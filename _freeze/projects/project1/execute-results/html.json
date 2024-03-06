@@ -1,0 +1,17 @@
+{
+  "hash": "471b7b52385a30c054f3114024748ad2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Burnout Items\"\nauthor: \"Matthew Weirick Johnson\"\ndescription: \"Burnout sucks. Using the Copenhagen Burnout Inventory, we can identify the suckiest aspects of burnouts as identified in a random clustered sample of academic librarians from across the US.\"\npage-layout: article\ndate: 2023-03-05\n---\n\n\n\n\n# Abstract\n\n# Introduction\n\n# Literature Review\n\n# Methods\n\n# Results\n\n\n::: {.cell}\n::: {.cell-output-display}\n![A bubble chart showing the distribution of responses for each question in the Copenhagen Burnout Inventory](project1_files/figure-html/fig-bubble-1.png){#fig-bubble width=672}\n:::\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![A bar chart showing the mean response for each question in the Copenhagen Burnout Inventory](project1_files/figure-html/fig-allbars-1.png){#fig-allbars width=672}\n:::\n:::\n",
+    "supporting": [
+      "project1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

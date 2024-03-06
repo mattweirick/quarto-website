@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/2022-04-01-call-for-chapters-training-library-instructors.html"
+    ]
+  },
+  {
     "listing": "/talks/index.html",
     "items": []
   },
@@ -8,19 +14,13 @@
     "items": []
   },
   {
-    "listing": "/CV/index.html",
-    "items": []
-  },
-  {
-    "listing": "/blog.html",
-    "items": [
-      "/posts/2022-04-01-call-for-chapters-training-library-instructors.html"
-    ]
-  },
-  {
     "listing": "/projects.html",
     "items": [
       "/projects/project1.html"
     ]
+  },
+  {
+    "listing": "/CV/index.html",
+    "items": []
   }
 ]

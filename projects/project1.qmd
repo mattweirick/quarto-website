@@ -1,0 +1,236 @@
+---
+title: "Burnout Items"
+author: "Matthew Weirick Johnson"
+description: "Burnout sucks. Using the Copenhagen Burnout Inventory, we can identify the suckiest aspects of burnouts as identified in a random clustered sample of academic librarians from across the US."
+page-layout: article
+date: 2023-03-05
+---
+
+```{r echo = FALSE, include = FALSE}
+
+library(readr)
+library(dplyr)
+library(tidyr)
+library(easystats)
+library(ggplot2)
+
+e <- read.csv("/Users/Matt/Documents/emotional_labor/emotional-labor-data.csv")
+e <- e[,-c(1:10)]
+e <- e %>%
+  filter(consent != 'I do not freely give my consent to take part in this study.')
+e <- e %>%
+  filter(eligibility1 == 'Yes' & eligibility2 == 'Yes')
+
+e <- e %>%
+  mutate(across(.cols = c(cbi1:cbi9),
+                .fns = ~case_when(
+                  .x == "Always" ~ 100,
+                  .x == "Often" ~ 75,
+                  .x == "Sometimes" ~ 50,
+                  .x == "Seldom" ~ 25,
+                  .x == "Never-Almost Never" ~ 0,
+                )))
+
+## cbi10 uses inverse scoring
+e <- e %>%
+  mutate(across(.cols = cbi10,
+                .fns = ~case_when(
+                  .x == "Always" ~ 0,
+                  .x == "Often" ~ 25,
+                  .x == "Sometimes" ~ 50,
+                  .x == "Seldom" ~ 75,
+                  .x == "Never-Almost Never" ~ 100,
+                )))
+
+e <- e %>%
+  mutate(across(.cols = c(cbi11:cbi17),
+                .fns = ~case_when(
+                  .x == "To a very high degree" ~ 100,
+                  .x == "To a high degree" ~ 75,
+                  .x == "Somewhat" ~ 50,
+                  .x == "To a low degree" ~ 25,
+                  .x == "To a very low degree" ~ 0,
+                )))
+
+e <- e %>%
+  mutate(across(.cols = c(cbi18:cbi19),
+                .fns = ~case_when(
+                  .x == "Always" ~ 100,
+                  .x == "Often" ~ 75,
+                  .x == "Sometimes" ~ 50,
+                  .x == "Seldom" ~ 25,
+                  .x == "Never-Almost Never" ~ 0,
+                )))
+
+e <- e %>%
+  select(cbi1:cbi19, satisfaction:Region) %>%
+  drop_na(where(is.numeric))
+
+e$satisfaction <- factor(x = e$satisfaction, levels = c("Not at all satisfied", "Somewhat satisfied", "Very satisfied"), ordered = TRUE)
+e$gender <- factor(e$gender, levels = c("Man", "Woman", "Identity not listed (please specify)", "Nonbinary"),
+                             labels = c("Man", "Woman", "Woman", "Nonbinary"))
+e$modality <- factor(e$modality, levels = c("Cisgender", "Transgender"))
+e$sexuality <- factor(e$sexuality, levels = c("Straight", "Bisexual", "Queer", "Asexual", "Pansexual", "Lesbian", "Gay"))
+e$disability <- factor(e$disability, levels = c("Yes", "No"))
+e$re <- factor(e$re)
+e$user <- factor(e$user, levels = c("Yes", "No"))
+e$supervisor <- factor(e$supervisor, levels = c("Yes", "No"))
+e$status <- factor(e$status, levels = c("Yes", "No"))
+
+tpbs <- apply(e[,c('cbi1', 'cbi2', 'cbi3', 'cbi4', 'cbi5', 'cbi6')],1,mean)
+twrbs <- apply(e[,c('cbi7', 'cbi8', 'cbi9', 'cbi10', 'cbi11', 'cbi12', 'cbi13')],1,mean)
+tcrbs <- apply(e[,c('cbi14', 'cbi15', 'cbi16', 'cbi17', 'cbi18', 'cbi19')],1,mean)
+e <- cbind(e, tpbs, twrbs, tcrbs)
+
+plots_personal <- e |>
+  select(cbi1:cbi6) |>
+  pivot_longer(
+    cols = starts_with("cbi"),
+    names_to = "question",
+    values_to = "response"
+  ) |>
+  select(question, response)
+
+plots_work <- e |>
+  select(cbi7:cbi13) |>
+  pivot_longer(
+    cols = starts_with("cbi"),
+    names_to = "question",
+    values_to = "response"
+  ) |>
+  select(question, response)
+
+plots_client <- e |>
+  select(cbi14:cbi19) |>
+  pivot_longer(
+    cols = starts_with("cbi"),
+    names_to = "question",
+    values_to = "response"
+  ) |>
+  select(question, response)
+
+a <- cbind(plots_personal, "Personal")
+colnames(a)[3] = "dimension"
+
+b <- cbind(plots_work, "Work")
+colnames(b)[3] = "dimension"
+
+c <- cbind(plots_client, "Client")
+colnames(c)[3] = "dimension"
+
+d <- rbind(a, b, c)
+
+d$question <- factor(d$question, levels = c("cbi1",
+                                            "cbi2",
+                                            "cbi3",
+                                            "cbi4",
+                                            "cbi5",
+                                            "cbi6",
+                                            "cbi7",
+                                            "cbi8",
+                                            "cbi9",
+                                            "cbi10",
+                                            "cbi11",
+                                            "cbi12",
+                                            "cbi13",
+                                            "cbi14",
+                                            "cbi15",
+                                            "cbi16",
+                                            "cbi17",
+                                            "cbi18",
+                                            "cbi19"))
+d$dimension <- factor(d$dimension, 
+                      levels = c("Personal",
+                                  "Work",
+                                  "Client"),
+                      labels = c("Personal Burnout",
+                                 "Work-related Burnout",
+                                 "Client-related Burnout"))
+
+line <- cbind(c("Personal", "Work-related", "Client-related"),
+              c(mean(e$tpbs), mean(e$twrbs), mean(e$tcrbs)))
+line <- data.frame(line)
+
+line <- data.frame(Dimension = c("Personal", "Work-related", "Client-related"),
+                   Line = c(mean(e$tpbs), mean(e$twrbs), mean(e$tcrbs)))
+
+temp <- d
+levels(temp$question) <-   sub('^cbi', '', levels(d$question))
+```
+
+# Abstract
+
+# Introduction
+
+# Literature Review
+
+# Methods
+
+# Results
+
+```{r echo = FALSE}
+#| label: fig-bubble
+#| fig-cap: A bubble chart showing the distribution of responses for each question in the Copenhagen Burnout Inventory
+
+ggplot(temp, aes(x = question, y = response, color = dimension)) +
+  geom_count() + 
+  scale_size_area() + 
+  facet_wrap(vars(dimension), scales = "free_x") + 
+  scale_colour_brewer(palette = "Dark2", guide = "none") +
+  labs(y="Responses", 
+       x = "Copenhagen Burnout Inventory Item",
+       title = "Distribution of Responses by Copenhangen Burnout Inventory Items") +
+  guides(size=guide_legend(title="Count")) +
+  theme_minimal()
+```
+
+```{r}
+#| echo: false
+#| label: fig-allbars
+#| fig-cap: A bar chart showing the mean response for each question in the Copenhagen Burnout Inventory
+
+temp |>
+  group_by(question) |>
+  summarise(
+    N = n(),
+    Mean = mean(response), 
+    Median = median(response),
+    "Std. Dev." = sd(response),
+    CI = qt(0.975, df=n()-1)*sd(response)/sqrt(n()),
+    CI_low = mean(response)-CI,
+    CI_hi = mean(response)+CI
+  ) |>
+  mutate(Dimension = c("Personal",
+                       "Personal",
+                       "Personal",
+                       "Personal",
+                       "Personal",
+                       "Personal",
+                       "Work-related",
+                       "Work-related",
+                       "Work-related",
+                       "Work-related",
+                       "Work-related",
+                       "Work-related",
+                       "Work-related",
+                       "Client-related",
+                       "Client-related",
+                       "Client-related",
+                       "Client-related",
+                       "Client-related",
+                       "Client-related")) |>
+  ggplot(aes(x=question, y = Mean, fill = factor(Dimension, levels = c("Personal", "Work-related", "Client-related")))) +
+    geom_col() + 
+    facet_wrap(vars(factor(Dimension, levels = c("Personal", "Work-related", "Client-related"))), scales = "free_x") + 
+    geom_errorbar(aes(ymin=CI_low, ymax=CI_hi),
+                linewidth=.3,
+                width=.2,
+                position=position_dodge(.9)) +
+    geom_hline(data = line, aes(yintercept = Line)) +
+    scale_fill_brewer(palette = "Dark2", guide = "none") + 
+    labs(y="Mean", 
+         x = "Copenhagen Burnout Inventory Item",
+         title = "Average Response by Copenhangen Burnout Inventory Items",
+         caption = "*Error bars indicate a 95% confidence interval for the corresponding mean.\nThe horizontal lines denote the average score across the subscale.") +
+    theme_minimal()
+```

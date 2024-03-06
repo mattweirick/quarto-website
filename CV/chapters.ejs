@@ -1,0 +1,34 @@
+```{=html}
+
+<style>
+  .btn-xs {
+    padding: .07em .31em;
+    font-size: .9em;
+ 
+  .ai-lg {
+    font-size: 1.2em;  /* Adjust as needed */
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+</style>
+
+<ul class="list">
+  <% for (const item of items) { %>
+    <li <%= metadataAttrs(item) %>>
+      <%= item.title %>
+      <br/>
+      <% if (item.type === 'Published') { %>
+        <small class="text-muted" style="display:block;">
+          <%= item.year %>. <%= item.author %>. <%= item.journal %>.
+        </small>
+      <% } %>
+    </li>
+  <% } %>
+</ul>
+
+```

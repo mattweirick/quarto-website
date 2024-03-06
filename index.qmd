@@ -1,0 +1,50 @@
+---
+title: "Matthew Weirick Johnson"
+image: portraits/portrait-2.jpg
+image-alt: Matthew Weirick Johnson standing in front of a window.
+about:
+  id: hero-heading
+  template: trestles
+  image-shape: round
+  links:
+    - text: "{{< fa location-dot size=xl >}} Tampa, FL"
+    - text: "{{< fa envelope-square size=xl >}} Email"
+      href: mailto:matt@mattweirick.com
+    - text: "{{< fa brands twitter size=xl >}} Twitter"
+      href: https://twitter.com/xoxoMattyBoy
+    - text: "{{< fa brands linkedin size=xl >}} LinkedIn"
+      href: https://www.linkedin.com/in/matthew-w-johnson
+    - text: "{{< fa brands instagram size=xl >}} Instagram"
+      href: https://instagram.com/mattbrarian
+    - text: "{{< fa brands github size=xl >}} Github"
+      href: https://github.com/mattweirick
+    - text: "{{< ai google-scholar size=xl color=#b33b72 >}} Google Scholar"
+      href: https://scholar.google.com/citations?user=dgbjIWIAAAAJ&hl=en
+    - text: "{{< ai orcid size=xl color=#b33b72 >}} ORCiD"
+      href: https://orcid.org/0000-0002-6391-2088
+    - text: "{{< ai researcherid size=xl color=#b33b72 >}} ResearcherID"
+      href: https://www.webofscience.com/wos/author/record/AFE-4307-2022
+    - text: "{{< ai scopus size=xl color=#b33b72 >}} Scopus Author ID"
+      href: http://www.scopus.com/inward/authorDetails.url?authorID=58064074100&partnerID=MN8TOARS
+---
+
+```{=html}
+<style>
+
+.title {
+  font-size: 1.5vw;
+}
+
+.about-link-text .fa-solid {
+  color:#b33b72;
+}
+
+.about-link-text .fa-brands {
+  color:#b33b72;
+}
+
+</style>
+```
+::: {#hero-heading}
+Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the University of South Florida Libraries, Tampa campus.
+:::

@@ -1,0 +1,263 @@
+---
+title: "Matthew Weirick Johnson"
+page-layout: full
+listing:
+  - id: published-papers-2024
+    include: 
+      type: "Published"
+      year: 2024
+    contents: ../research/papers.yaml
+    template: papers2.ejs
+    filter-ui: false
+    sort: "date desc" 
+    sort-ui: false
+    categories: false
+    type: table
+    field-display-names: 
+      year: "Year"
+      journal: "Journal"
+  - id: published-papers-2023
+    include: 
+      type: "Published"
+      year: 2023
+    contents: ../research/papers.yaml
+    template: papers2.ejs
+    filter-ui: false
+    sort: "date desc" 
+    sort-ui: false
+    categories: false
+    field-display-names: 
+      year: "Year"
+      journal: "Journal"
+  - id: published-papers-2021
+    include: 
+      type: "Published"
+      year: 2021
+    contents: ../research/papers.yaml
+    template: papers2.ejs
+    filter-ui: false
+    sort: "date desc" 
+    sort-ui: false
+    categories: false
+    field-display-names: 
+      year: "Year"
+      journal: "Journal"
+  - id: book-chapters
+    include: 
+      type: "Published"
+    contents: ../research/chapters.yaml
+    template: chapters.ejs
+    filter-ui: false
+    sort: "date desc" 
+    sort-ui: false
+    categories: false
+    field-display-names: 
+      year: "Year"
+      journal: "Journal"  
+  - id: other
+    include: 
+      type: "Published"
+    contents: ../research/other.yaml
+    template: chapters.ejs
+    filter-ui: false
+    sort: "date desc" 
+    sort-ui: false
+    categories: false
+    field-display-names: 
+      year: "Year"
+      journal: "Journal" 
+  - id: talks-national
+    include: 
+      type: "Published"
+      audience: "national"
+    contents: ../talks/talks.yaml
+    template: talks2.ejs
+    filter-ui: false
+    sort: "date desc" 
+    sort-ui: false
+    categories: false
+    field-display-names: 
+      year: "Year"
+      journal: "Journal"
+  - id: talks-international
+    include: 
+      type: "Published"
+      audience: "international"
+    contents: ../talks/talks.yaml
+    template: talks2.ejs
+    filter-ui: false
+    sort: "date desc" 
+    sort-ui: false
+    categories: false
+    field-display-names: 
+      year: "Year"
+      journal: "Journal"
+---
+
+```{=html}
+<style>
+h2 {
+  color: #b33b72;
+}
+
+h3 {
+  color: #b33b72;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+#quarto-document-content li + li {
+    margin-top: .5em;
+   }
+   
+#education li li + li {
+    margin-top:.1em;
+}
+
+#education li li + li:last-child {
+    margin-bottom: .5em;
+}
+   
+#education li li {
+    margin: 0 0 0 2em;
+      }
+
+#academic-positions li li {
+    margin: 0 0 0 2em;
+      }
+
+</style>
+```
+Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the University of South Florida Libraries, Tampa campus.
+
+## {{< fa graduation-cap >}} Education
+
+-   **Ph.D.** *Measurement & Evaluation*
+    -   University of South Florida, 2024 - Present
+-   **M.S.** *Library Science*
+    -   University of North Carolina at Chapel Hill, 2016-2018
+    -   **Master's Paper:** “Not playing that game”: An exploratory study of queer men’s health information behavior on location-aware dating and sex-seeking mobile applications
+    -   **Certificates:** Interdisciplinary Health Communication, Interdisciplinary Health Disparities, SILS Diversity Advocate
+
+```{=html}
+<!---  
+- Awards: Pratt Severn Best Student Research Paper Award, ASIS&T 
+--->
+```
+-   **B.A.** *English*
+    -   Virginia Tech, 2012-2016
+
+```{=html}
+<!---
+  - Awards: Barbara Ellen Smith Outstanding Paper Award, VT Women's & Gender Studies; Ut Prosim Award for Service, VT English
+--->
+```
+## {{< fa school >}} Academic Positions
+
+-   **Associate Librarian & Director**, University of South Florida, 2023 - Present
+    -   Director of Research & Instruction, Tampa campus, 2023 - Present
+-   **Associate Librarian**, UCLA, 2019-2023
+    -   Humanities & Social Sciences Librarian, 2019-2023
+    -   Lead for Teaching & Learning, 2020-2023
+    -   Humanities & Social Sciences Lead for Research Services, 2020-2022
+
+## {{< fa bookmark >}} Publications
+
+A complete list of publications with available open access options can be found on my [Research](/research) page.
+
+### {{< fa book >}} Books
+
+-   *Training Library Instructors, Vol 1 & 2*, Expected late 2024 from ACRL
+
+### {{< fa file-lines >}} Peer-reviewed Articles
+
+#### 2024
+
+::: {#published-papers-2024 style="padding-bottom: 0;"}
+:::
+
+#### 2023
+
+::: {#published-papers-2023 style="padding-bottom: 0;"}
+:::
+
+#### 2021
+
+::: {#published-papers-2021 style="padding-bottom: 0;"}
+:::
+
+### {{<fa book-open >}} Book Chapters
+
+::: {#book-chapters style="padding-bottom: 0;"}
+:::
+
+### {{< fa pen-nib >}} Other Publications
+
+::: {#other}
+:::
+
+## {{< fa bullhorn >}} Talks & Presentations
+
+### International
+
+::: {#talks-international}
+:::
+
+### National
+
+::: {#talks-national}
+:::
+
+## {{< fa magnifying-glass >}} Peer Reviews
+
+-   *College & Research Libraries*, 1 review
+-   *The Journal of Academic Librarianship*, 4 reviews
+-   *Journal of the Medical Library Association*, 1 review
+-   *Journal of New Librarianship*, 3 reviews
+-   *New Media & Society*, 2 reviews
+-   *Public Services Quarterly*, 3 reviews
+
+## {{< fa people-group >}} Professional Service
+
+### American Library Association (ALA)
+
+-   Conference Committee, ACRL Representative
+
+### Association of College & Research Libraries (ACRL)
+
+-   Publications Coordinating Committee, Member
+-   Choice Editorial Board, Member
+-   *College & Research Libraries* Editorial Board, Member
+-   Nominations and Policies Audit Task Force, Chair
+-   Professional Development Committee, Chair
+-   Professional Development Committee, Member
+
+### ACRL Instruction Section (IS)
+
+-   Secretary
+-   Peer-reviewed Instructional Materials Online (PRIMO) Committee, Member
+-   Diversity and Inclusion Task Force, Member
+
+### ACRL University Libraries Section (ULS)
+
+-   Professional Development Committee, Member
+
+### ACRL Women and Gender Studies Section (WGSS)
+
+-   WGSS Core Books Project (HIV & AIDS, British Literature), Member
+-   WGSS Awards Committee, Member
+
+### Rainbow Round Table (RRT)
+
+-   Stonewall Book Awards - Israel Fishman Non-Fiction Award Committee, Member
+-   News & Reviews Committee, Member
+-   Resources Committee, Member
+
+### Library Instruction Round Table (LIRT)
+
+-   Top 20 Committee, Member
+-   Newsletter Committee, Member

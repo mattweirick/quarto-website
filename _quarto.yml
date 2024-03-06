@@ -1,0 +1,50 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Matthew Weirick Johnson"
+  favicon: logo.png
+  navbar:
+    left:
+      - href: index.qmd
+        text: About
+      - href: research/index.qmd
+        text: Research
+      - href: talks/index.qmd
+        text: Presentations
+      - href: CV/index.qmd
+        text: CV
+    right:
+    - text: "{{< fa envelope size=xl >}}"
+      href: mailto:matt@mattweirick.com
+    - text: "{{< fa brands twitter size=xl >}}"
+      href: https://twitter.com/xoxoMattyBoy
+    - text: "{{< fa brands linkedin size=xl >}}"
+      href: https://www.linkedin.com/in/matthew-w-johnson
+    - text: "{{< fa brands instagram size=xl >}}"
+      href: https://instagram.com/mattbrarian
+    - text: "{{< fa brands github size=xl >}}"
+      href: https://github.com/mattweirick
+    - text: "{{< ai google-scholar size=xl >}}"
+      href: https://scholar.google.com/citations?user=dgbjIWIAAAAJ&hl=en
+    - text: "{{< ai orcid size=xl >}}"
+      href: https://orcid.org/0000-0002-6391-2088
+    - text: "{{< ai researcherid size=xl >}}"
+      href: https://www.webofscience.com/wos/author/record/AFE-4307-2022
+    - text: "{{< ai scopus size=xl >}}"
+      href: http://www.scopus.com/inward/authorDetails.url?authorI
+  sidebar: 
+    style: "docked"
+    search: true
+    title: "Matthew Weirick Johnson"
+    
+
+format:
+  html:
+    theme: theme.scss #was cosmo ??flatly ??litera (nice but needs some accessibility adjustment) ??lux (meh?) ??pulse (purple) ??sandstone (basic)
+    #like pillbox for bnuttons
+    css: styles.css
+    toc: true
+
+editor: visual

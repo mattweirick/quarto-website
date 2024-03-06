@@ -1,0 +1,95 @@
+---
+title: "Research"
+description: "" 
+listing:
+  - id: unpublished-papers
+    include: 
+      type: "Working"
+    contents: papers.yaml
+    template: papers.ejs
+    filter-ui: false
+    sort: "date desc"
+    sort-ui: false
+    categories: false
+  - id: forthcoming-papers
+    include: 
+      type: "Forthcoming"
+    contents: papers.yaml
+    template: papers.ejs
+    filter-ui: false
+    sort: "date desc"
+    sort-ui: false
+    categories: true  
+  - id: published-papers
+    include: 
+      type: "Published"
+    contents: papers.yaml
+    template: papers.ejs
+    filter-ui: false
+    sort: "date desc" 
+    sort-ui: false
+    categories: true
+    field-display-names: 
+      year: "Year"
+      journal: "Journal"
+  - id: published-chapters
+    include: 
+      type: "Published"
+    contents: chapters.yaml
+    template: papers.ejs
+    filter-ui: false
+    sort: "date desc"
+    sort-ui: false
+    categories: true 
+  - id: other
+    include: 
+      type: "Published"
+    contents: other.yaml
+    template: papers.ejs
+    filter-ui: false
+    sort: "date desc"
+    sort-ui: false
+    categories: true 
+page-layout: full
+include-back-link: false
+toc-location: right
+---
+
+If want to stay up-to-date on my work, follow me on [Google Scholar](https://scholar.google.com/citations?hl=en&user=dgbjIWIAAAAJ)
+
+You can filter the items displayed below based on my three major research areas:
+
+::: {.btn-group role="group" aria-label="Publication grouping buttons"}
+<a role="button" href="#category=" type="button" class="btn btn-outline-secondary btn-s">Improving Librarian Work Life</a> <a role="button" href="#category=" type="button" class="btn btn-outline-secondary btn-s">Training Librarians</a> <a role="button" href="#category=" type="button" class="btn btn-outline-secondary btn-s">Managing Librarians</a>
+:::
+
+</br>
+
+```{=html}
+<!--
+## Working Papers
+
+:::{#unpublished-papers}
+:::
+
+
+## Forthcoming
+
+:::{#forthcoming-papers}
+:::
+-->
+```
+## Peer-reviewed Articles
+
+::: {#published-papers}
+:::
+
+## Book Chapters
+
+::: {#published-chapters}
+:::
+
+## Other Publications
+
+::: {#other}
+:::

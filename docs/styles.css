@@ -25,3 +25,11 @@ a:visited {
 .navbar-nav ul a:hover {
   color:#3344dd !important;
 }
+
+.quarto-title-block h1 {
+  color: #000;
+}
+
+.quarto-title-block div {
+  color: #000;
+}

@@ -15,6 +15,10 @@ website:
         text: Presentations
       - href: CV/index.qmd
         text: CV
+      - href: projects.qmd
+        text: Projects
+      - href: blog.qmd
+        text: Blog
     right:
     - text: "{{< fa envelope size=xl >}}"
       href: mailto:matt@mattweirick.com

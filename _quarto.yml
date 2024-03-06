@@ -13,8 +13,10 @@ website:
         text: Presentations
       - href: CV/index.qmd
         text: CV
-      - href: projects.qmd
-        text: Projects
+      - text: Projects
+        menu: 
+          - projects.qmd
+          - projects/project1.qmd
       - href: blog.qmd
         text: Blog
     right:

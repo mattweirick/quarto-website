@@ -20,24 +20,26 @@ website:
       - href: blog.qmd
         text: Blog
     right:
-    - text: "{{< fa envelope size=xl >}}"
-      href: mailto:matt@mattweirick.com
-    - text: "{{< fa brands twitter size=xl >}}"
-      href: https://twitter.com/xoxoMattyBoy
-    - text: "{{< fa brands linkedin size=xl >}}"
-      href: https://www.linkedin.com/in/matthew-w-johnson
-    - text: "{{< fa brands instagram size=xl >}}"
-      href: https://instagram.com/mattbrarian
-    - text: "{{< fa brands github size=xl >}}"
-      href: https://github.com/mattweirick
-    - text: "{{< ai google-scholar size=xl >}}"
-      href: https://scholar.google.com/citations?user=dgbjIWIAAAAJ&hl=en
-    - text: "{{< ai orcid size=xl >}}"
-      href: https://orcid.org/0000-0002-6391-2088
-    - text: "{{< ai researcherid size=xl >}}"
-      href: https://www.webofscience.com/wos/author/record/AFE-4307-2022
-    - text: "{{< ai scopus size=xl >}}"
-      href: http://www.scopus.com/inward/authorDetails.url?authorI
+    - text: Connect with me
+      menu: 
+        - text: "{{< fa envelope size=xl >}} Email" 
+          href: mailto:matt@mattweirick.com
+        - text: "{{< fa brands twitter size=xl >}} Twitter"
+          href: https://twitter.com/xoxoMattyBoy
+        - text: "{{< fa brands linkedin size=xl >}} LinkedIn"
+          href: https://www.linkedin.com/in/matthew-w-johnson
+        - text: "{{< fa brands instagram size=xl >}} Instagram"
+          href: https://instagram.com/mattbrarian
+        - text: "{{< fa brands github size=xl >}} GitHub"
+          href: https://github.com/mattweirick
+        - text: "{{< ai google-scholar size=xl >}} Google Scholar"
+          href: https://scholar.google.com/citations?user=dgbjIWIAAAAJ&hl=en
+        - text: "{{< ai orcid size=xl >}} ORCiD"
+          href: https://orcid.org/0000-0002-6391-2088
+        - text: "{{< ai researcherid size=xl >}} Researcher ID"
+          href: https://www.webofscience.com/wos/author/record/AFE-4307-2022
+        - text: "{{< ai scopus size=xl >}} Scopus Author ID"
+          href: http://www.scopus.com/inward/authorDetails.url?authorI
   sidebar: 
     style: "docked"
     search: true

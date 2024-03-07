@@ -5,6 +5,11 @@ project:
 website:
   title: "Matthew Weirick Johnson"
   favicon: logo.png
+  google-analytics: "G-XN49YP77PL"
+  open-graph: true
+  twitter-card: 
+    creator: "@xoxoMattyBoy"
+    image: "/portraits/portrait-2.jpg"
   navbar:
     left:
       - href: research/index.qmd

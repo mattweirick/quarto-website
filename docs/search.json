@@ -60,7 +60,7 @@
     "href": "projects.html",
     "title": "All Projects",
     "section": "",
-    "text": "Use of the Copenhagen Burnout Inventory Among US Academic Librarians: Validity and Examination of the Burnout General Factor\n\n\n\n\n\n\n\n\n\n\n\nMatthew Weirick Johnson\n\n\n\n\n\n\n\n\n\n\n\n\nBurnout Items\n\n\n\n\n\nBurnout sucks. Using the Copenhagen Burnout Inventory, we can identify the suckiest aspects of burnouts as identified in a random clustered sample of academic librarians from across the US.\n\n\n\n\n\nMar 5, 2023\n\n\nMatthew Weirick Johnson\n\n\n\n\n\n\n\n\n\n\n\n\nEmotional Labor and Burnout Among Academic Librarians\n\n\n\n\n\nEmotional labor predicts a statistically significant and large portion of variance in burnout among academic librarians in the US.\n\n\n\n\n\nMar 5, 2023\n\n\nMatthew Weirick Johnson\n\n\n\n\n\n\nNo matching items"
+    "text": "Use of the Copenhagen Burnout Inventory Among US Academic Librarians\n\n\nExamination of Construct Validity and the Burnout General Factor\n\n\n\n\n\n\n\n\nMatthew Weirick Johnson\n\n\n\n\n\n\n\n\n\n\n\n\nBurnout Items\n\n\n\n\n\nBurnout sucks. Using the Copenhagen Burnout Inventory, we can identify the suckiest aspects of burnouts as identified in a random clustered sample of academic librarians from across the US.\n\n\n\n\n\nMar 5, 2023\n\n\nMatthew Weirick Johnson\n\n\n\n\n\n\n\n\n\n\n\n\nEmotional Labor and Burnout Among Academic Librarians\n\n\n\n\n\nEmotional labor predicts a statistically significant and large portion of variance in burnout among academic librarians in the US.\n\n\n\n\n\nMar 5, 2023\n\n\nMatthew Weirick Johnson\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/project1.html",
@@ -236,5 +236,68 @@
     "title": "Page Not Found",
     "section": "",
     "text": "The page you requested cannot be found (perhaps it was moved or renamed).\nYou may want to try searching to find the page’s new location."
+  },
+  {
+    "objectID": "projects/project3.html",
+    "href": "projects/project3.html",
+    "title": "Use of the Copenhagen Burnout Inventory Among US Academic Librarians",
+    "section": "",
+    "text": "keywords: burnout, psychometrics, Copenhagen Burnout Inventory, academic librarians"
+  },
+  {
+    "objectID": "projects/project3.html#maslach-burnout-inventory",
+    "href": "projects/project3.html#maslach-burnout-inventory",
+    "title": "Use of the Copenhagen Burnout Inventory Among US Academic Librarians",
+    "section": "Maslach Burnout Inventory",
+    "text": "Maslach Burnout Inventory\nNardine (2019) and Matteson & Miller (2013) previously used the Maslach Burnout Invetory among samples of academic librarians from ARL institutions and of librarians across different types of institutions respectively."
+  },
+  {
+    "objectID": "projects/project3.html#oldenburg-burnout-inventory",
+    "href": "projects/project3.html#oldenburg-burnout-inventory",
+    "title": "Use of the Copenhagen Burnout Inventory Among US Academic Librarians",
+    "section": "Oldenburg Burnout Inventory",
+    "text": "Oldenburg Burnout Inventory"
+  },
+  {
+    "objectID": "projects/project3.html#burnout-measure",
+    "href": "projects/project3.html#burnout-measure",
+    "title": "Use of the Copenhagen Burnout Inventory Among US Academic Librarians",
+    "section": "Burnout Measure",
+    "text": "Burnout Measure"
+  },
+  {
+    "objectID": "projects/project3.html#single-item-burnout-measure",
+    "href": "projects/project3.html#single-item-burnout-measure",
+    "title": "Use of the Copenhagen Burnout Inventory Among US Academic Librarians",
+    "section": "Single-item Burnout Measure",
+    "text": "Single-item Burnout Measure"
+  },
+  {
+    "objectID": "projects/project3.html#copenhagen-burnout-inventory",
+    "href": "projects/project3.html#copenhagen-burnout-inventory",
+    "title": "Use of the Copenhagen Burnout Inventory Among US Academic Librarians",
+    "section": "Copenhagen Burnout Inventory",
+    "text": "Copenhagen Burnout Inventory\nWood et al. (2020) and Johnson (2023) have previously used the Copenhagen Burnout Inventory among samples of academic librarians."
+  },
+  {
+    "objectID": "projects/project3.html#sample-recruitment",
+    "href": "projects/project3.html#sample-recruitment",
+    "title": "Use of the Copenhagen Burnout Inventory Among US Academic Librarians",
+    "section": "Sample & Recruitment",
+    "text": "Sample & Recruitment"
+  },
+  {
+    "objectID": "projects/project3.html#data-analysis",
+    "href": "projects/project3.html#data-analysis",
+    "title": "Use of the Copenhagen Burnout Inventory Among US Academic Librarians",
+    "section": "Data Analysis",
+    "text": "Data Analysis\nAnalyses were conducted using the R Statistical language (version 4.3.0; R Core Team, 2023) on macOS 14.0, using the packages semPlot (version 1.1.6; Epskamp S, 2022), easystats (version 0.7.0; Lüdecke D et al., 2022), lavaan (version 0.6.16; Rosseel Y, 2012), dplyr (version 1.1.4; Wickham H et al., 2023), readr (version 2.1.4; Wickham H et al., 2023), tidyr (version 1.3.0; Wickham H et al., 2023), and psych (version 2.3.9; William Revelle, 2023). The article was authored using Quarto in RStudio."
+  },
+  {
+    "objectID": "projects/project3.html#ethical-considerations",
+    "href": "projects/project3.html#ethical-considerations",
+    "title": "Use of the Copenhagen Burnout Inventory Among US Academic Librarians",
+    "section": "Ethical Considerations",
+    "text": "Ethical Considerations\nThe Institutional Review Board at the University of South Florida reviewed the study for human ethics approval and deemed it to be exempt with minimal risk. At the beginning of the web survey, participants reviewed an informed consent document and identified their consent by selecting “I freely give my consent to take part in this study.”"
   }
 ]

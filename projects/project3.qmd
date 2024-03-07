@@ -1,10 +1,10 @@
 ---
-title: "Use of the Copenhagen Burnout Inventory Among US Academic Librarians: Validity and Examination of the Burnout General Factor"
+title: "Use of the Copenhagen Burnout Inventory Among US Academic Librarians"
+subtitle: "Examination of Construct Validity and the Burnout General Factor"
 author: "Matthew Weirick Johnson"
 format: 
-  pdf: 
+  html: 
     mainfont: "Helvetica"
-editor: visual
 tbl-cap-location: top
 fig-cap-location: top
 nocite: |
@@ -386,7 +386,7 @@ cbi_model2 <- cfa(cbi2, data = e_cbi)
 
 # Summarize and interpret the fit of the CFA model
 # summary(cbi_model2, fit.measures = TRUE, standardized = TRUE)
-# interpret(cbi_model2)
+interpret(cbi_model2)
 
 # Draw the path diagram for the CFA model
 semPaths(cbi_model2,

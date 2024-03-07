@@ -6,11 +6,7 @@
     ]
   },
   {
-    "listing": "/talks/index.html",
-    "items": []
-  },
-  {
-    "listing": "/research/index.html",
+    "listing": "/CV/index.html",
     "items": []
   },
   {
@@ -20,7 +16,11 @@
     ]
   },
   {
-    "listing": "/CV/index.html",
+    "listing": "/research/index.html",
+    "items": []
+  },
+  {
+    "listing": "/talks/index.html",
     "items": []
   }
 ]

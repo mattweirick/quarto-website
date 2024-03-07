@@ -60,7 +60,7 @@
     "href": "projects.html",
     "title": "All Projects",
     "section": "",
-    "text": "Burnout Items\n\n\n\n\n\nBurnout sucks. Using the Copenhagen Burnout Inventory, we can identify the suckiest aspects of burnouts as identified in a random clustered sample of academic librarians from across the US.\n\n\n\n\n\nMar 5, 2023\n\n\nMatthew Weirick Johnson\n\n\n\n\n\n\nNo matching items"
+    "text": "Use of the Copenhagen Burnout Inventory Among US Academic Librarians: Validity and Examination of the Burnout General Factor\n\n\n\n\n\n\n\n\n\n\n\nMatthew Weirick Johnson\n\n\n\n\n\n\n\n\n\n\n\n\nBurnout Items\n\n\n\n\n\nBurnout sucks. Using the Copenhagen Burnout Inventory, we can identify the suckiest aspects of burnouts as identified in a random clustered sample of academic librarians from across the US.\n\n\n\n\n\nMar 5, 2023\n\n\nMatthew Weirick Johnson\n\n\n\n\n\n\n\n\n\n\n\n\nEmotional Labor and Burnout Among Academic Librarians\n\n\n\n\n\nEmotional labor predicts a statistically significant and large portion of variance in burnout among academic librarians in the US.\n\n\n\n\n\nMar 5, 2023\n\n\nMatthew Weirick Johnson\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/project1.html",
@@ -173,6 +173,34 @@
     "title": "Call for Chapters: Training Library Instructors",
     "section": "Chapter Proposals",
     "text": "Chapter Proposals\nProposals can be submitted using the embedded Google Form below or by visiting https://forms.gle/3J5GHrHszPtH9oqH8.\n\nLoading…\n\nProposals should include the names and affiliations of all potential authors/contributors, the intended volume and section of the chapter, and a 500-word abstract. Proposals will be reviewed based on the following areas, where relevant: significance of topic, reference to existing literature, research design & methodology, content & discussion, conclusions & contributions, and quality of writing. Proposals will also be considered based on the volume and section to which they would contribute.\nChapters must not be previously published or simultaneously submitted to other venues. Authors will retain copyright of their chapters and will be able to apply a Creative Commons  license when ACRL reaches the author agreement stage of the publication process. Authors will receive a complimentary eBook copy of the work, a 60% discount on the print book, and a PDF of their final chapter to deposit in their institutional repository."
+  },
+  {
+    "objectID": "projects/project2.html#introduction",
+    "href": "projects/project2.html#introduction",
+    "title": "Emotional Labor and Burnout Among Academic Librarians",
+    "section": "Introduction",
+    "text": "Introduction"
+  },
+  {
+    "objectID": "projects/project2.html#literature-review",
+    "href": "projects/project2.html#literature-review",
+    "title": "Emotional Labor and Burnout Among Academic Librarians",
+    "section": "Literature Review",
+    "text": "Literature Review"
+  },
+  {
+    "objectID": "projects/project2.html#methods",
+    "href": "projects/project2.html#methods",
+    "title": "Emotional Labor and Burnout Among Academic Librarians",
+    "section": "Methods",
+    "text": "Methods"
+  },
+  {
+    "objectID": "projects/project2.html#results",
+    "href": "projects/project2.html#results",
+    "title": "Emotional Labor and Burnout Among Academic Librarians",
+    "section": "Results",
+    "text": "Results\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nParameter\nOrganizational Support\nNegative Affect\nPositive Affect\nClient-Related\nWork-related\nPersonal\nFaking\nHiding\nDeep Acting\nVariation\nIntensity\nFrequency\n\n\n\n\nDuration\n-0.01\n0.05\n-0.08\n0.05\n0.03\n0.02\n0.04\n0.05\n-0.04\n-0.06\n-0.06\n0\n\n\nFrequency\n-0.17\n0.13\n0.02\n0.13\n0.23\n0.23\n0.40\n0.23\n0.39\n0.37\n0.23\n\n\n\nIntensity\n-0.06\n0.21\n0.05\n0.11\n0.23\n0.22\n0.13\n0.01\n0.26\n0.43\n\n\n\n\nVariation\n-0.09\n0.15\n0.11\n0.11\n0.15\n0.18\n0.15\n0.08\n0.32\n\n\n\n\n\nDeep Acting\n-0.03\n0.07\n0.00\n0.05\n0.10\n0.14\n0.23\n0.12\n\n\n\n\n\n\nHiding\n-0.55\n0.43\n-0.42\n0.40\n0.57\n0.50\n0.63\n\n\n\n\n\n\n\nFaking\n-0.41\n0.37\n-0.33\n0.38\n0.51\n0.44\n\n\n\n\n\n\n\n\nPersonal\n-0.52\n0.61\n-0.48\n0.48\n0.88\n\n\n\n\n\n\n\n\n\nWork-related\n-0.57\n0.58\n-0.53\n0.53\n\n\n\n\n\n\n\n\n\n\nClient-Related\n-0.27\n0.39\n-0.44\n\n\n\n\n\n\n\n\n\n\n\nPositive Affect\n0.40\n-0.30\n\n\n\n\n\n\n\n\n\n\n\n\nNegative Affect\n-0.39\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDot and Linear Regression Graphs Depicting Total Personal Burnout Score Predicted by Scores on Factors of Emotional Labor"
   },
   {
     "objectID": "talks/index.html",

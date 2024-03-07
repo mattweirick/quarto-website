@@ -2,9 +2,9 @@
 title: "Use of the Copenhagen Burnout Inventory Among US Academic Librarians"
 subtitle: "Examination of Construct Validity and the Burnout General Factor"
 author: "Matthew Weirick Johnson"
-format: 
-  html: 
-    mainfont: "Helvetica"
+description: "The Copenhagen Burnout Inventory (CBI) is a non-commercial, free, and easy-to-administer tool for measuring burnout across three dimensions: personal, work-related, and client-related. The CBI presents a cost-effective alternative to the MBI which may be particularly enticing for academic library leaders and researchers. This study assesses the psychometric properties, including construct validity and scale reliability, of the CBI among academic librarians in the United Studies using a probability sample stratified by institutional Carnegie classifications and geographic region."
+page-layout: article
+date: 2023-03-05
 tbl-cap-location: top
 fig-cap-location: top
 nocite: |

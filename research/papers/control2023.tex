@@ -1,0 +1,957 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  twocolumn]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+  \setmainfont[]{Helvetica}
+  \setsansfont[]{Helvetica}
+  \setmonofont[]{Helvetica}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\usepackage{float}
+\makeatletter
+\let\oldlt\longtable
+\let\endoldlt\endlongtable
+\def\longtable{\@ifnextchar[\longtable@i \longtable@ii}
+\def\longtable@i[#1]{\begin{figure}[H]
+\onecolumn
+\begin{minipage}{0.5\textwidth}
+\oldlt[#1]
+}
+\def\longtable@ii{\begin{figure}[H]
+\onecolumn
+\begin{minipage}{0.5\textwidth}
+\oldlt
+}
+\def\endlongtable{\endoldlt
+\end{minipage}
+\twocolumn
+\end{figure}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Job Control and Its Impacts on Burnout in Academic Instruction Librarians},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Job Control and Its Impacts on Burnout in Academic Instruction
+Librarians}
+\author{Matthew Weirick Johnson}
+\date{2023-06-12}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Librarians have been grappling with the issue of burnout for decades, at
+least. This study uses the Copenhagen Burnout Inventory (CBI) and Job
+Control Inventory to show how job control impacts Burnout. Using the
+CBI, Academic Instruction Librarians, on average, have high work-related
+burnout and even higher personal burnout compare to other jobs. However,
+librarians have low client-related burnout, similar to other caring or
+helping professions. The findings point to key factors taht impact job
+control and burnout to help consider ways of mitigating burnout and
+increasing job control.
+\end{abstract}
+
+\subsection{Abstract}\label{abstract}
+
+Librarians have been grappling with the issue of burnout for decades, at
+least. This study uses the Copenhagen Burnout Inventory (CBI) and Job
+Control Inventory to show how job control impacts burnout. Using the
+CBI, academic instruction librarians, on average, have high work-related
+burnout and even higher personal burnout compared to other jobs.
+However, librarians have low client-related burnout, similar to other
+``caring'' or ``helping'' professions. The findings point to key factors
+that impact job control and burnout to help consider ways of mitigating
+burnout and increasing job control.
+
+\subsection{Introduction}\label{introduction}
+
+Librarians have been grappling with the issue of burnout for decades, at
+least, with many acknowledging its prevalence in the profession. In
+recent years, additional empirical evidence, both quantitative and
+qualitative, has been published. Two specific instances have applied
+quantitative inventories to measure burnout among academic librarians.
+Applying the Areas of Worklife Survey and Maslach Burnout Inventory,
+Nardine (2019) found ``that lack of personal agency is the primary
+contributor to a sense of burnout'' (p.~508). Additionally, employing
+the Copenhagen Burnout Inventory, Wood et al.~(2020) found that
+librarian perceptions of burnout are quite high in comparison to other
+occupations, including nurses, hospital doctors, and social workers.
+Burnout is clearly a central concern for the profession that has
+received considerable attention in scholarship and other discussions,
+and agency or job control may be a large contributor.
+
+Burnout has been identified as a predictor of various negative
+consequences for employee health and wellbeing and for organizational
+success. These include physical consequences (cardiovascular diseases,
+pain, and impaired immune function), psychological consequences
+(depression and insomnia), and occupational consequences (absenteeism,
+poor performance, and job dissatisfaction). Given the negative impacts
+of burnout on employees and organizations, managers and administrators
+should consider preventative measures to mitigate burnout. Job control
+may be one area worth focusing mitigation measures.
+
+Librarians may lack job control generally and when providing library
+instruction specifically. There is no current data about job control
+among librarians, though job control does appear to be tied to burnout.
+However, little scholarly research considers librarian agency or begins
+to understand the factors that contribute to agency or feelings of
+agency for librarians at work. In order to improve job control and
+mitigate burnout in the workplace, we first need to understand how job
+control is experienced and what factors impact that experience.
+
+Given the relationship between job control and burnout and the negative
+impacts of burnout, it stands to reason that managers and administrators
+should work with employees to increase their job control as a means of
+mitigating burnout (Salvagioni et al., 2017). However, further research
+on job control and burnout among librarians is needed.
+
+This study seeks to address this research problem and fill the gap
+identified in the literature around librarian perceptions of job control
+generally and regarding instruction specifically. The study considers
+the following research questions:
+
+\begin{itemize}
+\tightlist
+\item
+  For academic instruction librarians, how does job control impact
+  burnout?
+\item
+  What factors contribute to job control and burnout for academic
+  instruction librarians? To what extent do these factors contribute to
+  job control?
+\end{itemize}
+
+This study uses the Copenhagen Burnout Inventory (CBI) and Job Control
+Inventory to show how job control impacts burnout. Using the CBI,
+academic instruction librarians, on average, have drastically high
+work-related burnout and even higher personal burnout compared to other
+jobs. However, librarians have drastically low client-related burnout,
+similar to other ``caring'' or ``helping'' professions. I argue that
+this difference is related to vocational awe and that person-centered
+management is necessary to approach employees holistically to mitigate
+personal and work-related burnout, which are statistically correlated.
+Additionally, the findings point to key factors that impact job control
+and burnout to help consider ways of mitigating burnout and increasing
+job control.
+
+\subsection{Literature Review}\label{literature-review}
+
+\subsubsection{Burnout}\label{burnout}
+
+The World Health Organization (WHO) in their International
+Classification of Diseases, 11th Edition (ICD-11) describe burnout as
+``a syndrome conceptualized as resulting from chronic workplace stress
+that has not been successfully managed. It is characterised by three
+dimensions: 1) feelings of energy depletion or exhaustion; 2) increased
+mental distance from one's job, or feelings of negativism or cynicism
+related to one's job; and 3) a sense of ineffectiveness and lack of
+accomplishment'' (World Health Organization, 2020). For several decades,
+burnout has been a preoccupation of librarians, the profession, and our
+professional literature. In fact, as Wood et al. (2020) demonstrate a
+scholarly literature search for burnout AND librar*, scholarly
+literature on burnout in librarians has had a steady upward trend for
+the past 4 decades. This has included considerable anecdotal evidence.
+In fact, over 30 years ago, Fisher (1990) called for further empirical
+evidence on burnout in librarians to answer her titular question ``are
+librarians burning out?'' While the extent of the anecdotal evidence
+should give us cause to believe librarians and a librarian's belief that
+they are burnt out seems just as important as an empirical decision or
+diagnosis that they are, anecdotal approaches may leave us lacking as we
+attempt to understand the systemic and structural causes of burnout in
+libraries and mitigate these effects. Further quantitative and
+qualitative study of burnout among librarians will allow us to pinpoint
+solutions for library administration to make organization and structural
+changes for the benefit of library workers.
+
+Employing the Copenhagen Burnout Inventory, Wood et al. (2020) found
+that librarian perceptions of burnout are quite high in comparison to
+other occupations, including nurses, hospital doctors, and social
+workers. This points to a significant issue that needs to be addressed.
+Considering job control as a component of agency may be one way to
+measure a specific aspect of burnout and mitigate feelings of workplace
+burnout. Applying the Areas of Worklife Survey (AWS) and Maslach Burnout
+Inventory (MBI), Nardine (2019) found ``that lack of personal agency is
+the primary contributor to a sense of burnout (p.~508 ) However, the AWS
+doesn't measure agency directly, but rather what Leiter \& Maslach
+(2003) refer to as Control, which''includes employee's perceived
+capacity to influence decisions that affect their work, to exercise
+professional autonomy, and to gain access to resources necessary to do
+an effective job'' (p.~96).
+
+\subsubsection{Job Control}\label{job-control}
+
+Ganster (1989) defines control ``as the ability to exert some influence
+over one's environment so that the environment becomes more rewarding or
+less threatening.'' Job control may have the following domains or
+dimensions hypothesized as ``areas from which stress at work may
+arise'': work tasks, work pacing, work scheduling, physical environment,
+decision making, interaction, and mobility. He also points to a
+tradition of ``employee participation in decision making'' as an aspect
+of job control, which previous literature on burnout has pointed to as a
+solution {[}Sheesley (2001); Christian (2015); Maslach (2017); (Corrado,
+2022){]}. Maslach \& Leiter (2016), identify job control, in relation to
+burnout and stress, as ``the perceived capacity to influence decisions
+that affect their work, to exercise professional autonomy, and to gain
+access to the resources necessary to do an effective job.''
+
+Leiter \& Maslach's (2003) conception of control in the AWS used by
+(Nardine, 2019) relies on the Job Demand-Control (JDC) model (Karasek,
+1979). The JDC model considers job demands (workload, pressure) and job
+control (sometimes decision latitude, a worker's ability to control
+their work) and proposes that a high demands-low control job will result
+in greater physical and psychological stress, which suggests that
+increased job control can ``buffer'' the negative impacts of increased
+job demands (Van der Doef \& Maes, 1999, p. 89). While it appears
+unlikely that this buffering hypothesis is true (Mansell \& Brough,
+2005), existing research supports the connection between low job control
+and increased burnout (Park et al., 2014; Portoghese et al., 2014; Taris
+et al., 2005).
+
+\subsubsection{Vocational Awe}\label{vocational-awe}
+
+Fobazi Ettarh (2018) describes vocational awe as ``the set of ideas,
+values, and assumptions librarians have about themselves and the
+profession that result in beliefs that libraries as institutions are
+inherently good and sacred, and therefore beyond critique.'' She argues
+that this positioning of the library as inherently good and thus of the
+workers in the library as the doers of that good work creates a
+situation in which any failure of the library is a failure of the
+individual ``to live up to the ideals of the profession.'' Ettarh
+argues, in particular, that burnout is one of several negative impacts
+caused by vocational awe. This sacredness of libraries becomes a way for
+institutions to deflect criticism and avoid caring for workers, pushing
+instead of individualized solutions to burnout that bely structural and
+systemic issues in library organizations and libraries broadly:
+``institutional response to burnout is the output of more `love and
+passion,' through the vocational impulses noted earlier and a
+championing of techniques like mindfulness and `whole-person'
+librarianship.'' Martyrdom and self-sacrifice become features of the
+profession; these are necessary features to operate libraries that are
+understaffed and under-resourced---doing more with less: ``Awe is easily
+weaponized against the worker, allowing anyone to deploy a vocational
+purity test in which the worker can be accuse of not being devout or
+passionate enough to serve without complaint.'' Workers may even
+weaponize awe against themselves as a form of self-regulation to meet
+the unrealistic ideals of the profession.
+
+\subsection{Materials and Methods}\label{materials-and-methods}
+
+A web survey was administered to measure job control and burnout among
+academic librarians with instruction responsibilities. To measure job
+control, the survey used the job control measure designed and validated
+by Dwyer \& Ganster (1991), which includes 22 questions. To measure
+burnout, the survey used the Copenhagen Burnout inventory described by
+Kristensen, et al. (n.d.), which includes 19 questions.
+
+\subsubsection{Sample and Recruitment}\label{sample-and-recruitment}
+
+The target population for the study was academic librarians with some
+instruction responsibilities. The survey was distributed using
+professional distribution lists provided by the ALA Connect platform
+that operates as a forum and email distribution system. The recruitment
+email was sent three times (29 August 2022, 13 September 2022, and 28
+September 2022) with concurrent messages via the social media platform
+Twitter. To participate, individuals needed to be currently employed in
+an academic library and have at least some teaching responsibilities.
+Calculating the reach of these methods and who within that reach meets
+the participation requirement is difficult; however, the ALA Connect
+distribution was sent to three lists: ACRL Members, which includes
+approximately 7,200 members; ACRL Instruction Section, which includes
+4,800 members; and Information Literacy Instruction in Academic
+Libraries, which includes 292 members. Given the size of the field and
+the connections between these groups, there is certainly overlap among
+the population across these three lists. In the end, 307 survey
+responses were collected, of which, 245 included complete results, which
+were used for data analysis. Demographic characteristics of the sample
+are included in Table 1. Participants could select more than one
+response for sexuality and race and ethnicity.
+
+Table 1. Demographic characteristics of the sample.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6986}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1507}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1507}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Characteristic
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+No.
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Percentage
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Gender} & & \\
+Agender & 2 & 0.82 \\
+Genderqueer or gender fluid & 3 & 1.22 \\
+Man & 22 & 8.98 \\
+Nonbinary & 3 & 1.22 \\
+Prefer not to say & 5 & 2.04 \\
+Unsure & 4 & 1.63 \\
+Woman & 206 & 84.08 \\
+& & \\
+\textbf{Gender Modality} & & \\
+Cisgender & 228 & 93.06 \\
+Prefer not to disclose & 12 & 4.90 \\
+Transgender & 3 & 1.22 \\
+Unsure & 1 & 0.41 \\
+Missing & 1 & 0.41 \\
+& & \\
+\textbf{Sexuality} & & \\
+Asexual & 15 & 6.12 \\
+Bisexual & 39 & 15.92 \\
+Gay & 5 & 2.04 \\
+Lesbian & 7 & 2.86 \\
+Pansexual & 7 & 2.86 \\
+Queer & 18 & 7.35 \\
+Straight & 158 & 64.49 \\
+Prefer not to disclose & 15 & 6.12 \\
+& & \\
+\textbf{Disability} & & \\
+Abled & 188 & 76.73 \\
+Disabled & 44 & 17.96 \\
+Prefer not to disclose & 12 & 4.90 \\
+missing & 1 & 0.41 \\
+& & \\
+\textbf{Race \& Ethnicity} & & \\
+African & 1 & 0.41 \\
+African American/Black & 6 & 2.45 \\
+East Asian & 1 & 0.41 \\
+Hispanic or Latinx/Latine & 12 & 4.90 \\
+Indigenous American, Native American, First Nations, or Alaska Native &
+2 & 0.82 \\
+Middle Eastern or North African & 4 & 1.63 \\
+Southeast Asian & 1 & 0.41 \\
+White & 222 & 90.61 \\
+Prefer not to disclose & 10 & 4.08 \\
+\end{longtable}
+
+\subsubsection{Measures}\label{measures}
+
+The web survey (developed using LibWizard) included demographic
+questions, questions about the characteristics of the participant's
+job/employment, and two validated scales related to work.
+
+The first of these validated scales was on job control, which was
+developed and validated by Ganster (1989) and (Dwyer \& Ganster, 1991).
+The inventory includes 22 questions to measure job control across
+various dimensions. In Ganster (1989), the first 21 questions are used
+to measure job control, and question 22 is used as a control; however,
+in (Dwyer \& Ganster, 1991), the authors use all 22 questions to
+calculate the job control score. Participants were asked all 22
+questions; however, in this study, the first 21 questions are used to
+calculate the job control score. Participants were asked to complete
+this job control inventory as it applies to their job generally, and
+then asked again to complete the same job control inventory but thinking
+specifically about their instruction responsibilities or the
+instructional aspects of their roles. However, the questions were
+exactly the same both times. Despite the note about this in the survey,
+this may have resulted in fewer complete responses. Scoring for the job
+control inventory uses a Likert scale with values 1 through five
+attributed (Very little = 1; Little = 2; A moderate amount = 3; Much =
+4; and Very much =5). The job control score is the average of these for
+the participant across the 21 items in the inventory.
+
+The Chronbach's alpha for the 21 item job control scale was 0.89 (n=245)
+when used for job control in general and 0.894 (n=245) when used for job
+control specifically related to instruction. Adding the twenty-second
+item increases the Chronbach's alphas to 0.899 and 0.902 respectively;
+however, the internal consistency is still good with the 21-item scale,
+and the twenty-second item was meant as an overall control for
+perception. This is also similar to Ganster's original 1989 report on
+the scale, which had an alpha of 0.87 (n = 191), and Dywer \& Ganster
+(1991), which also had an alpha of 0.87 (n = 90).
+
+The second of these validated scales was on burnout, using the
+Copenhagen Burnout Inventory (CBI), which includes three subscales:
+personal burnout (6 items), work-related burnout (7 items), and
+client-related burnout (6 items). For the purposes of this study, the
+word client in the client-related burnout subscale was changed to
+``patrons,'' as it was believed that this terminology was better aligned
+with how librarians consider users. This is aligned with general usage
+of the CBI: ``\,`Clients' is a broad concept covering terms such as
+patients, inmates, children, students, residents, etc. When the CBI is
+used in practice, the term appropriate for the specific group of
+respondents is used'' (Kristensen et al., n.d.).
+
+Kristensen et al. (n.d.) define these three dimensions measured by the
+subscales as follows:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Personal burnout:} ``the degree of physical and psychological
+  fatigue and exhaustion experienced by the person''
+\item
+  \textbf{Work-related burnout:} ``the degree of physical and
+  psychological fatigue and exhaustion that is perceived by the person
+  as related to his/her work''
+\item
+  \textbf{Client-related burnout:} ``the degree of physical and
+  psychological fatigue and exhaustion that is perceived by the person
+  as related to his/her work with clients''
+\end{itemize}
+
+Thus, personal burnout is not necessarily related to an individual's
+personal life but rather to a more general or generic assessment of
+burnout.
+
+The CBI uses two different Likert scales that are given values ranging
+from 0 to 100, and one question in the work-related burnout inventory is
+inversely scored. The total work-related burnout score (TWRBS), total
+personal burnout score (TPBS), and total client-related burnout score
+(TCRBS) are the average within the given subscale for the participant.
+
+The Chronbach's alpha for the personal burnout subscale, work-related
+burnout subscale, and client-related burnout subscale from the
+Copenhagen Burnout Inventory were 0.875, 0.889, and 0.887 respectively,
+which is similar to Kristensen et al.~(2005), which reported a range
+from 0.85 to 0.87 (n = 1,910), and Wood et al.~(2020) with a Chronbach's
+alpha of 0.798 (n = 1,808) for the work-related burnout subscale. The
+results demonstrate that these subscales have a good measure of
+reliability as well.
+
+Finally, the survey included questions about demographics and questions
+about the characteristics of the participants employment. The following
+demographic questions were included:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  What is your gender?
+\item
+  What is your gender modality? ``Gender modality refers to how a
+  person's gender identity stands in relation to their gender assigned
+  at birth'' (Ashley, 2022)
+\item
+  What is your sexuality? Select all that apply.
+\item
+  Are you disabled?
+\item
+  Which of the identities described above have you disclosed at work or
+  would you consider to be ``out'' at work? Select all that apply.
+\item
+  Please describe your race/ethnicity. Select all that apply.
+\end{enumerate}
+
+A summary of this demographic information within the sample is available
+in Table 1 above.
+
+The following questions about the characteristics of the participants
+employment were included because it was hypothesized that they would
+have an effect on job control or burnout:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  How long (in years) have you worked at your current institution?
+\item
+  How long (in years) have you been in a librarian position after
+  receiving your degree (in library science or equivalent)?
+\item
+  How long (in years) have you worked in libraries in any capacity?
+\item
+  Which of the following best describes the institution where you work?
+\item
+  Which of the following best describes your current position?
+\item
+  What is your annual salary or income (before taxes, etc.) in US
+  Dollars?
+\item
+  Which of the following best describes your employment status at your
+  current institution?
+\item
+  Are librarians at your institution eligible for tenure or an
+  equivalent status?
+\item
+  Have you obtained tenure or its equivalent at your institution? (This
+  was only revealed if the participant answered yes to the previous
+  question.)
+\item
+  Are you represented by a union?
+\item
+  Have you received formal training in library school or on the job
+  specifically intended to prepare you to teach?
+\item
+  Do you believe this training adequately prepared you for teaching?
+  (This was only revealed if the participant answered yes to the
+  previous question.)
+\item
+  Which of the following best describes your teaching workload?
+\end{enumerate}
+
+A summary of these characteristics within the sample is included in
+Table 2 below.
+
+Table 2. Summary of job characteristics for participants in the sample.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6944}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1528}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1528}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Characteristic
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+No.
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Percentage
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Length of time at current institution (in years)} & & \\
+Less than 1 & 31 & 12.65 \\
+1 to 5 & 100 & 40.82 \\
+6 to 10 & 55 & 22.45 \\
+11 to 15 & 23 & 9.39 \\
+16 or more & 36 & 14.69 \\
+& & \\
+\textbf{Length of time since obtaining their degree (in years)} & & \\
+Less than 1 & 6 & 2.45 \\
+1 to 5 & 62 & 25.31 \\
+6 to 10 & 63 & 25.71 \\
+11 to 15 & 45 & 18.37 \\
+16 or more & 67 & 27.35 \\
+missing & 2 & 0.82 \\
+& & \\
+\textbf{Length of time working in libraries (in years)} & & \\
+1 to 5 & 31 & 12.65 \\
+6 to 10 & 61 & 24.90 \\
+11 to 15 & 57 & 23.27 \\
+16 or more & 93 & 37.96 \\
+missing & 3 & 1.22 \\
+& & \\
+\textbf{Type of institution} & & \\
+Associate's college & 28 & 11.43 \\
+Baccalaureate college & 30 & 12.24 \\
+Doctoral university & 130 & 53.06 \\
+Law school & 3 & 1.22 \\
+Master's college or university & 54 & 22.04 \\
+& & \\
+\textbf{Public or private} & & \\
+Private & 91 & 37.14 \\
+Public & 154 & 62.86 \\
+& & \\
+\textbf{For-profit or non-profit} & & \\
+For-profit & 1 & 0.41 \\
+Non-profit & 244 & 99.59 \\
+& & \\
+\textbf{Permanent or temporary position} & & \\
+Permanent & 240 & 97.96 \\
+Probationary & 1 & 0.41 \\
+Temporary & 4 & 1.63 \\
+& & \\
+\textbf{Full-time or part-time} & & \\
+Full-time & 242 & 98.78 \\
+Part-time & 3 & 1.22 \\
+& & \\
+\textbf{Income} & & \\
+\$20,000 to \$34,999 & 1 & 0.41 \\
+\$35,000 to \$49,999 & 16 & 6.53 \\
+\$50,000 to \$74,999 & 129 & 52.65 \\
+\$75,000 to \$99,999 & 77 & 31.43 \\
+\$100,000 or greater & 16 & 6.53 \\
+Prefer not to disclose & 6 & 2.45 \\
+& & \\
+\textbf{Faculty status} & & \\
+Academic staff & 58 & 23.67 \\
+Faculty & 153 & 62.45 \\
+Staff & 34 & 13.88 \\
+& & \\
+\textbf{For faculty, tenure status (n=153)} & & \\
+Non-tenure-track & 60 & 39.22 \\
+Tenure-track & 92 & 60.13 \\
+Tenured & 1 & 0.65 \\
+& & \\
+\textbf{Tenure for librarians at institution} & & \\
+No & 120 & 48.98 \\
+Yes, similar status & 34 & 13.88 \\
+Yes, tenure & 86 & 35.1 \\
+Other & 5 & 2.04 \\
+& & \\
+\textbf{Tenure status for individual participant (n=120)} & & \\
+No & 63 & 52.5 \\
+Yes, I am tenured & 36 & 30 \\
+Yes, I have attained an equivalent status & 19 & 15.83 \\
+Other & 2 & 1.67 \\
+& & \\
+\textbf{Union status} & & \\
+In the process of unionizing & 3 & 1.22 \\
+No & 169 & 68.98 \\
+Unsure & 5 & 2.04 \\
+Yes & 67 & 27.35 \\
+Other & 1 & 0.41 \\
+& & \\
+\textbf{Training for library instruction} & & \\
+No & 58 & 23.67 \\
+Yes, in library school and on the job & 88 & 35.92 \\
+Yes, only in library school & 40 & 16.33 \\
+Yes, only on the job & 45 & 18.37 \\
+Other & 14 & 5.71 \\
+& & \\
+\textbf{Perception of effectiveness of training preparation (n=172)} &
+& \\
+Highly & 41 & 23.84 \\
+Not at all & 20 & 11.63 \\
+Somewhat & 111 & 64.53 \\
+& & \\
+\textbf{Perception of teaching workload} & & \\
+Far too excessive & 10 & 4.08 \\
+Slightly excessive & 68 & 27.76 \\
+Just right & 90 & 36.73 \\
+Slightly light & 60 & 24.49 \\
+Far too light & 17 & 6.94 \\
+\end{longtable}
+
+It is unclear why only one participant identified their position as
+tenure faculty, but 86 participants said they had tenure. The wording of
+the questions was likely confusing.
+
+\subsubsection{Statistical Analyses}\label{statistical-analyses}
+
+Analyses were conducted using the R Statistical language {[}version
+4.2.1; R Core Team (2022){]} on macOS Monterey 12.5.1, using the
+packages easystats {[}version 0.5.2; Lüdecke et al. (2022){]}, ltm
+{[}version 1.2.0; Rizopoulos (2007){]}, MASS {[}version 7.3.58.1;
+Venables \& Ripley (2002){]}, plyr {[}version 1.8.8; Wickham (2011){]},
+ggplot2 {[}version 3.4.0; Wickham (2022a){]}, stringr {[}version 1.4.1;
+Wickham (2022b){]}, dplyr {[}version 1.0.10; Wickham et al. (2022){]},
+and tidyr {[}version 1.2.1; Wickham \& Girlich (2022){]}.
+
+\subsubsection{Ethical Considerations}\label{ethical-considerations}
+
+Human research ethics approval was obtained from the Institutional
+Review Board at the University of California, Los Angeles
+(IRB\#22-001337), which certified the study as exempt. Consent was
+implied by participants clicking a button labelled ``I agree to
+participate'' at the start of the survey after reading an information
+sheet concerning the study. No survey responses were required, so
+participants could simply skip any question; however, many questions
+also gave an option for ``prefer not to disclose'' as well.
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-ashleyTransMyGender2022}
+Ashley, F. (2022). '{Trans}' is my gender modality: {A} modest
+terminological proposal. In L. Erickson-Schroth (Ed.), \emph{Trans
+bodies, trans selves: {A} resource by and for transgender communities}
+(Second Edition). {Oxford University Press}.
+
+\bibitem[\citeproctext]{ref-christianPassionDeficitOccupational2015}
+Christian, L. (2015). A {Passion Deficit}: {Occupational Burnout} and
+the {New Librarian}: {A Recommendation Report}. \emph{The Southeastern
+Librarian}, \emph{62}(4).
+\url{https://digitalcommons.kennesaw.edu/seln/vol62/iss4/2}
+
+\bibitem[\citeproctext]{ref-corradoLowMoraleBurnout2022}
+Corrado, E. M. (2022). Low {Morale} and {Burnout} in {Libraries}.
+\emph{Technical Services Quarterly}, \emph{39}(1), 37--48.
+\url{https://doi.org/10.1080/07317131.2021.2011149}
+
+\bibitem[\citeproctext]{ref-dwyerEffectsJobDemands1991}
+Dwyer, D. J., \& Ganster, D. C. (1991). The effects of job demands and
+control on employee attendance and satisfaction. \emph{Journal of
+Organizational Behavior}, \emph{12}(7), 595--608.
+\url{https://doi.org/10.1002/job.4030120704}
+
+\bibitem[\citeproctext]{ref-karasekJobDemandsJob1979}
+Karasek, R. A. (1979). Job {Demands}, {Job Decision Latitude}, and
+{Mental Strain}: {Implications} for {Job Redesign}. \emph{Administrative
+Science Quarterly}, \emph{24}(2), 285--308.
+\url{https://doi.org/10.2307/2392498}
+
+\bibitem[\citeproctext]{ref-kristensenCopenhagenBurnoutInventory}
+Kristensen, T. S., Borritz, M., Villadsen, E., \& Christensen, K. B.
+(n.d.). \emph{Copenhagen {Burnout Inventory}}.
+\url{https://doi.org/10.1037/t62096-000}
+
+\bibitem[\citeproctext]{ref-leiterAreasWorklifeStructured2003}
+Leiter, M. P., \& Maslach, C. (2003). Areas of {Worklife}: {A Structured
+Approach} to {Organizational Predictors} of {Job Burnout}. In P. L.
+Perrewe \& D. C. Ganster (Eds.), \emph{Emotional and {Physiological
+Processes} and {Positive Intervention Strategies}} (Vol. 3, pp.
+91--134). {Emerald Group Publishing Limited}.
+\url{https://doi.org/10.1016/S1479-3555(03)03003-8}
+
+\bibitem[\citeproctext]{ref-ludeckeFrameworkEasyStatistical2022}
+Lüdecke, D., Makowski, D., Ben-Shachar, M. S., Patil, I., \& Wiernik, B.
+M. (2022). \emph{Framework for {Easy Statistical Modeling},
+{Visualization}, and {Reporting}} (Version 0.5.2) {[}Computer
+software{]}. \url{https://easystats.github.io/easystats/}
+
+\bibitem[\citeproctext]{ref-mansellComprehensiveTestJob2005}
+Mansell, A., \& Brough, P. (2005). A comprehensive test of the job
+demands-control interaction: {Comparing} two measures of job
+characteristics. \emph{Australian Journal of Psychology}, \emph{57}(2),
+103--114. \url{https://doi.org/10.1080/10519990500048579}
+
+\bibitem[\citeproctext]{ref-maslachFindingSolutionsProblem2017}
+Maslach, C. (2017). Finding solutions to the problem of burnout.
+\emph{Consulting Psychology Journal: Practice and Research}, \emph{69},
+143--152. \url{https://doi.org/10.1037/cpb0000090}
+
+\bibitem[\citeproctext]{ref-maslachChapter43Burnout2016}
+Maslach, C., \& Leiter, M. P. (2016). Chapter 43 - {Burnout}. In G. Fink
+(Ed.), \emph{Stress: {Concepts}, {Cognition}, {Emotion}, and {Behavior}}
+(pp. 351--357). {Academic Press}.
+\url{https://doi.org/10.1016/B978-0-12-800951-2.00044-3}
+
+\bibitem[\citeproctext]{ref-nardineStateAcademicLiaison2019}
+Nardine, J. (2019). The state of academic liaison librarian burnout in
+{ARL} libraries in the united states. \emph{College \& Research
+Libraries}, \emph{80}(4).
+\url{https://crl.acrl.org/index.php/crl/article/view/17398/19522}
+
+\bibitem[\citeproctext]{ref-parkJobControlBurnout2014}
+Park, H. I., Jacob, A. C., Wagner, S. H., \& Baiden, M. (2014). Job
+control and burnout: {A Meta}‐analytic test of the {Conservation} of
+{Resources} model. \emph{Applied Psychology: An International Review},
+\emph{63}(4), 607--642. \url{https://doi.org/10.1111/apps.12008}
+
+\bibitem[\citeproctext]{ref-portogheseBurnoutWorkloadHealth2014}
+Portoghese, I., Galletta, M., Coppola, R. C., Finco, G., \& Campagna, M.
+(2014). Burnout and {Workload Among Health Care Workers}: {The
+Moderating Role} of {Job Control}. \emph{Safety and Health at Work},
+\emph{5}(3), 152--157. \url{https://doi.org/10.1016/j.shaw.2014.05.004}
+
+\bibitem[\citeproctext]{ref-rcoreteamProjectStatisticalComputing2022}
+R Core Team. (2022). \emph{R: {The R Project} for {Statistical
+Computing}} (Version 4.2.1) {[}Computer software{]}. {R Foundation for
+Statistical Computing}. \url{https://www.r-project.org/}
+
+\bibitem[\citeproctext]{ref-rizopoulosLtmPackageLatent2007}
+Rizopoulos, D. (2007). Ltm: {An R Package} for {Latent Variable
+Modeling} and {Item Response Analysis}. \emph{Journal of Statistical
+Software}, \emph{17}, 1--25. \url{https://doi.org/10.18637/jss.v017.i05}
+
+\bibitem[\citeproctext]{ref-salvagioniPhysicalPsychologicalOccupational2017}
+Salvagioni, D. A. J., Melanda, F. N., Mesas, A. E., González, A. D.,
+Gabani, F. L., \& Andrade, S. M. de. (2017). Physical, psychological and
+occupational consequences of job burnout: {A} systematic review of
+prospective studies. \emph{PLOS ONE}, \emph{12}(10), e0185781.
+\url{https://doi.org/10.1371/journal.pone.0185781}
+
+\bibitem[\citeproctext]{ref-sheesleyBurnoutAcademicTeaching2001}
+Sheesley, D. F. (2001). Burnout and the academic teaching librarian:
+{An} examination of the problem and suggested solutions. \emph{The
+Journal of Academic Librarianship}, \emph{27}(6), 447--451.
+\url{https://doi.org/10.1016/S0099-1333(01)00264-6}
+
+\bibitem[\citeproctext]{ref-tarisJobControlBurnout2005}
+Taris, T. W., Bakker, A. B., Schaufeli, W. B., Stoffelsen, J., \& Van
+Dierendonck, D. (2005). Job {Control} and {Burnout} across
+{Occupations}. \emph{Psychological Reports}, \emph{97}(3), 955--961.
+\url{https://doi.org/10.2466/pr0.97.3.955-961}
+
+\bibitem[\citeproctext]{ref-vanderdoefJobDemandControlSupport1999}
+Van der Doef, M., \& Maes, S. (1999). The {Job Demand-Control}
+(-{Support}) {Model} and psychological well-being: {A} review of 20
+years of empirical research. \emph{Work \& Stress}, \emph{13}(2),
+87--114. \url{https://doi.org/10.1080/026783799296084}
+
+\bibitem[\citeproctext]{ref-venablesModernAppliedStatistics2002}
+Venables, W. N., \& Ripley, B. D. (2002). \emph{Modern {Applied
+Statistics} with {S}, 4th ed} (4th ed.). {Springer}.
+\url{https://www.stats.ox.ac.uk/pub/MASS4/}
+
+\bibitem[\citeproctext]{ref-wickhamSplitApplyCombineStrategyData2011}
+Wickham, H. (2011). The {Split-Apply-Combine Strategy} for {Data
+Analysis}. \emph{Journal of Statistical Software}, \emph{40}, 1--29.
+\url{https://doi.org/10.18637/jss.v040.i01}
+
+\bibitem[\citeproctext]{ref-wickhamGgplot2ElegantGraphics2022}
+Wickham, H. (2022a). \emph{Ggplot2: {Elegant} graphics for data
+analysis} (Version 3.4.0) {[}Computer software{]}. {Springer-Verlag New
+York}. \url{https://ggplot2.tidyverse.org/}
+
+\bibitem[\citeproctext]{ref-wickhamStringrSimpleConsistent2022}
+Wickham, H. (2022b). \emph{Stringr: {Simple}, {Consistent Wrappers} for
+{Common String Operations}} (Version 1.4.1) {[}Computer software{]}.
+\url{https://CRAN.R-project.org/package=stringr}
+
+\bibitem[\citeproctext]{ref-wickhamDplyrGrammarData2022}
+Wickham, H., François, R., Henry, L., \& Müller, K. (2022). \emph{Dplyr:
+{A Grammar} of {Data Manipulation}} (Version 1.0.10) {[}Computer
+software{]}. \url{https://CRAN.R-project.org/package=dplyr}
+
+\bibitem[\citeproctext]{ref-wickhamTidyrTidyMessy2022}
+Wickham, H., \& Girlich, M. (2022). \emph{Tidyr: {Tidy Messy Data}}
+(Version 1.2.1) {[}Computer software{]}.
+\url{https://CRAN.R-project.org/package=tidyr}
+
+\bibitem[\citeproctext]{ref-woodAcademicLibrarianBurnout2020}
+Wood, B. A., Guimaraes, A. B., Holm, C. E., Hayes, S. W., \& Brooks, K.
+R. (2020). Academic librarian burnout: {A} survey using the {Copenhagen
+Burnout Inventory} ({CBI}). \emph{Journal of Library Administration},
+\emph{60}(5), 512--531.
+\url{https://doi.org/10.1080/01930826.2020.1729622}
+
+\end{CSLReferences}
+
+
+
+\end{document}

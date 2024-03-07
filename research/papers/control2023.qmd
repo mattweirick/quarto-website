@@ -1,0 +1,315 @@
+---
+title: "Job Control and Its Impacts on Burnout in Academic Instruction Librarians"
+date: 2023-06-12
+authors: 
+  - name: Matthew Weirick Johnson
+    affiliations: USF Libraries
+    corresponding: true
+    email: matt@mattweirick.com
+    orcid: 0000-0002-6391-2088
+page-layout: article
+filter: 
+  - authors-block
+  - abstract-section
+format: 
+  html:
+    toc: true
+  pdf: 
+    pdf-engine: lualatex
+    documentclass: article
+    mainfont: Helvetica
+    monofont: Helvetica
+    sansfont: Helvetica
+    keep-tex: true
+    abstract: "Librarians have been grappling with the issue of burnout for decades, at least. This study uses the Copenhagen Burnout Inventory (CBI) and Job Control Inventory to show how job control impacts Burnout. Using the CBI, Academic Instruction Librarians, on average, have high work-related burnout and even higher personal burnout compare to other jobs. However, librarians have low client-related burnout, similar to other caring or helping professions. The findings point to key factors taht impact job control and burnout to help consider ways of mitigating burnout and increasing job control."
+    classoption: twocolumn
+    pandoc_args: ['--lua-filter=scholary-metadata.lua']
+    include-in-header: 
+      - text: |
+          \usepackage{float}
+          \makeatletter
+          \let\oldlt\longtable
+          \let\endoldlt\endlongtable
+          \def\longtable{\@ifnextchar[\longtable@i \longtable@ii}
+          \def\longtable@i[#1]{\begin{figure}[H]
+          \onecolumn
+          \begin{minipage}{0.5\textwidth}
+          \oldlt[#1]
+          }
+          \def\longtable@ii{\begin{figure}[H]
+          \onecolumn
+          \begin{minipage}{0.5\textwidth}
+          \oldlt
+          }
+          \def\endlongtable{\endoldlt
+          \end{minipage}
+          \twocolumn
+          \end{figure}}
+          \makeatother
+      
+
+Journal: "Journal of Library Administration"
+bibliography: /Users/Matt/Library/CloudStorage/Box-Box/Work Laptop Documents/Projects/markdown files/My Library.bib
+csl: /Users/Matt/Zotero/styles/apa.csl
+---
+
+## Abstract
+
+Librarians have been grappling with the issue of burnout for decades, at least. This study uses the Copenhagen Burnout Inventory (CBI) and Job Control Inventory to show how job control impacts burnout. Using the CBI, academic instruction librarians, on average, have high work-related burnout and even higher personal burnout compared to other jobs. However, librarians have low client-related burnout, similar to other "caring" or "helping" professions. The findings point to key factors that impact job control and burnout to help consider ways of mitigating burnout and increasing job control.
+
+## Introduction
+
+Librarians have been grappling with the issue of burnout for decades, at least, with many acknowledging its prevalence in the profession. In recent years, additional empirical evidence, both quantitative and qualitative, has been published. Two specific instances have applied quantitative inventories to measure burnout among academic librarians. Applying the Areas of Worklife Survey and Maslach Burnout Inventory, Nardine (2019) found "that lack of personal agency is the primary contributor to a sense of burnout" (p. 508). Additionally, employing the Copenhagen Burnout Inventory, Wood et al. (2020) found that librarian perceptions of burnout are quite high in comparison to other occupations, including nurses, hospital doctors, and social workers. Burnout is clearly a central concern for the profession that has received considerable attention in scholarship and other discussions, and agency or job control may be a large contributor.
+
+Burnout has been identified as a predictor of various negative consequences for employee health and wellbeing and for organizational success. These include physical consequences (cardiovascular diseases, pain, and impaired immune function), psychological consequences (depression and insomnia), and occupational consequences (absenteeism, poor performance, and job dissatisfaction). Given the negative impacts of burnout on employees and organizations, managers and administrators should consider preventative measures to mitigate burnout. Job control may be one area worth focusing mitigation measures.
+
+Librarians may lack job control generally and when providing library instruction specifically. There is no current data about job control among librarians, though job control does appear to be tied to burnout. However, little scholarly research considers librarian agency or begins to understand the factors that contribute to agency or feelings of agency for librarians at work. In order to improve job control and mitigate burnout in the workplace, we first need to understand how job control is experienced and what factors impact that experience.
+
+Given the relationship between job control and burnout and the negative impacts of burnout, it stands to reason that managers and administrators should work with employees to increase their job control as a means of mitigating burnout [@salvagioniPhysicalPsychologicalOccupational2017]. However, further research on job control and burnout among librarians is needed.
+
+This study seeks to address this research problem and fill the gap identified in the literature around librarian perceptions of job control generally and regarding instruction specifically. The study considers the following research questions:
+
+-   For academic instruction librarians, how does job control impact burnout?
+-   What factors contribute to job control and burnout for academic instruction librarians? To what extent do these factors contribute to job control?
+
+This study uses the Copenhagen Burnout Inventory (CBI) and Job Control Inventory to show how job control impacts burnout. Using the CBI, academic instruction librarians, on average, have drastically high work-related burnout and even higher personal burnout compared to other jobs. However, librarians have drastically low client-related burnout, similar to other "caring" or "helping" professions. I argue that this difference is related to vocational awe and that person-centered management is necessary to approach employees holistically to mitigate personal and work-related burnout, which are statistically correlated. Additionally, the findings point to key factors that impact job control and burnout to help consider ways of mitigating burnout and increasing job control.
+
+## Literature Review
+
+### Burnout
+
+The World Health Organization (WHO) in their International Classification of Diseases, 11th Edition (ICD-11) describe burnout as “a syndrome conceptualized as resulting from chronic workplace stress that has not been successfully managed. It is characterised by three dimensions: 1) feelings of energy depletion or exhaustion; 2) increased mental distance from one’s job, or feelings of negativism or cynicism related to one's job; and 3) a sense of ineffectiveness and lack of accomplishment” (World Health Organization, 2020). For several decades, burnout has been a preoccupation of librarians, the profession, and our professional literature. In fact, as Wood et al. [-@woodAcademicLibrarianBurnout2020] demonstrate a scholarly literature search for burnout AND librar\*, scholarly literature on burnout in librarians has had a steady upward trend for the past 4 decades. This has included considerable anecdotal evidence. In fact, over 30 years ago, Fisher (1990) called for further empirical evidence on burnout in librarians to answer her titular question "are librarians burning out?" While the extent of the anecdotal evidence should give us cause to believe librarians and a librarian's belief that they are burnt out seems just as important as an empirical decision or diagnosis that they are, anecdotal approaches may leave us lacking as we attempt to understand the systemic and structural causes of burnout in libraries and mitigate these effects. Further quantitative and qualitative study of burnout among librarians will allow us to pinpoint solutions for library administration to make organization and structural changes for the benefit of library workers.
+
+Employing the Copenhagen Burnout Inventory, Wood et al. [-@woodAcademicLibrarianBurnout2020] found that librarian perceptions of burnout are quite high in comparison to other occupations, including nurses, hospital doctors, and social workers. This points to a significant issue that needs to be addressed. Considering job control as a component of agency may be one way to measure a specific aspect of burnout and mitigate feelings of workplace burnout. Applying the Areas of Worklife Survey (AWS) and Maslach Burnout Inventory (MBI), Nardine [-@nardineStateAcademicLiaison2019] found "that lack of personal agency is the primary contributor to a sense of burnout (p. 508 ) However, the AWS doesn't measure agency directly, but rather what Leiter & Maslach [-@leiterAreasWorklifeStructured2003] refer to as Control, which "includes employee's perceived capacity to influence decisions that affect their work, to exercise professional autonomy, and to gain access to resources necessary to do an effective job" (p. 96).
+
+### Job Control
+
+Ganster (1989) defines control "as the ability to exert some influence over one's environment so that the environment becomes more rewarding or less threatening." Job control may have the following domains or dimensions hypothesized as "areas from which stress at work may arise": work tasks, work pacing, work scheduling, physical environment, decision making, interaction, and mobility. He also points to a tradition of "employee participation in decision making" as an aspect of job control, which previous literature on burnout has pointed to as a solution [@sheesleyBurnoutAcademicTeaching2001; @christianPassionDeficitOccupational2015; @maslachFindingSolutionsProblem2017; [@corradoLowMoraleBurnout2022]\]. Maslach & Leiter [-@maslachChapter43Burnout2016], identify job control, in relation to burnout and stress, as "the perceived capacity to influence decisions that affect their work, to exercise professional autonomy, and to gain access to the resources necessary to do an effective job."
+
+Leiter & Maslach's [-@leiterAreasWorklifeStructured2003] conception of control in the AWS used by [@nardineStateAcademicLiaison2019] relies on the Job Demand-Control (JDC) model [@karasekJobDemandsJob1979]. The JDC model considers job demands (workload, pressure) and job control (sometimes decision latitude, a worker's ability to control their work) and proposes that a high demands-low control job will result in greater physical and psychological stress, which suggests that increased job control can "buffer" the negative impacts of increased job demands [@vanderdoefJobDemandControlSupport1999, p. 89]. While it appears unlikely that this buffering hypothesis is true [@mansellComprehensiveTestJob2005], existing research supports the connection between low job control and increased burnout [@tarisJobControlBurnout2005; @parkJobControlBurnout2014; @portogheseBurnoutWorkloadHealth2014].
+
+### Vocational Awe
+
+Fobazi Ettarh (2018) describes vocational awe as "the set of ideas, values, and assumptions librarians have about themselves and the profession that result in beliefs that libraries as institutions are inherently good and sacred, and therefore beyond critique." She argues that this positioning of the library as inherently good and thus of the workers in the library as the doers of that good work creates a situation in which any failure of the library is a failure of the individual "to live up to the ideals of the profession." Ettarh argues, in particular, that burnout is one of several negative impacts caused by vocational awe. This sacredness of libraries becomes a way for institutions to deflect criticism and avoid caring for workers, pushing instead of individualized solutions to burnout that bely structural and systemic issues in library organizations and libraries broadly: "institutional response to burnout is the output of more 'love and passion,' through the vocational impulses noted earlier and a championing of techniques like mindfulness and 'whole-person' librarianship." Martyrdom and self-sacrifice become features of the profession; these are necessary features to operate libraries that are understaffed and under-resourced—doing more with less: "Awe is easily weaponized against the worker, allowing anyone to deploy a vocational purity test in which the worker can be accuse of not being devout or passionate enough to serve without complaint." Workers may even weaponize awe against themselves as a form of self-regulation to meet the unrealistic ideals of the profession.
+
+## Materials and Methods
+
+A web survey was administered to measure job control and burnout among academic librarians with instruction responsibilities. To measure job control, the survey used the job control measure designed and validated by Dwyer & Ganster [-@dwyerEffectsJobDemands1991], which includes 22 questions. To measure burnout, the survey used the Copenhagen Burnout inventory described by Kristensen, et al. [-@kristensenCopenhagenBurnoutInventory], which includes 19 questions.
+
+### Sample and Recruitment
+
+The target population for the study was academic librarians with some instruction responsibilities. The survey was distributed using professional distribution lists provided by the ALA Connect platform that operates as a forum and email distribution system. The recruitment email was sent three times (29 August 2022, 13 September 2022, and 28 September 2022) with concurrent messages via the social media platform Twitter. To participate, individuals needed to be currently employed in an academic library and have at least some teaching responsibilities. Calculating the reach of these methods and who within that reach meets the participation requirement is difficult; however, the ALA Connect distribution was sent to three lists: ACRL Members, which includes approximately 7,200 members; ACRL Instruction Section, which includes 4,800 members; and Information Literacy Instruction in Academic Libraries, which includes 292 members. Given the size of the field and the connections between these groups, there is certainly overlap among the population across these three lists. In the end, 307 survey responses were collected, of which, 245 included complete results, which were used for data analysis. Demographic characteristics of the sample are included in Table 1. Participants could select more than one response for sexuality and race and ethnicity.
+
+Table 1. Demographic characteristics of the sample.
+
+| Characteristic                                                        | No. | Percentage |
+|---------------------------------------------------|-----------|-----------|
+| **Gender**                                                            |     |            |
+| Agender                                                               | 2   | 0.82       |
+| Genderqueer or gender fluid                                           | 3   | 1.22       |
+| Man                                                                   | 22  | 8.98       |
+| Nonbinary                                                             | 3   | 1.22       |
+| Prefer not to say                                                     | 5   | 2.04       |
+| Unsure                                                                | 4   | 1.63       |
+| Woman                                                                 | 206 | 84.08      |
+|                                                                       |     |            |
+| **Gender Modality**                                                   |     |            |
+| Cisgender                                                             | 228 | 93.06      |
+| Prefer not to disclose                                                | 12  | 4.90       |
+| Transgender                                                           | 3   | 1.22       |
+| Unsure                                                                | 1   | 0.41       |
+| Missing                                                               | 1   | 0.41       |
+|                                                                       |     |            |
+| **Sexuality**                                                         |     |            |
+| Asexual                                                               | 15  | 6.12       |
+| Bisexual                                                              | 39  | 15.92      |
+| Gay                                                                   | 5   | 2.04       |
+| Lesbian                                                               | 7   | 2.86       |
+| Pansexual                                                             | 7   | 2.86       |
+| Queer                                                                 | 18  | 7.35       |
+| Straight                                                              | 158 | 64.49      |
+| Prefer not to disclose                                                | 15  | 6.12       |
+|                                                                       |     |            |
+| **Disability**                                                        |     |            |
+| Abled                                                                 | 188 | 76.73      |
+| Disabled                                                              | 44  | 17.96      |
+| Prefer not to disclose                                                | 12  | 4.90       |
+| missing                                                               | 1   | 0.41       |
+|                                                                       |     |            |
+| **Race & Ethnicity**                                                  |     |            |
+| African                                                               | 1   | 0.41       |
+| African American/Black                                                | 6   | 2.45       |
+| East Asian                                                            | 1   | 0.41       |
+| Hispanic or Latinx/Latine                                             | 12  | 4.90       |
+| Indigenous American, Native American, First Nations, or Alaska Native | 2   | 0.82       |
+| Middle Eastern or North African                                       | 4   | 1.63       |
+| Southeast Asian                                                       | 1   | 0.41       |
+| White                                                                 | 222 | 90.61      |
+| Prefer not to disclose                                                | 10  | 4.08       |
+
+### Measures
+
+The web survey (developed using LibWizard) included demographic questions, questions about the characteristics of the participant's job/employment, and two validated scales related to work.
+
+The first of these validated scales was on job control, which was developed and validated by Ganster (1989) and [@dwyerEffectsJobDemands1991]. The inventory includes 22 questions to measure job control across various dimensions. In Ganster (1989), the first 21 questions are used to measure job control, and question 22 is used as a control; however, in [@dwyerEffectsJobDemands1991], the authors use all 22 questions to calculate the job control score. Participants were asked all 22 questions; however, in this study, the first 21 questions are used to calculate the job control score. Participants were asked to complete this job control inventory as it applies to their job generally, and then asked again to complete the same job control inventory but thinking specifically about their instruction responsibilities or the instructional aspects of their roles. However, the questions were exactly the same both times. Despite the note about this in the survey, this may have resulted in fewer complete responses. Scoring for the job control inventory uses a Likert scale with values 1 through five attributed (Very little = 1; Little = 2; A moderate amount = 3; Much = 4; and Very much =5). The job control score is the average of these for the participant across the 21 items in the inventory.
+
+The Chronbach's alpha for the 21 item job control scale was 0.89 (n=245) when used for job control in general and 0.894 (n=245) when used for job control specifically related to instruction. Adding the twenty-second item increases the Chronbach's alphas to 0.899 and 0.902 respectively; however, the internal consistency is still good with the 21-item scale, and the twenty-second item was meant as an overall control for perception. This is also similar to Ganster's original 1989 report on the scale, which had an alpha of 0.87 (n = 191), and Dywer & Ganster (1991), which also had an alpha of 0.87 (n = 90).
+
+The second of these validated scales was on burnout, using the Copenhagen Burnout Inventory (CBI), which includes three subscales: personal burnout (6 items), work-related burnout (7 items), and client-related burnout (6 items). For the purposes of this study, the word client in the client-related burnout subscale was changed to "patrons," as it was believed that this terminology was better aligned with how librarians consider users. This is aligned with general usage of the CBI: "'Clients' is a broad concept covering terms such as patients, inmates, children, students, residents, etc. When the CBI is used in practice, the term appropriate for the specific group of respondents is used" [@kristensenCopenhagenBurnoutInventory].
+
+Kristensen et al. [-@kristensenCopenhagenBurnoutInventory] define these three dimensions measured by the subscales as follows:
+
+-   **Personal burnout:** "the degree of physical and psychological fatigue and exhaustion experienced by the person"
+-   **Work-related burnout:** "the degree of physical and psychological fatigue and exhaustion that is perceived by the person as related to his/her work"
+-   **Client-related burnout:** "the degree of physical and psychological fatigue and exhaustion that is perceived by the person as related to his/her work with clients"
+
+Thus, personal burnout is not necessarily related to an individual's personal life but rather to a more general or generic assessment of burnout.
+
+The CBI uses two different Likert scales that are given values ranging from 0 to 100, and one question in the work-related burnout inventory is inversely scored. The total work-related burnout score (TWRBS), total personal burnout score (TPBS), and total client-related burnout score (TCRBS) are the average within the given subscale for the participant.
+
+The Chronbach's alpha for the personal burnout subscale, work-related burnout subscale, and client-related burnout subscale from the Copenhagen Burnout Inventory were 0.875, 0.889, and 0.887 respectively, which is similar to Kristensen et al. (2005), which reported a range from 0.85 to 0.87 (n = 1,910), and Wood et al. (2020) with a Chronbach's alpha of 0.798 (n = 1,808) for the work-related burnout subscale. The results demonstrate that these subscales have a good measure of reliability as well.
+
+Finally, the survey included questions about demographics and questions about the characteristics of the participants employment. The following demographic questions were included:
+
+1.  What is your gender?
+2.  What is your gender modality? "Gender modality refers to how a person's gender identity stands in relation to their gender assigned at birth" [@ashleyTransMyGender2022]
+3.  What is your sexuality? Select all that apply.
+4.  Are you disabled?
+5.  Which of the identities described above have you disclosed at work or would you consider to be "out" at work? Select all that apply.
+6.  Please describe your race/ethnicity. Select all that apply.
+
+A summary of this demographic information within the sample is available in Table 1 above.
+
+The following questions about the characteristics of the participants employment were included because it was hypothesized that they would have an effect on job control or burnout:
+
+1.  How long (in years) have you worked at your current institution?
+2.  How long (in years) have you been in a librarian position after receiving your degree (in library science or equivalent)?
+3.  How long (in years) have you worked in libraries in any capacity?
+4.  Which of the following best describes the institution where you work?
+5.  Which of the following best describes your current position?
+6.  What is your annual salary or income (before taxes, etc.) in US Dollars?
+7.  Which of the following best describes your employment status at your current institution?
+8.  Are librarians at your institution eligible for tenure or an equivalent status?
+9.  Have you obtained tenure or its equivalent at your institution? (This was only revealed if the participant answered yes to the previous question.)
+10. Are you represented by a union?
+11. Have you received formal training in library school or on the job specifically intended to prepare you to teach?
+12. Do you believe this training adequately prepared you for teaching? (This was only revealed if the participant answered yes to the previous question.)
+13. Which of the following best describes your teaching workload?
+
+A summary of these characteristics within the sample is included in Table 2 below.
+
+Table 2. Summary of job characteristics for participants in the sample.
+
+| Characteristic                                                  | No. | Percentage |
+|--------------------------------------------------|-----------|-----------|
+| **Length of time at current institution (in years)**            |     |            |
+| Less than 1                                                     | 31  | 12.65      |
+| 1 to 5                                                          | 100 | 40.82      |
+| 6 to 10                                                         | 55  | 22.45      |
+| 11 to 15                                                        | 23  | 9.39       |
+| 16 or more                                                      | 36  | 14.69      |
+|                                                                 |     |            |
+| **Length of time since obtaining their degree (in years)**      |     |            |
+| Less than 1                                                     | 6   | 2.45       |
+| 1 to 5                                                          | 62  | 25.31      |
+| 6 to 10                                                         | 63  | 25.71      |
+| 11 to 15                                                        | 45  | 18.37      |
+| 16 or more                                                      | 67  | 27.35      |
+| missing                                                         | 2   | 0.82       |
+|                                                                 |     |            |
+| **Length of time working in libraries (in years)**              |     |            |
+| 1 to 5                                                          | 31  | 12.65      |
+| 6 to 10                                                         | 61  | 24.90      |
+| 11 to 15                                                        | 57  | 23.27      |
+| 16 or more                                                      | 93  | 37.96      |
+| missing                                                         | 3   | 1.22       |
+|                                                                 |     |            |
+| **Type of institution**                                         |     |            |
+| Associate's college                                             | 28  | 11.43      |
+| Baccalaureate college                                           | 30  | 12.24      |
+| Doctoral university                                             | 130 | 53.06      |
+| Law school                                                      | 3   | 1.22       |
+| Master's college or university                                  | 54  | 22.04      |
+|                                                                 |     |            |
+| **Public or private**                                           |     |            |
+| Private                                                         | 91  | 37.14      |
+| Public                                                          | 154 | 62.86      |
+|                                                                 |     |            |
+| **For-profit or non-profit**                                    |     |            |
+| For-profit                                                      | 1   | 0.41       |
+| Non-profit                                                      | 244 | 99.59      |
+|                                                                 |     |            |
+| **Permanent or temporary position**                             |     |            |
+| Permanent                                                       | 240 | 97.96      |
+| Probationary                                                    | 1   | 0.41       |
+| Temporary                                                       | 4   | 1.63       |
+|                                                                 |     |            |
+| **Full-time or part-time**                                      |     |            |
+| Full-time                                                       | 242 | 98.78      |
+| Part-time                                                       | 3   | 1.22       |
+|                                                                 |     |            |
+| **Income**                                                      |     |            |
+| \$20,000 to \$34,999                                            | 1   | 0.41       |
+| \$35,000 to \$49,999                                            | 16  | 6.53       |
+| \$50,000 to \$74,999                                            | 129 | 52.65      |
+| \$75,000 to \$99,999                                            | 77  | 31.43      |
+| \$100,000 or greater                                            | 16  | 6.53       |
+| Prefer not to disclose                                          | 6   | 2.45       |
+|                                                                 |     |            |
+| **Faculty status**                                              |     |            |
+| Academic staff                                                  | 58  | 23.67      |
+| Faculty                                                         | 153 | 62.45      |
+| Staff                                                           | 34  | 13.88      |
+|                                                                 |     |            |
+| **For faculty, tenure status (n=153)**                          |     |            |
+| Non-tenure-track                                                | 60  | 39.22      |
+| Tenure-track                                                    | 92  | 60.13      |
+| Tenured                                                         | 1   | 0.65       |
+|                                                                 |     |            |
+| **Tenure for librarians at institution**                        |     |            |
+| No                                                              | 120 | 48.98      |
+| Yes, similar status                                             | 34  | 13.88      |
+| Yes, tenure                                                     | 86  | 35.1       |
+| Other                                                           | 5   | 2.04       |
+|                                                                 |     |            |
+| **Tenure status for individual participant (n=120)**            |     |            |
+| No                                                              | 63  | 52.5       |
+| Yes, I am tenured                                               | 36  | 30         |
+| Yes, I have attained an equivalent status                       | 19  | 15.83      |
+| Other                                                           | 2   | 1.67       |
+|                                                                 |     |            |
+| **Union status**                                                |     |            |
+| In the process of unionizing                                    | 3   | 1.22       |
+| No                                                              | 169 | 68.98      |
+| Unsure                                                          | 5   | 2.04       |
+| Yes                                                             | 67  | 27.35      |
+| Other                                                           | 1   | 0.41       |
+|                                                                 |     |            |
+| **Training for library instruction**                            |     |            |
+| No                                                              | 58  | 23.67      |
+| Yes, in library school and on the job                           | 88  | 35.92      |
+| Yes, only in library school                                     | 40  | 16.33      |
+| Yes, only on the job                                            | 45  | 18.37      |
+| Other                                                           | 14  | 5.71       |
+|                                                                 |     |            |
+| **Perception of effectiveness of training preparation (n=172)** |     |            |
+| Highly                                                          | 41  | 23.84      |
+| Not at all                                                      | 20  | 11.63      |
+| Somewhat                                                        | 111 | 64.53      |
+|                                                                 |     |            |
+| **Perception of teaching workload**                             |     |            |
+| Far too excessive                                               | 10  | 4.08       |
+| Slightly excessive                                              | 68  | 27.76      |
+| Just right                                                      | 90  | 36.73      |
+| Slightly light                                                  | 60  | 24.49      |
+| Far too light                                                   | 17  | 6.94       |
+
+It is unclear why only one participant identified their position as tenure faculty, but 86 participants said they had tenure. The wording of the questions was likely confusing.
+
+### Statistical Analyses
+
+Analyses were conducted using the R Statistical language [version 4.2.1; @rcoreteamProjectStatisticalComputing2022] on macOS Monterey 12.5.1, using the packages easystats [version 0.5.2; @ludeckeFrameworkEasyStatistical2022], ltm [version 1.2.0; @rizopoulosLtmPackageLatent2007], MASS [version 7.3.58.1; @venablesModernAppliedStatistics2002], plyr [version 1.8.8; @wickhamSplitApplyCombineStrategyData2011], ggplot2 [version 3.4.0; @wickhamGgplot2ElegantGraphics2022], stringr [version 1.4.1; @wickhamStringrSimpleConsistent2022], dplyr [version 1.0.10; @wickhamDplyrGrammarData2022], and tidyr [version 1.2.1; @wickhamTidyrTidyMessy2022].
+
+### Ethical Considerations
+
+Human research ethics approval was obtained from the Institutional Review Board at the University of California, Los Angeles (IRB#22-001337), which certified the study as exempt. Consent was implied by participants clicking a button labelled "I agree to participate" at the start of the survey after reading an information sheet concerning the study. No survey responses were required, so participants could simply skip any question; however, many questions also gave an option for "prefer not to disclose" as well.

@@ -1,6 +1,18 @@
 ---
 title: "Matthew Weirick Johnson"
 page-layout: full
+format:
+  html:
+    toc: true
+  pdf:
+    pdf-engine: lualatex
+    documentclass: scrartcl
+    mainfont: Helvetica
+    monofont: Helvetica
+    sansfont: Helvetica
+    keep-tex: true
+    urlcolor: Black
+format-links: [pdf]
 listing:
   - id: published-papers-2024
     include: 
@@ -132,9 +144,11 @@ ul {
 
 </style>
 ```
+::: {.content-visible when-format="html"}
 Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the University of South Florida Libraries, Tampa campus.
+:::
 
-## {{< fa graduation-cap >}} Education
+## <i class="fa-solid fa-graduation-cap"></i> Education
 
 -   **Ph.D.** *Measurement & Evaluation*
     -   University of South Florida, 2024 - Present
@@ -156,7 +170,7 @@ Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the U
   - Awards: Barbara Ellen Smith Outstanding Paper Award, VT Women's & Gender Studies; Ut Prosim Award for Service, VT English
 --->
 ```
-## {{< fa school >}} Academic Positions
+## <i class="fa-solid fa-school"></i> Academic Positions
 
 -   **Associate Librarian & Director**, University of South Florida, 2023 - Present
     -   Director of Research & Instruction, Tampa campus, 2023 - Present
@@ -165,19 +179,24 @@ Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the U
     -   Lead for Teaching & Learning, 2020-2023
     -   Humanities & Social Sciences Lead for Research Services, 2020-2022
 
-## {{< fa bookmark >}} Publications
+## <i class="fa-solid fa-bookmark"></i> Publications
 
+::: {.content-visible when-format="html"}
 A complete list of publications with available open access options can be found on my [Research](/research) page.
+:::
 
-### {{< fa book >}} Books
+### <i class="fa-solid fa-book"></i> Books
 
 -   *Training Library Instructors, Vol 1 & 2*, Expected late 2024 from ACRL
 
-### {{< fa file-lines >}} Peer-reviewed Articles
+### <i class="fa-solid fa-file-lines"></i> Peer-reviewed Articles
 
 #### 2024
 
 ::: {#published-papers-2024 style="padding-bottom: 0;"}
+:::
+::: {.content-visible when-format="pdf"}
+"Academic instruction librarians' feelings of job control: Quantitative analysis of responses to a job control inventory." *The Journal of Academic Librarianship.*
 :::
 
 #### 2023
@@ -190,17 +209,17 @@ A complete list of publications with available open access options can be found 
 ::: {#published-papers-2021 style="padding-bottom: 0;"}
 :::
 
-### {{<fa book-open >}} Book Chapters
+### <i class="fa-solid fa-book-open"></i> Book Chapters
 
 ::: {#book-chapters style="padding-bottom: 0;"}
 :::
 
-### {{< fa pen-nib >}} Other Publications
+### <i class="fa-solid fa-pen-nib"></i> Other Publications
 
 ::: {#other}
 :::
 
-## {{< fa bullhorn >}} Talks & Presentations
+## <i class="fa-solid fa-bullhorn"></i> Talks & Presentations
 
 ### International
 
@@ -212,7 +231,7 @@ A complete list of publications with available open access options can be found 
 ::: {#talks-national}
 :::
 
-## {{< fa magnifying-glass >}} Peer Reviews
+## <i class="fa-solid fa-magnifying-glass"></i> Peer Reviews
 
 -   *College & Research Libraries*, 1 review
 -   *The Journal of Academic Librarianship*, 4 reviews
@@ -221,7 +240,7 @@ A complete list of publications with available open access options can be found 
 -   *New Media & Society*, 2 reviews
 -   *Public Services Quarterly*, 3 reviews
 
-## {{< fa people-group >}} Professional Service
+## <i class="fa-solid fa-people-group"></i> Professional Service
 
 ### American Library Association (ALA)
 

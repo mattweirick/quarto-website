@@ -22,6 +22,7 @@ website:
         menu: 
           - projects.qmd
           - projects/project1.qmd
+          - projects/project2.qmd
       - href: blog.qmd
         text: Blog
     right:

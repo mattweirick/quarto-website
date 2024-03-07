@@ -1,0 +1,215 @@
+---
+title: "Emotional Labor and Burnout Among Academic Librarians"
+author: "Matthew Weirick Johnson"
+description: "Emotional labor predicts a statistically significant and large portion of variance in burnout among academic librarians in the US."
+page-layout: article
+date: 2023-03-05
+---
+
+```{r}
+#| include: false
+
+library(readr)
+library(dplyr)
+library(tidyr)
+library(easystats)
+library(knitr)
+library(ggplot2)
+library(patchwork)
+
+# read data file from Qualtrics csv data
+e <- read.csv("/Users/Matt/Documents/emotional_labor/emotional-labor-data.csv")
+
+# remove unnecessary fields
+e <- e[-c(1,2),]
+e <- e[,-c(1:10)]
+
+# filter out participants who didn't consent
+e <- e %>%
+  filter(consent != 'I do not freely give my consent to take part in this study.')
+
+# filter our participants who are not eligible
+e <- e %>%
+  filter(eligibility1 == 'Yes' & eligibility2 == 'Yes')
+
+e <- e %>%
+  mutate(across(.cols = c(el2:el19),
+                .fns = ~case_when(
+                  .x == "Never" ~ 1,
+                  .x == "Rarely" ~ 2,
+                  .x == "Sometimes" ~ 3,
+                  .x == "Often" ~ 4,
+                  .x == "Always" ~ 5,
+                )))
+
+e <- e %>%
+  mutate(across(.cols = c(cbi1:cbi9),
+                .fns = ~case_when(
+                  .x == "Always" ~ 100,
+                  .x == "Often" ~ 75,
+                  .x == "Sometimes" ~ 50,
+                  .x == "Seldom" ~ 25,
+                  .x == "Never-Almost Never" ~ 0,
+                )))
+
+## cbi10 uses inverse scoring
+e <- e %>%
+  mutate(across(.cols = cbi10,
+                .fns = ~case_when(
+                  .x == "Always" ~ 0,
+                  .x == "Often" ~ 25,
+                  .x == "Sometimes" ~ 50,
+                  .x == "Seldom" ~ 75,
+                  .x == "Never-Almost Never" ~ 100,
+                )))
+
+e <- e %>%
+  mutate(across(.cols = c(cbi11:cbi17),
+                .fns = ~case_when(
+                  .x == "To a very high degree" ~ 100,
+                  .x == "To a high degree" ~ 75,
+                  .x == "Somewhat" ~ 50,
+                  .x == "To a low degree" ~ 25,
+                  .x == "To a very low degree" ~ 0,
+                )))
+
+e <- e %>%
+  mutate(across(.cols = c(cbi18:cbi19),
+                .fns = ~case_when(
+                  .x == "Always" ~ 100,
+                  .x == "Often" ~ 75,
+                  .x == "Sometimes" ~ 50,
+                  .x == "Seldom" ~ 25,
+                  .x == "Never-Almost Never" ~ 0,
+                )))
+
+e <- e %>%
+  mutate(across(.cols = c(qd1:qd3),
+                .fns = ~case_when(
+                  .x == "Always" ~ 100,
+                  .x == "Often" ~ 75,
+                  .x == "Sometimes" ~ 50,
+                  .x == "Seldom" ~ 25,
+                  .x == "Never/hardly ever" ~ 0,
+                )))
+
+## Coded 'I do not have a supervisor' and 'I do not have colleagues' as -99 
+## because rows with NAs will be deleted later, but I will keep these missing values in the dataset. 
+## After removing NAs, -99 needs to be changed back to NA for data analysis.
+e <- e %>%
+  mutate(across(.cols = c(ssx1:scx2),
+                .fns = ~case_when(
+                  .x == "Always" ~ 100,
+                  .x == "Often" ~ 75,
+                  .x == "Sometimes" ~ 50,
+                  .x == "Seldom" ~ 25,
+                  .x == "Never/hardly ever" ~ 0,
+                  .x == "I do not have a supervisor" ~ -99,
+                  .x == "I do not have colleagues" ~ -99
+                )))
+
+e <- e %>%
+  mutate(across(.cols = c(panas1:panas20),
+                .fns = ~case_when(
+                  .x == "Very slightly or not at all" ~ 1,
+                  .x == "A little" ~ 2,
+                  .x == "Moderately" ~ 3,
+                  .x == "Quite a bit" ~ 4,
+                  .x == "Extremely" ~ 5
+                )))
+
+e <- e %>% 
+  mutate(across(.cols = c(pos1, pos4, pos7, pos8, pos10, pos11, pos14, pos15, pos16),
+                .fns = ~case_when(
+                  .x == "Strongly disagree" ~ 1,
+                  .x == "Disagree" ~ 2,
+                  .x == "Somewhat disagree" ~ 3,
+                  .x == "Neither agree nor disagree" ~ 4,
+                  .x == "Somewhat agree" ~ 5,
+                  .x == "Agree" ~ 6,
+                  .x == "Strongly agree" ~ 7
+                )))
+
+## items from the POS scale are inversely scored
+e <- e %>% 
+  mutate(across(.cols = c(pos2, pos3, pos5, pos6, pos9, pos12, pos13,),
+                .fns = ~case_when(
+                  .x == "Strongly disagree" ~ 7,
+                  .x == "Disagree" ~ 6,
+                  .x == "Somewhat disagree" ~ 5,
+                  .x == "Neither agree nor disagree" ~ 4,
+                  .x == "Somewhat agree" ~ 3,
+                  .x == "Agree" ~ 2,
+                  .x == "Strongly agree" ~ 1
+                )))
+
+e$el1 <- as.numeric(e$el1) 
+
+e <- e %>%
+  drop_na(where(is.numeric))
+
+e$scx1 <- case_match(e$scx1, -99 ~ NA, .default = e$scx1)
+e$scx2 <- case_match(e$scx2, -99 ~ NA, .default = e$scx2)
+e$ssx1 <- case_match(e$ssx1, -99 ~ NA, .default = e$ssx1)
+e$ssx2 <- case_match(e$ssx2, -99 ~ NA, .default = e$ssx2)
+
+e$satisfaction <- factor(x = e$satisfaction, levels = c("Not at all satisfied", "Somewhat satisfied", "Very satisfied"), ordered = TRUE)
+e$gender <- factor(e$gender, levels = c("Man", "Woman", "Identity not listed (please specify)", "Nonbinary"),
+                             labels = c("Man", "Woman", "Woman", "Nonbinary"))
+e$modality <- factor(e$modality, levels = c("Cisgender", "Transgender"))
+e$sexuality <- factor(e$sexuality, levels = c("Straight", "Bisexual", "Queer", "Asexual", "Pansexual", "Lesbian", "Gay"))
+e$disability <- factor(e$disability, levels = c("Yes", "No"))
+e$re <- factor(e$re)
+e$user <- factor(e$user, levels = c("Yes", "No"))
+e$supervisor <- factor(e$supervisor, levels = c("Yes", "No"))
+e$status <- factor(e$status, levels = c("Yes", "No"))
+
+## el6, which is question 5 on the emotional labor scale document that I have
+## was not used for calculation of any of the subscales. 
+## This code calculates the scores for the subscales and adds them to the main dataframe.
+el_dur <- e$el1
+el_freq <- apply(e[,c('el2', 'el3', 'el5')],1,mean)
+el_int <- apply(e[,c('el4', 'el12')],1,mean)
+el_var <- apply(e[,c('el9', 'el13', 'el18')],1,mean)
+el_deep <- apply(e[,c('el11', 'el16', 'el15')],1,mean)
+el_hiding <- apply(e[,c('el14', 'el7', 'el19')],1,mean)
+el_faking <- apply(e[,c('el10', 'el8', 'el17')],1,mean)
+e <- cbind(e, el_dur, el_freq, el_int, el_var, el_deep, el_hiding, el_faking)
+
+tpbs <- apply(e[,c('cbi1', 'cbi2', 'cbi3', 'cbi4', 'cbi5', 'cbi6')],1,mean)
+twrbs <- apply(e[,c('cbi7', 'cbi8', 'cbi9', 'cbi10', 'cbi11', 'cbi12', 'cbi13')],1,mean)
+tcrbs <- apply(e[,c('cbi14', 'cbi15', 'cbi16', 'cbi17', 'cbi18', 'cbi19')],1,mean)
+e <- cbind(e, tpbs, twrbs, tcrbs)
+
+qd <- apply(e[,c('qd1', 'qd2', 'qd3')],1,mean)
+ss <- apply(e[,c('ssx1', 'ssx2')],1,mean)
+sc <- apply(e[,c('scx1', 'scx2')],1,mean)
+pa <- apply(e[,c('panas1', 'panas3', 'panas5', 'panas9', 'panas10', 'panas12', 'panas14', 'panas16', 'panas17', 'panas19')],1,sum)
+na <- apply(e[,c('panas2', 'panas4', 'panas6', 'panas7', 'panas8', 'panas11', 'panas13', 'panas15', 'panas18', 'panas20')],1,sum)
+spos <- apply(e[,c('pos1', 'pos2', 'pos3', 'pos4', 'pos5', 'pos6', 'pos7', 'pos8', 'pos9', 'pos10', 'pos11', 'pos12', 'pos13', 'pos14', 'pos15', 'pos16')],1,mean)
+e <- cbind(e, qd, ss, sc, pa, na, spos)
+```
+
+## Abstract
+
+## Introduction
+
+## Literature Review
+
+## Methods
+
+## Results
+
+```{r}
+#| echo: false
+
+options(knitr.kable.NA = '')
+
+correlation(e, select = c('el_dur', 'el_freq', 'el_int', 'el_var', 'el_deep', 'el_hiding', 'el_faking', 'tpbs', 'twrbs', 'tcrbs', 'pa', 'na', 'spos'),
+            rename = c("Duration", "Frequency", "Intensity", "Variation", "Deep Acting", "Hiding", "Faking", "Personal", "Work-related", "Client-Related", "Positive Affect", "Negative Affect", "Organizational Support")) %>%
+  summary() %>%
+  kable(digits = 2)
+```
+
+![Dot and Linear Regression Graphs Depicting Total Personal Burnout Score Predicted by Scores on Factors of Emotional Labor](elxtpbs.png)
+

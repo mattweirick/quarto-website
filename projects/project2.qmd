@@ -211,5 +211,66 @@ correlation(e, select = c('el_dur', 'el_freq', 'el_int', 'el_var', 'el_deep', 'e
   kable(digits = 2)
 ```
 
-![Dot and Linear Regression Graphs Depicting Total Personal Burnout Score Predicted by Scores on Factors of Emotional Labor](elxtpbs.png)
+
+```{r}
+#| echo: false
+#| out-height: '100%'
+#| out-width: '100%'
+#| dpi: 300
+#| fig-cap: "Dot and Linear Regression Graphs Depicting Total Personal Burnout Score Predicted by Scores on Factors of Emotional Labor"
+#| label: fig-elxtpbs
+plot1 <- e |>
+  ggplot(aes(el_deep, tpbs)) +
+  geom_point() +
+  geom_smooth(method="lm") +
+  labs(title = "a",
+       x = "Deep Acting",
+       y = "Personal Burnout")
+
+plot2 <- e |>
+  ggplot(aes(el_faking, tpbs)) +
+  geom_point() +
+  geom_smooth(method="lm") +
+  labs(title = "b",
+       x = "Faking Emotions",
+       y = "Personal Burnout")
+
+plot3 <- e |>
+  ggplot(aes(el_freq, tpbs)) +
+  geom_point() +
+  geom_smooth(method="lm") +
+  labs(title = "c",
+       x = "Frequency",
+       y = "Personal Burnout")
+
+plot4 <- e |>
+  ggplot(aes(el_hiding, tpbs)) +
+  geom_point() +
+  geom_smooth(method="lm") +
+  labs(title = "d",
+       x = "Hiding Emotions",
+       y = "Personal Burnout")
+
+plot5 <- e |>
+  ggplot(aes(el_int, tpbs)) +
+  geom_point() +
+  geom_smooth(method="lm") +
+  labs(title = "e",
+       x = "Intensity of Emotions",
+       y = "Personal Burnout")
+
+plot6 <- e |>
+  ggplot(aes(el_var, tpbs)) +
+  geom_point() +
+  geom_smooth(method="lm") +
+  labs(title = "f",
+       x = "Variety of Emotions",
+       y = "Personal Burnout")
+
+plot1 + plot2 + plot3 + plot4 + plot5 + plot6 + 
+  plot_layout(axis_titles = "collect",
+              axes = "collect") + 
+  plot_annotation(title = "Personal Burnout Predicted by Factors of Emotional Labor")
+```
+
 

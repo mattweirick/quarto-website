@@ -23,6 +23,7 @@ website:
           - projects.qmd
           - projects/project1.qmd
           - projects/project2.qmd
+          - projects/project3.qmd
       - href: blog.qmd
         text: Blog
     right:

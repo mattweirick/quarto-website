@@ -1,0 +1,9 @@
+---
+title: "Honors 101I: Research Today: Sources, Tools, and Strategies"
+author: "Matthew Weirick Johnson"
+description: "Research is a process of exploration, experimentation, and discovery. This course is designed to help you engage with this process and prepare you for a research-intensive honors thesis. You will collaborate with peers, mentors, and experts across the UCLA campus as you develop your own approach to research."
+page-layout: article
+term: "Winter 2021"
+---
+
+{{< pdf 110i-syllabus.pdf width=100% height=800 >}}

@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Matthew Weirick Johnson"
+  site-url: https://academic.mattweirick.com/quarto-website/
   favicon: logo.png
   google-analytics: "G-XN49YP77PL"
   open-graph: true

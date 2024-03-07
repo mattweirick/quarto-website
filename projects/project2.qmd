@@ -211,7 +211,6 @@ correlation(e, select = c('el_dur', 'el_freq', 'el_int', 'el_var', 'el_deep', 'e
   kable(digits = 2)
 ```
 
-
 ```{r}
 #| echo: false
 #| out-height: '100%'
@@ -272,5 +271,3 @@ plot1 + plot2 + plot3 + plot4 + plot5 + plot6 +
               axes = "collect") + 
   plot_annotation(title = "Personal Burnout Predicted by Factors of Emotional Labor")
 ```
-
-

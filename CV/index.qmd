@@ -195,6 +195,7 @@ A complete list of publications with available open access options can be found 
 
 ::: {#published-papers-2024 style="padding-bottom: 0;"}
 :::
+
 ::: {.content-visible when-format="pdf"}
 "Academic instruction librarians' feelings of job control: Quantitative analysis of responses to a job control inventory." *The Journal of Academic Librarianship.*
 :::

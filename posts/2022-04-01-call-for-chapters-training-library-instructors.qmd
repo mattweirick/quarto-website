@@ -13,141 +13,133 @@ aliases:
 
 # Contents
 
-- [About the Books](https://academic.mattweirick.com/posts/call-for-chapters#about-the-books)
-- [Call for Chapter Proposals](https://academic.mattweirick.com/posts/call-for-chapters#call-for-chapter-proposals)
-- [Submission Procedures](https://academic.mattweirick.com/posts/call-for-chapters#submission-procedures)
-- [About the Editor](https://academic.mattweirick.com/posts/call-for-chapters#about-the-editor)
+-   [About the Books](https://academic.mattweirick.com/posts/call-for-chapters#about-the-books)
+-   [Call for Chapter Proposals](https://academic.mattweirick.com/posts/call-for-chapters#call-for-chapter-proposals)
+-   [Submission Procedures](https://academic.mattweirick.com/posts/call-for-chapters#submission-procedures)
+-   [About the Editor](https://academic.mattweirick.com/posts/call-for-chapters#about-the-editor)
 
 # About the Books
 
-Throughout higher education, teaching labor is undervalued and underresourced, and workers from graduate students to faculty to librarians (this is neither an exhaustive nor a mutually exclusive list) are expected to teach but often receive little or no formal training and may receive few or no opportunities for supervised teaching with feedback and reflection. In academic libraries in particular, librarians are increasingly expected to provide instruction as part of their job responsibilities; however, they often receive little or no formal training or practical, experience-based learning from their graduate programs, in work opportunities as students, or through on-the-job training as early-career librarians. These two edited volumes seek to intervene in this area by pulling together literature, reflections, and examples to support continued work in teaching librarians to teach. 
+Throughout higher education, teaching labor is undervalued and underresourced, and workers from graduate students to faculty to librarians (this is neither an exhaustive nor a mutually exclusive list) are expected to teach but often receive little or no formal training and may receive few or no opportunities for supervised teaching with feedback and reflection. In academic libraries in particular, librarians are increasingly expected to provide instruction as part of their job responsibilities; however, they often receive little or no formal training or practical, experience-based learning from their graduate programs, in work opportunities as students, or through on-the-job training as early-career librarians. These two edited volumes seek to intervene in this area by pulling together literature, reflections, and examples to support continued work in teaching librarians to teach.
 
-Repeated reviews of librarian job ads have shown increases in instructional responsibilities or an expectation of instruction as a core responsibility for librarians ([Lynch & Smith, 2001](#Lynch-Smith); [Sproles & Ratledge, 2004](#Sproles-Ratledge); [Detmering & Sproles, 2012](#Detmering-Sproles)). In Hall's ([2013](#Hall)) survey of supervisors, 87% reported that library instruction was very important in their libraries. Additionally, they noted that assisting other instructors, on-the-job training, in-house training programs, and observing other instructors were the best ways to prepare a new librarian to do instruction. However, often library school students and early career librarians receive little or no formal teacher training in their graduate programs, from work experiences during grad school, or in their professional roles. Sproles, Johnson, & Farison ([2008](#Sproles-Johnson-Farison)), Saunders ([2015](#Saunders)), and Dodson ([2020](#Dodson)) have looked at instruction & reference course offerings,  descriptions, and syllabi in LIS graduate programs finding that the majority of programs offer courses that introduce instruction and information literacy topics, but the opportunities are still limited with room for improvement (e.g., in the breadth of offerings and the topics discussed).  
+Repeated reviews of librarian job ads have shown increases in instructional responsibilities or an expectation of instruction as a core responsibility for librarians ([Lynch & Smith, 2001](#Lynch-Smith); [Sproles & Ratledge, 2004](#Sproles-Ratledge); [Detmering & Sproles, 2012](#Detmering-Sproles)). In Hall's ([2013](#Hall)) survey of supervisors, 87% reported that library instruction was very important in their libraries. Additionally, they noted that assisting other instructors, on-the-job training, in-house training programs, and observing other instructors were the best ways to prepare a new librarian to do instruction. However, often library school students and early career librarians receive little or no formal teacher training in their graduate programs, from work experiences during grad school, or in their professional roles. Sproles, Johnson, & Farison ([2008](#Sproles-Johnson-Farison)), Saunders ([2015](#Saunders)), and Dodson ([2020](#Dodson)) have looked at instruction & reference course offerings, descriptions, and syllabi in LIS graduate programs finding that the majority of programs offer courses that introduce instruction and information literacy topics, but the opportunities are still limited with room for improvement (e.g., in the breadth of offerings and the topics discussed).
 
-These two edited volumes, to be published by ACRL Press, will outline case studies and best practices for developing and delivering teacher training for students and early-career librarians in academic libraries and LIS graduate programs. 
+These two edited volumes, to be published by ACRL Press, will outline case studies and best practices for developing and delivering teacher training for students and early-career librarians in academic libraries and LIS graduate programs.
 
-These two volumes intend to situate the impetus for training library instructors. They will
-- explore why teacher training is important in LIS graduate programs and academic libraries,
-- provide case studies and examples with detailed resources regarding the development,
-delivery, and assessment of library instruction training in academic libraries and
-graduate programs, 
-- present effective and successful partnerships that leverage student instructors, and
-- contribute critical reflections from student workers and early career librarians to
-provide important context for designing student-centered initiatives.
+These two volumes intend to situate the impetus for training library instructors. They will - explore why teacher training is important in LIS graduate programs and academic libraries, - provide case studies and examples with detailed resources regarding the development, delivery, and assessment of library instruction training in academic libraries and graduate programs, - present effective and successful partnerships that leverage student instructors, and - contribute critical reflections from student workers and early career librarians to provide important context for designing student-centered initiatives.
 
-Each volume will be separated into three general sections:
-- Theory, Practice, and Need
-- Case Studies
-- Learner Reflections & Perspectives
+Each volume will be separated into three general sections: - Theory, Practice, and Need - Case Studies - Learner Reflections & Perspectives
 
-## Training Library Instructors, Vol 1: A Guide for LIS Faculty &amp; Graduate Programs
+## Training Library Instructors, Vol 1: A Guide for LIS Faculty & Graduate Programs
 
-The first volume will focus on integrating teacher training in graduate programs by LIS faculty. The book will begin with background and a review of relevant literature regarding training in LIS curricula, followed by case studies with practical examples of effective training in LIS programs and case studies of LIS faculty collaborating with partners on or off campus to provide training for students. The volume will close with reflections and perspectives from graduate students and early-career librarians with or without instruction training in their LIS programs. 
+The first volume will focus on integrating teacher training in graduate programs by LIS faculty. The book will begin with background and a review of relevant literature regarding training in LIS curricula, followed by case studies with practical examples of effective training in LIS programs and case studies of LIS faculty collaborating with partners on or off campus to provide training for students. The volume will close with reflections and perspectives from graduate students and early-career librarians with or without instruction training in their LIS programs.
 
-## Training Library Instructors, Vol 2: A Guide for Librarians &amp; Academic Libraries
+## Training Library Instructors, Vol 2: A Guide for Librarians & Academic Libraries
 
 The second volume will focus on training library instructors in academic libraries through training programs, on-the-job training, or other mechanisms. The book will begin with a framing of the need for training library student workers to teach and the value of peer-to-peer teaching & learning initiatives. This will be followed by case studies of how librarians and academic libraries have incorporated instruction training for their student workers or early-career librarians to prepare them for instructional duties and case studies exploring collaborations for peer-to-peer teaching opportunities. The volume will close with reflections and perspectives from graduate students and early-career librarians about their experiences with on-the-job training or in-house training programs in academic libraries as student workers or early-career librarians.
 
 ## References
 
-<a id="Detmering-Sproles"></a>Detmering, R., & Sproles, C. (2012). Forget the desk job: current roles and responsibilities in entry-level reference job advertisements. *College & Research Libraries*, *73*(6), 543-555. <a href="https://doi.org/10.5860/crl-304" target="_blank" aria-label="open the article in a new tab.">https://doi.org/10.5860/crl-304 <i class="fa fa-external-link" aria-hidden="true" title="Link opens in a new tab."></i></a>      
+<a id="Detmering-Sproles"></a>Detmering, R., & Sproles, C. (2012). Forget the desk job: current roles and responsibilities in entry-level reference job advertisements. *College & Research Libraries*, *73*(6), 543-555. <a href="https://doi.org/10.5860/crl-304" target="_blank" aria-label="open the article in a new tab.">https://doi.org/10.5860/crl-304 <i class="fa fa-external-link" aria-hidden="true" title="Link opens in a new tab."></i></a>
 
 <a id="Dodson"></a>Dodson, M. (2020). On target or missing the mark? Instruction courses in LIS graduate programs. *Public Services Quarterly*, *16*(2), 83-94. <a href="https://doi.org/10.1080/15228959.2020.1745131" target="_blank" aria-label="open the article in a new tab.">https://doi.org/10.1080/15228959.2020.1745131 <i class="fa fa-external-link" aria-hidden="true" title="Link opens in a new tab."></i></a>
-  
+
 <a id="Hall"></a>Hall, R. A. (2013). Beyond the job ad: Employers and library instruction. *College & Research Libraries*, *74*(1), 24-38. <a href="https://doi.org/10.5860/crl-236" target="_blank" aria-label="open the article in a new tab.">https://doi.org/10.5860/crl-236 <i class="fa fa-external-link" aria-hidden="true" title="Link opens in a new tab."></i></a>
-  
+
 <a id="Lynch-Smith"></a>Lynch, B. P., & Smith, K. R. (2001). The changing nature of work in academic libraries. *College & Research Libraries*, *62*(5), 407-420. <a href="https://doi.org/10.5860/crl.62.5.407" target="_blank" aria-label="open the article in a new tab.">https://doi.org/10.5860/crl.62.5.407 <i class="fa fa-external-link" aria-hidden="true" title="Link opens in a new tab."></i></a>
-  
+
 <a id="Saunders"></a>Saunders, L. (2015). Education for instruction: A review of LIS instruction syllabi. *The Reference Librarian*, *56*(1), 1-21. <a href="https://doi.org/10.1080/02763877.2014.969392" target="_blank" aria-label="open the article in a new tab.">https://doi.org/10.1080/02763877.2014.969392 <i class="fa fa-external-link" aria-hidden="true" title="Link opens in a new tab."></i></a>
-  
+
 <a id="Sproles-Johnson-Farison"></a>Sproles, C., Johnson, A. M., & Farison, L. (2008). What the teachers are teaching: How MLIS programs are preparing academic librarians for instructional roles. *Journal of Education for Library and Information Science*, *49*(3), 195-209. <a href="https://www.jstor.org/stable/40323773" target="_blank" aria-label="open the article in a new tab.">https://www.jstor.org/stable/40323773 <i class="fa fa-external-link" aria-hidden="true" title="Link opens in a new tab."></i></a>
 
-<a id="Sproles-Ratledge"></a>Sproles, C., & Ratledge, D. (2004). An analysis of entry-level librarian ads published in American Libraries, 1982-2002. *The Electronic Journal of Academic and Special Librarianship*, *5*(2-3). <a href="http://southernlibrarianship.icaap.org/content/v05n02/sproles_c01.htm" target="_blank" aria-label="open the article in a new tab.">http://southernlibrarianship.icaap.org/content/v05n02/sproles_c01.htm <i class="fa fa-external-link" aria-hidden="true" title="Link opens in a new tab."></i></a>   
+<a id="Sproles-Ratledge"></a>Sproles, C., & Ratledge, D. (2004). An analysis of entry-level librarian ads published in American Libraries, 1982-2002. *The Electronic Journal of Academic and Special Librarianship*, *5*(2-3). <a href="http://southernlibrarianship.icaap.org/content/v05n02/sproles_c01.htm" target="_blank" aria-label="open the article in a new tab.">http://southernlibrarianship.icaap.org/content/v05n02/sproles_c01.htm <i class="fa fa-external-link" aria-hidden="true" title="Link opens in a new tab."></i></a>
 
 # Call for Chapter Proposals
 
-These edited volumes will present case studies for training library school students, student workers, and early-career librarians to provide instruction. Each chapter should provide background and context for the case and include relevant and specific information that a colleague would need to initiate a similar program, course, collaboration, etc. Chapters will be separated into two volumes, which will include sections for (1) theory, practice, and need, (2) case studies, and (3) learner reflections and perspectives. Case studies will likely be separated into those that discuss a particular program, course, or approach to training and those that discuss partnering or collaborating to engage learners in practical teaching experiences (though some cases may also do both). 
+These edited volumes will present case studies for training library school students, student workers, and early-career librarians to provide instruction. Each chapter should provide background and context for the case and include relevant and specific information that a colleague would need to initiate a similar program, course, collaboration, etc. Chapters will be separated into two volumes, which will include sections for (1) theory, practice, and need, (2) case studies, and (3) learner reflections and perspectives. Case studies will likely be separated into those that discuss a particular program, course, or approach to training and those that discuss partnering or collaborating to engage learners in practical teaching experiences (though some cases may also do both).
 
 ## Chapters related to theory, practice, and need may take any of the following approaches or others as relevant:
 
-- a review of current literature on library school programs and curricula or on-the-job training in libraries
-- an overview of the need for and value of peer-to-peer teaching & learning initiatives in libraries perhaps as related to other peer-to-peer library or university services
-- a content analysis of job ads 
-- a content analysis of LIS syllabi
-- an analysis of current LIS program offerings
-- a review of the literature on job ads, LIS syllabi, and/or LIS program offerings
-- a survey of recent library school graduates or early-career librarians about how prepared they felt to do library instruction or what preparation they received in library school or on the job
+-   a review of current literature on library school programs and curricula or on-the-job training in libraries
+-   an overview of the need for and value of peer-to-peer teaching & learning initiatives in libraries perhaps as related to other peer-to-peer library or university services
+-   a content analysis of job ads
+-   a content analysis of LIS syllabi
+-   an analysis of current LIS program offerings
+-   a review of the literature on job ads, LIS syllabi, and/or LIS program offerings
+-   a survey of recent library school graduates or early-career librarians about how prepared they felt to do library instruction or what preparation they received in library school or on the job
 
-## A few potential ideas for case studies are provided below: 
+## A few potential ideas for case studies are provided below:
 
-- a practice or workflow for student workers, library school students, or early career librarians to shadow librarians providing instruction
-- an in-house training program for student workers and/or early-career librarians to learn about teaching & learning
-- a community of practice, reflective practice, or peer support program for giving and receiving feedback about library instruction or learning and growing together
-- a course or curriculum in a graduate program dedicated to teaching & learning, user education, information literacy, library instruction, etc.
-- a collaboration between a faculty member and a library or librarians to provide hands-on experience providing library instruction in any library setting
-- a professional development program or other training opportunity that introduces people to concepts related to teaching & learning, information literacy, etc. 
+-   a practice or workflow for student workers, library school students, or early career librarians to shadow librarians providing instruction
+-   an in-house training program for student workers and/or early-career librarians to learn about teaching & learning
+-   a community of practice, reflective practice, or peer support program for giving and receiving feedback about library instruction or learning and growing together
+-   a course or curriculum in a graduate program dedicated to teaching & learning, user education, information literacy, library instruction, etc.
+-   a collaboration between a faculty member and a library or librarians to provide hands-on experience providing library instruction in any library setting
+-   a professional development program or other training opportunity that introduces people to concepts related to teaching & learning, information literacy, etc.
 
-## Chapters for learner reflections and perspectives may touch on any of the following topics, though they need not fit into any of these: 
+## Chapters for learner reflections and perspectives may touch on any of the following topics, though they need not fit into any of these:
 
-- experiences with library instruction or information literacy training in library school, on the job as a student worker, or on the job as an early-career librarian and the impact on your work
-- lack of training in library school or work and the impact on your work
-- approaches to learning about or getting experience with library instruction 
-- reflections on any training you have received - what worked well, what didn't, etc. 
+-   experiences with library instruction or information literacy training in library school, on the job as a student worker, or on the job as an early-career librarian and the impact on your work
+-   lack of training in library school or work and the impact on your work
+-   approaches to learning about or getting experience with library instruction
+-   reflections on any training you have received - what worked well, what didn't, etc.
 
-If you have an idea for a chapter that you would like to discuss further, please contact me at matt@mattweirick.com <a href="mailto:matt@mattweirick.com"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+If you have an idea for a chapter that you would like to discuss further, please contact me at matt\@mattweirick.com <a href="mailto:matt@mattweirick.com"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
 
-**Library school students** and **first-time authors** are encouraged to submit. Again, please reach out if you have any specific questions or would like to talk through an idea together. I'm happy to provide guidance and mentorship throughout the process from proposal to final draft or to provide support in any other ways that are meaningful and helpful. 
+**Library school students** and **first-time authors** are encouraged to submit. Again, please reach out if you have any specific questions or would like to talk through an idea together. I'm happy to provide guidance and mentorship throughout the process from proposal to final draft or to provide support in any other ways that are meaningful and helpful.
 
-**Authors from oppressed and marginalized groups** are also encouraged to submit as are **authors from any academic setting**, including graduate programs, 2-year and 4-year institutions, and HBCUs. 
+**Authors from oppressed and marginalized groups** are also encouraged to submit as are **authors from any academic setting**, including graduate programs, 2-year and 4-year institutions, and HBCUs.
 
 # Submission Procedures
 
-## Timeline  
+## Timeline
 
 ![A gantt chart visualizing the project timeline, which is written out below](https://academic.mattweirick.com/files/project-timeline.png)
 
-| Date | Event |
-| :---: | :---: |
-| 1 April 2022 | Call for Chapter Proposals |
-| 1 June 2022 | Chapter Proposal Submission Deadline |
-| 30 July 2022 | Accept or Reject Decision Deadline | 
-| 1 December 2022 | First Drafts Due | 
-| 1 April 2023 | Editorial Review Completed | 
-| 1 July 2023 | Author Revisions Due | 
-| 1 September 2023 | Completed Manuscript Due to ACRL |
+|       Date       |                Event                 |
+|:----------------:|:------------------------------------:|
+|   1 April 2022   |      Call for Chapter Proposals      |
+|   1 June 2022    | Chapter Proposal Submission Deadline |
+|   30 July 2022   |  Accept or Reject Decision Deadline  |
+| 1 December 2022  |           First Drafts Due           |
+|   1 April 2023   |      Editorial Review Completed      |
+|   1 July 2023    |         Author Revisions Due         |
+| 1 September 2023 |   Completed Manuscript Due to ACRL   |
 
 ## Expected Final Chapter Lengths
 
-- **Theory, Practice, and Need Chapters:** 3,000 words
-- **Case Studies:** 3,000-6,000 words
-- **Reflections:** 2,000-3,000 words
+-   **Theory, Practice, and Need Chapters:** 3,000 words
+-   **Case Studies:** 3,000-6,000 words
+-   **Reflections:** 2,000-3,000 words
 
 ## Formatting & Style
 
-For chapter proposals, any citation style will be great. For full chapter drafts, citations will be formatted in the **Chicago Manual of Style endnotes and bibliography format**. Chicago Manual of Style provides a [quick guide with sample citations](https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-1.html). 
+For chapter proposals, any citation style will be great. For full chapter drafts, citations will be formatted in the **Chicago Manual of Style endnotes and bibliography format**. Chicago Manual of Style provides a [quick guide with sample citations](https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-1.html).
 
-Final chapter submissions will include brief author biographies (under 150 words each). 
+Final chapter submissions will include brief author biographies (under 150 words each).
 
-Chapters can include appendices, illustrations, figures, etc. and these are encouraged where materials might be adaptable or reusable for others attempting to create similar initiatives. See more clarification from ACRL Press below for incorporating this content into your drafts: 
->Charts, graphs, bulleted lists, photos, and other illustrations or enhancements of your content are welcomed and encouraged! Charts and graphs can be created directly in the Word document, or as separate Excel or other files such as Adobe Illustrator, as long as their placement is labelled within the manuscript and the separate file is named accordingly. For instance, if it’s the third figure in \[your] chapter, place \[\[LAST NAME FIGURE 3 HERE]] where you’d like it to appear in the manuscript, and name the separate file LAST NAME FIGURE 3. For photos, please keep them separate from the manuscript, label their placement in the manuscript, and name the file according to the system above (note: authors are responsible for securing permissions for any figure or image they wish published that they did not create themselves or that is not in the public domain). 
+Chapters can include appendices, illustrations, figures, etc. and these are encouraged where materials might be adaptable or reusable for others attempting to create similar initiatives. See more clarification from ACRL Press below for incorporating this content into your drafts: \>Charts, graphs, bulleted lists, photos, and other illustrations or enhancements of your content are welcomed and encouraged! Charts and graphs can be created directly in the Word document, or as separate Excel or other files such as Adobe Illustrator, as long as their placement is labelled within the manuscript and the separate file is named accordingly. For instance, if it’s the third figure in \[your\] chapter, place \[\[LAST NAME FIGURE 3 HERE\]\] where you’d like it to appear in the manuscript, and name the separate file LAST NAME FIGURE 3. For photos, please keep them separate from the manuscript, label their placement in the manuscript, and name the file according to the system above (note: authors are responsible for securing permissions for any figure or image they wish published that they did not create themselves or that is not in the public domain).
 
->Final chapter manuscripts will be professionally designed, so authors shouldn’t worry too much about the appearance of the Word docs—it will change through the production process. Please use a standard font at 11 or 12 points, double spaced, and make sure the headers are consistently formatted so that our designer knows how to style them. Final chapter submissions will be copyedited for grammar, style, etc., and you will review the redline edit before we move into design. (ACRL Press)
+> Final chapter manuscripts will be professionally designed, so authors shouldn’t worry too much about the appearance of the Word docs—it will change through the production process. Please use a standard font at 11 or 12 points, double spaced, and make sure the headers are consistently formatted so that our designer knows how to style them. Final chapter submissions will be copyedited for grammar, style, etc., and you will review the redline edit before we move into design. (ACRL Press)
 
 ## Chapter Proposals
 
-Proposals can be submitted using the embedded Google Form below or by visiting [https://forms.gle/3J5GHrHszPtH9oqH8](https://forms.gle/3J5GHrHszPtH9oqH8).
+Proposals can be submitted using the embedded Google Form below or by visiting <https://forms.gle/3J5GHrHszPtH9oqH8>.
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScN9e0Y35VSOgH4CWIZvQ_Mx8RYf5BITYo4zjhRTmxI2qgMCQ/viewform?embedded=true" width="100%" height="750" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>  
-  
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScN9e0Y35VSOgH4CWIZvQ_Mx8RYf5BITYo4zjhRTmxI2qgMCQ/viewform?embedded=true" width="100%" height="750" frameborder="0" marginheight="0" marginwidth="0">
 
-Proposals should include the names and affiliations of all potential authors/contributors, the intended volume and section of the chapter, and a 500-word abstract. Proposals will be reviewed based on the following areas, where relevant: significance of topic, reference to existing literature, research design & methodology, content & discussion, conclusions & contributions, and quality of writing. Proposals will also be considered based on the volume and section to which they would contribute.  
+Loading…
 
-Chapters must not be previously published or simultaneously submitted to other venues. Authors will retain copyright of their chapters and will be able to apply a [Creative Commons](https://creativecommons.org/) <i class="fa fa-creative-commons" aria-hidden="true"></i> license when ACRL reaches the author agreement stage of the publication process. Authors will receive a complimentary eBook copy of the work, a 60% discount on the print book, and a PDF of their final chapter to deposit in their institutional repository. 
+</iframe>
+
+Proposals should include the names and affiliations of all potential authors/contributors, the intended volume and section of the chapter, and a 500-word abstract. Proposals will be reviewed based on the following areas, where relevant: significance of topic, reference to existing literature, research design & methodology, content & discussion, conclusions & contributions, and quality of writing. Proposals will also be considered based on the volume and section to which they would contribute.
+
+Chapters must not be previously published or simultaneously submitted to other venues. Authors will retain copyright of their chapters and will be able to apply a [Creative Commons](https://creativecommons.org/) <i class="fa fa-creative-commons" aria-hidden="true"></i> license when ACRL reaches the author agreement stage of the publication process. Authors will receive a complimentary eBook copy of the work, a 60% discount on the print book, and a PDF of their final chapter to deposit in their institutional repository.
 
 # About the Editor
 
-<img src="https://academic.mattweirick.com/files/Headshot.jpg" alt="A headshot of the editor" width="45%" style="float:left">Matthew Weirick Johnson is Librarian for English, History &amp; Comparative Literature and Lead for Teaching &amp; Learning at UCLA Library. As Lead for Teaching &amp; Learning, Johnson led the development and delivery of UCLA Library’s inaugural library instruction training for library student research assistants and continues to lead this initiative to annually train student workers to provide library instruction. They implemented the Library’s student instruction training program and continue to coordinate it.  
+<img src="https://academic.mattweirick.com/files/Headshot.jpg" alt="A headshot of the editor" width="45%" style="float:left"/>Matthew Weirick Johnson is Librarian for English, History & Comparative Literature and Lead for Teaching & Learning at UCLA Library. As Lead for Teaching & Learning, Johnson led the development and delivery of UCLA Library’s inaugural library instruction training for library student research assistants and continues to lead this initiative to annually train student workers to provide library instruction. They implemented the Library’s student instruction training program and continue to coordinate it.
 
-Johnson has published on topics related to library instruction and information literacy in *Progressive Librarian*, *Library Trends*, *College &amp; Research Libraries News*, and *The Journal of Interactive Technology &amp; Pedagogy*. They have chapters accepted in forthcoming ACRL Press publications including *Academic Librarian Burnout: Causes and Responses*; *Teaching Critical Reading Skills: Strategies for Academic Librarians*; *Undergraduate Research and the Academic Librarian: Case Studies &amp; Best Practices, Volume 2*; *Instructional Identities and Information Literacy: Transforming Our Programs, Institutions, and Profession, Volume 2*; and *Everyday Evidence-Based Practice in the Academic Library: Case Studies and Reflections*.  
+Johnson has published on topics related to library instruction and information literacy in *Progressive Librarian*, *Library Trends*, *College & Research Libraries News*, and *The Journal of Interactive Technology & Pedagogy*. They have chapters accepted in forthcoming ACRL Press publications including *Academic Librarian Burnout: Causes and Responses*; *Teaching Critical Reading Skills: Strategies for Academic Librarians*; *Undergraduate Research and the Academic Librarian: Case Studies & Best Practices, Volume 2*; *Instructional Identities and Information Literacy: Transforming Our Programs, Institutions, and Profession, Volume 2*; and *Everyday Evidence-Based Practice in the Academic Library: Case Studies and Reflections*.
 
-If you have any questions or would like to discuss an idea before submitting a proposal, please contact me at matt@mattweirick.com <a href="mailto:matt@mattweirick.com"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+If you have any questions or would like to discuss an idea before submitting a proposal, please contact me at matt\@mattweirick.com <a href="mailto:matt@mattweirick.com"> <i class="fa fa-envelope" aria-hidden="true"></i></a>

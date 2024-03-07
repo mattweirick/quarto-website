@@ -10,6 +10,13 @@
     "items": []
   },
   {
+    "listing": "/teaching.html",
+    "items": [
+      "/teaching/honors101i.html",
+      "/teaching/resprc110a.html"
+    ]
+  },
+  {
     "listing": "/research/index.html",
     "items": []
   },

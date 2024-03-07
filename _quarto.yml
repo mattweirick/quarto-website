@@ -17,6 +17,8 @@ website:
         text: Research
       - href: talks/index.qmd
         text: Presentations
+      - href: teaching.qmd
+        text: Teaching
       - href: CV/index.qmd
         text: CV
       - text: Projects

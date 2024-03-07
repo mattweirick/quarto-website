@@ -1,0 +1,9 @@
+---
+title: "Courses"
+listing:
+  contents: teaching
+  sort: "date desc"
+  type: default
+  categories: false
+  fields: [term, title, description]
+---

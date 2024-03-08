@@ -103,7 +103,7 @@ The target population for the study was academic librarians with some instructio
 Table 1. Demographic characteristics of the sample.
 
 | Characteristic                                                        | No. | Percentage |
-|---------------------------------------------------|-----------|-----------|
+|-----------------------------------------------------------------------|-----|------------|
 | **Gender**                                                            |     |            |
 | Agender                                                               | 2   | 0.82       |
 | Genderqueer or gender fluid                                           | 3   | 1.22       |
@@ -201,7 +201,7 @@ A summary of these characteristics within the sample is included in Table 2 belo
 Table 2. Summary of job characteristics for participants in the sample.
 
 | Characteristic                                                  | No. | Percentage |
-|--------------------------------------------------|-----------|-----------|
+|-----------------------------------------------------------------|-----|------------|
 | **Length of time at current institution (in years)**            |     |            |
 | Less than 1                                                     | 31  | 12.65      |
 | 1 to 5                                                          | 100 | 40.82      |

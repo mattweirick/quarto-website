@@ -1,17 +1,28 @@
 ---
 title: "Matthew Weirick Johnson"
 page-layout: full
+bibliography: "My Publications.bib"
+nocite: |
+  @*
+csl: apa-cv.csl
+css: cv.css
 format:
   html:
     toc: true
+    suppress-bibliography: true
   pdf:
     pdf-engine: lualatex
     documentclass: scrartcl
+    #cite-method: biblatex
+    #biblatexoptions: maxbibnames=99, sorting=ydnt, style=apa-cv, dashed=false, terseinits=true, date=year
     mainfont: Helvetica
     monofont: Helvetica
     sansfont: Helvetica
     keep-tex: true
     urlcolor: Black
+    include-in-header: 
+      - text: |
+          \usepackage{enumitem}
 format-links: [pdf]
 listing:
   - id: published-papers-2024
@@ -150,10 +161,10 @@ Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the U
 
 ## <i class="fa-solid fa-graduation-cap"></i> Education
 
--   **Ph.D.** *Measurement & Evaluation*
-    -   University of South Florida, 2024 - Present
--   **M.S.** *Library Science*
-    -   University of North Carolina at Chapel Hill, 2016-2018
+-   **Ph.D.** *Measurement & Evaluation* [2024 -- Present]{.cvdate}
+    -   University of South Florida 
+-   **M.S.** *Library Science* [2016 -- 2018]{.cvdate}
+    -   University of North Carolina at Chapel Hill
     -   **Master's Paper:** “Not playing that game”: An exploratory study of queer men’s health information behavior on location-aware dating and sex-seeking mobile applications
     -   **Certificates:** Interdisciplinary Health Communication, Interdisciplinary Health Disparities, SILS Diversity Advocate
 
@@ -162,8 +173,8 @@ Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the U
 - Awards: Pratt Severn Best Student Research Paper Award, ASIS&T 
 --->
 ```
--   **B.A.** *English*
-    -   Virginia Tech, 2012-2016
+-   **B.A.** *English* [2012 -- 2016]{.cvdate}
+    -   Virginia Tech
 
 ```{=html}
 <!---
@@ -172,9 +183,10 @@ Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the U
 ```
 ## <i class="fa-solid fa-school"></i> Academic Positions
 
--   **Associate Librarian & Director**, University of South Florida, 2023 - Present
-    -   Director of Research & Instruction, Tampa campus, 2023 - Present
--   **Associate Librarian**, UCLA, 2019-2023
+-   **Associate Librarian & Director**, University of South Florida [2023 -- Present]{.cvdate}
+    -   Director of Research & Instruction, Tampa campus
+    
+-   **Associate Librarian**, UCLA, [2019 -- 2023]{.cvdate}
     -   Humanities & Social Sciences Librarian, 2019-2023
     -   Lead for Teaching & Learning, 2020-2023
     -   Humanities & Social Sciences Lead for Research Services, 2020-2022
@@ -197,7 +209,9 @@ A complete list of publications with available open access options can be found 
 :::
 
 ::: {.content-visible when-format="pdf"}
-"Academic instruction librarians' feelings of job control: Quantitative analysis of responses to a job control inventory." *The Journal of Academic Librarianship.*
+
+
+
 :::
 
 #### 2023
@@ -249,9 +263,9 @@ A complete list of publications with available open access options can be found 
 
 ### Association of College & Research Libraries (ACRL)
 
--   Publications Coordinating Committee, Member
--   Choice Editorial Board, Member
--   *College & Research Libraries* Editorial Board, Member
+-   Publications Coordinating Committee, Member [2023 -- 2025]{.cvdate}
+-   Choice Editorial Board, Member [2023 -- 2025]{.cvdate}
+-   *College & Research Libraries* Editorial Board, Member [2023 -- 2026]{.cvdate}
 -   Nominations and Policies Audit Task Force, Chair
 -   Professional Development Committee, Chair
 -   Professional Development Committee, Member

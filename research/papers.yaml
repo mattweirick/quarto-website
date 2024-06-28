@@ -15,6 +15,21 @@ while teaching"
     - Burnout
     - Job Control
     - Academic Instruction Librarians
+    - 2025
+
+- title: "Use of the Copenhagen Burnout Inventory among US academic librarians: Examining construct validity through factor structure and model fit"
+  type: "Published"
+  short: "cbi2024"
+  author:
+    - Matthew Weirick Johnson
+  date: 2024-06-28
+  year: 2024
+  journal: "<em> The Journal of Academic Librarianship</em>"
+  abstract: "Burnout is a pervasive problem in libraries; however, little empirical evidence exists to demonstrate burnout's extent and to assist in identifying evidence-based solutions. As far as quantitative analysis of burnout is concerned, the Maslach Burnout Inventory (MBI) has been a primary tool for measuring burnout among human services workers. However, the tool is proprietary and can be cost-prohibitive for large samples or small/non-existent budgets. As we consider the measurement of burnout as a field, open tools are better aligned with the values of librarianship, and free tools are better aligned with the resources available for conducting research or internal assessments. The Copenhagen Burnout Inventory (CBI) is a non-commercial, free, and easy-to-administer tool for measuring burnout across three dimensions: personal, work-related, and client-related. The CBI presents a cost-effective alternative to the MBI which may be particularly enticing for academic library leaders and researchers. This study assesses the psychometric properties, including factor structure and scale reliability, to contribute to demonstrating construct validity of the CBI among academic librarians in the United Studies using a probability sample stratified by institutional Carnegie classifications and geographic region.<br><br>Confirmatory Factory Analysis (CFA) is used the examine the factor structure and model fit of five models for the CBI: a correlated three factors model, a correlated two factors model (using work-related and client-related burnout), and three single factor models for each of the three independent subscales (personal, work-related, and client-related burnout). The factorial validity and model fit for the five models demonstrated in the study are reasonable, suggesting that the items in the three scales are successfully measuring the latent constructs (personal burnout, work-related burnout, and client-related burnout), which contributes to construct validity. The expected relationship between the observed variables (the items in the measurement model) and the latent constructs is supported by the CFA analyses. While other examinations of validity, including other aspects of construct validity, should also be examined, the findings support the use of the CBI for measurement of burnout among academic librarians."
+  #pdf:
+  pubopen: https://doi.org/10.1016/j.acalib.2024.102922
+  categories:
+    - Burnout
     - 2024
 
 - title: "Academic instruction librarians' feelings of job control: Quantitative analysis of responses to a job control inventory"
@@ -29,7 +44,6 @@ while teaching"
   #pdf:
   pubclosed: https://doi.org/10.1016/j.acalib.2023.102835
   categories:
-    - Burnout
     - Job Control
     - Academic Instruction Librarians
     - 2024

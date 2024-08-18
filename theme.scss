@@ -29,9 +29,10 @@ $green:   #18bc9c !default;
 $teal:    #20c997 !default;
 $cyan:    #3498db !default;
 
-$primary:       #b33b72 !default;
+$primary:       #5F4B8B !default;
+// #b33b72
 $secondary:     $gray-600 !default;
-$success:       #b33b72 !default;
+$success:       #5F4B8B !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
@@ -207,3 +208,84 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0
     background-image: escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$black}'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>"));
   }
 }
+
+// Styling for listings pages
+  .btn-xs {
+    padding: .07em .31em;
+    font-size: .9em;
+    color: $primary;
+    border-color: $primary;
+    text-transform:none;
+    margin-top:.5em;
+    border-bottom-width: .31em;
+  }
+  
+    .btn-xs:hover {
+    background-color: $primary;
+    border-color: $primary;
+  }
+  
+  .project-categories {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.35em 0 0.35em;
+    padding-bottom: 0;
+    row-gap: 0.4em;
+    column-gap: 0.4em;
+    font-family: $headings-font-family;
+    }
+
+.project-category {
+    padding: 0.25em 0.75em 0.25em 0em;
+    font-size: 0.7em;
+    text-transform: uppercase;
+        }
+
+.project-category a {
+    color: $gray-800;
+}
+
+.project-category a:hover {
+    color: $primary;
+}
+
+// Style about page links
+
+.about-link-text .fa-solid {
+  color:$primary;
+}
+
+.about-link:hover, .about-link:hover span, .about-link:hover i {
+  background-color:$primary;
+  color: $white;
+}
+
+.about-link-text .fa-brands {
+  color:$primary;
+}
+
+.about-link-text .ai {
+  color:$primary;
+}
+
+h1 {
+  color: #58585d;
+}
+
+h2 {
+  color: $primary;
+}
+
+h3 {
+  color: $primary;
+}
+
+#quarto-margin-sidebar a:hover {
+  font-weight: bold;
+}
+
+.navbar-nav.navbar-nav-scroll.me-auto a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.7em;
+}
+// palette: #aa6482, #d67797

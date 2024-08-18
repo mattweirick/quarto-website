@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-talks-national .list');
+    const listingTargetEl = window.document.querySelector('#listing-talks-international .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -86,34 +86,6 @@ ul.task-list li input[type="checkbox"] {
       valueNames: ['listing-title','listing-type','listing-short','listing-author','listing-date','listing-year','listing-venue','listing-audience','listing-description','listing-categories','listing-pdf','listing-pubopen',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
       searchColumns: ["listing-title","listing-type","listing-short","listing-author","listing-date","listing-year","listing-venue","listing-audience","listing-description","listing-categories","listing-pdf","listing-pubopen"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-talks-national'] = new List('listing-talks-national', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-talks-international .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-type','listing-short','listing-author','listing-date','listing-year','listing-venue','listing-audience','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
-      
-      searchColumns: ["listing-title","listing-type","listing-short","listing-author","listing-date","listing-year","listing-venue","listing-audience","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -219,7 +191,7 @@ window.Quarto = {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
         <li>
     <a class="dropdown-item" href="../projects.html">
- <span class="dropdown-text">All Projects</span></a>
+ <span class="dropdown-text">Projects</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../projects/project1.html">
@@ -300,8 +272,8 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#international" id="toc-international" class="nav-link active" data-scroll-target="#international">International</a></li>
-  <li><a href="#national" id="toc-national" class="nav-link" data-scroll-target="#national">National</a></li>
+  <li><a href="#international-national" id="toc-international-national" class="nav-link active" data-scroll-target="#international-national">International &amp; National</a></li>
+  <li><a href="#regional-local-institutional" id="toc-regional-local-institutional" class="nav-link" data-scroll-target="#regional-local-institutional">Regional, Local &amp; Institutional</a></li>
   </ul>
 </nav>
     </div>
@@ -327,27 +299,13 @@ window.Quarto = {
 </header>
 
 
-<section id="international" class="level2">
-<h2 class="anchored" data-anchor-id="international">International</h2>
+<section id="international-national" class="level2">
+<h2 class="anchored" data-anchor-id="international-national">International &amp; National</h2>
 <div id="listing-talks-international" class="quarto-listing quarto-listing-container-custom">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
 
 <style>
-  .btn-xs {
-    padding: .07em .31em;
-    font-size: .9em;
-    color: #b33b72;
-    border-color: #b33b72;
-    text-transform:none;
-    margin-top:.5em;
-    border-bottom-width: .31em;
-  }
-  
-  .btn-xs:hover {
-    background-color: #b33b72;
-    border-color: #b33b72;
-  }
   
   .ai-lg {
     font-size: 1.2em;  /* Adjust as needed */
@@ -370,171 +328,6 @@ window.Quarto = {
     margin: 0;
     padding: 0;
   }
-  
-.project-categories {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0.35em 0 0.35em;
-    padding-top: 
-    padding-bottom: 0;
-    row-gap: 0.4em;
-    column-gap: 0.4em;
-    font-family: $headings-font-family;
-    }
-
-.project-category {
-    padding: 0.25em 0.75em 0.25em 0em;
-    font-size: 0.7em;
-    text-transform: uppercase;
-        }
-
-.project-category a {
-    color: #343a40;
-}
-
-.project-category a:hover {
-    color: #b33b72;
-}
-
-</style>
-
-<ul class="list">
-  
-    <li data-index="0" data-categories="information literacy,public libraries,2018" data-listing-date-sort="1539230400000">
-      Writing beyond the academy: Writing &amp; digital literacy skills courses in local public libraries
-      <br>
-      <!-- paper info for not-yet-published papers -->
-      
-      
-      <!-- paper info for published papers -->
-      
-        <small class="text-muted">
-          2018. Matthew Weirick Johnson. International Writing Centers Association Conference.
-        </small>
-      
-      
-     <br>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-            
-            <div class="project-categories">
-                
-                    <div class="project-category"><a href="#category=information literacy">
-                            information literacy
-                        </a></div>
-                    
-                    <div class="project-category"><a href="#category=public libraries">
-                            public libraries
-                        </a></div>
-                    
-                    <div class="project-category"><a href="#category=2018">
-                            2018
-                        </a></div>
-                    
-            </div>
-            
-      
-      
-      <hr>
-    </li>
-  
-</ul>
-
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</section>
-<section id="national" class="level2">
-<h2 class="anchored" data-anchor-id="national">National</h2>
-<div id="listing-talks-national" class="quarto-listing quarto-listing-container-custom">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
-
-<style>
-  .btn-xs {
-    padding: .07em .31em;
-    font-size: .9em;
-    color: #b33b72;
-    border-color: #b33b72;
-    text-transform:none;
-    margin-top:.5em;
-    border-bottom-width: .31em;
-  }
-  
-  .btn-xs:hover {
-    background-color: #b33b72;
-    border-color: #b33b72;
-  }
-  
-  .ai-lg {
-    font-size: 1.2em;  /* Adjust as needed */
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .card {
-    margin-bottom: 0;
-    margin-top: 0;
-    border: 0;
-    padding-bottom: 0;
-  }
-  
-  .collapse {
-    margin: 0;
-    padding: 0;
-  }
-  
-.project-categories {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0.35em 0 0.35em;
-    padding-top: 
-    padding-bottom: 0;
-    row-gap: 0.4em;
-    column-gap: 0.4em;
-    font-family: $headings-font-family;
-    }
-
-.project-category {
-    padding: 0.25em 0.75em 0.25em 0em;
-    font-size: 0.7em;
-    text-transform: uppercase;
-        }
-
-.project-category a {
-    color: #343a40;
-}
-
-.project-category a:hover {
-    color: #b33b72;
-}
 
 </style>
 
@@ -874,11 +667,77 @@ No matching items
       <hr>
     </li>
   
+    <li data-index="5" data-categories="information literacy,public libraries,2018" data-listing-date-sort="1539230400000">
+      Writing beyond the academy: Writing &amp; digital literacy skills courses in local public libraries
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2018. Matthew Weirick Johnson. International Writing Centers Association Conference.
+        </small>
+      
+      
+     <br>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=information literacy">
+                            information literacy
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=public libraries">
+                            public libraries
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=2018">
+                            2018
+                        </a></div>
+                    
+            </div>
+            
+      
+      
+      <hr>
+    </li>
+  
 </ul>
 
 <div class="listing-no-matching d-none">
 No matching items
 </div>
+</div>
+</section>
+<section id="regional-local-institutional" class="level2">
+<h2 class="anchored" data-anchor-id="regional-local-institutional">Regional, Local &amp; Institutional</h2>
+<div id="talks-local">
+
 </div>
 
 

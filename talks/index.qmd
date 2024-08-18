@@ -2,23 +2,12 @@
 title: "Talks & Presentations"
 description: "" 
 listing:
-  - id: talks-national
-    include: 
-      type: "Published"
-      audience: "national"
-    contents: talks.yaml
-    template: talks.ejs
-    filter-ui: false
-    sort: "date desc" 
-    sort-ui: false
-    categories: false
-    field-display-names: 
-      year: "Year"
-      journal: "Journal"
   - id: talks-international
     include: 
       type: "Published"
-      audience: "international"
+      audience: 
+        - "international"
+        - "national"
     contents: talks.yaml
     template: talks.ejs
     filter-ui: false
@@ -32,11 +21,12 @@ page-layout: full
 include-back-link: false
 ---
 
-## International
+## International & National
+
 ::: {#talks-international}
 :::
 
-## National
-::: {#talks-national}
-:::
+## Regional, Local & Institutional
 
+::: {#talks-local}
+:::

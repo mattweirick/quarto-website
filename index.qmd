@@ -18,13 +18,13 @@ about:
       href: https://instagram.com/mattbrarian
     - text: "{{< fa brands github size=xl >}} Github"
       href: https://github.com/mattweirick
-    - text: "{{< ai google-scholar size=xl color=#b33b72 >}} Google Scholar"
+    - text: "{{< ai google-scholar size=xl >}} Google Scholar"
       href: https://scholar.google.com/citations?user=dgbjIWIAAAAJ&hl=en
-    - text: "{{< ai orcid size=xl color=#b33b72 >}} ORCiD"
+    - text: "{{< ai orcid size=xl >}} ORCiD"
       href: https://orcid.org/0000-0002-6391-2088
-    - text: "{{< ai researcherid size=xl color=#b33b72 >}} ResearcherID"
+    - text: "{{< ai researcherid size=xl >}} ResearcherID"
       href: https://www.webofscience.com/wos/author/record/AFE-4307-2022
-    - text: "{{< ai scopus size=xl color=#b33b72 >}} Scopus Author ID"
+    - text: "{{< ai scopus size=xl >}} Scopus Author ID"
       href: http://www.scopus.com/inward/authorDetails.url?authorID=58064074100&partnerID=MN8TOARS
 ---
 
@@ -33,14 +33,6 @@ about:
 
 .title {
   font-size: 1.5vw;
-}
-
-.about-link-text .fa-solid {
-  color:#b33b72;
-}
-
-.about-link-text .fa-brands {
-  color:#b33b72;
 }
 
 </style>

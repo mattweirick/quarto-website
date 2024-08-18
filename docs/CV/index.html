@@ -83,9 +83,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-type','listing-short','listing-author','listing-date','listing-year','listing-journal','listing-abstract','listing-pubclosed','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-title','listing-type','listing-short','listing-author','listing-date','listing-year','listing-journal','listing-abstract','listing-pubopen','listing-categories','listing-pubclosed',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-title","listing-type","listing-short","listing-author","listing-date","listing-year","listing-journal","listing-abstract","listing-pubclosed","listing-categories"],
+      searchColumns: ["listing-title","listing-type","listing-short","listing-author","listing-date","listing-year","listing-journal","listing-abstract","listing-pubopen","listing-categories","listing-pubclosed"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -362,7 +362,7 @@ window.Quarto = {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
         <li>
     <a class="dropdown-item" href="../projects.html">
- <span class="dropdown-text">All Projects</span></a>
+ <span class="dropdown-text">Projects</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../projects/project1.html">
@@ -494,13 +494,6 @@ window.Quarto = {
 
 
 <style>
-h2 {
-  color: #b33b72;
-}
-
-h3 {
-  color: #b33b72;
-}
 
 ul {
     list-style-type: none;
@@ -606,7 +599,17 @@ ul {
 
 <ul class="list">
   
-    <li data-index="0" data-categories="Burnout,Job Control,Academic Instruction Librarians,2024" data-listing-date-sort="1704085200000">
+    <li data-index="0" data-categories="Burnout,2024" data-listing-date-sort="1719547200000">
+      Use of the Copenhagen Burnout Inventory among US academic librarians: Examining construct validity through factor structure and model fit
+      <br>
+      
+        <small class="text-muted" style="display:block;">
+          Matthew Weirick Johnson. <em> The Journal of Academic Librarianship</em>.
+        </small>
+      
+    </li>
+  
+    <li data-index="1" data-categories="Job Control,Academic Instruction Librarians,2024" data-listing-date-sort="1704085200000">
       Academic instruction librarians' feelings of job control: Quantitative analysis of responses to a job control inventory
       <br>
       
@@ -621,7 +624,17 @@ ul {
 <!---
 <ul class="list">
   
-    <li data-index='1' data-categories='Burnout,Job Control,Academic Instruction Librarians,2024' data-listing-date-sort='1704085200000'>
+    <li data-index='2' data-categories='Burnout,2024' data-listing-date-sort='1719547200000'>
+      Use of the Copenhagen Burnout Inventory among US academic librarians: Examining construct validity through factor structure and model fit
+      <br/>
+      
+        <small class="text-muted">
+          2024. Matthew Weirick Johnson. <em> The Journal of Academic Librarianship</em>.  <a href="https://doi.org/10.1016/j.acalib.2024.102922">https://doi.org/10.1016/j.acalib.2024.102922.</a> 
+        </small>
+      
+    </li>
+  
+    <li data-index='3' data-categories='Job Control,Academic Instruction Librarians,2024' data-listing-date-sort='1704085200000'>
       Academic instruction librarians' feelings of job control: Quantitative analysis of responses to a job control inventory
       <br/>
       
@@ -1001,20 +1014,6 @@ No matching items
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
 
 <style>
-  .btn-xs {
-    padding: .07em .31em;
-    font-size: .9em;
-    color: #b33b72;
-    border-color: #b33b72;
-    text-transform:none;
-    margin-top:.5em;
-    border-bottom-width: .31em;
-  }
-  
-  .btn-xs:hover {
-    background-color: #b33b72;
-    border-color: #b33b72;
-  }
   
   .ai-lg {
     font-size: 1.2em;  /* Adjust as needed */
@@ -1038,30 +1037,6 @@ No matching items
     padding: 0;
   }
   
-.project-categories {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0.35em 0 0.35em;
-    padding-top: 
-    padding-bottom: 0;
-    row-gap: 0.4em;
-    column-gap: 0.4em;
-    font-family: $headings-font-family;
-    }
-
-.project-category {
-    padding: 0.25em 0.75em 0.25em 0em;
-    font-size: 0.7em;
-    text-transform: uppercase;
-        }
-
-.project-category a {
-    color: #343a40;
-}
-
-.project-category a:hover {
-    color: #b33b72;
-}
 
 </style>
 
@@ -1095,20 +1070,6 @@ No matching items
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
 
 <style>
-  .btn-xs {
-    padding: .07em .31em;
-    font-size: .9em;
-    color: #b33b72;
-    border-color: #b33b72;
-    text-transform:none;
-    margin-top:.5em;
-    border-bottom-width: .31em;
-  }
-  
-  .btn-xs:hover {
-    background-color: #b33b72;
-    border-color: #b33b72;
-  }
   
   .ai-lg {
     font-size: 1.2em;  /* Adjust as needed */
@@ -1132,30 +1093,6 @@ No matching items
     padding: 0;
   }
   
-.project-categories {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0.35em 0 0.35em;
-    padding-top: 
-    padding-bottom: 0;
-    row-gap: 0.4em;
-    column-gap: 0.4em;
-    font-family: $headings-font-family;
-    }
-
-.project-category {
-    padding: 0.25em 0.75em 0.25em 0em;
-    font-size: 0.7em;
-    text-transform: uppercase;
-        }
-
-.project-category a {
-    color: #343a40;
-}
-
-.project-category a:hover {
-    color: #b33b72;
-}
 
 </style>
 

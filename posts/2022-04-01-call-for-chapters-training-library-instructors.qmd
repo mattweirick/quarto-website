@@ -3,7 +3,6 @@ title: "Call for Chapters: Training Library Instructors"
 date: 2022-04-01
 description: "These two edited volumes, to be published by ACRL, will outline case studies and best practices for developing and delivering teacher training for students and early-career librarians in academic libraries and LIS graduate programs."
 page-layout: article
-title-block-banner: "#E09EBB"
 image: "project-timeline.png"
 aliases: 
   - call-for-chapters.html

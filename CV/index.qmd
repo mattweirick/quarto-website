@@ -119,13 +119,6 @@ listing:
 
 ```{=html}
 <style>
-h2 {
-  color: #b33b72;
-}
-
-h3 {
-  color: #b33b72;
-}
 
 ul {
     list-style-type: none;
@@ -162,7 +155,7 @@ Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the U
 ## <i class="fa-solid fa-graduation-cap"></i> Education
 
 -   **Ph.D.** *Measurement & Evaluation* [2024 -- Present]{.cvdate}
-    -   University of South Florida 
+    -   University of South Florida
 -   **M.S.** *Library Science* [2016 -- 2018]{.cvdate}
     -   University of North Carolina at Chapel Hill
     -   **Master's Paper:** “Not playing that game”: An exploratory study of queer men’s health information behavior on location-aware dating and sex-seeking mobile applications
@@ -185,7 +178,6 @@ Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the U
 
 -   **Associate Librarian & Director**, University of South Florida [2023 -- Present]{.cvdate}
     -   Director of Research & Instruction, Tampa campus
-    
 -   **Associate Librarian**, UCLA, [2019 -- 2023]{.cvdate}
     -   Humanities & Social Sciences Librarian, 2019-2023
     -   Lead for Teaching & Learning, 2020-2023
@@ -209,9 +201,6 @@ A complete list of publications with available open access options can be found 
 :::
 
 ::: {.content-visible when-format="pdf"}
-
-
-
 :::
 
 #### 2023

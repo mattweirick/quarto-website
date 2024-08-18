@@ -6,4 +6,4 @@ page-layout: article
 term: "Winter 2021"
 ---
 
-{{< pdf 110i-syllabus.pdf width=100% height=800 >}}
+![](110i-syllabus.pdf){width=100% height=800}

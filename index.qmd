@@ -2,10 +2,7 @@
 title: "Matthew Weirick Johnson"
 image: portraits/portrait-2.jpg
 image-alt: Matthew Weirick Johnson standing in front of a window.
-format:
-  html:
-    grid:
-      body-width: 1300px
+page-layout: full
 about:
   id: hero-heading
   template: trestles
@@ -31,6 +28,8 @@ about:
     - text: "{{< ai scopus size=xl >}} Scopus Author ID"
       href: http://www.scopus.com/inward/authorDetails.url?authorID=58064074100&partnerID=MN8TOARS
 ---
+
+
 
 ::: {#hero-heading}
 Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the University of South Florida Libraries and a PhD student in Educational Measurement and Evaluation also at USF.

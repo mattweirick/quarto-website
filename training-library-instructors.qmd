@@ -1,6 +1,15 @@
 ---
 title: "Training Library Instructors"
-description: "Book published by ACRL in 2024"
+author: "Matthew Weirick Johnson"
+description: "Pedagogy impacts all parts of library work and culture. It changes the way we interact with learners regardless of setting and however we name or define the teaching moment from research help to outreach to leading meetings. Pedagogy is a praxis of relation, and studying it can improve all aspects of our work and organizations.</br></br>In two volumes, <i>Training Library Instructors</i> collects examples of how we train our colleagues to teach, whether they’re student workers, non-librarian staff, new or experienced librarians, or something else entirely. <i>Volume 1, A Guide to Training Graduate Students</i>, focuses on teacher training for graduate students in LIS programs and in academic libraries. It presents existing literature and theories, approaches to teaching library school students to teach, and critical reflections from librarians about their varied experiences receiving teacher training. In <i>Volume 2, A Guide to Training Librarians,</i> librarians share their knowledge about teaching, learning, and pedagogy through a variety of replicable activities: formal and informal workshops, courses, communities of practice, peer observation, and more.</br></br>Training Library Instructors provides detailed, easily implemented and modified plans for courses, internships, teach-the-teacher programs, and other instructional methods and opportunities for graduate students and library workers at all levels of teaching experience."
+title-block-banner: "#a8aca6"
+title-block-banner-color: black
+page-layout: article
+date: 2024-09
+date-format: MMMM YYYY
+draft: true
+aliases: 
+  - /training-library-instructors/
 ---
 
 ## Vol 1: A Guide to Training Graduate Students
@@ -32,9 +41,6 @@ description: "Book published by ACRL in 2024"
 
 ### Conclusion: Advancing Teaching & Learning in the LIS Curriculum
 ### Author Biographies
-### Bibliography
-### Index
-
 
 ## Vol 2: A Guide to Training Librarians
 ### Table of Contents
@@ -64,5 +70,3 @@ description: "Book published by ACRL in 2024"
 
 ### Conclusion: Moving Instruction Training Forward in Academic Libraries
 ### Author Biographies
-### Bibliography
-### Index

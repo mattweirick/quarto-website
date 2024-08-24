@@ -35,3 +35,7 @@ a:visited {
 .quarto-title-block div {
   color: #000;
 }
+
+.center h2 {
+  text-align: center;
+}

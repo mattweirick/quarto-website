@@ -1,6 +1,6 @@
 ---
 title: "Matthew Weirick Johnson"
-page-layout: full
+page-layout: article
 bibliography: "My Publications.bib"
 nocite: |
   @*
@@ -149,14 +149,14 @@ ul {
 </style>
 ```
 ::: {.content-visible when-format="html"}
-Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the University of South Florida Libraries, Tampa campus.
+Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the University of South Florida Libraries and a PhD student in Educational Measurement and Evaluation also at USF. You can also [download a PDF of my CV](/files/johnson-cv.pdf).
 :::
 
 ## <i class="fa-solid fa-graduation-cap"></i> Education
 
--   **Ph.D.** *Measurement & Evaluation* [2024 -- Present]{.cvdate}
+-   **Ph.D.** *Measurement & Evaluation* [exp. 2027]{.cvdate}
     -   University of South Florida
--   **M.S.** *Library Science* [2016 -- 2018]{.cvdate}
+-   **M.S.** *Library Science* [2018]{.cvdate}
     -   University of North Carolina at Chapel Hill
     -   **Master's Paper:** “Not playing that game”: An exploratory study of queer men’s health information behavior on location-aware dating and sex-seeking mobile applications
     -   **Certificates:** Interdisciplinary Health Communication, Interdisciplinary Health Disparities, SILS Diversity Advocate
@@ -166,7 +166,7 @@ Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the U
 - Awards: Pratt Severn Best Student Research Paper Award, ASIS&T 
 --->
 ```
--   **B.A.** *English* [2012 -- 2016]{.cvdate}
+-   **B.A.** *English* [2016]{.cvdate}
     -   Virginia Tech
 
 ```{=html}
@@ -248,39 +248,40 @@ A complete list of publications with available open access options can be found 
 
 ### American Library Association (ALA)
 
--   Conference Committee, ACRL Representative
+-   Conference Committee, ACRL Representative [2022 -- 2023]{.cvdate}
 
 ### Association of College & Research Libraries (ACRL)
 
 -   Publications Coordinating Committee, Member [2023 -- 2025]{.cvdate}
 -   Choice Editorial Board, Member [2023 -- 2025]{.cvdate}
 -   *College & Research Libraries* Editorial Board, Member [2023 -- 2026]{.cvdate}
--   Nominations and Policies Audit Task Force, Chair
--   Professional Development Committee, Chair
--   Professional Development Committee, Member
+-   Nominations and Policies Audit Task Force, Chair [2022 -- 2023]{.cvdate}
+-   Professional Development Committee, Chair [2022 -- 2023]{.cvdate}
+-   Professional Development Committee, Member [2019 -- 2022]{.cvdate}
 
 ### ACRL Instruction Section (IS)
 
--   Secretary
--   Peer-reviewed Instructional Materials Online (PRIMO) Committee, Member
--   Diversity and Inclusion Task Force, Member
+-   Executive Committee, Archivist [2024 -- 2025]{.cvdate}
+-   Executive Committee, Secretary [2023 -- 2024]{.cvdate}
+-   Peer-reviewed Instructional Materials Online (PRIMO) Committee, Member [2023 -- 2025]{.cvdate}
+-   Diversity and Inclusion Task Force, Member [2018 -- 2020]{.cvdate}
 
 ### ACRL University Libraries Section (ULS)
 
--   Professional Development Committee, Member
+-   Professional Development Committee, Member [2023 -- 2025]{.cvdate}
 
 ### ACRL Women and Gender Studies Section (WGSS)
 
--   WGSS Core Books Project (HIV & AIDS, British Literature), Member
--   WGSS Awards Committee, Member
+-   Core Books Project (HIV & AIDS, British Literature), Member [2021 -- Present]{.cvdate}
+-   Awards Committee, Member [2021 -- 2023]{.cvdate}
 
 ### Rainbow Round Table (RRT)
 
--   Stonewall Book Awards - Israel Fishman Non-Fiction Award Committee, Member
--   News & Reviews Committee, Member
--   Resources Committee, Member
+-   Stonewall Book Awards - Israel Fishman Non-Fiction Award Committee, Member [2022 -- 2024]{.cvdate}
+-   News & Reviews Committee, Member [2019 -- 2021]{.cvdate}
+-   Resources Committee, Member [2017 -- 2019]{.cvdate}
 
 ### Library Instruction Round Table (LIRT)
 
--   Top 20 Committee, Member
--   Newsletter Committee, Member
+-   Top 20 Committee, Member [2023 -- 2025]{.cvdate}
+-   Newsletter Committee, Member [2017 -- 2019]{.cvdate}

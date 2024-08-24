@@ -29,6 +29,8 @@ website:
           - projects/project3.qmd
       - href: blog.qmd
         text: Blog
+      - href: training-library-instructors.qmd
+        text: "Training Library Instructors"
     right:
     - text: Connect with me
       menu: 

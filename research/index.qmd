@@ -60,7 +60,7 @@ If want to stay up-to-date on my work, follow me on [Google Scholar](https://sch
 You can filter the items displayed below based on my three major research areas:
 
 ::: {.btn-group role="group" aria-label="Publication grouping buttons"}
-<a role="button" href="#category=" type="button" class="btn btn-outline-secondary btn-s">Improving Librarian Work Life</a> <a role="button" href="#category=" type="button" class="btn btn-outline-secondary btn-s">Training Librarians</a> <a role="button" href="#category=" type="button" class="btn btn-outline-secondary btn-s">Managing Librarians</a>
+<a role="button" href="#category=Librarian Worklife" type="button" class="btn btn-outline-secondary btn-s">Improving Librarian Work Life</a> <a role="button" href="#category=" type="button" class="btn btn-outline-secondary btn-s">Training Librarians</a> <a role="button" href="#category=" type="button" class="btn btn-outline-secondary btn-s">Managing Librarians</a>
 :::
 
 </br>

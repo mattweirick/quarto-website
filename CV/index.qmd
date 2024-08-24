@@ -10,19 +10,19 @@ format:
   html:
     toc: true
     suppress-bibliography: true
-  pdf:
-    pdf-engine: lualatex
-    documentclass: scrartcl
+  #pdf:
+    #pdf-engine: lualatex
+    #documentclass: scrartcl
     #cite-method: biblatex
     #biblatexoptions: maxbibnames=99, sorting=ydnt, style=apa-cv, dashed=false, terseinits=true, date=year
-    mainfont: Helvetica
-    monofont: Helvetica
-    sansfont: Helvetica
-    keep-tex: true
-    urlcolor: Black
-    include-in-header: 
-      - text: |
-          \usepackage{enumitem}
+    #mainfont: Helvetica
+    #monofont: Helvetica
+    #sansfont: Helvetica
+    #keep-tex: true
+    #urlcolor: Black
+    #include-in-header: 
+    #  - text: |
+    #      \usepackage{enumitem}
 format-links: [pdf]
 listing:
   - id: published-papers-2024

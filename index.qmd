@@ -32,10 +32,7 @@ about:
 ```{=html}
 <style>
 
-.title {
-  font-size: 2vw;
-  white-space: nowrap;
-}
+
 
 </style>
 ```

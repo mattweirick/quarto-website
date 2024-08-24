@@ -2,6 +2,7 @@
 title: "Matthew Weirick Johnson"
 image: portraits/portrait-2.jpg
 image-alt: Matthew Weirick Johnson standing in front of a window.
+page-layout: full
 about:
   id: hero-heading
   template: trestles
@@ -32,11 +33,22 @@ about:
 <style>
 
 .title {
-  font-size: 1.5vw;
+  font-size: 2.5vw;
 }
 
 </style>
 ```
 ::: {#hero-heading}
-Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the University of South Florida Libraries, Tampa campus.
+Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the University of South Florida Libraries and a PhD student in Educational Measurement and Evaluation also at USF.
+
+## Forthcoming Books {.center}
+
+<a href="/training-library-instructors">
+
+::: {layout-ncol="2"}
+![Training Library Instructors, Vol 1: A Guide to Training Graduate Students](files/Vol1_cover.jpg){fig-alt=""}
+
+![Training Library Instructors, Vol 2: A Guide to Training Librarians](files/Vol2_cover.jpg){fig-alt=""}
+:::
+</a>
 :::

@@ -33,7 +33,8 @@ about:
 <style>
 
 .title {
-  font-size: 2.3vw;
+  font-size: 2vw;
+  white-space: nowrap;
 }
 
 </style>
@@ -50,5 +51,6 @@ Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the U
 
 ![Training Library Instructors, Vol 2: A Guide to Training Librarians](files/Vol2_cover.jpg){fig-alt=""}
 :::
+
 </a>
 :::

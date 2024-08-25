@@ -11,6 +11,7 @@ draft: true
 aliases: 
   - /training-library-instructors/
   - /TLI/
+  - /tli
 ---
 
 ## Vol 1: A Guide to Training Graduate Students

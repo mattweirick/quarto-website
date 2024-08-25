@@ -89,10 +89,13 @@ listing:
     field-display-names: 
       year: "Year"
       journal: "Journal" 
-  - id: talks-national
+  - id: talks-local
     include: 
       type: "Published"
-      audience: "national"
+      audience: 
+        - "regional"
+        - "local"
+        - "institutional"
     contents: ../talks/talks.yaml
     template: talks2.ejs
     filter-ui: false
@@ -105,7 +108,23 @@ listing:
   - id: talks-international
     include: 
       type: "Published"
-      audience: "international"
+      audience: 
+        - "international"
+        - "national"
+    contents: ../talks/talks.yaml
+    template: talks2.ejs
+    filter-ui: false
+    sort: "date desc" 
+    sort-ui: false
+    categories: false
+    field-display-names: 
+      year: "Year"
+      journal: "Journal"
+  - id: talks-invited
+    include: 
+      type: "Published"
+      audience: 
+        - "invited"
     contents: ../talks/talks.yaml
     template: talks2.ejs
     filter-ui: false
@@ -225,24 +244,37 @@ A complete list of publications with available open access options can be found 
 
 ## <i class="fa-solid fa-bullhorn"></i> Talks & Presentations
 
-### International
+### International & National
 
 ::: {#talks-international}
 :::
 
-### National
+### Regional, Local & Institutional
 
-::: {#talks-national}
+::: {#talks-local}
 :::
 
-## <i class="fa-solid fa-magnifying-glass"></i> Peer Reviews
+### Invited Talks
 
--   *College & Research Libraries*, 1 review
--   *The Journal of Academic Librarianship*, 4 reviews
--   *Journal of the Medical Library Association*, 1 review
--   *Journal of New Librarianship*, 3 reviews
--   *New Media & Society*, 2 reviews
--   *Public Services Quarterly*, 3 reviews
+::: {#talks-invited}
+:::
+
+## <i class="fa-solid fa-magnifying-glass"></i> Editorial & Peer Review Service
+
+### Editorial Service
+
+- *College & Research Libraries*, Social Media Editor [2023 -- 2026]{.cvdate}
+- ACRL *Choice*, Editorial Board Member [2023 -- 2025]{.cvdate}
+- *Public Services Quarterly*, Editorial Board Member [2023 -- Present]{.cvdate}
+
+### Peer Reviews
+
+-   *College & Research Libraries* [1 review]{.cvdate}
+-   *The Journal of Academic Librarianship* [4 reviews]{.cvdate}
+-   *Journal of the Medical Library Association* [1 review]{.cvdate}
+-   *Journal of New Librarianship* [3 reviews]{.cvdate}
+-   *New Media & Society* [2 reviews]{.cvdate}
+-   *Public Services Quarterly* [3 reviews]{.cvdate}
 
 ## <i class="fa-solid fa-people-group"></i> Professional Service
 

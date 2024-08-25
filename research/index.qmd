@@ -57,6 +57,7 @@ toc-location: right
 
 If want to stay up-to-date on my work, follow me on [Google Scholar](https://scholar.google.com/citations?hl=en&user=dgbjIWIAAAAJ)
 
+```{=html}
 <!---
 You can filter the items displayed below based on my three major research areas:
 
@@ -67,7 +68,7 @@ You can filter the items displayed below based on my three major research areas:
 </br>
 
 --->
-
+```
 ```{=html}
 <!--
 ## Working Papers

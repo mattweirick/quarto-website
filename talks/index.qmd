@@ -17,6 +17,36 @@ listing:
     field-display-names: 
       year: "Year"
       journal: "Journal"
+  - id: talks-local
+    include: 
+      type: "Published"
+      audience: 
+        - "regional"
+        - "local"
+        - "institutional"
+    contents: talks.yaml
+    template: talks.ejs
+    filter-ui: false
+    sort: "date desc" 
+    sort-ui: false
+    categories: false
+    field-display-names: 
+      year: "Year"
+      journal: "Journal"
+  - id: talks-invited
+    include: 
+      type: "Published"
+      audience: 
+        - "invited"
+    contents: talks.yaml
+    template: talks.ejs
+    filter-ui: false
+    sort: "date desc" 
+    sort-ui: false
+    categories: false
+    field-display-names: 
+      year: "Year"
+      journal: "Journal"
 page-layout: full
 include-back-link: false
 ---
@@ -29,4 +59,9 @@ include-back-link: false
 ## Regional, Local & Institutional
 
 ::: {#talks-local}
+:::
+
+## Invited Talks
+
+::: {#talks-invited}
 :::

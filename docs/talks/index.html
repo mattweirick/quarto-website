@@ -83,13 +83,69 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-type','listing-short','listing-author','listing-date','listing-year','listing-venue','listing-audience','listing-description','listing-categories','listing-pdf','listing-pubopen',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-title','listing-type','listing-short','listing-author','listing-date','listing-year','listing-venue','listing-location','listing-audience','listing-pres','listing-categories','listing-description','listing-pdf','listing-pubopen',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-title","listing-type","listing-short","listing-author","listing-date","listing-year","listing-venue","listing-audience","listing-description","listing-categories","listing-pdf","listing-pubopen"],
+      searchColumns: ["listing-title","listing-type","listing-short","listing-author","listing-date","listing-year","listing-venue","listing-location","listing-audience","listing-pres","listing-categories","listing-description","listing-pdf","listing-pubopen"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-talks-international'] = new List('listing-talks-international', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-talks-local .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-type','listing-short','listing-author','listing-date','listing-year','listing-venue','listing-location','listing-audience','listing-pres','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-type","listing-short","listing-author","listing-date","listing-year","listing-venue","listing-location","listing-audience","listing-pres","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-talks-local'] = new List('listing-talks-local', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-talks-invited .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-type','listing-short','listing-author','listing-date','listing-year','listing-venue','listing-location','listing-audience','listing-pres','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-type","listing-short","listing-author","listing-date","listing-year","listing-venue","listing-location","listing-audience","listing-pres","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-talks-invited'] = new List('listing-talks-invited', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -278,6 +334,7 @@ window.Quarto = {
   <ul>
   <li><a href="#international-national" id="toc-international-national" class="nav-link active" data-scroll-target="#international-national">International &amp; National</a></li>
   <li><a href="#regional-local-institutional" id="toc-regional-local-institutional" class="nav-link" data-scroll-target="#regional-local-institutional">Regional, Local &amp; Institutional</a></li>
+  <li><a href="#invited-talks" id="toc-invited-talks" class="nav-link" data-scroll-target="#invited-talks">Invited Talks</a></li>
   </ul>
 </nav>
     </div>
@@ -337,7 +394,135 @@ window.Quarto = {
 
 <ul class="list">
   
-    <li data-index="0" data-categories="Burnout,Librarian Worklife,2023" data-listing-date-sort="1697774400000">
+    <li data-index="0" data-categories="Job Control,Librarian Worklife,2024" data-listing-date-sort="1715745600000">
+      Meaningful work &amp; librarian agency: Exploring job control among academic instruction librarians
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2024. Matthew Weirick Johnson. Conference on Academic Library Management. Online. Conference Presentation.
+        </small>
+      
+      
+     <br>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Job Control">
+                            Job Control
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Librarian Worklife">
+                            Librarian Worklife
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=2024">
+                            2024
+                        </a></div>
+                    
+            </div>
+            
+      
+      
+      <hr>
+    </li>
+  
+    <li data-index="1" data-categories="Practitioner Research,Librarian-Researcher Confidence,Librarian Professional Development,Research Training,2023" data-listing-date-sort="1699938000000">
+      Developing librarian-research confidence with Research Fridays
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2023. Matthew Weirick Johnson. LOEX Fall Focus. Online. Lightning Talk.
+        </small>
+      
+      
+     <br>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Practitioner Research">
+                            Practitioner Research
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Librarian-Researcher Confidence">
+                            Librarian-Researcher Confidence
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Librarian Professional Development">
+                            Librarian Professional Development
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Research Training">
+                            Research Training
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=2023">
+                            2023
+                        </a></div>
+                    
+            </div>
+            
+      
+      
+      <hr>
+    </li>
+  
+    <li data-index="2" data-categories="Burnout,Librarian Worklife,2023" data-listing-date-sort="1697774400000">
       Burnout in libraries: A research &amp; advocacy panel
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -346,7 +531,7 @@ window.Quarto = {
       <!-- paper info for published papers -->
       
         <small class="text-muted">
-          2023. Matthew Weirick Johnson, Jessica Jones, Lynn Hoffman. Core Forum.
+          2023. Matthew Weirick Johnson, Jessica Jones, Lynn Hoffman (moderator). Core Forum. New Orleans, LA. Panel Presentation.
         </small>
       
       
@@ -406,7 +591,7 @@ window.Quarto = {
       <hr>
     </li>
   
-    <li data-index="1" data-categories="Open Educational Resources,Universal Design for Learning,Disability Justice,2022" data-listing-date-sort="1667448000000">
+    <li data-index="3" data-categories="Open Educational Resources,Universal Design for Learning,Disability Justice,2022" data-listing-date-sort="1667448000000">
       Accessible access, universal design, and the limits of inclusion in open educational resource development: An interactive workshop
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -415,7 +600,7 @@ window.Quarto = {
       <!-- paper info for published papers -->
       
         <small class="text-muted">
-          2022. Salma Abumeeiz, Matthew Weirick Johnson. Critical Librarianship &amp; Pedagogy Symposium.
+          2022. Salma Abumeeiz, Matthew Weirick Johnson. Critical Librarianship &amp; Pedagogy Symposium. Online. Conference Presentation.
         </small>
       
       
@@ -474,7 +659,7 @@ window.Quarto = {
       <hr>
     </li>
   
-    <li data-index="2" data-categories="Writing and Research,Information Literacy,2021" data-listing-date-sort="1620878400000">
+    <li data-index="4" data-categories="Writing and Research,Information Literacy,2021" data-listing-date-sort="1620878400000">
       Writing and research are inseparable: Helping instructors integrate research and writing instruction in writing across the curriculum course planning
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -483,7 +668,7 @@ window.Quarto = {
       <!-- paper info for published papers -->
       
         <small class="text-muted">
-          2021. Matthew Weirick Johnson, Sylvia Page, Laurel Westrup. LOEX.
+          2021. Matthew Weirick Johnson, Sylvia Page, Laurel Westrup. LOEX. Online. Conference Presentation.
         </small>
       
       
@@ -547,7 +732,7 @@ window.Quarto = {
       <hr>
     </li>
   
-    <li data-index="3" data-categories="Critical Pedagogy,Critical Librarianship,Human Resources,Librarian Worklife,2020" data-listing-date-sort="1600228800000">
+    <li data-index="5" data-categories="Critical Pedagogy,Critical Librarianship,Human Resources,Librarian Worklife,2020" data-listing-date-sort="1600228800000">
       Conflicting interests and begrudging partnerships: Turning critical pedagogy on human resources
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -556,7 +741,7 @@ window.Quarto = {
       <!-- paper info for published papers -->
       
         <small class="text-muted">
-          2020. Matthew Weirick Johnson. Critical Librarianship &amp; Pedagogy Symposium.
+          2020. Matthew Weirick Johnson. Critical Librarianship &amp; Pedagogy Symposium. Online. Conference Presentation.
         </small>
       
       
@@ -615,7 +800,7 @@ window.Quarto = {
       <hr>
     </li>
   
-    <li data-index="4" data-categories="Masculinity Studies,Gender Segregation,Library Workplaces,Librarian Worklife,2019" data-listing-date-sort="1565150400000">
+    <li data-index="6" data-categories="Masculinity Studies,Gender Segregation,Library Workplaces,Librarian Worklife,2019" data-listing-date-sort="1565150400000">
       Desiring SUVs: Masculinities, masculine overcompensation, and gender segregation in academic libraries
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -624,7 +809,7 @@ window.Quarto = {
       <!-- paper info for published papers -->
       
         <small class="text-muted">
-          2019. Matthew Weirick Johnson. IDEAL.
+          2019. Matthew Weirick Johnson. IDEAL. Columbus, OH. Conference Presentation.
         </small>
       
       
@@ -683,7 +868,7 @@ window.Quarto = {
       <hr>
     </li>
   
-    <li data-index="5" data-categories="Information Literacy,Public Libraries,2018" data-listing-date-sort="1539230400000">
+    <li data-index="7" data-categories="Information Literacy,Public Libraries,2018" data-listing-date-sort="1539230400000">
       Writing beyond the academy: Writing &amp; digital literacy skills courses in local public libraries
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -692,7 +877,7 @@ window.Quarto = {
       <!-- paper info for published papers -->
       
         <small class="text-muted">
-          2018. Matthew Weirick Johnson. International Writing Centers Association Conference.
+          2018. Matthew Weirick Johnson. International Writing Centers Association Conference. Atlanta, GA. Conference Presentation.
         </small>
       
       
@@ -743,6 +928,246 @@ window.Quarto = {
       <hr>
     </li>
   
+    <li data-index="8" data-categories="Information Worlds,Information Poverty,Writing Centers,2017" data-listing-date-sort="1510462800000">
+      Learning from the library: Information worlds &amp; information poverty
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2017. Matthew Weirick Johnson. International Writing Centers Association Conference. Chicago, IL. Conference Presentation.
+        </small>
+      
+      
+     <br>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Information Worlds">
+                            Information Worlds
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Information Poverty">
+                            Information Poverty
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Writing Centers">
+                            Writing Centers
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=2017">
+                            2017
+                        </a></div>
+                    
+            </div>
+            
+      
+      
+      <hr>
+    </li>
+  
+    <li data-index="9" data-categories="Writing Centers,Library Collaborations,2016" data-listing-date-sort="1476417600000">
+      Committed to write: Writing centers, libraries, &amp; prisons in collaboration
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2016. Matthew Weirick Johnson. International Writing Centers Association Conference. Denver, CO. Conference Presentation.
+        </small>
+      
+      
+     <br>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Writing Centers">
+                            Writing Centers
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Library Collaborations">
+                            Library Collaborations
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=2016">
+                            2016
+                        </a></div>
+                    
+            </div>
+            
+      
+      
+      <hr>
+    </li>
+  
+    <li data-index="10" data-categories="Writing Centers,2015" data-listing-date-sort="1444363200000">
+      The Writing Partners Program: A case study of ELL students and beginning coaches
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2015. Jennifer Lawrence, Matthew Weirick Johnson. International Writing Centers Association Conference. Panel: Who Do We Think We Are? Institutional, Student, and Disciplinary Perceptions of the Writing Center. Pittsburgh, PA. Panel Presentation.
+        </small>
+      
+      
+     <br>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Writing Centers">
+                            Writing Centers
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=2015">
+                            2015
+                        </a></div>
+                    
+            </div>
+            
+      
+      
+      <hr>
+    </li>
+  
+    <li data-index="11" data-categories="Don Juan,Lord Byron,2015" data-listing-date-sort="1432353600000">
+      Don Juan in love (and lust)
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2015. Matthew Weirick Johnson. Messolonghi Byron Society’s 10th Annual International Student Byron Conference. Messolonghi, GR. Conference Presentation.
+        </small>
+      
+      
+     <br>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Don Juan">
+                            Don Juan
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Lord Byron">
+                            Lord Byron
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=2015">
+                            2015
+                        </a></div>
+                    
+            </div>
+            
+      
+      
+      <hr>
+    </li>
+  
 </ul>
 
 <div class="listing-no-matching d-none">
@@ -752,8 +1177,536 @@ No matching items
 </section>
 <section id="regional-local-institutional" class="level2">
 <h2 class="anchored" data-anchor-id="regional-local-institutional">Regional, Local &amp; Institutional</h2>
-<div id="talks-local">
+<div id="listing-talks-local" class="quarto-listing quarto-listing-container-custom">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
+
+<style>
+  
+  .ai-lg {
+    font-size: 1.2em;  /* Adjust as needed */
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .card {
+    margin-bottom: 0;
+    margin-top: 0;
+    border: 0;
+    padding-bottom: 0;
+  }
+  
+  .collapse {
+    margin: 0;
+    padding: 0;
+  }
+
+</style>
+
+<ul class="list">
+  
+    <li data-index="0" data-categories="Open Access,Open Educational Resources,Accessibility,Disability Justice,2022" data-listing-date-sort="1652414400000">
+      The limits of open access in open educational resources: Incorporating accessibility into the WI+RE Way at UCLA Library
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2022. Matthew Weirick Johnson, Salma Abumeeiz. California Conference on Library Instruction. Online. Conference Presentation.
+        </small>
+      
+      
+     <br>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Open Access">
+                            Open Access
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Open Educational Resources">
+                            Open Educational Resources
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Accessibility">
+                            Accessibility
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Disability Justice">
+                            Disability Justice
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=2022">
+                            2022
+                        </a></div>
+                    
+            </div>
+            
+      
+      
+      <hr>
+    </li>
+  
+    <li data-index="1" data-categories="Open Access,Open Educational Resources,Accessibility,Disability Justice,2022" data-listing-date-sort="1647921600000">
+      The limits of inclusion in open access: Accessible access, universal design, and open educational resources
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2022. Matthew Weirick Johnson, Salma Abumeeiz. UCLA Library Research Forum. Online. Conference Presentation.
+        </small>
+      
+      
+     <br>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Open Access">
+                            Open Access
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Open Educational Resources">
+                            Open Educational Resources
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Accessibility">
+                            Accessibility
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Disability Justice">
+                            Disability Justice
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=2022">
+                            2022
+                        </a></div>
+                    
+            </div>
+            
+      
+      
+      <hr>
+    </li>
+  
+    <li data-index="2" data-categories="Anti-Racist Pedagogy,Library Instruction,2021" data-listing-date-sort="1620100800000">
+      UCLA Library’s Anti-Racist Pedagogy Workshop Series
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2021. Matthew Weirick Johnson. LAUC Assembly DEI Lightning Talks. Online. Lightning Talk.
+        </small>
+      
+      
+     <br>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Anti-Racist Pedagogy">
+                            Anti-Racist Pedagogy
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Library Instruction">
+                            Library Instruction
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=2021">
+                            2021
+                        </a></div>
+                    
+            </div>
+            
+      
+      
+      <hr>
+    </li>
+  
+</ul>
+
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="invited-talks" class="level2">
+<h2 class="anchored" data-anchor-id="invited-talks">Invited Talks</h2>
+<div id="listing-talks-invited" class="quarto-listing quarto-listing-container-custom">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
+
+<style>
+  
+  .ai-lg {
+    font-size: 1.2em;  /* Adjust as needed */
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .card {
+    margin-bottom: 0;
+    margin-top: 0;
+    border: 0;
+    padding-bottom: 0;
+  }
+  
+  .collapse {
+    margin: 0;
+    padding: 0;
+  }
+
+</style>
+
+<ul class="list">
+  
+    <li data-index="0" data-categories="Information Literacy,Teach the Teacher,Library Instruction,2024" data-listing-date-sort="1720497600000">
+      Teaching information literacy: Considering current and future approaches and models
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2024. Matthew Weirick Johnson, Heidi Julien, Jane Hammons, Bill Badke, Karen Kaufmann (moderator). Continuing the Conversation Webinar Series hosted by Ohio State University Libraries. Online. Invited Panel Presentation.
+        </small>
+      
+      
+     <br>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Information Literacy">
+                            Information Literacy
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Teach the Teacher">
+                            Teach the Teacher
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Library Instruction">
+                            Library Instruction
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=2024">
+                            2024
+                        </a></div>
+                    
+            </div>
+            
+      
+      
+      <hr>
+    </li>
+  
+    <li data-index="1" data-categories="Burnout,Librarian Worklife,2024" data-listing-date-sort="1707282000000">
+      Best of Core Forum: Burnout in libraries: A research &amp; advocacy panel
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2024. Matthew Weirick Johnson, Jessica Jones, Lynn Hoffman (moderator). Best of Core Forum Webinar Series. Online. Invited Panel Presentation.
+        </small>
+      
+      
+     <br>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Burnout">
+                            Burnout
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Librarian Worklife">
+                            Librarian Worklife
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=2024">
+                            2024
+                        </a></div>
+                    
+            </div>
+            
+      
+      
+      <hr>
+    </li>
+  
+    <li data-index="2" data-categories="Burnout,Librarian Worklife,Emotional Labor,2023" data-listing-date-sort="1702443600000">
+      Burnout and affective labor
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2023. Matthew Weirick Johnson, Sylvia Page. Recipe for Resilience: Strategies for Combating Burnout in the Workplace sponsored by the Medical Library Association (MLA). Online. Invited Panel Presentation.
+        </small>
+      
+      
+     <br>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Burnout">
+                            Burnout
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Librarian Worklife">
+                            Librarian Worklife
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Emotional Labor">
+                            Emotional Labor
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=2023">
+                            2023
+                        </a></div>
+                    
+            </div>
+            
+      
+      
+      <hr>
+    </li>
+  
+    <li data-index="3" data-categories="Open Access,Open Educational Resources,Accessibility,Disability Justice,2023" data-listing-date-sort="1698206400000">
+      Missing in the open: Accessibility and OER and open access
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2023. Matthew Weirick Johnson, Salma Abumeeiz, Sylvia Page. UCLA Library Open Access Week 2023. Online. Invited Panel Presentation.
+        </small>
+      
+      
+     <br>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Open Access">
+                            Open Access
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Open Educational Resources">
+                            Open Educational Resources
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Accessibility">
+                            Accessibility
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Disability Justice">
+                            Disability Justice
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=2023">
+                            2023
+                        </a></div>
+                    
+            </div>
+            
+      
+      
+      <hr>
+    </li>
+  
+</ul>
+
+<div class="listing-no-matching d-none">
+No matching items
+</div>
 </div>
 
 

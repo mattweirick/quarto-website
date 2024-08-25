@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Matthew Weirick Johnson"
-  site-url: https://mattweirick.com/
+  site-url: https://mattweirick.com
   favicon: logo.png
   google-analytics: "G-XN49YP77PL"
   open-graph: true

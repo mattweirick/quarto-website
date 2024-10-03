@@ -83,6 +83,12 @@ You can filter the items displayed below based on my three major research areas:
 :::
 -->
 ```
+
+## Edited Books
+
+-   *Training Library Instructors, Vol 1: A Guide to Training Graduate Students* <br/> <small class="text-muted" style="display:block;"> Matthew Weirick Johnson (Ed.). ACRL. </small><hr>
+- *Training Library Instructors, Vol 2: A Guide to Training Librarians* <br/> <small class="text-muted" style="display:block;"> Matthew Weirick Johnson (Ed.). ACRL.</small><hr>
+
 ## Peer-reviewed Articles
 
 ::: {#published-papers}

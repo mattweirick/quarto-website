@@ -208,7 +208,7 @@ Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the U
 A complete list of publications with available open access options can be found on my [Research](/research) page.
 :::
 
-### <i class="fa-solid fa-book"></i> Books
+### <i class="fa-solid fa-book"></i> Edited Books
 
 -   *Training Library Instructors, Vol 1: A Guide to Training Graduate Students* <br/> <small class="text-muted" style="display:block;"> Matthew Weirick Johnson (Ed.). ACRL. </small>
 - *Training Library Instructors, Vol 2: A Guide to Training Librarians* <br/> <small class="text-muted" style="display:block;"> Matthew Weirick Johnson (Ed.). ACRL. </small>

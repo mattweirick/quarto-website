@@ -210,7 +210,8 @@ A complete list of publications with available open access options can be found 
 
 ### <i class="fa-solid fa-book"></i> Books
 
--   *Training Library Instructors, Vol 1 & 2*, Expected late 2024 from ACRL
+-   *Training Library Instructors, Vol 1: A Guide to Training Graduate Students* <br/> <small class="text-muted" style="display:block;"> Matthew Weirick Johnson (Ed.). ACRL. </small>
+- *Training Library Instructors, Vol 2: A Guide to Training Librarians* <br/> <small class="text-muted" style="display:block;"> Matthew Weirick Johnson (Ed.). ACRL. </small>
 
 ### <i class="fa-solid fa-file-lines"></i> Peer-reviewed Articles
 
@@ -270,11 +271,11 @@ A complete list of publications with available open access options can be found 
 ### Peer Reviews
 
 -   *College & Research Libraries* [1 review]{.cvdate}
--   *The Journal of Academic Librarianship* [4 reviews]{.cvdate}
+-   *The Journal of Academic Librarianship* [7 reviews]{.cvdate}
 -   *Journal of the Medical Library Association* [1 review]{.cvdate}
 -   *Journal of New Librarianship* [3 reviews]{.cvdate}
 -   *New Media & Society* [2 reviews]{.cvdate}
--   *Public Services Quarterly* [3 reviews]{.cvdate}
+-   *Public Services Quarterly* [4 reviews]{.cvdate}
 
 ## <i class="fa-solid fa-people-group"></i> Professional Service
 

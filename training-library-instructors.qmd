@@ -11,8 +11,37 @@ draft: true
 aliases: 
   - /training-library-instructors/
   - /TLI/
+  - /TLI
+  - /tli/
   - /tli
 ---
+
+## Buy the Books
+
+:::: {layout-ncol="3"}
+
+<div>
+![Training Library Instructors, Vol 1: A Guide to Training Graduate Students](files/Vol1_cover.jpg){fig-alt=""}
+</div>
+<div>
+![Training Library Instructors, Vol 2: A Guide to Training Librarians](files/Vol2_cover.jpg){fig-alt=""}
+</div>
+
+<div>
+
+Purchase the books from the ALA Store:
+
+-   [Volume 1](https://alastore.ala.org/training-library-instructors-vol-1-guide-training-graduate-students)
+-   [Volume 2](https://alastore.ala.org/training-library-instructors-vol-2-guide-training-librarians)
+-   [Volumes 1 & 2 (two-volume discount)](https://alastore.ala.org/training-library-instructors-guide-training-graduate-students-and-librarians-2-volume-set)
+-   [Volume 1 PDF eBook](https://alastore.ala.org/training-library-instructors-vol-1-guide-training-graduate-students-eeditions-pdf-e-book)
+-   [Volume 2 PDF eBook](https://alastore.ala.org/training-library-instructors-vol-2-guide-training-librarians-eeditions-pdf-e-book)
+
+Some chapters are available through the authors' institutional repositories. Links are included below where applicable.
+
+</div>
+
+::::
 
 ## Vol 1: A Guide to Training Graduate Students
 
@@ -24,30 +53,29 @@ aliases:
 
 ### Teaching & Learning in the LIS Curriculum: Theory, Practice, and Need
 
-1.  Practice Theory in Information Literacy; Logan Rath
-2.  Library Instruction Training and the MLIS: A Review of the Literature; Matthew Weirick Johnson
+1.  Practice Theory in Information Literacy<br/><small class="text-muted" style="display:block;">Logan Rath</small>
+2.  Library Instruction Training and the MLIS: A Review of the Literature<br/><small class="text-muted" style="display:block;">Matthew Weirick Johnson</small>
 
 ### Case Studies
 
-3.  Using Teaching Demonstrations in Graduate-Level Instruction Courses; Melissa A. Wong
-4.  Teaching Instruction Librarians by Design; Dominique Turnbow & Amanda Roth
-5.  From Intern to Instructor: Training to Teach With Primary Sources - Rachel Makarowski & Maureen Maryanski
-6.  Reflections on the Information Literacy Scholars Program at Syracuse University Libraries; Kelly Delevan, Breeann Austin, Brie Baumert, Rebecca McCall, Lauren Quackenbush, Olivia Russo, Alayna L. Vander Veer, and B. Austin Waters
-7.  Introducing Emerging Library Instructors to Information Literacy Instruction through Programmatic Instruction; Alicia G. Vaandering, Amanda Izenstark, Colin Braun, Erin Cunningham, Reina Kirkendall, and Laura Marasco
+3.  Using Teaching Demonstrations in LIS Instruction Courses<br/><small class="text-muted" style="display:block;">Melissa A. Wong</small>
+4.  Teaching Instruction Librarians by Design<br/><small class="text-muted" style="display:block;">Dominique Turnbow & Amanda Roth</small>
+5.  From Intern to Instructor: Training to Teach With Primary Sources<br/><small class="text-muted" style="display:block;">Rachel Makarowski & Maureen Maryanski</small>
+6.  [Empowering Library Instructors: Reflections on the Information Literacy Scholars Program at Syracuse University Libraries](https://surface.syr.edu/sul/225/)<br/><small class="text-muted" style="display:block;">Kelly Delevan, Breeann Austin, Brie Baumert, Rebecca McCall, Lauren Quackenbush, Olivia Russo, Alayna L. Vander Veer, and B. Austin Waters</small>
+7.  [Introducing Emerging Library Instructors to Information Literacy Instruction through Programmatic Instruction](https://digitalcommons.uri.edu/lib_ps_pubs/83/)<br/><small class="text-muted" style="display:block;">Alicia G. Vaandering, Amanda Izenstark, Colin Braun, Erin Cunningham, Reina Kirkendall, and Laura Marasco</small>
 
 ### Reflections: LIS Instruction Training
 
-8.  Creating My Own Experience: Navigating a Library Graduate Program Without Library Instruction Training; Kala Dunn
-9.  The Impact of a Graduate Assistantship and Optional Courses on Becoming a Teaching Librarian; Chrissy O'Grady
-10. From Learner to Teacher: Preparing for the Library Instruction Classroom and Fostering Teacher Identity Through Information Literacy Coursework; Kaci Wilson
-11. From Library Science Student to Instruction Librarian: Using the Science and Art of Teaching to Grow as an Instruction Librarian; Mark W. Duncan
+8.  Creating My Own Experience: Navigating a Library Graduate Program to Become an Instruction Librarian<br/><small class="text-muted" style="display:block;">Kala Dunn</small>
+9.  [The Impact of a Graduate Assistantship and Optional Courses on Becoming a Teaching Librarian](http://hdl.handle.net/20.500.12648/15561)<br/><small class="text-muted" style="display:block;">Chrissy O'Grady</small>
+10. From Learner to Teacher: Preparing for the Library Instruction Classroom and Fostering Teacher Identity Through Information Literacy Coursework<br/><small class="text-muted" style="display:block;">Kaci Wilson</small>
+11. From Library Science Student to Instruction Librarian: Using the Science and Art of Teaching to Grow as an Instruction Librarian<br/><small class="text-muted" style="display:block;">Mark W. Duncan</small>
 
 ### Reflections: Non-LIS Instruction Training
 
-12. Benefits of An Elementary School Teaching Background for Academic Library Instruction; Amber Owrey
-13. Thoughts from a Teacher Librarian: Utilizing Training as a Teacher to Become an Instructional Librarian; Ella Gibson
-14. Changing Roles: Lessons Learned from Applying Non-LIS Teacher Training to Library Instruction; Jeremiah Mercurio
-15. Having a Teaching Background Doesn't Solve All of Your Library Instruction Questions, But Learning From Each Other Might; Alexandra Mitchell
+12. Benefits of An Elementary School Teaching Background<br/><small class="text-muted" style="display:block;">Amber Owrey</small>
+13. Thoughts from a Teacher Librarian: Utilizing Training as a Teacher to Become an Instructional Librarian<br/><small class="text-muted" style="display:block;">Ella Gibson</small>
+14. Adjusting Roles: Lessons Learned from Applying Non-LIS Teacher Training to Library Instruction<br/><small class="text-muted" style="display:block;">Jeremiah R. Mercurio</small>
 
 ### Conclusion: Advancing Teaching & Learning in the LIS Curriculum
 
@@ -63,29 +91,30 @@ aliases:
 
 ### Case Studies: Continuing Training for Library Instructors
 
-16. Developing Library Instructors Together: A Case Study from the Hong Kong JULAC Consortium; Victoria Caplan, Christopher Chan, Lisa Janicke Hinchliffe, Eunice S. P. Wong
-17. Increasing Inclusive Instruction: Building a Bespoke In-house Teacher Training Programme at the University of Cambridge; Kirstie Preest & Claire Sewell
-18. Communities of Support: Using the Community of Practice Model for Library Instructor Development; Melissa A. Wong & Laura Saunders
+15. Developing Library Instructors Together: A Case Study from the Hong Kong JULAC Consortium<br/><small class="text-muted" style="display:block;">Victoria F. Caplan, Christopher Chan, Lisa Janicke Hinchliffe, and Eunice S. P. Wong</small>
+16. Increasing Inclusive Instruction: Building a Bespoke In-house Teacher Training Programme at the University of Cambridge<br/><small class="text-muted" style="display:block;">Kirstie Preest & Claire Sewell</small>
+17. Communities of Support: Using the Community of Practice Model for Library Instructor Development<br/><small class="text-muted" style="display:block;">Melissa A. Wong & Laura Saunders</small>
 
 ### Case Studies: Training New Librarians
 
-19. We're All in this Together: Holistic Approaches to Training New Instruction Librarians; Randi Beem, Marc Bess, Ryan Harris, Abby Moore, Natalie Ornat Bitting, Catherine Tingelstad, Angel Truesdale
-20. Learning What Works: Training New Library Instructors During a Pandemic and Beyond; Josette M. Kubicki, Tonya D. Dority, Thomas C. Weeks, and Emma Kate Morgan
+18. We're All in this Together: Holistic Approaches to Training New Instruction Librarians<br/><small class="text-muted" style="display:block;">Randi Beem, Marc Bess, Ryan Harris, Abby Moore, Natalie Ornat Bitting, Catherine Tingelstad, and Angel Truesdale</small>
+19. Learning What Works: The Impact of Change on Training New Library Instructors<br/><small class="text-muted" style="display:block;">Josette M. Kubicki, Tonya D. Dority, Thomas C. Weeks, and Emma Kate Morgan</small>
 
 ### Case Studies: Training New and Experienced Librarians
 
-21. Planning for Instruction Training: Implementing an On-the-job Training for Library Instructors; Livia Piotto
-22. Supporting Librarian Teachers: The Learning-Centred Librarian Instruction Program at the University of Victoria; Karen Munro, Cynthia Korpan, Matt Huculak, and Michael Lines
-23. Best of Both Worlds: Training for New and Experienced Instructors; David X. Lemmons, Ashley Blinstrub, Kayla M. Gourlay, Maoria J. Kirker, Janna Mattson, and Anna K. Murphy-Lang
+20. [Planning for Instruction Training: Implementing an On-the-job Training for Library Instructors](https://hdl.handle.net/20.500.14490/398)<br/><small class="text-muted" style="display:block;">Livia Piotto</small>
+21. Supporting Librarian Teachers: The Learning-Centered Librarian Instruction Program at the University of Victoria<br/><small class="text-muted" style="display:block;">Karen Munro, Cynthia Korpan, Matt Huculak, and Michael Lines</small>
+22. Best of Both Worlds: Training for New and Experienced Library Instructors<br/><small class="text-muted" style="display:block;">David X. Lemmons, Ashley Blinstrub, Kayla M. Gourlay, Maoria J. Kirker, Janna Mattson, and Anna K. Murphy-Lang</small>
 
 ### Reflections
 
-24. The Introverted Instructor: Tackling Library Instruction When It's Out of Your Comfort Zone; Ginelle Baskin
-25. (Eventually) Learning to Look Before I Leap: Discovering Instructional Design Mid-Career; Nicole Westerdahl
-26. Observing the Observed: Autotheory as a Practice of Instruction; Russel Peterson
-27. It Takes a Village to Raise a Librarian; Sam Mandani & Fannie Ouyang
-28. Go and Get What You Need!: Seeking Out Mentorship; Jamia Williams
+23. [The Introverted Instructor: Tackling Library Instruction When It's Out of Your Comfort Zone](https://jewlscholar.mtsu.edu/handle/mtsu/7364)<br/><small class="text-muted" style="display:block;">Ginelle Baskin</small>
+24. (Eventually) Learning to Look Before I Leap: Discovering Instructional Design Mid-Career<br/><small class="text-muted" style="display:block;">Nicole Westerdahl</small>
+25. Learning from Each Other: Peer Observation for On-the-Job Library Instructor Development<br/><small class="text-muted" style="display:block;">Alexandra Mitchell</small>
+26. [Peer Observation and its Discontents: Using Autotheory to Argue for Focused, Community-Centered Instruction Training](https://open.library.emory.edu/publications/emory:wbf26/)<br/><small class="text-muted" style="display:block;">Russel Peterson</small>
+27. It Takes a Village to Raise a Librarian: Reflection on an Unconference Teaching Workshop<br/><small class="text-muted" style="display:block;">Sam Mandani & Fannie Ouyang</small>
+28. Go and Get What You Need!: Seeking Out Mentorship<br/><small class="text-muted" style="display:block;">Jamia Williams</small>
 
 ### Conclusion: Moving Instruction Training Forward in Academic Libraries
 
-### Author Biographies
+### About the Authors

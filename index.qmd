@@ -29,12 +29,10 @@ about:
       href: http://www.scopus.com/inward/authorDetails.url?authorID=58064074100&partnerID=MN8TOARS
 ---
 
-
-
 ::: {#hero-heading}
 Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the University of South Florida Libraries and a PhD student in Educational Measurement and Evaluation also at USF.
 
-## Forthcoming Books {.center}
+## New Books {.center}
 
 <a href="/training-library-instructors">
 

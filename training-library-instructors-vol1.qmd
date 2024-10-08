@@ -13,7 +13,10 @@ citation:
   isbn: 979-8-89255-603-3
   url: https://alastore.ala.org/training-library-instructors-vol-1-guide-training-graduate-students
   publisher: Association of College & Research Libraries
-  editor: Matthew Weirick Johnson
+  editor:
+    name: 
+      given: Matthew Weirick
+      family: Johnson
 ---
 
 ## Buy the Books

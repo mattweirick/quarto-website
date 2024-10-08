@@ -8,6 +8,7 @@ page-layout: article
 date: 2024-09
 date-format: MMMM YYYY
 google-scholar: true
+csl: files/apa.csl
 citation:
   type: book
   isbn: 979-8-89255-523-4

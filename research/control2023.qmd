@@ -1,0 +1,26 @@
+---
+title: "Job control and its impacts on burnout in academic instruction librarians"
+author:
+  name: 
+    given: Matthew Weirick
+    family: Johnson
+description: "Librarians have been grappling with the issue of burnout for decades, at least. This study uses the Copenhagen Burnout Inventory (CBI) and Job Control Inventory to show how job control impacts burnout. Using the CBI, academic instruction librarians, on average, have high work-related burnout and even higher personal burnout compared to other jobs. However, librarians have low client-related burnout, similar to other “caring” or “helping” professions. The findings point to key factors that impact job control and burnout to help consider ways of mitigating burnout and increasing job control."
+title-block-banner: "#a8aca6"
+title-block-banner-color: black
+page-layout: article
+date: 2023-06-12
+date-format: DD MMMM YYYY
+google-scholar: true
+csl: ../files/apa.csl
+citation:
+  type: article-journal
+  container-title: "Journal of Library Administration"
+  doi: "10.1080/01930826.2023.2219601"
+  volume: 63
+  issue: 5
+  page-first: 595
+  page-last: 632
+  abstract: "Librarians have been grappling with the issue of burnout for decades, at least. This study uses the Copenhagen Burnout Inventory (CBI) and Job Control Inventory to show how job control impacts burnout. Using the CBI, academic instruction librarians, on average, have high work-related burnout and even higher personal burnout compared to other jobs. However, librarians have low client-related burnout, similar to other “caring” or “helping” professions. The findings point to key factors that impact job control and burnout to help consider ways of mitigating burnout and increasing job control."
+---
+
+![Read "Job control and its impacts on burnout in academic instruction librarians"](../papers/control2023.pdf){width=100% height=6in}

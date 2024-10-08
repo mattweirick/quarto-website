@@ -1,0 +1,88 @@
+---
+title: "Training Library Instructors"
+description: "Pedagogy impacts all parts of library work and culture. It changes the way we interact with learners regardless of setting and however we name or define the teaching moment, from research help to outreach to leading meetings. Pedagogy is a praxis of relation, and studying it can improve all aspects of our work and organizations.</br></br>In two volumes, <i>Training Library Instructors</i> collects examples of how we train our colleagues to teach, whether they’re student workers, non-librarian staff, new or experienced librarians, or something else entirely. In Volume 2, <i>A Guide to Training Librarians</i>, librarians share their knowledge about teaching, learning, and pedagogy through a variety of replicable activities: formal and informal workshops, courses, communities of practice, peer observation, and more. Programs include mock instruction, nano-teaching, and other feedback and homework mechanisms; happen at the individual, institutional, or consortial level; and can involve collaborations across library or university departments.</br></br>So many librarians value lifelong learning and the opportunity to learn from each other. <i>A Guide to Training Librarians</i> provides a starting point for readers considering their own teach-the-teacher programs and various approaches to learning together, exploring library instruction for the first time, or expanding existing knowledge through continued education."
+title-block-banner: "#a8aca6"
+title-block-banner-color: black
+page-layout: article
+date: 2024-09
+date-format: MMMM YYYY
+google-scholar: true
+csl: files/apa.csl
+citation:
+  type: book
+  isbn: 979-8-89255-601-9
+  url: https://alastore.ala.org/training-library-instructors-vol-2-guide-training-librarians
+  publisher: Association of College & Research Libraries
+  editor:
+    name: 
+      given: Matthew Weirick
+      family: Johnson
+---
+
+## Buy the Books
+
+::: {layout-ncol="3"}
+<div>
+
+![Training Library Instructors, Vol 1: A Guide to Training Graduate Students](files/Vol1_cover.jpg){fig-alt=""}
+
+</div>
+
+<div>
+
+![Training Library Instructors, Vol 2: A Guide to Training Librarians](files/Vol2_cover.jpg){fig-alt=""}
+
+</div>
+
+<div>
+
+Purchase the books from the ALA Store:
+
+-   [Volume 1](https://alastore.ala.org/training-library-instructors-vol-1-guide-training-graduate-students)
+-   [Volume 2](https://alastore.ala.org/training-library-instructors-vol-2-guide-training-librarians)
+-   [Volumes 1 & 2 (two-volume discount)](https://alastore.ala.org/training-library-instructors-guide-training-graduate-students-and-librarians-2-volume-set)
+-   [Volume 1 PDF eBook](https://alastore.ala.org/training-library-instructors-vol-1-guide-training-graduate-students-eeditions-pdf-e-book)
+-   [Volume 2 PDF eBook](https://alastore.ala.org/training-library-instructors-vol-2-guide-training-librarians-eeditions-pdf-e-book)
+
+Some chapters are available through the authors' institutional repositories. Links are included below where applicable.
+
+</div>
+:::
+
+## Vol 2: A Guide to Training Librarians
+
+### Table of Contents
+
+### Acknowledgements
+
+### Introduction
+
+### Case Studies: Continuing Training for Library Instructors
+
+15. Developing Library Instructors Together: A Case Study from the Hong Kong JULAC Consortium<br/><small class="text-muted" style="display:block;">Victoria F. Caplan, Christopher Chan, Lisa Janicke Hinchliffe, and Eunice S. P. Wong</small>
+16. Increasing Inclusive Instruction: Building a Bespoke In-house Teacher Training Programme at the University of Cambridge<br/><small class="text-muted" style="display:block;">Kirstie Preest & Claire Sewell</small>
+17. Communities of Support: Using the Community of Practice Model for Library Instructor Development<br/><small class="text-muted" style="display:block;">Melissa A. Wong & Laura Saunders</small>
+
+### Case Studies: Training New Librarians
+
+18. [We're All in this Together: Holistic Approaches to Training New Instruction Librarians](http://hdl.handle.net/20.500.13093/work:1542)<br/><small class="text-muted" style="display:block;">Randi Beem, Marc Bess, Ryan Harris, Abby Moore, Natalie Ornat Bitting, Catherine Tingelstad, and Angel Truesdale</small>
+19. Learning What Works: The Impact of Change on Training New Library Instructors<br/><small class="text-muted" style="display:block;">Josette M. Kubicki, Tonya D. Dority, Thomas C. Weeks, and Emma Kate Morgan</small>
+
+### Case Studies: Training New and Experienced Librarians
+
+20. [Planning for Instruction Training: Implementing an On-the-job Training for Library Instructors](https://hdl.handle.net/20.500.14490/398)<br/><small class="text-muted" style="display:block;">Livia Piotto</small>
+21. Supporting Librarian Teachers: The Learning-Centered Librarian Instruction Program at the University of Victoria<br/><small class="text-muted" style="display:block;">Karen Munro, Cynthia Korpan, Matt Huculak, and Michael Lines</small>
+22. [Best of Both Worlds: Training for New and Experienced Library Instructors](https://doi.org/10.13021/MARS/2107)<br/><small class="text-muted" style="display:block;">David X. Lemmons, Ashley Blinstrub, Kayla M. Gourlay, Maoria J. Kirker, Janna Mattson, and Anna K. Murphy-Lang</small>
+
+### Reflections
+
+23. [The Introverted Instructor: Tackling Library Instruction When It's Out of Your Comfort Zone](https://jewlscholar.mtsu.edu/handle/mtsu/7364)<br/><small class="text-muted" style="display:block;">Ginelle Baskin</small>
+24. (Eventually) Learning to Look Before I Leap: Discovering Instructional Design Mid-Career<br/><small class="text-muted" style="display:block;">Nicole Westerdahl</small>
+25. Learning from Each Other: Peer Observation for On-the-Job Library Instructor Development<br/><small class="text-muted" style="display:block;">Alexandra Mitchell</small>
+26. [Peer Observation and its Discontents: Using Autotheory to Argue for Focused, Community-Centered Instruction Training](https://open.library.emory.edu/publications/emory:wbf26/)<br/><small class="text-muted" style="display:block;">Russel Peterson</small>
+27. It Takes a Village to Raise a Librarian: Reflection on an Unconference Teaching Workshop<br/><small class="text-muted" style="display:block;">Sam Mandani & Fannie Ouyang</small>
+28. Go and Get What You Need!: Seeking Out Mentorship<br/><small class="text-muted" style="display:block;">Jamia Williams</small>
+
+### Conclusion: Moving Instruction Training Forward in Academic Libraries
+
+### About the Authors

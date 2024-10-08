@@ -7,7 +7,13 @@ title-block-banner-color: black
 page-layout: article
 date: 2024-09
 date-format: MMMM YYYY
-draft: true
+google-scholar: true
+citation:
+  type: book
+  isbn: 979-8-89255-523-4
+  url: https://alastore.ala.org/training-library-instructors-guide-training-graduate-students-and-librarians-2-volume-set
+  publisher: Association of College & Research Libraries
+  editor: Matthew Weirick Johnson
 aliases: 
   - /training-library-instructors/
   - /TLI/
@@ -59,7 +65,7 @@ Some chapters are available through the authors' institutional repositories. Lin
 ### Case Studies
 
 3.  Using Teaching Demonstrations in LIS Instruction Courses<br/><small class="text-muted" style="display:block;">Melissa A. Wong</small>
-4.  Teaching Instruction Librarians by Design<br/><small class="text-muted" style="display:block;">Dominique Turnbow & Amanda Roth</small>
+4.  [Teaching Instruction Librarians by Design](https://escholarship.org/uc/item/57q4t4dw)<br/><small class="text-muted" style="display:block;">Dominique Turnbow & Amanda Roth</small>
 5.  From Intern to Instructor: Training to Teach With Primary Sources<br/><small class="text-muted" style="display:block;">Rachel Makarowski & Maureen Maryanski</small>
 6.  [Empowering Library Instructors: Reflections on the Information Literacy Scholars Program at Syracuse University Libraries](https://surface.syr.edu/sul/225/)<br/><small class="text-muted" style="display:block;">Kelly Delevan, Breeann Austin, Brie Baumert, Rebecca McCall, Lauren Quackenbush, Olivia Russo, Alayna L. Vander Veer, and B. Austin Waters</small>
 7.  [Introducing Emerging Library Instructors to Information Literacy Instruction through Programmatic Instruction](https://digitalcommons.uri.edu/lib_ps_pubs/83/)<br/><small class="text-muted" style="display:block;">Alicia G. Vaandering, Amanda Izenstark, Colin Braun, Erin Cunningham, Reina Kirkendall, and Laura Marasco</small>

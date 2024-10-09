@@ -1,0 +1,19 @@
+---
+title: "Keeping up with... Burnout"
+author:
+  name: 
+    given: Matthew Weirick
+    family: Johnson
+title-block-banner: "#a8aca6"
+title-block-banner-color: black
+page-layout: article
+date: 2024-06
+date-format: MMMM YYYY
+google-scholar: true
+csl: ../files/apa.csl
+citation:
+  type: article
+  container-title: "Keeping up with..."
+  url: https://www.ala.org/acrl/publications/keeping_up_with/burnout
+  publisher: Association of College & Research Libraries
+---

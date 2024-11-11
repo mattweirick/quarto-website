@@ -1,7 +1,9 @@
 project:
   type: website
   output-dir: docs
-
+  resources:
+    - "/files"
+    
 website:
   title: "Matthew Weirick Johnson"
   site-url: https://mattweirick.com

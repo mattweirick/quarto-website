@@ -1,0 +1,16 @@
+---
+title: "FERA Presentation Files"
+date: 21 November 2024
+aliases: 
+  - /fera-2024/
+  - /fera-2024
+  - /fera2024/
+  - /fera2024
+  - /FERA-2024/
+  - /FERA-2024
+  - /FERA2024/
+  - /FERA2024
+---
+
+- Poster [[.pdf]]
+- Interview Protocol [[.docx]](../files/fera-2024-interview-questions.pdf)

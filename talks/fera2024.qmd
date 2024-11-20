@@ -1,6 +1,7 @@
 ---
 title: "FERA Presentation Files"
 date: 21 November 2024
+page-layout: full
 aliases: 
   - /fera-2024/
   - /fera-2024
@@ -12,5 +13,7 @@ aliases:
   - /FERA2024
 ---
 
-- Poster [[.pdf]]
+- Poster [[.pdf]](..//files/fera-2024-poster.pdf)
 - Interview Protocol [[.docx]](../files/fera-2024-interview-questions.pdf)
+
+![Academic Teaching Librarian Reflections on Self-Report Burnout and Job Control Scores. Poster presented at FERA 2024.](..//files/fera-2024-poster.pdf){width=100% height=36em}

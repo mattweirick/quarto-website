@@ -4,10 +4,16 @@ description: "Pedagogy impacts all parts of library work and culture. It changes
 title-block-banner: "#a8aca6"
 title-block-banner-color: black
 page-layout: article
-date: 2024-09
+date: 2024-09-27
 date-format: MMMM YYYY
+author: 
+  - name: 
+      given: Matthew Weirick
+      family: Johnson
+    affiliation: USF Libraries
 google-scholar: true
 csl: files/apa.csl
+appendix-cite-as: false
 citation: 
   type: book
   isbn: 979-8-89255-603-3
@@ -86,3 +92,7 @@ Some chapters are available through the authors' institutional repositories. Lin
 ### Conclusion: Advancing Teaching & Learning in the LIS Curriculum
 
 ### Author Biographies
+
+### References 
+
+Johnson, M. W. (Ed.). (2024). <i>Training Library Instructors, Vol. 1: A Guide to Training Graduate Students</i>. Association of College & Research Libraries. <a href="https://alastore.ala.org/training-library-instructors-vol-1-guide-training-graduate-students">https://alastore.ala.org/training-library-instructors-vol-1-guide-training-graduate-students</a>

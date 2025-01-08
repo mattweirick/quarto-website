@@ -76,6 +76,34 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-published-papers-2025 .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-type','listing-short','listing-author','listing-date','listing-year','listing-journal','listing-abstract','listing-pubopen','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-type","listing-short","listing-author","listing-date","listing-year","listing-journal","listing-abstract","listing-pubopen","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-published-papers-2025'] = new List('listing-published-papers-2025', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-published-papers-2024 .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -615,7 +643,66 @@ ul {
 <section id="peer-reviewed-articles" class="level3">
 <h3 class="anchored" data-anchor-id="peer-reviewed-articles"><i class="fa-solid fa-file-lines"></i> Peer-reviewed Articles</h3>
 <section id="section" class="level4">
-<h4 class="anchored" data-anchor-id="section">2024</h4>
+<h4 class="anchored" data-anchor-id="section">2025</h4>
+<div id="listing-published-papers-2025" style="padding-bottom: 0;" class="quarto-listing quarto-listing-container-custom">
+
+<style>
+  .btn-xs {
+    padding: .07em .31em;
+    font-size: .9em;
+ 
+  .ai-lg {
+    font-size: 1.2em;  /* Adjust as needed */
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+</style>
+
+<ul class="list">
+  
+    <li data-index="0" data-categories="Burnout,Job Control,Academic Instruction Librarians,Librarian Worklife,2025" data-listing-date-sort="1735707600000">
+      Job control, library instruction, and burnout: A quantitative analysis of academic instruction librarians’ experiences of job control while teaching  <a href="https://doi.org/10.5860/crl.86.1.50" title="read the open access version of Job control, library instruction, and burnout: A quantitative analysis of academic instruction librarians’ experiences of job control while teaching"><i class="ai ai-open-access"></i></a> 
+      <br>
+      
+        <small class="text-muted" style="display:block;">
+          Matthew Weirick Johnson. <em> College &amp; Research Libraries</em>.
+        </small>
+      
+    </li>
+  
+</ul>
+
+<!---
+<ul class="list">
+  
+    <li data-index='1' data-categories='Burnout,Job Control,Academic Instruction Librarians,Librarian Worklife,2025' data-listing-date-sort='1735707600000'>
+      Job control, library instruction, and burnout: A quantitative analysis of academic instruction librarians’ experiences of job control while teaching
+      <br/>
+      
+        <small class="text-muted">
+          2025. Matthew Weirick Johnson. <em> College & Research Libraries</em>.  <a href="https://doi.org/10.5860/crl.86.1.50">https://doi.org/10.5860/crl.86.1.50.</a> 
+        </small>
+      
+    </li>
+  
+</ul>
+
+to add an indent on lines after title: 
+style="margin-left:1em;display:block;"
+--->
+
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="section-1" class="level4">
+<h4 class="anchored" data-anchor-id="section-1">2024</h4>
 <div id="listing-published-papers-2024" style="padding-bottom: 0;" class="quarto-listing quarto-listing-container-custom">
 
 <style>
@@ -637,7 +724,17 @@ ul {
 
 <ul class="list">
   
-    <li data-index="0" data-categories="Burnout,Librarian Worklife,2024" data-listing-date-sort="1719547200000">
+    <li data-index="0" data-categories="Burnout,Assessment,Management,2024" data-listing-date-sort="1734411600000">
+      The burden of proving burnout in academic library workers  <a href="https://doi.org/10.33137/cjal-rcbu.v10.43096" title="read the open access version of The burden of proving burnout in academic library workers"><i class="ai ai-open-access"></i></a> 
+      <br>
+      
+        <small class="text-muted" style="display:block;">
+          Matthew Weirick Johnson, Sylvia Page. <em> Canadian Journal of Academic Librarianship</em>.
+        </small>
+      
+    </li>
+  
+    <li data-index="1" data-categories="Burnout,Librarian Worklife,2024" data-listing-date-sort="1719547200000">
       Use of the Copenhagen Burnout Inventory among US academic librarians: Examining construct validity through factor structure and model fit  <a href="https://doi.org/10.1016/j.acalib.2024.102922" title="read the open access version of Use of the Copenhagen Burnout Inventory among US academic librarians: Examining construct validity through factor structure and model fit"><i class="ai ai-open-access"></i></a> 
       <br>
       
@@ -647,7 +744,7 @@ ul {
       
     </li>
   
-    <li data-index="1" data-categories="Job Control,Academic Instruction Librarians,Librarian Worklife,2024" data-listing-date-sort="1704085200000">
+    <li data-index="2" data-categories="Job Control,Academic Instruction Librarians,Librarian Worklife,2024" data-listing-date-sort="1704085200000">
       Academic instruction librarians' feelings of job control: Quantitative analysis of responses to a job control inventory  <a href="https://doi.org/10.1016/j.acalib.2023.102835" title="read the publisher's version of Academic instruction librarians' feelings of job control: Quantitative analysis of responses to a job control inventory"><i class="ai ai-closed-access"></i></a> 
       <br>
       
@@ -662,7 +759,17 @@ ul {
 <!---
 <ul class="list">
   
-    <li data-index='2' data-categories='Burnout,Librarian Worklife,2024' data-listing-date-sort='1719547200000'>
+    <li data-index='3' data-categories='Burnout,Assessment,Management,2024' data-listing-date-sort='1734411600000'>
+      The burden of proving burnout in academic library workers
+      <br/>
+      
+        <small class="text-muted">
+          2024. Matthew Weirick Johnson, Sylvia Page. <em> Canadian Journal of Academic Librarianship</em>.  <a href="https://doi.org/10.33137/cjal-rcbu.v10.43096">https://doi.org/10.33137/cjal-rcbu.v10.43096.</a> 
+        </small>
+      
+    </li>
+  
+    <li data-index='4' data-categories='Burnout,Librarian Worklife,2024' data-listing-date-sort='1719547200000'>
       Use of the Copenhagen Burnout Inventory among US academic librarians: Examining construct validity through factor structure and model fit
       <br/>
       
@@ -672,7 +779,7 @@ ul {
       
     </li>
   
-    <li data-index='3' data-categories='Job Control,Academic Instruction Librarians,Librarian Worklife,2024' data-listing-date-sort='1704085200000'>
+    <li data-index='5' data-categories='Job Control,Academic Instruction Librarians,Librarian Worklife,2024' data-listing-date-sort='1704085200000'>
       Academic instruction librarians' feelings of job control: Quantitative analysis of responses to a job control inventory
       <br/>
       
@@ -693,8 +800,8 @@ No matching items
 </div>
 </div>
 </section>
-<section id="section-1" class="level4">
-<h4 class="anchored" data-anchor-id="section-1">2023</h4>
+<section id="section-2" class="level4">
+<h4 class="anchored" data-anchor-id="section-2">2023</h4>
 <div id="listing-published-papers-2023" style="padding-bottom: 0;" class="quarto-listing quarto-listing-container-custom">
 
 <style>
@@ -792,8 +899,8 @@ No matching items
 </div>
 </div>
 </section>
-<section id="section-2" class="level4">
-<h4 class="anchored" data-anchor-id="section-2">2021</h4>
+<section id="section-3" class="level4">
+<h4 class="anchored" data-anchor-id="section-3">2021</h4>
 <div id="listing-published-papers-2021" style="padding-bottom: 0;" class="quarto-listing quarto-listing-container-custom">
 
 <style>

@@ -10,7 +10,7 @@ while teaching"
   journal: "<em> College & Research Libraries</em>"
   abstract: "Providing library instruction, often via one-shots in someone else's classroom, may reduce feelings of agency or job control for academic instruction librarians. This study addresses potential differences in job control across core responsibilities, specifically looking at the difference between job duties overall and instruction responsibilities.</br></br>As we consider the characteristics of library instruction, we should consider how those characteristics impact librarian agency in teaching spaces and acts. For job control with regard to instruction, training and experience may have specific impacts and should be pursued as a means to empower academic library instructors."
   #pdf:
-  #pubopen:
+  pubopen: https://doi.org/10.5860/crl.86.1.50
   categories:
     - Burnout
     - Job Control
@@ -18,6 +18,23 @@ while teaching"
     - Librarian Worklife
     - 2025
 
+- title: "The burden of proving burnout in academic library workers"
+  type: "Published"
+  short: "burden2024"
+  author: 
+    - Matthew Weirick Johnson
+    - Sylvia Page
+  date: 2024-12-17
+  year: 2024
+  journal: "<em> Canadian Journal of Academic Librarianship</em>"
+  abstract: "Current paradigms of assessment, measurement, and evidence-based practice in libraries, which inform administrative and managerial action (or inaction), construct an undue burden of proof for burnout (and other negative workplace conditions) that denies library workers the care and interventions necessary for them to thrive in their workplace and that leads to continued exploitative practices and emotional extraction.</br></br>Frequently, burnout has to be proven through quantitative rather than qualitative processes, and the lack of quantitative data allows administrators to ignore burnout’s prevalence. Similarly, when solutions to burnout are considered, they're approached without consideration of individual worker needs. Through the focus on quantification, we bureaucratically obscure the individual in favour of a plurality, and develop solutions that serve those at the centre but not the margins.</br></br>The phenomenon of burnout can be understood as a symptom of larger labour concerns throughout libraries and other workplaces that result from an overreliance on (quantitative) evidence-based paradigms and the mining of affect in service of “workplace wellbeing.” Library innovation, then, improves the functioning of the library for users in a model where the library is not a workplace and the library workers are not considered a user group. In some cases, library resources receive far more consideration and care than the people working in the library both in terms of space and support."
+  pubopen: https://doi.org/10.33137/cjal-rcbu.v10.43096
+  categories: 
+    - Burnout
+    - Assessment
+    - Management
+    - 2024
+    
 - title: "Use of the Copenhagen Burnout Inventory among US academic librarians: Examining construct validity through factor structure and model fit"
   type: "Published"
   short: "cbi2024"

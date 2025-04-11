@@ -1,0 +1,35 @@
+[
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/2022-04-01-call-for-chapters-training-library-instructors.html"
+    ]
+  },
+  {
+    "listing": "/teaching.html",
+    "items": [
+      "/teaching/honors101i.html",
+      "/teaching/resprc110a.html"
+    ]
+  },
+  {
+    "listing": "/research/index.html",
+    "items": []
+  },
+  {
+    "listing": "/talks/index.html",
+    "items": []
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/project1.html",
+      "/projects/project2.html",
+      "/projects/project3.html"
+    ]
+  },
+  {
+    "listing": "/CV/index.html",
+    "items": []
+  }
+]

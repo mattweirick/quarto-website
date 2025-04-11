@@ -1,0 +1,41 @@
+/* css styles */
+  
+a {
+  color: #3344dd;
+}
+
+a:hover, a:active, a:focus {
+  color: #bb1122;
+}
+
+/* Not sure if this is needed for accessibility?
+a:visited {
+  color: #884488;
+}
+*/
+
+/* .sidebar nav[role="doc-toc"] ul > li > a.active {
+  color: #3344dd !important;
+}
+
+.sidebar nav[role="doc-toc"] ul > li > a:hover {
+  color: #3344dd !important;
+}
+
+.navbar-nav ul a:hover {
+  color:#3344dd !important;
+}
+*/
+
+/*
+.quarto-title-block h1 {
+  color: #000;
+}
+*/
+.quarto-title-block div {
+  color: #000;
+}
+
+.center h2 {
+  text-align: center;
+}

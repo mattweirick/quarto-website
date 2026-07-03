@@ -2,25 +2,6 @@
   float: right;
 }
 
-.certificates {
-  display: flex;
-  align-items: baseline;
-  gap: 0.3rem;
-  margin-right: 20em; /* room for right-floated cvdate */
-}
-
-.certificates-label {
-  font-weight: 700;
-  flex-shrink: 0;
-  font-style: bold;
-}
-
-.certificates-value {
-  flex: 1;
-  min-width: 0;
-  padding-right: 6em;
-}
-
 .cv-details-item {
   list-style: none;   /* removes the second bullet */
   margin-left: 0;
@@ -41,5 +22,4 @@
 .cv-detail-value {
   min-width: 0;
 }
-
 

@@ -212,6 +212,11 @@ ul {
     margin: 0 0 0 2em;
       }
 
+#academic-positions h3 {
+  font-size: var(--bs-body-font-size);
+  font-weight: 600;
+}
+
 </style>
 ```
 
@@ -281,9 +286,7 @@ Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the U
 ```
 
 ```{=html}
-<!---  
-- Awards: Pratt Severn Best Student Research Paper Award, ASIS&T 
---->
+<!--- Awards: Pratt Severn Best Student Research Paper Award, ASIS&T --->
 ```
 
 ### Virginia Tech
@@ -291,19 +294,23 @@ Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the U
 - **BA** *English* [2016]{.cvdate}
 
 ```{=html}
-<!---
-  - Awards: Barbara Ellen Smith Outstanding Paper Award, VT Women's & Gender Studies; Ut Prosim Award for Service, VT English
---->
+<!--- Awards: Barbara Ellen Smith Outstanding Paper Award, VT Women's & Gender Studies; Ut Prosim Award for Service, VT English --->
 ```
 
 ## <i class="fa-solid fa-school"></i> Academic Positions
 
-- **Associate Librarian & Director**, University of South Florida [2023 -- Present]{.cvdate}
-  - Director of Research & Instruction, Tampa campus
-- **Associate Librarian**, UCLA, [2019 -- 2023]{.cvdate}
-  - Humanities & Social Sciences Librarian, 2019-2023
-  - Lead for Teaching & Learning, 2020-2023
-  - Humanities & Social Sciences Lead for Research Services, 2020-2022
+
+### University of South Florida
+
+- **Associate Librarian & Director** [**2023 -- Present**]{.cvdate}
+  - Director of Research & Instruction
+  
+### University of California, Los Angeles
+
+- **Associate Librarian** [**2019 -- 2023**]{.cvdate}
+  - Humanities & Social Sciences Librarian [2019 -- 2023]{.cvdate}
+  - Lead for Teaching & Learning [2020 -- 2023]{.cvdate}
+  - Humanities & Social Sciences Lead for Research Services [2020 -- 2022]{.cvdate}
 
 ## <i class="fa-solid fa-bookmark"></i> Publications
 

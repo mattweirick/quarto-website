@@ -76,6 +76,34 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-published-papers-2026 .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-type','listing-short','listing-author','listing-date','listing-year','listing-journal','listing-abstract','listing-pubclosed','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-type","listing-short","listing-author","listing-date","listing-year","listing-journal","listing-abstract","listing-pubclosed","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-published-papers-2026'] = new List('listing-published-papers-2026', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-published-papers-2025 .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -195,9 +223,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-type','listing-short','listing-author','listing-date','listing-year','listing-journal','listing-categories','listing-pdf','listing-pubclosed','listing-abstract',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-title','listing-type','listing-short','listing-author','listing-date','listing-year','listing-journal','listing-pubclosed','listing-categories','listing-pdf','listing-abstract',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-title","listing-type","listing-short","listing-author","listing-date","listing-year","listing-journal","listing-categories","listing-pdf","listing-pubclosed","listing-abstract"],
+      searchColumns: ["listing-title","listing-type","listing-short","listing-author","listing-date","listing-year","listing-journal","listing-pubclosed","listing-categories","listing-pdf","listing-abstract"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -279,9 +307,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-type','listing-short','listing-author','listing-date','listing-year','listing-venue','listing-location','listing-audience','listing-pres','listing-categories','listing-description','listing-pdf','listing-pubopen',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-title','listing-type','listing-short','listing-author','listing-date','listing-year','listing-venue','listing-location','listing-audience','listing-pres','listing-categories','listing-description','listing-pubopen',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-title","listing-type","listing-short","listing-author","listing-date","listing-year","listing-venue","listing-location","listing-audience","listing-pres","listing-categories","listing-description","listing-pdf","listing-pubopen"],
+      searchColumns: ["listing-title","listing-type","listing-short","listing-author","listing-date","listing-year","listing-venue","listing-location","listing-audience","listing-pres","listing-categories","listing-description","listing-pubopen"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -314,6 +342,34 @@ ul.task-list li input[type="checkbox"] {
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-talks-invited'] = new List('listing-talks-invited', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-talks-webinars .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-type','listing-short','listing-author','listing-date','listing-year','listing-venue','listing-location','listing-audience','listing-pres','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-type","listing-short","listing-author","listing-date","listing-year","listing-venue","listing-location","listing-audience","listing-pres","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-talks-webinars'] = new List('listing-talks-webinars', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -503,7 +559,12 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+  <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+  <ul class="collapse">
+  <li><a href="#university-of-south-florida" id="toc-university-of-south-florida" class="nav-link" data-scroll-target="#university-of-south-florida">University of South Florida</a></li>
+  <li><a href="#university-of-north-carolina-at-chapel-hill" id="toc-university-of-north-carolina-at-chapel-hill" class="nav-link" data-scroll-target="#university-of-north-carolina-at-chapel-hill">University of North Carolina at Chapel Hill</a></li>
+  <li><a href="#virginia-tech" id="toc-virginia-tech" class="nav-link" data-scroll-target="#virginia-tech">Virginia Tech</a></li>
+  </ul></li>
   <li><a href="#academic-positions" id="toc-academic-positions" class="nav-link" data-scroll-target="#academic-positions"><i class="fa-solid fa-school"></i> Academic Positions</a></li>
   <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications"><i class="fa-solid fa-bookmark"></i> Publications</a>
   <ul class="collapse">
@@ -517,6 +578,7 @@ window.Quarto = {
   <li><a href="#international-national" id="toc-international-national" class="nav-link" data-scroll-target="#international-national">International &amp; National</a></li>
   <li><a href="#regional-local-institutional" id="toc-regional-local-institutional" class="nav-link" data-scroll-target="#regional-local-institutional">Regional, Local &amp; Institutional</a></li>
   <li><a href="#invited-talks" id="toc-invited-talks" class="nav-link" data-scroll-target="#invited-talks">Invited Talks</a></li>
+  <li><a href="#webinars" id="toc-webinars" class="nav-link" data-scroll-target="#webinars">Webinars</a></li>
   </ul></li>
   <li><a href="#editorial-peer-review-service" id="toc-editorial-peer-review-service" class="nav-link" data-scroll-target="#editorial-peer-review-service"><i class="fa-solid fa-magnifying-glass"></i> Editorial &amp; Peer Review Service</a>
   <ul class="collapse">
@@ -526,12 +588,8 @@ window.Quarto = {
   <li><a href="#professional-service" id="toc-professional-service" class="nav-link" data-scroll-target="#professional-service"><i class="fa-solid fa-people-group"></i> Professional Service</a>
   <ul class="collapse">
   <li><a href="#american-library-association-ala" id="toc-american-library-association-ala" class="nav-link" data-scroll-target="#american-library-association-ala">American Library Association (ALA)</a></li>
-  <li><a href="#association-of-college-research-libraries-acrl" id="toc-association-of-college-research-libraries-acrl" class="nav-link" data-scroll-target="#association-of-college-research-libraries-acrl">Association of College &amp; Research Libraries (ACRL)</a></li>
-  <li><a href="#acrl-instruction-section-is" id="toc-acrl-instruction-section-is" class="nav-link" data-scroll-target="#acrl-instruction-section-is">ACRL Instruction Section (IS)</a></li>
-  <li><a href="#acrl-university-libraries-section-uls" id="toc-acrl-university-libraries-section-uls" class="nav-link" data-scroll-target="#acrl-university-libraries-section-uls">ACRL University Libraries Section (ULS)</a></li>
-  <li><a href="#acrl-women-and-gender-studies-section-wgss" id="toc-acrl-women-and-gender-studies-section-wgss" class="nav-link" data-scroll-target="#acrl-women-and-gender-studies-section-wgss">ACRL Women and Gender Studies Section (WGSS)</a></li>
-  <li><a href="#rainbow-round-table-rrt" id="toc-rainbow-round-table-rrt" class="nav-link" data-scroll-target="#rainbow-round-table-rrt">Rainbow Round Table (RRT)</a></li>
-  <li><a href="#library-instruction-round-table-lirt" id="toc-library-instruction-round-table-lirt" class="nav-link" data-scroll-target="#library-instruction-round-table-lirt">Library Instruction Round Table (LIRT)</a></li>
+  <li><a href="#american-educational-research-association-aera" id="toc-american-educational-research-association-aera" class="nav-link" data-scroll-target="#american-educational-research-association-aera">American Educational Research Association (AERA)</a></li>
+  <li><a href="#institute-for-research-design-in-librarianship-irdl" id="toc-institute-for-research-design-in-librarianship-irdl" class="nav-link" data-scroll-target="#institute-for-research-design-in-librarianship-irdl">Institute for Research Design in Librarianship (IRDL)</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -570,17 +628,22 @@ ul {
     margin-top: .5em;
    }
    
-#education li li + li {
+#education li + li {
     margin-top:.1em;
 }
 
-#education li li + li:last-child {
+#education li + li:last-child {
     margin-bottom: .5em;
 }
    
-#education li li {
+#education li {
     margin: 0 0 0 2em;
       }
+
+#education h3 {
+  font-size: var(--bs-body-font-size);
+  font-weight: 600;
+}
 
 #academic-positions li li {
     margin: 0 0 0 2em;
@@ -590,30 +653,40 @@ ul {
 <p>Matthew Weirick Johnson, MSLS is the Director of Research &amp; Instruction at the University of South Florida Libraries and a PhD student in Educational Measurement and Evaluation also at USF. You can also <a href="../files/johnson-cv.pdf">download a PDF of my CV</a>.</p>
 <section id="education" class="level2">
 <h2 class="anchored" data-anchor-id="education"><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+<section id="university-of-south-florida" class="level3">
+<h3 class="anchored" data-anchor-id="university-of-south-florida">University of South Florida</h3>
 <ul>
-<li><strong>Ph.D.</strong> <em>Measurement &amp; Evaluation</em> <span class="cvdate">exp. 2027</span>
+<li><strong>PhD</strong> <em>Measurement &amp; Research</em> <span class="cvdate">exp. 2027</span></li>
+<li><strong>MA</strong> <em>Women’s, Gender &amp; Sexuality Studies</em> <span class="cvdate">exp. 2027</span>
+</li><li class="certificates">
+<span class="certificates-label">Certificates:</span> <span class="certificates-value"> Qualitative Research, Advanced Quantitative Research, Women’s, Gender &amp; Sexuality Studies </span>
+</li>
+</ul>
+</section>
+<section id="university-of-north-carolina-at-chapel-hill" class="level3">
+<h3 class="anchored" data-anchor-id="university-of-north-carolina-at-chapel-hill">University of North Carolina at Chapel Hill</h3>
 <ul>
-<li>University of South Florida</li>
-</ul></li>
-<li><strong>M.S.</strong> <em>Library Science</em> <span class="cvdate">2018</span>
-<ul>
-<li>University of North Carolina at Chapel Hill</li>
-<li><strong>Master’s Paper:</strong> “Not playing that game”: An exploratory study of queer men’s health information behavior on location-aware dating and sex-seeking mobile applications</li>
-<li><strong>Certificates:</strong> Interdisciplinary Health Communication, Interdisciplinary Health Disparities, SILS Diversity Advocate</li>
-</ul></li>
+<li><strong>MS</strong> <em>Library Science</em> <span class="cvdate">2018</span>
+</li><li class="certificates">
+<span class="certificates-label">Master’s Paper:</span> <span class="certificates-value"> “Not playing that game”: An exploratory study of queer men’s health information behavior on location-aware dating and sex-seeking mobile applications </span>
+</li>
+<li class="certificates">
+<span class="certificates-label">Certificates:</span> <span class="certificates-value"> Interdisciplinary Health Communication, Interdisciplinary Health Disparities, SILS Diversity Advocate </span>
+</li>
 </ul>
 <!---  
 - Awards: Pratt Severn Best Student Research Paper Award, ASIS&T 
 --->
+</section>
+<section id="virginia-tech" class="level3">
+<h3 class="anchored" data-anchor-id="virginia-tech">Virginia Tech</h3>
 <ul>
-<li><strong>B.A.</strong> <em>English</em> <span class="cvdate">2016</span>
-<ul>
-<li>Virginia Tech</li>
-</ul></li>
+<li><strong>BA</strong> <em>English</em> <span class="cvdate">2016</span></li>
 </ul>
 <!---
   - Awards: Barbara Ellen Smith Outstanding Paper Award, VT Women's & Gender Studies; Ut Prosim Award for Service, VT English
 --->
+</section>
 </section>
 <section id="academic-positions" class="level2">
 <h2 class="anchored" data-anchor-id="academic-positions"><i class="fa-solid fa-school"></i> Academic Positions</h2>
@@ -643,7 +716,66 @@ ul {
 <section id="peer-reviewed-articles" class="level3">
 <h3 class="anchored" data-anchor-id="peer-reviewed-articles"><i class="fa-solid fa-file-lines"></i> Peer-reviewed Articles</h3>
 <section id="section" class="level4">
-<h4 class="anchored" data-anchor-id="section">2025</h4>
+<h4 class="anchored" data-anchor-id="section">2026</h4>
+<div id="listing-published-papers-2026" style="padding-bottom: 0;" class="quarto-listing quarto-listing-container-custom">
+
+<style>
+  .btn-xs {
+    padding: .07em .31em;
+    font-size: .9em;
+ 
+  .ai-lg {
+    font-size: 1.2em;  /* Adjust as needed */
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+</style>
+
+<ul class="list">
+  
+    <li data-index="0" data-categories="Burnout,2026" data-listing-date-sort="1769922000000">
+      Insights from a burnout debate: Occupational health psychology for academic librarianship  <a href="https://doi.org/10.1353/pla.2026.a979341" title="read the publisher's version of Insights from a burnout debate: Occupational health psychology for academic librarianship"><i class="ai ai-closed-access"></i></a> 
+      <br>
+      
+        <small class="text-muted" style="display:block;">
+          Matthew Weirick Johnson. <em> portal: Libraries and the Academic</em>.
+        </small>
+      
+    </li>
+  
+</ul>
+
+<!---
+<ul class="list">
+  
+    <li data-index='1' data-categories='Burnout,2026' data-listing-date-sort='1769922000000'>
+      Insights from a burnout debate: Occupational health psychology for academic librarianship
+      <br/>
+      
+        <small class="text-muted">
+          2026. Matthew Weirick Johnson. <em> portal: Libraries and the Academic</em>.  <a href="https://doi.org/10.1353/pla.2026.a979341">https://doi.org/10.1353/pla.2026.a979341.</a> 
+        </small>
+      
+    </li>
+  
+</ul>
+
+to add an indent on lines after title: 
+style="margin-left:1em;display:block;"
+--->
+
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="section-1" class="level4">
+<h4 class="anchored" data-anchor-id="section-1">2025</h4>
 <div id="listing-published-papers-2025" style="padding-bottom: 0;" class="quarto-listing quarto-listing-container-custom">
 
 <style>
@@ -701,8 +833,8 @@ No matching items
 </div>
 </div>
 </section>
-<section id="section-1" class="level4">
-<h4 class="anchored" data-anchor-id="section-1">2024</h4>
+<section id="section-2" class="level4">
+<h4 class="anchored" data-anchor-id="section-2">2024</h4>
 <div id="listing-published-papers-2024" style="padding-bottom: 0;" class="quarto-listing quarto-listing-container-custom">
 
 <style>
@@ -800,8 +932,8 @@ No matching items
 </div>
 </div>
 </section>
-<section id="section-2" class="level4">
-<h4 class="anchored" data-anchor-id="section-2">2023</h4>
+<section id="section-3" class="level4">
+<h4 class="anchored" data-anchor-id="section-3">2023</h4>
 <div id="listing-published-papers-2023" style="padding-bottom: 0;" class="quarto-listing quarto-listing-container-custom">
 
 <style>
@@ -899,8 +1031,8 @@ No matching items
 </div>
 </div>
 </section>
-<section id="section-3" class="level4">
-<h4 class="anchored" data-anchor-id="section-3">2021</h4>
+<section id="section-4" class="level4">
+<h4 class="anchored" data-anchor-id="section-4">2021</h4>
 <div id="listing-published-papers-2021" style="padding-bottom: 0;" class="quarto-listing quarto-listing-container-custom">
 
 <style>
@@ -1002,8 +1134,18 @@ No matching items
 
 <ul class="list">
   
-    <li data-index="0" data-categories="Library Instruction,LIS Education,Academic Instruction Librarians,2024" data-listing-date-sort="1727409600000">
-      Library instruction training and the MLIS: A review of the literature
+    <li data-index="0" data-categories="Job Crafting,Academic Library Workers,2026" data-listing-date-sort="1772341200000">
+      Job control and librarian engagement: Considerations of workplace agency for crafting meaningful work experiences  <a href="https://www.bloomsbury.com/us/creating-healthy-library-workplaces-9798216188780/" title="read the publisher's version of Job control and librarian engagement: Considerations of workplace agency for crafting meaningful work experiences"><i class="ai ai-closed-access"></i></a> 
+      <br>
+      
+        <small class="text-muted" style="display:block;">
+          2026. Matthew Weirick Johnson. <br>In J. Martin (Ed.) <em>Creating Healthy Library Workplaces: Five Factors That Improve Employee Engagement and Satisfaction</em>.
+        </small>
+      
+    </li>
+  
+    <li data-index="1" data-categories="Library Instruction,LIS Education,Academic Instruction Librarians,2024" data-listing-date-sort="1727409600000">
+      Library instruction training and the MLIS: A review of the literature  <a href="https://alastore.ala.org/training-library-instructors-guide-training-graduate-students-and-librarians-2-volume-set" title="read the publisher's version of Library instruction training and the MLIS: A review of the literature"><i class="ai ai-closed-access"></i></a> 
       <br>
       
         <small class="text-muted" style="display:block;">
@@ -1012,8 +1154,8 @@ No matching items
       
     </li>
   
-    <li data-index="1" data-categories="Library Assessment,Academic Instruction Librarians,2023" data-listing-date-sort="1698811200000">
-      Everyday evidence to assess teaching and learning: A programmatic assessment of library instruction
+    <li data-index="2" data-categories="Library Assessment,Academic Instruction Librarians,2023" data-listing-date-sort="1698811200000">
+      Everyday evidence to assess teaching and learning: A programmatic assessment of library instruction  <a href="https://alastore.ala.org/content/everyday-evidence-based-practice-academic-libraries-case-studies-and-reflections" title="read the publisher's version of Everyday evidence to assess teaching and learning: A programmatic assessment of library instruction"><i class="ai ai-closed-access"></i></a> 
       <br>
       
         <small class="text-muted" style="display:block;">
@@ -1022,8 +1164,8 @@ No matching items
       
     </li>
   
-    <li data-index="2" data-categories="Library Instruction,LIS Education,Academic Instruction Librarians,2023" data-listing-date-sort="1685592000000">
-      Transforming our identities as learners and instructors: A library instruction training program
+    <li data-index="3" data-categories="Library Instruction,LIS Education,Academic Instruction Librarians,2023" data-listing-date-sort="1685592000000">
+      Transforming our identities as learners and instructors: A library instruction training program  <a href="https://alastore.ala.org/content/instructional-identities-and-information-literacy-3-volume-set" title="read the publisher's version of Transforming our identities as learners and instructors: A library instruction training program"><i class="ai ai-closed-access"></i></a> 
       <br>
       
         <small class="text-muted" style="display:block;">
@@ -1032,8 +1174,8 @@ No matching items
       
     </li>
   
-    <li data-index="3" data-categories="Library Instruction,Online Learning,Learner-centered Design,2023" data-listing-date-sort="1675227600000">
-      Promoting critical reading through learner-centered design: WI+RE’s approach to open online learning
+    <li data-index="4" data-categories="Library Instruction,Online Learning,Learner-centered Design,2023" data-listing-date-sort="1675227600000">
+      Promoting critical reading through learner-centered design: WI+RE’s approach to open online learning  <a href="https://alastore.ala.org/content/teaching-critical-reading-skills-strategies-academic-librarians-2-volume-set" title="read the publisher's version of Promoting critical reading through learner-centered design: WI+RE’s approach to open online learning"><i class="ai ai-closed-access"></i></a> 
       <br>
       
         <small class="text-muted" style="display:block;">
@@ -1042,8 +1184,8 @@ No matching items
       
     </li>
   
-    <li data-index="4" data-categories="Library Instruction,Undergradaute Research,Writing &amp; Reseearch,2023" data-listing-date-sort="1672549200000">
-      Writing and Research Training Program: A UCLA campus partnership to support BIPOC, LGBTQIA, and disabled student researchers
+    <li data-index="5" data-categories="Library Instruction,Undergradaute Research,Writing &amp; Reseearch,2023" data-listing-date-sort="1672549200000">
+      Writing and Research Training Program: A UCLA campus partnership to support BIPOC, LGBTQIA, and disabled student researchers  <a href="https://alastore.ala.org/content/undergraduate-research-and-academic-librarian-case-studies-and-best-practices-volume-2" title="read the publisher's version of Writing and Research Training Program: A UCLA campus partnership to support BIPOC, LGBTQIA, and disabled student researchers"><i class="ai ai-closed-access"></i></a> 
       <br>
       
         <small class="text-muted" style="display:block;">
@@ -1052,8 +1194,8 @@ No matching items
       
     </li>
   
-    <li data-index="5" data-categories="Burnout,Workload,Librarian Worklife,2022" data-listing-date-sort="1669870800000">
-      What’s in a workload? Affect, burnout, and complicating capacity in academic librarians
+    <li data-index="6" data-categories="Burnout,Workload,Librarian Worklife,2022" data-listing-date-sort="1669870800000">
+      What’s in a workload? Affect, burnout, and complicating capacity in academic librarians  <a href="https://alastore.ala.org/content/academic-librarian-burnout-causes-and-responses" title="read the publisher's version of What’s in a workload? Affect, burnout, and complicating capacity in academic librarians"><i class="ai ai-closed-access"></i></a> 
       <br>
       
         <small class="text-muted" style="display:block;">
@@ -1092,8 +1234,28 @@ No matching items
 
 <ul class="list">
   
-    <li data-index="0" data-categories="Burnout,Academic Librarians,Librarian Worklife,2024" data-listing-date-sort="1718856000000">
-      Keeping up with...burnout
+    <li data-index="0" data-categories="Burnout,Academic Library Workers,2026" data-listing-date-sort="1767243600000">
+      Fixing work, not workers: Burnout as an organizational problem  <a href="https://doi.org/10.5860/crln.87.1.29" title="read the open access version of Fixing work, not workers: Burnout as an organizational problem"><i class="ai ai-open-access"></i></a> 
+      <br>
+      
+        <small class="text-muted" style="display:block;">
+          2026. Matthew Weirick Johnson. <em>College &amp; Research Libraries News</em>.
+        </small>
+      
+    </li>
+  
+    <li data-index="1" data-categories="Information Literacy,2025" data-listing-date-sort="1751342400000">
+      Celebrating 25 years of information literacy: A presentation series  <a href="https://doi.org/10.5860/crln.86.7.300" title="read the open access version of Celebrating 25 years of information literacy: A presentation series"><i class="ai ai-open-access"></i></a> 
+      <br>
+      
+        <small class="text-muted" style="display:block;">
+          2025. Jane Hammons, Spencer Brayton, Audrey Gunn, Matthew Weirick Johnson, Melissa Mallon, Mira Scarnecchia. <em>College &amp; Research Libraries News</em>.
+        </small>
+      
+    </li>
+  
+    <li data-index="2" data-categories="Burnout,Academic Librarians,Librarian Worklife,2024" data-listing-date-sort="1718856000000">
+      Keeping up with...burnout  <a href="https://www.ala.org/acrl/publications/keeping_up_with/burnout" title="read the open access version of Keeping up with...burnout"><i class="ai ai-open-access"></i></a> 
       <br>
       
         <small class="text-muted" style="display:block;">
@@ -1102,8 +1264,8 @@ No matching items
       
     </li>
   
-    <li data-index="1" data-categories="Digital Pedagogy,Library Instruction,Academic Instruction Librarians,2021" data-listing-date-sort="1625630400000">
-      Teaching in the digital library: A partnership between teaching librarians and digital library staff
+    <li data-index="3" data-categories="Digital Pedagogy,Library Instruction,Academic Instruction Librarians,2021" data-listing-date-sort="1625630400000">
+      Teaching in the digital library: A partnership between teaching librarians and digital library staff  <a href="https://doi.org/10.5860/crln.82.7.302" title="read the open access version of Teaching in the digital library: A partnership between teaching librarians and digital library staff"><i class="ai ai-open-access"></i></a> 
       <br>
       
         <small class="text-muted" style="display:block;">
@@ -1112,8 +1274,8 @@ No matching items
       
     </li>
   
-    <li data-index="2" data-categories="Book Review,2020" data-listing-date-sort="1583125200000">
-      Book Review: <em>Library Trends</em> issue: Labor in academic libraries
+    <li data-index="4" data-categories="Book Review,2020" data-listing-date-sort="1583125200000">
+      Book Review: <em>Library Trends</em> issue: Labor in academic libraries  <a href="https://libparlor.com/2020/03/02/book-review-library-trends-issue-labor-in-academic-libraries/" title="read the open access version of Book Review: <em>Library Trends</em> issue: Labor in academic libraries"><i class="ai ai-open-access"></i></a> 
       <br>
       
         <small class="text-muted" style="display:block;">
@@ -1122,8 +1284,8 @@ No matching items
       
     </li>
   
-    <li data-index="3" data-categories="Book Review,2019" data-listing-date-sort="1566532800000">
-      Book Review: Masked by trust: Bias in library discovery
+    <li data-index="5" data-categories="Book Review,2019" data-listing-date-sort="1566532800000">
+      Book Review: Masked by trust: Bias in library discovery  <a href="https://libparlor.com/2019/08/23/book-review-masked-by-trust-bias-in-library-discovery/" title="read the open access version of Book Review: Masked by trust: Bias in library discovery"><i class="ai ai-open-access"></i></a> 
       <br>
       
         <small class="text-muted" style="display:block;">
@@ -1132,8 +1294,8 @@ No matching items
       
     </li>
   
-    <li data-index="4" data-categories="Book Review,2019" data-listing-date-sort="1558065600000">
-      Book Review: Critical approaches to credit-bearing information literacy courses
+    <li data-index="6" data-categories="Book Review,2019" data-listing-date-sort="1558065600000">
+      Book Review: Critical approaches to credit-bearing information literacy courses  <a href="https://libparlor.com/2019/05/17/book-review-critical-approaches-to-credit-bearing-information-literacy-courses/" title="read the open access version of Book Review: Critical approaches to credit-bearing information literacy courses"><i class="ai ai-open-access"></i></a> 
       <br>
       
         <small class="text-muted" style="display:block;">
@@ -1142,8 +1304,8 @@ No matching items
       
     </li>
   
-    <li data-index="5" data-categories="Information Literacy,2018" data-listing-date-sort="1514782800000">
-      Personal health data, surveillance, &amp; biopolitics: Toward a personal health data information literacy
+    <li data-index="7" data-categories="Information Literacy,2018" data-listing-date-sort="1514782800000">
+      Personal health data, surveillance, &amp; biopolitics: Toward a personal health data information literacy  <a href="http://www.progressivelibrariansguild.org/PL/PL46/150johnson.pdf" title="read the open access version of Personal health data, surveillance, &amp; biopolitics: Toward a personal health data information literacy"><i class="ai ai-open-access"></i></a> 
       <br>
       
         <small class="text-muted" style="display:block;">
@@ -1152,8 +1314,8 @@ No matching items
       
     </li>
   
-    <li data-index="6" data-categories="2016" data-listing-date-sort="1460433600000">
-      ‘All human beings, as we meet them, are commingled out of good and evil’: Connections between person and place in <em>Wuthering Heights</em>
+    <li data-index="8" data-categories="2016" data-listing-date-sort="1460433600000">
+      ‘All human beings, as we meet them, are commingled out of good and evil’: Connections between person and place in <em>Wuthering Heights</em>  <a href="https://doi.org/10.21061/ph.v8i0.162" title="read the open access version of ‘All human beings, as we meet them, are commingled out of good and evil’: Connections between person and place in <em>Wuthering Heights</em>"><i class="ai ai-open-access"></i></a> 
       <br>
       
         <small class="text-muted" style="display:block;">
@@ -1207,7 +1369,161 @@ No matching items
 
 <ul class="list">
   
-    <li data-index="0" data-categories="Job Control,Librarian Worklife,2024" data-listing-date-sort="1715745600000">
+    <li data-index="0" data-categories="Qualitative Research Methodology,Science Fiction" data-listing-date-sort="1775966400000">
+      Science fiction as methodology: Extrapolation, speculation, and fabulation in qualitative inquiry
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2026. Matthew Weirick Johnson. American Educational Research Association Annual Meeting. Los Angeles, CA. Conference Presentation.
+        </small>
+      
+    </li>
+  
+    <li data-index="1" data-categories="Information Literacy,Research Assignment Design" data-listing-date-sort="1775793600000">
+      Moving past the research paper: Centering metaliteracy in effective research assignment design
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2026. Matthew Weirick Johnson, Jennifer Slagus. American Educational Research Association Annual Meeting. Los Angeles, CA. Conference Presentation.
+        </small>
+      
+    </li>
+  
+    <li data-index="2" data-categories="Qualitative Research Methodology,Generative AI" data-listing-date-sort="1775707200000">
+      Ethics in the algorithm: Artificial intelligence and qualitative research
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2026. Lorien S. Jordan, Jennifer R. Wolgemuth, Matthew Weirick Johnson, Camryn T. Collins. American Educational Research Association Annual Meeting. Los Angeles, CA. Conference Presentation.
+        </small>
+      
+    </li>
+  
+    <li data-index="3" data-categories="Qualitative Research Methodology,Generative AI" data-listing-date-sort="1768453200000">
+      Qualitative research and generative AI on the intergalactic bummer train
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2026. Matthew Weirick Johnson, Lorien S. Jordan. European Congress of Qualitative Inquiry. Athens, Greece. Conference Presentation.
+        </small>
+      
+    </li>
+  
+    <li data-index="4" data-categories="Qualitative Research Methodology,Generative AI" data-listing-date-sort="1768366800000">
+      The violence that makes our research possible: AI, extraction, and qualitative ethics
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2026. Lorien S. Jordan, Matthew Weirick Johnson, Jennifer R. Wolgemuth. European Congress of Qualitative Inquiry. Athens, Greece. Conference Presentation.
+        </small>
+      
+    </li>
+  
+    <li data-index="5" data-categories="Qualitative Research Methodology" data-listing-date-sort="1745726400000">
+      Methodological performativity: Doing and undoing methodology
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2025. Matthew Weirick Johnson. American Educational Research Association Annual Meeting. Denver, CO. Conference Presentation.
+        </small>
+      
+    </li>
+  
+    <li data-index="6" data-categories="Quarto" data-listing-date-sort="1745380800000">
+      Build your personal website with Quarto
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2025. Matthew Weirick Johnson. National Council on Measurement in Education. Denver, CO. Training Session.
+        </small>
+      
+    </li>
+  
+    <li data-index="7" data-categories="Qualitative Research Methodology" data-listing-date-sort="1743739200000">
+      Publish it with ACRL
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2025. Anne Doherty, David Free, Erin Nevius, Bill Mickey, Matthew Weirick Johnson, Heidi Burkhardt. Association of College &amp; Research Libraries Conference. Minneapolis, MN. Panel Presentation.
+        </small>
+      
+    </li>
+  
+    <li data-index="8" data-categories="Qualitative Research Methodology" data-listing-date-sort="1741150800000">
+      (Un)doing methodology/(un)becoming methodologist: Performativity and methodological norms
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2025. Matthew Weirick Johnson. The Qualitative Report Conference. Ft. Lauderdale, FL. Conference Presentation.
+        </small>
+      
+    </li>
+  
+    <li data-index="9" data-categories="QuantCrit" data-listing-date-sort="1731906000000">
+      Quantitative Criticalism in LIS
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2024. Matthew Weirick Johnson. IRDL Online Research Conference. Online. Conference Presentation.
+        </small>
+      
+    </li>
+  
+    <li data-index="10" data-categories="Job Control,Academic Library Workers" data-listing-date-sort="1715745600000">
+      Librarian perceptions of job control: Considerations for leaders and managers
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2024. Matthew Weirick Johnson. Core Forum. Minneapolis, MN. Poster Presentation.
+        </small>
+      
+    </li>
+  
+    <li data-index="11" data-categories="Job Control,Librarian Worklife,2024" data-listing-date-sort="1715745600000">
       Meaningful work &amp; librarian agency: Exploring job control among academic instruction librarians
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1221,7 +1537,7 @@ No matching items
       
     </li>
   
-    <li data-index="1" data-categories="Practitioner Research,Librarian-Researcher Confidence,Librarian Professional Development,Research Training,2023" data-listing-date-sort="1699938000000">
+    <li data-index="12" data-categories="Practitioner Research,Librarian-Researcher Confidence,Librarian Professional Development,Research Training,2023" data-listing-date-sort="1699938000000">
       Developing librarian-research confidence with Research Fridays
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1235,7 +1551,7 @@ No matching items
       
     </li>
   
-    <li data-index="2" data-categories="Burnout,Librarian Worklife,2023" data-listing-date-sort="1697774400000">
+    <li data-index="13" data-categories="Burnout,Librarian Worklife,2023" data-listing-date-sort="1697774400000">
       Burnout in libraries: A research &amp; advocacy panel
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1249,7 +1565,7 @@ No matching items
       
     </li>
   
-    <li data-index="3" data-categories="Open Educational Resources,Universal Design for Learning,Disability Justice,2022" data-listing-date-sort="1667448000000">
+    <li data-index="14" data-categories="Open Educational Resources,Universal Design for Learning,Disability Justice,2022" data-listing-date-sort="1667448000000">
       Accessible access, universal design, and the limits of inclusion in open educational resource development: An interactive workshop
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1263,7 +1579,7 @@ No matching items
       
     </li>
   
-    <li data-index="4" data-categories="Writing and Research,Information Literacy,2021" data-listing-date-sort="1620878400000">
+    <li data-index="15" data-categories="Writing and Research,Information Literacy,2021" data-listing-date-sort="1620878400000">
       Writing and research are inseparable: Helping instructors integrate research and writing instruction in writing across the curriculum course planning
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1277,7 +1593,7 @@ No matching items
       
     </li>
   
-    <li data-index="5" data-categories="Critical Pedagogy,Critical Librarianship,Human Resources,Librarian Worklife,2020" data-listing-date-sort="1600228800000">
+    <li data-index="16" data-categories="Critical Pedagogy,Critical Librarianship,Human Resources,Librarian Worklife,2020" data-listing-date-sort="1600228800000">
       Conflicting interests and begrudging partnerships: Turning critical pedagogy on human resources
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1291,7 +1607,7 @@ No matching items
       
     </li>
   
-    <li data-index="6" data-categories="Masculinity Studies,Gender Segregation,Library Workplaces,Librarian Worklife,2019" data-listing-date-sort="1565150400000">
+    <li data-index="17" data-categories="Masculinity Studies,Gender Segregation,Library Workplaces,Librarian Worklife,2019" data-listing-date-sort="1565150400000">
       Desiring SUVs: Masculinities, masculine overcompensation, and gender segregation in academic libraries
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1305,7 +1621,7 @@ No matching items
       
     </li>
   
-    <li data-index="7" data-categories="Information Literacy,Public Libraries,2018" data-listing-date-sort="1539230400000">
+    <li data-index="18" data-categories="Information Literacy,Public Libraries,2018" data-listing-date-sort="1539230400000">
       Writing beyond the academy: Writing &amp; digital literacy skills courses in local public libraries
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1319,7 +1635,7 @@ No matching items
       
     </li>
   
-    <li data-index="8" data-categories="Information Worlds,Information Poverty,Writing Centers,2017" data-listing-date-sort="1510462800000">
+    <li data-index="19" data-categories="Information Worlds,Information Poverty,Writing Centers,2017" data-listing-date-sort="1510462800000">
       Learning from the library: Information worlds &amp; information poverty
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1333,7 +1649,7 @@ No matching items
       
     </li>
   
-    <li data-index="9" data-categories="Writing Centers,Library Collaborations,2016" data-listing-date-sort="1476417600000">
+    <li data-index="20" data-categories="Writing Centers,Library Collaborations,2016" data-listing-date-sort="1476417600000">
       Committed to write: Writing centers, libraries, &amp; prisons in collaboration
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1347,7 +1663,7 @@ No matching items
       
     </li>
   
-    <li data-index="10" data-categories="Writing Centers,2015" data-listing-date-sort="1444363200000">
+    <li data-index="21" data-categories="Writing Centers,2015" data-listing-date-sort="1444363200000">
       The Writing Partners Program: A case study of ELL students and beginning coaches
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1361,7 +1677,7 @@ No matching items
       
     </li>
   
-    <li data-index="11" data-categories="Don Juan,Lord Byron,2015" data-listing-date-sort="1432353600000">
+    <li data-index="22" data-categories="Don Juan,Lord Byron,2015" data-listing-date-sort="1432353600000">
       Don Juan in love (and lust)
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1417,7 +1733,105 @@ No matching items
 
 <ul class="list">
   
-    <li data-index="0" data-categories="Open Access,Open Educational Resources,Accessibility,Disability Justice,2022" data-listing-date-sort="1652414400000">
+    <li data-index="0" data-categories="Qualitative Research Methodology" data-listing-date-sort="1777089600000">
+      Ad-libbing methodology: Templates, structure, and improvisation in writing about qualitative research
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2026. Matthew Weirick Johnson. Interdisciplinary Symposium on Qualitative Methodologies. Tampa, FL. Conference Presentation.
+        </small>
+      
+    </li>
+  
+    <li data-index="1" data-categories="Queer Studies,PrEP,Feminist STS" data-listing-date-sort="1770958800000">
+      PrEP and queer potentiality: Resisting normative logics of biomedical technologies in sexual health
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2026. Matthew Weirick Johnson. Present Tense / Future Possibilities Conference (USF Women's, Gender, and Sexuality Studies Interdisciplinary Conference). Tampa, FL. Conference Presentation.
+        </small>
+      
+    </li>
+  
+    <li data-index="2" data-categories="Academic Libraries,Student Workers,Self-Determination Theory" data-listing-date-sort="1762318800000">
+      Autonomy, competence, relatedness: A framework of practical strategies for meaningful student work
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2025. Matthew Weirick Johnson, Jennifer Slagus, Daniel Neil. Association of College &amp; Research Libraries Delaware Valley Chapter Fall Event. Online. Conference Presentation.
+        </small>
+      
+    </li>
+  
+    <li data-index="3" data-categories="Academic Libraries,Workplace Well-Being" data-listing-date-sort="1761278400000">
+      Recovery from work: Recovery activities, experiences, and environments for academic library well-being
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2025. Matthew Weirick Johnson. Florida Association of College &amp; Research Libraries Virtual Conference. Online. Conference Presentation.
+        </small>
+      
+    </li>
+  
+    <li data-index="4" data-categories="Qualitative Research Methodology,Methodology as Infrastructure" data-listing-date-sort="1744344000000">
+      'Where we're going, we don't need roads': Methodology as infrastructure, (in)visibility, and the potential of disorientation
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2025. Matthew Weirick Johnson. Interdisciplinary Symposium on Qualitative Methodologies. Tampa, FL. Conference Presentation.
+        </small>
+      
+    </li>
+  
+    <li data-index="5" data-categories="Academic Libraries,Burnout" data-listing-date-sort="1732165200000">
+      Academic teaching librarian reflections on self-report burnout and job control scores
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2024. Matthew Weirick Johnson. Florida Educational Research Association Annual Conference. Orlando, FL. Poster Presentation.
+        </small>
+      
+    </li>
+  
+    <li data-index="6" data-categories="Information Literacy,Faculty Development,Academic Libraries" data-listing-date-sort="1729828800000">
+      Information literacy professional development for disciplinary faculty through a summer institute
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2024. Matthew Weirick Johnson, Jessica Szempruch, Carl DiNardo, Emily Mann. Florida Association of College &amp; Research Libraries Virtual Conference. Online. Conference Presentation.
+        </small>
+      
+    </li>
+  
+    <li data-index="7" data-categories="Open Access,Open Educational Resources,Accessibility,Disability Justice,2022" data-listing-date-sort="1652414400000">
       The limits of open access in open educational resources: Incorporating accessibility into the WI+RE Way at UCLA Library
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1431,7 +1845,7 @@ No matching items
       
     </li>
   
-    <li data-index="1" data-categories="Open Access,Open Educational Resources,Accessibility,Disability Justice,2022" data-listing-date-sort="1647921600000">
+    <li data-index="8" data-categories="Open Access,Open Educational Resources,Accessibility,Disability Justice,2022" data-listing-date-sort="1647921600000">
       The limits of inclusion in open access: Accessible access, universal design, and open educational resources
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1445,7 +1859,7 @@ No matching items
       
     </li>
   
-    <li data-index="2" data-categories="Anti-Racist Pedagogy,Library Instruction,2021" data-listing-date-sort="1620100800000">
+    <li data-index="9" data-categories="Anti-Racist Pedagogy,Library Instruction,2021" data-listing-date-sort="1620100800000">
       UCLA Library’s Anti-Racist Pedagogy Workshop Series
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1501,7 +1915,21 @@ No matching items
 
 <ul class="list">
   
-    <li data-index="0" data-categories="Information Literacy,Teach the Teacher,Library Instruction,2024" data-listing-date-sort="1720497600000">
+    <li data-index="0" data-categories="Burnout,Librarian Worklife,2025" data-listing-date-sort="1738213200000">
+      Seeing ourselves as workers: Exploring burnout &amp; workers solidarity in academic libraries
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2025. Matthew Weirick Johnson. Delaware Library Association College &amp; Researc Libraries Division Winter Program. Online. Invited Talk.
+        </small>
+      
+    </li>
+  
+    <li data-index="1" data-categories="Information Literacy,Teach the Teacher,Library Instruction,2024" data-listing-date-sort="1720497600000">
       Teaching information literacy: Considering current and future approaches and models
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1515,7 +1943,7 @@ No matching items
       
     </li>
   
-    <li data-index="1" data-categories="Burnout,Librarian Worklife,2024" data-listing-date-sort="1707282000000">
+    <li data-index="2" data-categories="Burnout,Librarian Worklife,2024" data-listing-date-sort="1707282000000">
       Best of Core Forum: Burnout in libraries: A research &amp; advocacy panel
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1529,7 +1957,7 @@ No matching items
       
     </li>
   
-    <li data-index="2" data-categories="Burnout,Librarian Worklife,Emotional Labor,2023" data-listing-date-sort="1702443600000">
+    <li data-index="3" data-categories="Burnout,Librarian Worklife,Emotional Labor,2023" data-listing-date-sort="1702443600000">
       Burnout and affective labor
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1543,7 +1971,7 @@ No matching items
       
     </li>
   
-    <li data-index="3" data-categories="Open Access,Open Educational Resources,Accessibility,Disability Justice,2023" data-listing-date-sort="1698206400000">
+    <li data-index="4" data-categories="Open Access,Open Educational Resources,Accessibility,Disability Justice,2023" data-listing-date-sort="1698206400000">
       Missing in the open: Accessibility and OER and open access
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1553,6 +1981,132 @@ No matching items
       
         <small class="text-muted">
           2023. Matthew Weirick Johnson, Salma Abumeeiz, Sylvia Page. UCLA Library Open Access Week 2023. Online. Invited Panel Presentation.
+        </small>
+      
+    </li>
+  
+</ul>
+
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="webinars" class="level3">
+<h3 class="anchored" data-anchor-id="webinars">Webinars</h3>
+<div id="listing-talks-webinars" class="quarto-listing quarto-listing-container-custom">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
+
+<style>
+  
+  .ai-lg {
+    font-size: 1.2em;  /* Adjust as needed */
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .card {
+    margin-bottom: 0;
+    margin-top: 0;
+    border: 0;
+    padding-bottom: 0;
+  }
+  
+  .collapse {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+</style>
+
+<ul class="list">
+  
+    <li data-index="0" data-categories="Quarto" data-listing-date-sort="1741752000000">
+      Build your personal website with Quarto: Sharing your research
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2025. Matthew Weirick Johnson. Core Webinars. Online. Webinar.
+        </small>
+      
+    </li>
+  
+    <li data-index="1" data-categories="Quarto" data-listing-date-sort="1740546000000">
+      Build your personal website with Quarto: Highlighting your work and creating a blog
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2025. Matthew Weirick Johnson. Core Webinars. Online. Webinar.
+        </small>
+      
+    </li>
+  
+    <li data-index="2" data-categories="Quarto" data-listing-date-sort="1739941200000">
+      Build your personal website with Quarto: Getting started
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2025. Matthew Weirick Johnson. Core Webinars. Online. Webinar.
+        </small>
+      
+    </li>
+  
+    <li data-index="3" data-categories="Quarto" data-listing-date-sort="1739336400000">
+      Build your personal website with Quarto: An introduction to GitHub Pages, Markdown, and R Studio
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2025. Matthew Weirick Johnson. Core Webinars. Online. Webinar.
+        </small>
+      
+    </li>
+  
+    <li data-index="4" data-categories="Information Literacy,Library Instruction,LIS Education" data-listing-date-sort="1732078800000">
+      Training library instructors: MLIS students
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2024. Dominique Turnbow, Kelly Delevan, B. Austin Waters, Breeann Austin, Matthew Weirick Johnson (moderator). Association of College &amp; Research Libraries. Online. Webinar.
+        </small>
+      
+    </li>
+  
+    <li data-index="5" data-categories="Information Literacy,Library Instruction" data-listing-date-sort="1731474000000">
+      Training library instructors: Institutional approaches
+      <br>
+      <!-- paper info for not-yet-published papers -->
+      
+      
+      <!-- paper info for published papers -->
+      
+        <small class="text-muted">
+          2024. Kirstie Preest, Claire Sewell, Karen Munro, Matt Huculak, Michael Lines, Matthew Weirick Johnson (moderator). Association of College &amp; Research Libraries. Online. Webinar.
         </small>
       
     </li>
@@ -1578,12 +2132,15 @@ No matching items
 <section id="peer-reviews" class="level3">
 <h3 class="anchored" data-anchor-id="peer-reviews">Peer Reviews</h3>
 <ul>
-<li><em>College &amp; Research Libraries</em> <span class="cvdate">1 review</span></li>
-<li><em>The Journal of Academic Librarianship</em> <span class="cvdate">7 reviews</span></li>
-<li><em>Journal of the Medical Library Association</em> <span class="cvdate">1 review</span></li>
-<li><em>Journal of New Librarianship</em> <span class="cvdate">3 reviews</span></li>
-<li><em>New Media &amp; Society</em> <span class="cvdate">2 reviews</span></li>
-<li><em>Public Services Quarterly</em> <span class="cvdate">4 reviews</span></li>
+<li><em>The Journal of Academic Librarianship</em> <span class="cvdate">18 reviews (2023 – 2026)</span></li>
+<li><em>Public Services Quarterly</em> <span class="cvdate">9 reviews (2023 – 2026)</span></li>
+<li><em>College &amp; Research Libraries</em> <span class="cvdate">4 reviews (2023 – 2026)</span></li>
+<li><em>Journal of New Librarianship</em> <span class="cvdate">3 reviews (2021 – 2023)</span></li>
+<li><em>New Media &amp; Society</em> <span class="cvdate">3 reviews (2021)</span></li>
+<li><em>Journal of Information Literacy</em> <span class="cvdate">1 review (2024)</span></li>
+<li><em>Journal of the Medical Library Association</em> <span class="cvdate">1 review (2022)</span></li>
+<li><em>Library Journal</em> <span class="cvdate">1 review (2024)</span></li>
+<li><em>Qualitative Inquiry</em> <span class="cvdate">1 review (2025)</span></li>
 </ul>
 </section>
 </section>
@@ -1594,10 +2151,10 @@ No matching items
 <ul>
 <li>Conference Committee, ACRL Representative <span class="cvdate">2022 – 2023</span></li>
 </ul>
-</section>
-<section id="association-of-college-research-libraries-acrl" class="level3">
-<h3 class="anchored" data-anchor-id="association-of-college-research-libraries-acrl">Association of College &amp; Research Libraries (ACRL)</h3>
+<section id="association-of-college-research-libraries-acrl" class="level4">
+<h4 class="anchored" data-anchor-id="association-of-college-research-libraries-acrl">Association of College &amp; Research Libraries (ACRL)</h4>
 <ul>
+<li>Conference Contributed Papers Committee, Member <span class="cvdate">2024 – 2025</span></li>
 <li>Publications Coordinating Committee, Member <span class="cvdate">2023 – 2025</span></li>
 <li>Choice Editorial Board, Member <span class="cvdate">2023 – 2025</span></li>
 <li><em>College &amp; Research Libraries</em> Editorial Board, Member <span class="cvdate">2023 – 2026</span></li>
@@ -1605,42 +2162,61 @@ No matching items
 <li>Professional Development Committee, Chair <span class="cvdate">2022 – 2023</span></li>
 <li>Professional Development Committee, Member <span class="cvdate">2019 – 2022</span></li>
 </ul>
-</section>
-<section id="acrl-instruction-section-is" class="level3">
-<h3 class="anchored" data-anchor-id="acrl-instruction-section-is">ACRL Instruction Section (IS)</h3>
+<section id="acrl-instruction-section-is" class="level5">
+<h5 class="anchored" data-anchor-id="acrl-instruction-section-is">ACRL Instruction Section (IS)</h5>
 <ul>
+<li>Management and Leadership Committee, Member <span class="cvdate">2026 – 2028</span></li>
+<li>Nominating Committee, Chair <span class="cvdate">2025 – 2026</span></li>
 <li>Executive Committee, Archivist <span class="cvdate">2024 – 2025</span></li>
 <li>Executive Committee, Secretary <span class="cvdate">2023 – 2024</span></li>
 <li>Peer-reviewed Instructional Materials Online (PRIMO) Committee, Member <span class="cvdate">2023 – 2025</span></li>
 <li>Diversity and Inclusion Task Force, Member <span class="cvdate">2018 – 2020</span></li>
 </ul>
 </section>
-<section id="acrl-university-libraries-section-uls" class="level3">
-<h3 class="anchored" data-anchor-id="acrl-university-libraries-section-uls">ACRL University Libraries Section (ULS)</h3>
+<section id="acrl-university-libraries-section-uls" class="level5">
+<h5 class="anchored" data-anchor-id="acrl-university-libraries-section-uls">ACRL University Libraries Section (ULS)</h5>
 <ul>
+<li>Professional Development Committee, Co-Chair <span class="cvdate">2025 – 2027</span></li>
 <li>Professional Development Committee, Member <span class="cvdate">2023 – 2025</span></li>
 </ul>
 </section>
-<section id="acrl-women-and-gender-studies-section-wgss" class="level3">
-<h3 class="anchored" data-anchor-id="acrl-women-and-gender-studies-section-wgss">ACRL Women and Gender Studies Section (WGSS)</h3>
+<section id="acrl-women-and-gender-studies-section-wgss" class="level5">
+<h5 class="anchored" data-anchor-id="acrl-women-and-gender-studies-section-wgss">ACRL Women and Gender Studies Section (WGSS)</h5>
 <ul>
 <li>Core Books Project (HIV &amp; AIDS, British Literature), Member <span class="cvdate">2021 – Present</span></li>
 <li>Awards Committee, Member <span class="cvdate">2021 – 2023</span></li>
 </ul>
 </section>
-<section id="rainbow-round-table-rrt" class="level3">
-<h3 class="anchored" data-anchor-id="rainbow-round-table-rrt">Rainbow Round Table (RRT)</h3>
+<section id="rainbow-round-table-rrt" class="level5">
+<h5 class="anchored" data-anchor-id="rainbow-round-table-rrt">Rainbow Round Table (RRT)</h5>
 <ul>
 <li>Stonewall Book Awards - Israel Fishman Non-Fiction Award Committee, Member <span class="cvdate">2022 – 2024</span></li>
 <li>News &amp; Reviews Committee, Member <span class="cvdate">2019 – 2021</span></li>
 <li>Resources Committee, Member <span class="cvdate">2017 – 2019</span></li>
 </ul>
 </section>
-<section id="library-instruction-round-table-lirt" class="level3">
-<h3 class="anchored" data-anchor-id="library-instruction-round-table-lirt">Library Instruction Round Table (LIRT)</h3>
+</section>
+<section id="library-instruction-round-table-lirt" class="level4">
+<h4 class="anchored" data-anchor-id="library-instruction-round-table-lirt">Library Instruction Round Table (LIRT)</h4>
 <ul>
-<li>Top 20 Committee, Member <span class="cvdate">2023 – 2025</span></li>
+<li>Top 20 Committee, Member <span class="cvdate">2023 – 2027</span></li>
 <li>Newsletter Committee, Member <span class="cvdate">2017 – 2019</span></li>
+</ul>
+</section>
+</section>
+<section id="american-educational-research-association-aera" class="level3">
+<h3 class="anchored" data-anchor-id="american-educational-research-association-aera">American Educational Research Association (AERA)</h3>
+<section id="qualitative-research-special-interest-group-qrsig" class="level4">
+<h4 class="anchored" data-anchor-id="qualitative-research-special-interest-group-qrsig">Qualitative Research Special Interest Group (QRSIG)</h4>
+<ul>
+<li>Graduate Student Travel Award Committee, Member <span class="cvdate">2026 – 2027</span></li>
+</ul>
+</section>
+</section>
+<section id="institute-for-research-design-in-librarianship-irdl" class="level3">
+<h3 class="anchored" data-anchor-id="institute-for-research-design-in-librarianship-irdl">Institute for Research Design in Librarianship (IRDL)</h3>
+<ul>
+<li>Mentor <span class="cvdate">2023 – 2024</span></li>
 </ul>
 
 

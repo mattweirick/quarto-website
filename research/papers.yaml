@@ -1,3 +1,18 @@
+- title: "Insights from a burnout debate: Occupational health psychology for academic librarianship"
+  type: "Published"
+  short: "burnout-debate-2026"
+  author:
+    - Matthew Weirick Johnson
+  date: 2026-02-01
+  year: 2026
+  journal: "<em> portal: Libraries and the Academic</em>"
+  abstract: "A recent scholarly debate in Work & Stress challenges foundational assumptions about burnout, with Renzo Bianchi and Irvin Sam Schonfeld arguing for its abandonment in favor of a depression-focused framework. Their critique centers on burnout’s conceptual ambiguity, overstated prevalence, and overlap with depression. Leading occupational health psychologists respond with counterarguments affirming burnout’s distinctiveness and occupational roots. These debates offer critical insights for library and information science, highlighting the need for interdisciplinary engagement, improved measurement, and organizational interventions. Integrating perspectives from occupational health psychology can enrich burnout research in librarianship and support more effective strategies for improving library workplace conditions."
+  #pdf:
+  pubclosed: https://doi.org/10.1353/pla.2026.a979341
+  categories:
+    - Burnout
+    - 2026
+
 - title: "Job control, library instruction, and burnout: A quantitative
 analysis of academic instruction librarians’ experiences of job control
 while teaching"

@@ -20,7 +20,7 @@
 <ul class="list">
   <% for (const item of items) { %>
     <li <%= metadataAttrs(item) %>>
-      <%= item.title %>
+      <%= item.title %> <% if (item.pubclosed) { %> <a href="<%= item.pubclosed %>" title="read the publisher's version of <%= item.title %>"><i class="ai ai-closed-access"></i></a> <% } else{ %> <a href="<%= item.pubopen %>" title="read the open access version of <%= item.title %>"><i class="ai ai-open-access"></i></a> <% } %>
       <br/>
       <% if (item.type === 'Published') { %>
         <small class="text-muted" style="display:block;">

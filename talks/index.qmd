@@ -47,6 +47,20 @@ listing:
     field-display-names: 
       year: "Year"
       journal: "Journal"
+  - id: talks-webinars
+    include: 
+      type: "Published"
+      audience: 
+        - "webinar"
+    contents: talks.yaml
+    template: talks.ejs
+    filter-ui: false
+    sort: "date desc" 
+    sort-ui: false
+    categories: false
+    field-display-names: 
+      year: "Year"
+      journal: "Journal"
 page-layout: full
 include-back-link: false
 ---
@@ -64,4 +78,9 @@ include-back-link: false
 ## Invited Talks
 
 ::: {#talks-invited}
+:::
+
+## Webinars
+
+::: {#talks-webinars}
 :::

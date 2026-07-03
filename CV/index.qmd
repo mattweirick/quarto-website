@@ -25,6 +25,20 @@ format:
     #      \usepackage{enumitem}
 format-links: [pdf]
 listing:
+  - id: published-papers-2026
+    include: 
+      type: "Published"
+      year: 2026
+    contents: ../research/papers.yaml
+    template: papers2.ejs
+    filter-ui: false
+    sort: "date desc" 
+    sort-ui: false
+    categories: false
+    type: table
+    field-display-names: 
+      year: "Year"
+      journal: "Journal"
   - id: published-papers-2025
     include: 
       type: "Published"
@@ -148,6 +162,20 @@ listing:
     field-display-names: 
       year: "Year"
       journal: "Journal"
+  - id: talks-webinars
+    include: 
+      type: "Published"
+      audience: 
+        - "webinar"
+    contents: ../talks/talks.yaml
+    template: talks2.ejs
+    filter-ui: false
+    sort: "date desc" 
+    sort-ui: false
+    categories: false
+    field-display-names: 
+      year: "Year"
+      journal: "Journal"
 ---
 
 ```{=html}
@@ -163,17 +191,22 @@ ul {
     margin-top: .5em;
    }
    
-#education li li + li {
+#education li + li {
     margin-top:.1em;
 }
 
-#education li li + li:last-child {
+#education li + li:last-child {
     margin-bottom: .5em;
 }
    
-#education li li {
+#education li {
     margin: 0 0 0 2em;
       }
+
+#education h3 {
+  font-size: var(--bs-body-font-size);
+  font-weight: 600;
+}
 
 #academic-positions li li {
     margin: 0 0 0 2em;
@@ -187,20 +220,42 @@ Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the U
 
 ## <i class="fa-solid fa-graduation-cap"></i> Education
 
--   **Ph.D.** *Measurement & Evaluation* [exp. 2027]{.cvdate}
-    -   University of South Florida
--   **M.S.** *Library Science* [2018]{.cvdate}
-    -   University of North Carolina at Chapel Hill
-    -   **Master's Paper:** “Not playing that game”: An exploratory study of queer men’s health information behavior on location-aware dating and sex-seeking mobile applications
-    -   **Certificates:** Interdisciplinary Health Communication, Interdisciplinary Health Disparities, SILS Diversity Advocate
+### University of South Florida
+
+-   **PhD** *Measurement & Research* [exp. 2027]{.cvdate}
+-   **MA** *Women's, Gender & Sexuality Studies* [exp. 2027]{.cvdate}
+<li class="certificates">
+  <span class="certificates-label">Certificates:</span>
+  <span class="certificates-value">
+    Qualitative Research, Advanced Quantitative Research, Women's, Gender & Sexuality Studies
+  </span>
+</li>
+
+### University of North Carolina at Chapel Hill
+
+-   **MS** *Library Science* [2018]{.cvdate}
+<li class="certificates">
+  <span class="certificates-label">Master's Paper:</span>
+  <span class="certificates-value">
+  “Not playing that game”: An exploratory study of queer men’s health information behavior on location-aware dating and sex-seeking mobile applications
+  </span>
+</li>
+<li class="certificates">
+  <span class="certificates-label">Certificates:</span>
+  <span class="certificates-value">
+  Interdisciplinary Health Communication, Interdisciplinary Health Disparities, SILS Diversity Advocate
+  </span>
+</li>
+    
 
 ```{=html}
 <!---  
 - Awards: Pratt Severn Best Student Research Paper Award, ASIS&T 
 --->
 ```
--   **B.A.** *English* [2016]{.cvdate}
-    -   Virginia Tech
+### Virginia Tech
+
+-   **BA** *English* [2016]{.cvdate}
 
 ```{=html}
 <!---
@@ -228,6 +283,11 @@ A complete list of publications with available open access options can be found 
 -   *Training Library Instructors, Vol 2: A Guide to Training Librarians* <br/> <small class="text-muted" style="display:block;"> Matthew Weirick Johnson (Ed.). ACRL. </small>
 
 ### <i class="fa-solid fa-file-lines"></i> Peer-reviewed Articles
+
+#### 2026
+
+::: {#published-papers-2026 style="padding-bottom: 0;"}
+:::
 
 #### 2025
 
@@ -279,6 +339,11 @@ A complete list of publications with available open access options can be found 
 ::: {#talks-invited}
 :::
 
+### Webinars
+
+::: {#talks-webinars}
+:::
+
 ## <i class="fa-solid fa-magnifying-glass"></i> Editorial & Peer Review Service
 
 ### Editorial Service
@@ -289,12 +354,15 @@ A complete list of publications with available open access options can be found 
 
 ### Peer Reviews
 
--   *College & Research Libraries* [1 review]{.cvdate}
--   *The Journal of Academic Librarianship* [7 reviews]{.cvdate}
--   *Journal of the Medical Library Association* [1 review]{.cvdate}
--   *Journal of New Librarianship* [3 reviews]{.cvdate}
--   *New Media & Society* [2 reviews]{.cvdate}
--   *Public Services Quarterly* [4 reviews]{.cvdate}
+-   *The Journal of Academic Librarianship* [18 reviews (2023 -- 2026)]{.cvdate}
+-   *Public Services Quarterly* [9 reviews (2023 -- 2026)]{.cvdate}
+-   *College & Research Libraries* [4 reviews (2023 -- 2026)]{.cvdate}
+-   *Journal of New Librarianship* [3 reviews (2021 -- 2023)]{.cvdate}
+-   *New Media & Society* [3 reviews (2021)]{.cvdate}
+-   *Journal of Information Literacy* [1 review (2024)]{.cvdate}
+-   *Journal of the Medical Library Association* [1 review (2022)]{.cvdate}
+-   *Library Journal* [1 review (2024)]{.cvdate}
+-   *Qualitative Inquiry* [1 review (2025)]{.cvdate}
 
 ## <i class="fa-solid fa-people-group"></i> Professional Service
 
@@ -302,8 +370,9 @@ A complete list of publications with available open access options can be found 
 
 -   Conference Committee, ACRL Representative [2022 -- 2023]{.cvdate}
 
-### Association of College & Research Libraries (ACRL)
+#### Association of College & Research Libraries (ACRL)
 
+-   Conference Contributed Papers Committee, Member [2024 -- 2025]{.cvdate}
 -   Publications Coordinating Committee, Member [2023 -- 2025]{.cvdate}
 -   Choice Editorial Board, Member [2023 -- 2025]{.cvdate}
 -   *College & Research Libraries* Editorial Board, Member [2023 -- 2026]{.cvdate}
@@ -311,29 +380,44 @@ A complete list of publications with available open access options can be found 
 -   Professional Development Committee, Chair [2022 -- 2023]{.cvdate}
 -   Professional Development Committee, Member [2019 -- 2022]{.cvdate}
 
-### ACRL Instruction Section (IS)
+##### ACRL Instruction Section (IS)
 
+-   Management and Leadership Committee, Member [2026 -- 2028]{.cvdate}
+-   Nominating Committee, Chair [2025 -- 2026]{.cvdate}
 -   Executive Committee, Archivist [2024 -- 2025]{.cvdate}
 -   Executive Committee, Secretary [2023 -- 2024]{.cvdate}
 -   Peer-reviewed Instructional Materials Online (PRIMO) Committee, Member [2023 -- 2025]{.cvdate}
 -   Diversity and Inclusion Task Force, Member [2018 -- 2020]{.cvdate}
 
-### ACRL University Libraries Section (ULS)
+##### ACRL University Libraries Section (ULS)
 
+-   Professional Development Committee, Co-Chair [2025 -- 2027]{.cvdate}
 -   Professional Development Committee, Member [2023 -- 2025]{.cvdate}
 
-### ACRL Women and Gender Studies Section (WGSS)
+##### ACRL Women and Gender Studies Section (WGSS)
 
 -   Core Books Project (HIV & AIDS, British Literature), Member [2021 -- Present]{.cvdate}
 -   Awards Committee, Member [2021 -- 2023]{.cvdate}
 
-### Rainbow Round Table (RRT)
+##### Rainbow Round Table (RRT)
 
 -   Stonewall Book Awards - Israel Fishman Non-Fiction Award Committee, Member [2022 -- 2024]{.cvdate}
 -   News & Reviews Committee, Member [2019 -- 2021]{.cvdate}
 -   Resources Committee, Member [2017 -- 2019]{.cvdate}
 
-### Library Instruction Round Table (LIRT)
+#### Library Instruction Round Table (LIRT)
 
--   Top 20 Committee, Member [2023 -- 2025]{.cvdate}
+-   Top 20 Committee, Member [2023 -- 2027]{.cvdate}
 -   Newsletter Committee, Member [2017 -- 2019]{.cvdate}
+
+### American Educational Research Association (AERA)
+
+#### Qualitative Research Special Interest Group (QRSIG)
+
+-   Graduate Student Travel Award Committee, Member [2026 -- 2027]{.cvdate}
+
+### Institute for Research Design in Librarianship (IRDL)
+
+-   Mentor [2023 -- 2024]{.cvdate}
+
+

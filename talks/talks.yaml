@@ -1,3 +1,382 @@
+- title: "Science fiction as methodology: Extrapolation, speculation, and fabulation in qualitative inquiry"
+  type: Published
+  short: aera-2026-scifi
+  author:
+    - Matthew Weirick Johnson
+  date: 2026-04-12
+  year: 2026
+  venue: "American Educational Research Association Annual Meeting"
+  location: "Los Angeles, CA"
+  audience: national
+  pres: "Conference Presentation"
+  categories: 
+    - Qualitative Research Methodology
+    - Science Fiction
+
+- title: "Ethics in the algorithm: Artificial intelligence and qualitative research"
+  type: Published
+  short: aera-2026-AI
+  author:
+    - Lorien S. Jordan
+    - Jennifer R. Wolgemuth
+    - Matthew Weirick Johnson
+    - Camryn T. Collins
+  date: 2026-04-09
+  year: 2026
+  venue: "American Educational Research Association Annual Meeting"
+  location: "Los Angeles, CA"
+  audience: national
+  pres: "Conference Presentation"
+  categories: 
+    - Qualitative Research Methodology
+    - Generative AI
+
+- title: "Moving past the research paper: Centering metaliteracy in effective research assignment design"
+  type: Published
+  short: aera-2026-metaliteracy
+  author:
+    - Matthew Weirick Johnson
+    - Jennifer Slagus
+  date: 2026-04-10
+  year: 2026
+  venue: "American Educational Research Association Annual Meeting"
+  location: "Los Angeles, CA"
+  audience: national
+  pres: "Conference Presentation"
+  categories: 
+    - Information Literacy
+    - Research Assignment Design
+
+- title: "The violence that makes our research possible: AI, extraction, and qualitative ethics"
+  type: Published
+  short: ecqi-2026-violence
+  author:
+    - Lorien S. Jordan
+    - Matthew Weirick Johnson
+    - Jennifer R. Wolgemuth
+  date: 2026-01-14
+  year: 2026
+  venue: "European Congress of Qualitative Inquiry"
+  location: "Athens, Greece"
+  audience: international
+  pres: "Conference Presentation"
+  categories: 
+    - Qualitative Research Methodology
+    - Generative AI
+
+- title: "Qualitative research and generative AI on the intergalactic bummer train"
+  type: Published
+  short: ecqi-2026-bummer
+  author:
+    - Matthew Weirick Johnson
+    - Lorien S. Jordan
+  date: 2026-01-15
+  year: 2026
+  venue: "European Congress of Qualitative Inquiry"
+  location: "Athens, Greece"
+  audience: international
+  pres: "Conference Presentation"
+  categories: 
+    - Qualitative Research Methodology
+    - Generative AI
+
+- title: "Methodological performativity: Doing and undoing methodology"
+  type: Published
+  short: aera-2025
+  author:
+    - Matthew Weirick Johnson
+  date: 2025-04-27
+  year: 2025
+  venue: "American Educational Research Association Annual Meeting"
+  location: "Denver, CO"
+  audience: national
+  pres: "Conference Presentation"
+  categories: 
+    - Qualitative Research Methodology
+
+- title: "Build your personal website with Quarto"
+  type: Published
+  short: ncme-2025
+  author:
+    - Matthew Weirick Johnson
+  date: 2025-04-23
+  year: 2025
+  venue: "National Council on Measurement in Education"
+  location: "Denver, CO"
+  audience: national
+  pres: "Training Session"
+  categories: 
+    - Quarto
+
+- title: "Publish it with ACRL"
+  type: Published
+  short: acrl-2025
+  author:
+    - Anne Doherty
+    - David Free
+    - Erin Nevius
+    - Bill Mickey
+    - Matthew Weirick Johnson
+    - Heidi Burkhardt
+  date: 2025-04-04
+  year: 2025
+  venue: "Association of College & Research Libraries Conference"
+  location: "Minneapolis, MN"
+  audience: national
+  pres: "Panel Presentation"
+  categories: 
+    - Qualitative Research Methodology
+
+- title: "(Un)doing methodology/(un)becoming methodologist: Performativity and methodological norms"
+  type: Published
+  short: tqr-2025
+  author:
+    - Matthew Weirick Johnson
+  date: 2025-03-05
+  year: 2025
+  venue: "The Qualitative Report Conference"
+  location: "Ft. Lauderdale, FL"
+  audience: international
+  pres: "Conference Presentation"
+  categories: 
+    - Qualitative Research Methodology
+
+- title: "Quantitative Criticalism in LIS"
+  type: Published
+  short: irdl-2024
+  author:
+    - Matthew Weirick Johnson
+  date: 2024-11-18
+  year: 2024
+  venue: "IRDL Online Research Conference"
+  location: "Online"
+  audience: national
+  pres: "Conference Presentation"
+  categories: 
+    - QuantCrit
+    
+- title: "Librarian perceptions of job control: Considerations for leaders and managers"
+  type: Published
+  short: core-2024
+  author:
+    - Matthew Weirick Johnson
+  date: 2024-05-15
+  year: 2024
+  venue: "Core Forum"
+  location: "Minneapolis, MN"
+  audience: national
+  pres: "Poster Presentation"
+  categories: 
+    - Job Control
+    - Academic Library Workers
+
+- title: "Ad-libbing methodology: Templates, structure, and improvisation in writing about qualitative research"
+  type: Published
+  short: isqm-2026-adlibbing
+  author:
+    - Matthew Weirick Johnson
+  date: 2026-04-25
+  year: 2026
+  venue: "Interdisciplinary Symposium on Qualitative Methodologies"
+  location: "Tampa, FL"
+  audience: institutional
+  pres: "Conference Presentation"
+  categories:
+    - Qualitative Research Methodology
+
+- title: "PrEP and queer potentiality: Resisting normative logics of biomedical technologies in sexual health"
+  type: Published
+  short: wgss-2026-prep
+  author:
+    - Matthew Weirick Johnson
+  date: 2026-02-13
+  year: 2026
+  venue: "Present Tense / Future Possibilities Conference (USF Women's, Gender, and Sexuality Studies Interdisciplinary Conference)"
+  location: "Tampa, FL"
+  audience: institutional
+  pres: "Conference Presentation"
+  categories:
+    - Queer Studies
+    - PrEP
+    - Feminist STS
+
+- title: "Autonomy, competence, relatedness: A framework of practical strategies for meaningful student work"
+  type: Published
+  short: acrl-dv-2025-sdt
+  author:
+    - Matthew Weirick Johnson
+    - Jennifer Slagus
+    - Daniel Neil
+  date: 2025-11-05
+  year: 2025
+  venue: "Association of College & Research Libraries Delaware Valley Chapter Fall Event"
+  location: "Online"
+  audience: regional
+  pres: "Conference Presentation"
+  categories:
+    - Academic Libraries
+    - Student Workers
+    - Self-Determination Theory
+
+- title: "Recovery from work: Recovery activities, experiences, and environments for academic library well-being"
+  type: Published
+  short: facrl-2025-recovery
+  author:
+    - Matthew Weirick Johnson
+  date: 2025-10-24
+  year: 2025
+  venue: "Florida Association of College & Research Libraries Virtual Conference"
+  location: "Online"
+  audience: regional
+  pres: "Conference Presentation"
+  categories:
+    - Academic Libraries
+    - Workplace Well-Being
+
+- title: "'Where we're going, we don't need roads': Methodology as infrastructure, (in)visibility, and the potential of disorientation"
+  type: Published
+  short: isqm-2025-infrastructure
+  author:
+    - Matthew Weirick Johnson
+  date: 2025-04-11
+  year: 2025
+  venue: "Interdisciplinary Symposium on Qualitative Methodologies"
+  location: "Tampa, FL"
+  audience: institutional
+  pres: "Conference Presentation"
+  categories:
+    - Qualitative Research Methodology
+    - Methodology as Infrastructure
+
+- title: "Academic teaching librarian reflections on self-report burnout and job control scores"
+  type: Published
+  short: fera-2024-burnout
+  author:
+    - Matthew Weirick Johnson
+  date: 2024-11-21
+  year: 2024
+  venue: "Florida Educational Research Association Annual Conference"
+  location: "Orlando, FL"
+  audience: regional
+  pres: "Poster Presentation"
+  categories:
+    - Academic Libraries
+    - Burnout
+
+- title: "Information literacy professional development for disciplinary faculty through a summer institute"
+  type: Published
+  short: facrl-2024-summer-institute
+  author:
+    - Matthew Weirick Johnson
+    - Jessica Szempruch
+    - Carl DiNardo
+    - Emily Mann
+  date: 2024-10-25
+  year: 2024
+  venue: "Florida Association of College & Research Libraries Virtual Conference"
+  location: "Online"
+  audience: regional
+  pres: "Conference Presentation"
+  categories:
+    - Information Literacy
+    - Faculty Development
+    - Academic Libraries
+
+- title: "Build your personal website with Quarto: An introduction to GitHub Pages, Markdown, and R Studio"
+  type: Published
+  short: core-2025-quarto-part1
+  author:
+    - Matthew Weirick Johnson
+  date: 2025-02-12
+  year: 2025
+  venue: "Core Webinars"
+  location: "Online"
+  audience: webinar
+  pres: "Webinar"
+  categories:
+    - Quarto
+
+- title: "Build your personal website with Quarto: Getting started"
+  type: Published
+  short: core-2025-quarto-part2
+  author:
+    - Matthew Weirick Johnson
+  date: 2025-02-19
+  year: 2025
+  venue: "Core Webinars"
+  location: "Online"
+  audience: webinar
+  pres: "Webinar"
+  categories:
+    - Quarto
+
+- title: "Build your personal website with Quarto: Highlighting your work and creating a blog"
+  type: Published
+  short: core-2025-quarto-part3
+  author:
+    - Matthew Weirick Johnson
+  date: 2025-02-26
+  year: 2025
+  venue: "Core Webinars"
+  location: "Online"
+  audience: webinar
+  pres: "Webinar"
+  categories:
+    - Quarto
+
+- title: "Build your personal website with Quarto: Sharing your research"
+  type: Published
+  short: core-2025-quarto-part4
+  author:
+    - Matthew Weirick Johnson
+  date: 2025-03-12
+  year: 2025
+  venue: "Core Webinars"
+  location: "Online"
+  audience: webinar
+  pres: "Webinar"
+  categories:
+    - Quarto
+
+- title: "Training library instructors: MLIS students"
+  type: Published
+  short: acrl-2024-training-mlis
+  author:
+    - Dominique Turnbow
+    - Kelly Delevan
+    - B. Austin Waters
+    - Breeann Austin
+    - Matthew Weirick Johnson (moderator)
+  date: 2024-11-20
+  year: 2024
+  venue: "Association of College & Research Libraries"
+  location: "Online"
+  audience: webinar
+  pres: "Webinar"
+  categories:
+    - Information Literacy
+    - Library Instruction
+    - LIS Education
+
+- title: "Training library instructors: Institutional approaches"
+  type: Published
+  short: acrl-2024-training-institutional
+  author:
+    - Kirstie Preest
+    - Claire Sewell
+    - Karen Munro
+    - Matt Huculak
+    - Michael Lines
+    - Matthew Weirick Johnson (moderator)
+  date: 2024-11-13
+  year: 2024
+  venue: "Association of College & Research Libraries"
+  location: "Online"
+  audience: webinar
+  pres: "Webinar"
+  categories:
+    - Information Literacy
+    - Library Instruction
 
 - title: "Learning from the library: Information worlds & information poverty"
   type: Published
@@ -190,6 +569,22 @@
     - Emotional Labor
     - 2023
 
+- title: "Seeing ourselves as workers: Exploring burnout & workers solidarity in academic libraries"
+  type: "Published"
+  short: delaware-talk
+  author:
+    - Matthew Weirick Johnson
+  date: 2025-01-30
+  year: 2025
+  venue: "Delaware Library Association College & Researc Libraries Division Winter Program"
+  location: Online
+  audience: invited
+  pres: "Invited Talk"
+  categories: 
+    - Burnout
+    - Librarian Worklife
+    - 2025
+    
 - title: "Best of Core Forum: Burnout in libraries: A research & advocacy panel"
   type: "Published"
   short: burnout-2024
@@ -262,7 +657,6 @@
   audience: "national"
   pres: "Conference Presentation"
   description: "Writing across the curriculum (WAC) courses involve assignments in which writing and research are deeply intertwined. But it is often difficult for instructors to anticipate the writing and information literacy skills their assignments require. To address this, UCLA librarians have partnered with writing faculty to create a course planner to help WAC instructors predict an assignment’s composition and research demands, and devise student-centered activities to address them. This session describes the collaboration that led to the planner and workshops conducted for WAC faculty and TAs, and gives participants opportunities to share similar ideas that are working on their campuses."
-  pdf: https://academic.mattweirick.com/files/LOEX-2021-slides.pdf
   categories:
     - Writing and Research
     - Information Literacy

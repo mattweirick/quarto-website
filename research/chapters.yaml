@@ -1,3 +1,17 @@
+- title: "Job control and librarian engagement: Considerations of workplace agency for crafting meaningful work experiences"
+  type: "Published"
+  short: "job-crafting-chapter"
+  author: 
+    - Matthew Weirick Johnson
+  date: 2026-03-01
+  year: 2026
+  journal: "</br>In J. Martin (Ed.) <em>Creating Healthy Library Workplaces: Five Factors That Improve Employee Engagement and Satisfaction</em>"
+  pubclosed: https://www.bloomsbury.com/us/creating-healthy-library-workplaces-9798216188780/
+  categories: 
+    - Job Crafting
+    - Academic Library Workers
+    - 2026
+
 - title: "Library instruction training and the MLIS: A review of the literature"
   type: "Published"
   short: "TLI-chapter2024"
@@ -6,6 +20,7 @@
   date: 2024-09-27
   year: 2024
   journal: "</br>In M. W. Johnson (Ed.) <em>Training Library Instructors, Vol 1: A Guide to Training Graduate Students</em>"
+  pubclosed: https://alastore.ala.org/training-library-instructors-guide-training-graduate-students-and-librarians-2-volume-set
   categories: 
     - Library Instruction
     - LIS Education

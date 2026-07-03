@@ -214,6 +214,7 @@ ul {
 
 </style>
 ```
+
 ::: {.content-visible when-format="html"}
 Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the University of South Florida Libraries and a PhD student in Educational Measurement and Evaluation also at USF. You can also [download a PDF of my CV](/files/johnson-cv.pdf).
 :::
@@ -222,54 +223,87 @@ Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the U
 
 ### University of South Florida
 
--   **PhD** *Measurement & Research* [exp. 2027]{.cvdate}
--   **MA** *Women's, Gender & Sexuality Studies* [exp. 2027]{.cvdate}
-<li class="certificates">
-  <span class="certificates-label">Certificates:</span>
-  <span class="certificates-value">
-    Qualitative Research, Advanced Quantitative Research, Women's, Gender & Sexuality Studies
-  </span>
-</li>
+```{=html}
+<ul>
+  <li>
+    <strong>PhD</strong> <em>Measurement &amp; Research</em>
+    <span class="cvdate">exp. 2027</span>
+  </li>
+
+  <li>
+    <strong>MA</strong> <em>Women's, Gender &amp; Sexuality Studies</em>
+    <span class="cvdate">exp. 2027</span>
+  </li>
+
+  <li class="cv-details-item">
+    <div class="cv-details">
+      <div class="cv-detail-label">Certificates:</div>
+      <div class="cv-detail-value">
+        <div>Qualitative Research</div>
+        <div>Advanced Quantitative Research</div>
+        <div>Women's, Gender &amp; Sexuality Studies</div>
+      </div>
+    </div>
+  </li>
+</ul>
+```
+
 
 ### University of North Carolina at Chapel Hill
 
--   **MS** *Library Science* [2018]{.cvdate}
-<li class="certificates">
-  <span class="certificates-label">Master's Paper:</span>
-  <span class="certificates-value">
-  “Not playing that game”: An exploratory study of queer men’s health information behavior on location-aware dating and sex-seeking mobile applications
-  </span>
-</li>
-<li class="certificates">
-  <span class="certificates-label">Certificates:</span>
-  <span class="certificates-value">
-  Interdisciplinary Health Communication, Interdisciplinary Health Disparities, SILS Diversity Advocate
-  </span>
-</li>
-    
+```{=html}
+<ul>
+  <li>
+    <strong>MS</strong> <em>Library Science</em>
+    <span class="cvdate">2018</span>
+  </li>
+
+  <li class="cv-details-item">
+    <div class="cv-details">
+      <div class="cv-detail-label">Master's Paper:</div>
+      <div class="cv-detail-value">
+        “Not playing that game”: An exploratory study of queer men's health
+        information behavior on location-aware dating and sex-seeking mobile
+        applications
+      </div>
+
+      <div class="cv-detail-label">Certificates:</div>
+      <div class="cv-detail-value">
+
+  <div>Interdisciplinary Health Communication</div>
+  <div>Interdisciplinary Health Disparities</div>
+  <div>SILS Diversity Advocate</div>
+
+      </div>
+    </div>
+  </li>
+</ul>
+```
 
 ```{=html}
 <!---  
 - Awards: Pratt Severn Best Student Research Paper Award, ASIS&T 
 --->
 ```
+
 ### Virginia Tech
 
--   **BA** *English* [2016]{.cvdate}
+- **BA** *English* [2016]{.cvdate}
 
 ```{=html}
 <!---
   - Awards: Barbara Ellen Smith Outstanding Paper Award, VT Women's & Gender Studies; Ut Prosim Award for Service, VT English
 --->
 ```
+
 ## <i class="fa-solid fa-school"></i> Academic Positions
 
--   **Associate Librarian & Director**, University of South Florida [2023 -- Present]{.cvdate}
-    -   Director of Research & Instruction, Tampa campus
--   **Associate Librarian**, UCLA, [2019 -- 2023]{.cvdate}
-    -   Humanities & Social Sciences Librarian, 2019-2023
-    -   Lead for Teaching & Learning, 2020-2023
-    -   Humanities & Social Sciences Lead for Research Services, 2020-2022
+- **Associate Librarian & Director**, University of South Florida [2023 -- Present]{.cvdate}
+  - Director of Research & Instruction, Tampa campus
+- **Associate Librarian**, UCLA, [2019 -- 2023]{.cvdate}
+  - Humanities & Social Sciences Librarian, 2019-2023
+  - Lead for Teaching & Learning, 2020-2023
+  - Humanities & Social Sciences Lead for Research Services, 2020-2022
 
 ## <i class="fa-solid fa-bookmark"></i> Publications
 
@@ -279,8 +313,8 @@ A complete list of publications with available open access options can be found 
 
 ### <i class="fa-solid fa-book"></i> Edited Books
 
--   *Training Library Instructors, Vol 1: A Guide to Training Graduate Students* <br/> <small class="text-muted" style="display:block;"> Matthew Weirick Johnson (Ed.). ACRL. </small>
--   *Training Library Instructors, Vol 2: A Guide to Training Librarians* <br/> <small class="text-muted" style="display:block;"> Matthew Weirick Johnson (Ed.). ACRL. </small>
+- *Training Library Instructors, Vol 1: A Guide to Training Graduate Students* <br/> <small class="text-muted" style="display:block;"> Matthew Weirick Johnson (Ed.). ACRL. </small>
+- *Training Library Instructors, Vol 2: A Guide to Training Librarians* <br/> <small class="text-muted" style="display:block;"> Matthew Weirick Johnson (Ed.). ACRL. </small>
 
 ### <i class="fa-solid fa-file-lines"></i> Peer-reviewed Articles
 
@@ -348,76 +382,74 @@ A complete list of publications with available open access options can be found 
 
 ### Editorial Service
 
--   *College & Research Libraries*, Social Media Editor [2023 -- 2026]{.cvdate}
--   ACRL *Choice*, Editorial Board Member [2023 -- 2025]{.cvdate}
--   *Public Services Quarterly*, Editorial Board Member [2023 -- Present]{.cvdate}
+- *College & Research Libraries*, Social Media Editor [2023 -- 2026]{.cvdate}
+- ACRL *Choice*, Editorial Board Member [2023 -- 2025]{.cvdate}
+- *Public Services Quarterly*, Editorial Board Member [2023 -- Present]{.cvdate}
 
 ### Peer Reviews
 
--   *The Journal of Academic Librarianship* [18 reviews (2023 -- 2026)]{.cvdate}
--   *Public Services Quarterly* [9 reviews (2023 -- 2026)]{.cvdate}
--   *College & Research Libraries* [4 reviews (2023 -- 2026)]{.cvdate}
--   *Journal of New Librarianship* [3 reviews (2021 -- 2023)]{.cvdate}
--   *New Media & Society* [3 reviews (2021)]{.cvdate}
--   *Journal of Information Literacy* [1 review (2024)]{.cvdate}
--   *Journal of the Medical Library Association* [1 review (2022)]{.cvdate}
--   *Library Journal* [1 review (2024)]{.cvdate}
--   *Qualitative Inquiry* [1 review (2025)]{.cvdate}
+- *The Journal of Academic Librarianship* [18 reviews (2023 -- 2026)]{.cvdate}
+- *Public Services Quarterly* [9 reviews (2023 -- 2026)]{.cvdate}
+- *College & Research Libraries* [4 reviews (2023 -- 2026)]{.cvdate}
+- *Journal of New Librarianship* [3 reviews (2021 -- 2023)]{.cvdate}
+- *New Media & Society* [3 reviews (2021)]{.cvdate}
+- *Journal of Information Literacy* [1 review (2024)]{.cvdate}
+- *Journal of the Medical Library Association* [1 review (2022)]{.cvdate}
+- *Library Journal* [1 review (2024)]{.cvdate}
+- *Qualitative Inquiry* [1 review (2025)]{.cvdate}
 
 ## <i class="fa-solid fa-people-group"></i> Professional Service
 
 ### American Library Association (ALA)
 
--   Conference Committee, ACRL Representative [2022 -- 2023]{.cvdate}
+- Conference Committee, ACRL Representative [2022 -- 2023]{.cvdate}
 
 #### Association of College & Research Libraries (ACRL)
 
--   Conference Contributed Papers Committee, Member [2024 -- 2025]{.cvdate}
--   Publications Coordinating Committee, Member [2023 -- 2025]{.cvdate}
--   Choice Editorial Board, Member [2023 -- 2025]{.cvdate}
--   *College & Research Libraries* Editorial Board, Member [2023 -- 2026]{.cvdate}
--   Nominations and Policies Audit Task Force, Chair [2022 -- 2023]{.cvdate}
--   Professional Development Committee, Chair [2022 -- 2023]{.cvdate}
--   Professional Development Committee, Member [2019 -- 2022]{.cvdate}
+- Conference Contributed Papers Committee, Member [2024 -- 2025]{.cvdate}
+- Publications Coordinating Committee, Member [2023 -- 2025]{.cvdate}
+- Choice Editorial Board, Member [2023 -- 2025]{.cvdate}
+- *College & Research Libraries* Editorial Board, Member [2023 -- 2026]{.cvdate}
+- Nominations and Policies Audit Task Force, Chair [2022 -- 2023]{.cvdate}
+- Professional Development Committee, Chair [2022 -- 2023]{.cvdate}
+- Professional Development Committee, Member [2019 -- 2022]{.cvdate}
 
 ##### ACRL Instruction Section (IS)
 
--   Management and Leadership Committee, Member [2026 -- 2028]{.cvdate}
--   Nominating Committee, Chair [2025 -- 2026]{.cvdate}
--   Executive Committee, Archivist [2024 -- 2025]{.cvdate}
--   Executive Committee, Secretary [2023 -- 2024]{.cvdate}
--   Peer-reviewed Instructional Materials Online (PRIMO) Committee, Member [2023 -- 2025]{.cvdate}
--   Diversity and Inclusion Task Force, Member [2018 -- 2020]{.cvdate}
+- Management and Leadership Committee, Member [2026 -- 2028]{.cvdate}
+- Nominating Committee, Chair [2025 -- 2026]{.cvdate}
+- Executive Committee, Archivist [2024 -- 2025]{.cvdate}
+- Executive Committee, Secretary [2023 -- 2024]{.cvdate}
+- Peer-reviewed Instructional Materials Online (PRIMO) Committee, Member [2023 -- 2025]{.cvdate}
+- Diversity and Inclusion Task Force, Member [2018 -- 2020]{.cvdate}
 
 ##### ACRL University Libraries Section (ULS)
 
--   Professional Development Committee, Co-Chair [2025 -- 2027]{.cvdate}
--   Professional Development Committee, Member [2023 -- 2025]{.cvdate}
+- Professional Development Committee, Co-Chair [2025 -- 2027]{.cvdate}
+- Professional Development Committee, Member [2023 -- 2025]{.cvdate}
 
 ##### ACRL Women and Gender Studies Section (WGSS)
 
--   Core Books Project (HIV & AIDS, British Literature), Member [2021 -- Present]{.cvdate}
--   Awards Committee, Member [2021 -- 2023]{.cvdate}
+- Core Books Project (HIV & AIDS, British Literature), Member [2021 -- Present]{.cvdate}
+- Awards Committee, Member [2021 -- 2023]{.cvdate}
 
 ##### Rainbow Round Table (RRT)
 
--   Stonewall Book Awards - Israel Fishman Non-Fiction Award Committee, Member [2022 -- 2024]{.cvdate}
--   News & Reviews Committee, Member [2019 -- 2021]{.cvdate}
--   Resources Committee, Member [2017 -- 2019]{.cvdate}
+- Stonewall Book Awards - Israel Fishman Non-Fiction Award Committee, Member [2022 -- 2024]{.cvdate}
+- News & Reviews Committee, Member [2019 -- 2021]{.cvdate}
+- Resources Committee, Member [2017 -- 2019]{.cvdate}
 
 #### Library Instruction Round Table (LIRT)
 
--   Top 20 Committee, Member [2023 -- 2027]{.cvdate}
--   Newsletter Committee, Member [2017 -- 2019]{.cvdate}
+- Top 20 Committee, Member [2023 -- 2027]{.cvdate}
+- Newsletter Committee, Member [2017 -- 2019]{.cvdate}
 
 ### American Educational Research Association (AERA)
 
 #### Qualitative Research Special Interest Group (QRSIG)
 
--   Graduate Student Travel Award Committee, Member [2026 -- 2027]{.cvdate}
+- Graduate Student Travel Award Committee, Member [2026 -- 2027]{.cvdate}
 
 ### Institute for Research Design in Librarianship (IRDL)
 
--   Mentor [2023 -- 2024]{.cvdate}
-
-
+- Mentor [2023 -- 2024]{.cvdate}

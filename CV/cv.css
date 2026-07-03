@@ -2,21 +2,25 @@
   float: right;
 }
 
-.certificates {
-  display: flex;
-  align-items: baseline;
-  gap: 0.3rem;
-  margin-right: 20em; /* room for right-floated cvdate */
+.cv-details-item {
+  list-style: none;   /* removes the second bullet */
+  margin-left: 0;
 }
 
-.certificates-label {
+.cv-details {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 0.5rem;
+  row-gap: 0.25rem;
+  margin-right: 8rem; /* reserve room for dates if needed */
+}
+
+.cv-detail-label {
   font-weight: 700;
-  flex-shrink: 0;
-  font-style: bold;
 }
 
-.certificates-value {
-  flex: 1;
+.cv-detail-value {
   min-width: 0;
-  padding-right: 6em;
 }
+
+

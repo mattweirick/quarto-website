@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Matthew Weirick Johnson</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -33,15 +36,16 @@ ul.task-list li input[type="checkbox"] {
 <link href="../logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-895a036e5932bd51361c6ec59ce21edc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
@@ -392,8 +396,8 @@ gtag('js', new Date());
 gtag('config', 'G-XN49YP77PL', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -406,7 +410,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -434,7 +438,7 @@ window.Quarto = {
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -446,7 +450,7 @@ window.Quarto = {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -468,7 +472,7 @@ window.Quarto = {
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Projects</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
@@ -501,7 +505,7 @@ window.Quarto = {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-connect-with-me" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-connect-with-me" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Connect with me</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-connect-with-me">    
@@ -541,7 +545,7 @@ window.Quarto = {
   </li>
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -652,23 +656,55 @@ ul {
 <section id="university-of-south-florida" class="level3">
 <h3 class="anchored" data-anchor-id="university-of-south-florida">University of South Florida</h3>
 <ul>
-<li><strong>PhD</strong> <em>Measurement &amp; Research</em> <span class="cvdate">exp. 2027</span></li>
-<li><strong>MA</strong> <em>Women’s, Gender &amp; Sexuality Studies</em> <span class="cvdate">exp. 2027</span>
-</li><li class="certificates">
-<span class="certificates-label">Certificates:</span> <span class="certificates-value"> Qualitative Research, Advanced Quantitative Research, Women’s, Gender &amp; Sexuality Studies </span>
-</li>
+  <li>
+    <strong>PhD</strong> <em>Measurement &amp; Research</em>
+    <span class="cvdate">exp. 2027</span>
+  </li>
+
+  <li>
+    <strong>MA</strong> <em>Women's, Gender &amp; Sexuality Studies</em>
+    <span class="cvdate">exp. 2027</span>
+  </li>
+
+  <li class="cv-details-item">
+    <div class="cv-details">
+      <div class="cv-detail-label">Certificates:</div>
+      <div class="cv-detail-value">
+        <div>Qualitative Research</div>
+        <div>Advanced Quantitative Research</div>
+        <div>Women's, Gender &amp; Sexuality Studies</div>
+      </div>
+    </div>
+  </li>
 </ul>
 </section>
 <section id="university-of-north-carolina-at-chapel-hill" class="level3">
 <h3 class="anchored" data-anchor-id="university-of-north-carolina-at-chapel-hill">University of North Carolina at Chapel Hill</h3>
 <ul>
-<li><strong>MS</strong> <em>Library Science</em> <span class="cvdate">2018</span>
-</li><li class="certificates">
-<span class="certificates-label">Master’s Paper:</span> <span class="certificates-value"> “Not playing that game”: An exploratory study of queer men’s health information behavior on location-aware dating and sex-seeking mobile applications </span>
-</li>
-<li class="certificates">
-<span class="certificates-label">Certificates:</span> <span class="certificates-value"> Interdisciplinary Health Communication, Interdisciplinary Health Disparities, SILS Diversity Advocate </span>
-</li>
+  <li>
+    <strong>MS</strong> <em>Library Science</em>
+    <span class="cvdate">2018</span>
+  </li>
+
+  <li class="cv-details-item">
+    <div class="cv-details">
+      <div class="cv-detail-label">Master's Paper:</div>
+      <div class="cv-detail-value">
+        “Not playing that game”: An exploratory study of queer men's health
+        information behavior on location-aware dating and sex-seeking mobile
+        applications
+      </div>
+
+      <div class="cv-detail-label">Certificates:</div>
+      <div class="cv-detail-value">
+
+  <div>Interdisciplinary Health Communication</div>
+  <div>Interdisciplinary Health Disparities</div>
+  <div>SILS Diversity Advocate</div>
+
+      </div>
+    </div>
+  </li>
 </ul>
 <!---  
 - Awards: Pratt Severn Best Student Research Paper Award, ASIS&T 
@@ -734,7 +770,7 @@ ul {
 
 <ul class="list">
   
-    <li data-index="0" data-categories="Burnout,2026" data-listing-date-sort="1769922000000">
+    <li data-index="0" data-categories="QnVybm91dCUyQzIwMjY=" data-listing-date-sort="1769922000000">
       Insights from a burnout debate: Occupational health psychology for academic librarianship  <a href="https://doi.org/10.1353/pla.2026.a979341" title="read the publisher's version of Insights from a burnout debate: Occupational health psychology for academic librarianship"><i class="ai ai-closed-access"></i></a> 
       <br>
       
@@ -749,7 +785,7 @@ ul {
 <!---
 <ul class="list">
   
-    <li data-index='1' data-categories='Burnout,2026' data-listing-date-sort='1769922000000'>
+    <li data-index='1' data-categories='QnVybm91dCUyQzIwMjY=' data-listing-date-sort='1769922000000'>
       Insights from a burnout debate: Occupational health psychology for academic librarianship
       <br/>
       
@@ -765,9 +801,7 @@ to add an indent on lines after title:
 style="margin-left:1em;display:block;"
 --->
 
-<div class="listing-no-matching d-none">
-No matching items
-</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
 <section id="section-1" class="level4">
@@ -793,7 +827,7 @@ No matching items
 
 <ul class="list">
   
-    <li data-index="0" data-categories="Burnout,Job Control,Academic Instruction Librarians,Librarian Worklife,2025" data-listing-date-sort="1735707600000">
+    <li data-index="0" data-categories="QnVybm91dCUyQ0pvYiUyMENvbnRyb2wlMkNBY2FkZW1pYyUyMEluc3RydWN0aW9uJTIwTGlicmFyaWFucyUyQ0xpYnJhcmlhbiUyMFdvcmtsaWZlJTJDMjAyNQ==" data-listing-date-sort="1735707600000">
       Job control, library instruction, and burnout: A quantitative analysis of academic instruction librarians’ experiences of job control while teaching  <a href="https://doi.org/10.5860/crl.86.1.50" title="read the open access version of Job control, library instruction, and burnout: A quantitative analysis of academic instruction librarians’ experiences of job control while teaching"><i class="ai ai-open-access"></i></a> 
       <br>
       
@@ -808,7 +842,7 @@ No matching items
 <!---
 <ul class="list">
   
-    <li data-index='1' data-categories='Burnout,Job Control,Academic Instruction Librarians,Librarian Worklife,2025' data-listing-date-sort='1735707600000'>
+    <li data-index='1' data-categories='QnVybm91dCUyQ0pvYiUyMENvbnRyb2wlMkNBY2FkZW1pYyUyMEluc3RydWN0aW9uJTIwTGlicmFyaWFucyUyQ0xpYnJhcmlhbiUyMFdvcmtsaWZlJTJDMjAyNQ==' data-listing-date-sort='1735707600000'>
       Job control, library instruction, and burnout: A quantitative analysis of academic instruction librarians’ experiences of job control while teaching
       <br/>
       
@@ -824,9 +858,7 @@ to add an indent on lines after title:
 style="margin-left:1em;display:block;"
 --->
 
-<div class="listing-no-matching d-none">
-No matching items
-</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
 <section id="section-2" class="level4">
@@ -852,7 +884,7 @@ No matching items
 
 <ul class="list">
   
-    <li data-index="0" data-categories="Burnout,Assessment,Management,2024" data-listing-date-sort="1734411600000">
+    <li data-index="0" data-categories="QnVybm91dCUyQ0Fzc2Vzc21lbnQlMkNNYW5hZ2VtZW50JTJDMjAyNA==" data-listing-date-sort="1734411600000">
       The burden of proving burnout in academic library workers  <a href="https://doi.org/10.33137/cjal-rcbu.v10.43096" title="read the open access version of The burden of proving burnout in academic library workers"><i class="ai ai-open-access"></i></a> 
       <br>
       
@@ -862,7 +894,7 @@ No matching items
       
     </li>
   
-    <li data-index="1" data-categories="Burnout,Librarian Worklife,2024" data-listing-date-sort="1719547200000">
+    <li data-index="1" data-categories="QnVybm91dCUyQ0xpYnJhcmlhbiUyMFdvcmtsaWZlJTJDMjAyNA==" data-listing-date-sort="1719547200000">
       Use of the Copenhagen Burnout Inventory among US academic librarians: Examining construct validity through factor structure and model fit  <a href="https://doi.org/10.1016/j.acalib.2024.102922" title="read the open access version of Use of the Copenhagen Burnout Inventory among US academic librarians: Examining construct validity through factor structure and model fit"><i class="ai ai-open-access"></i></a> 
       <br>
       
@@ -872,7 +904,7 @@ No matching items
       
     </li>
   
-    <li data-index="2" data-categories="Job Control,Academic Instruction Librarians,Librarian Worklife,2024" data-listing-date-sort="1704085200000">
+    <li data-index="2" data-categories="Sm9iJTIwQ29udHJvbCUyQ0FjYWRlbWljJTIwSW5zdHJ1Y3Rpb24lMjBMaWJyYXJpYW5zJTJDTGlicmFyaWFuJTIwV29ya2xpZmUlMkMyMDI0" data-listing-date-sort="1704085200000">
       Academic instruction librarians' feelings of job control: Quantitative analysis of responses to a job control inventory  <a href="https://doi.org/10.1016/j.acalib.2023.102835" title="read the publisher's version of Academic instruction librarians' feelings of job control: Quantitative analysis of responses to a job control inventory"><i class="ai ai-closed-access"></i></a> 
       <br>
       
@@ -887,7 +919,7 @@ No matching items
 <!---
 <ul class="list">
   
-    <li data-index='3' data-categories='Burnout,Assessment,Management,2024' data-listing-date-sort='1734411600000'>
+    <li data-index='3' data-categories='QnVybm91dCUyQ0Fzc2Vzc21lbnQlMkNNYW5hZ2VtZW50JTJDMjAyNA==' data-listing-date-sort='1734411600000'>
       The burden of proving burnout in academic library workers
       <br/>
       
@@ -897,7 +929,7 @@ No matching items
       
     </li>
   
-    <li data-index='4' data-categories='Burnout,Librarian Worklife,2024' data-listing-date-sort='1719547200000'>
+    <li data-index='4' data-categories='QnVybm91dCUyQ0xpYnJhcmlhbiUyMFdvcmtsaWZlJTJDMjAyNA==' data-listing-date-sort='1719547200000'>
       Use of the Copenhagen Burnout Inventory among US academic librarians: Examining construct validity through factor structure and model fit
       <br/>
       
@@ -907,7 +939,7 @@ No matching items
       
     </li>
   
-    <li data-index='5' data-categories='Job Control,Academic Instruction Librarians,Librarian Worklife,2024' data-listing-date-sort='1704085200000'>
+    <li data-index='5' data-categories='Sm9iJTIwQ29udHJvbCUyQ0FjYWRlbWljJTIwSW5zdHJ1Y3Rpb24lMjBMaWJyYXJpYW5zJTJDTGlicmFyaWFuJTIwV29ya2xpZmUlMkMyMDI0' data-listing-date-sort='1704085200000'>
       Academic instruction librarians' feelings of job control: Quantitative analysis of responses to a job control inventory
       <br/>
       
@@ -923,9 +955,7 @@ to add an indent on lines after title:
 style="margin-left:1em;display:block;"
 --->
 
-<div class="listing-no-matching d-none">
-No matching items
-</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
 <section id="section-3" class="level4">
@@ -951,7 +981,7 @@ No matching items
 
 <ul class="list">
   
-    <li data-index="0" data-categories="Open Access,Open Educational Resources,2023" data-listing-date-sort="1691467200000">
+    <li data-index="0" data-categories="T3BlbiUyMEFjY2VzcyUyQ09wZW4lMjBFZHVjYXRpb25hbCUyMFJlc291cmNlcyUyQzIwMjM=" data-listing-date-sort="1691467200000">
       The limits of inclusion in open access: Accessible access, universal design, and open educational resources  <a href="https://doi.org/10.31274/jlsc.14399" title="read the open access version of The limits of inclusion in open access: Accessible access, universal design, and open educational resources"><i class="ai ai-open-access"></i></a> 
       <br>
       
@@ -961,7 +991,7 @@ No matching items
       
     </li>
   
-    <li data-index="1" data-categories="Burnout,Job Control,Academic Instruction Librarians,Librarian Worklife,2023" data-listing-date-sort="1686542400000">
+    <li data-index="1" data-categories="QnVybm91dCUyQ0pvYiUyMENvbnRyb2wlMkNBY2FkZW1pYyUyMEluc3RydWN0aW9uJTIwTGlicmFyaWFucyUyQ0xpYnJhcmlhbiUyMFdvcmtsaWZlJTJDMjAyMw==" data-listing-date-sort="1686542400000">
       Job control and its impacts on burnout in academic instruction librarians  <a href="https://doi.org/10.1080/01930826.2023.2219601" title="read the publisher's version of Job control and its impacts on burnout in academic instruction librarians"><i class="ai ai-closed-access"></i></a> 
       <br>
       
@@ -971,7 +1001,7 @@ No matching items
       
     </li>
   
-    <li data-index="2" data-categories="Research Services,Management,Student Workers,2023" data-listing-date-sort="1673586000000">
+    <li data-index="2" data-categories="UmVzZWFyY2glMjBTZXJ2aWNlcyUyQ01hbmFnZW1lbnQlMkNTdHVkZW50JTIwV29ya2VycyUyQzIwMjM=" data-listing-date-sort="1673586000000">
       Collaborative research services: A peer-led cohort approach  <a href="https://doi.org/10.1108/RSR-09-2022-0049" title="read the publisher's version of Collaborative research services: A peer-led cohort approach"><i class="ai ai-closed-access"></i></a> 
       <br>
       
@@ -986,7 +1016,7 @@ No matching items
 <!---
 <ul class="list">
   
-    <li data-index='3' data-categories='Open Access,Open Educational Resources,2023' data-listing-date-sort='1691467200000'>
+    <li data-index='3' data-categories='T3BlbiUyMEFjY2VzcyUyQ09wZW4lMjBFZHVjYXRpb25hbCUyMFJlc291cmNlcyUyQzIwMjM=' data-listing-date-sort='1691467200000'>
       The limits of inclusion in open access: Accessible access, universal design, and open educational resources
       <br/>
       
@@ -996,7 +1026,7 @@ No matching items
       
     </li>
   
-    <li data-index='4' data-categories='Burnout,Job Control,Academic Instruction Librarians,Librarian Worklife,2023' data-listing-date-sort='1686542400000'>
+    <li data-index='4' data-categories='QnVybm91dCUyQ0pvYiUyMENvbnRyb2wlMkNBY2FkZW1pYyUyMEluc3RydWN0aW9uJTIwTGlicmFyaWFucyUyQ0xpYnJhcmlhbiUyMFdvcmtsaWZlJTJDMjAyMw==' data-listing-date-sort='1686542400000'>
       Job control and its impacts on burnout in academic instruction librarians
       <br/>
       
@@ -1006,7 +1036,7 @@ No matching items
       
     </li>
   
-    <li data-index='5' data-categories='Research Services,Management,Student Workers,2023' data-listing-date-sort='1673586000000'>
+    <li data-index='5' data-categories='UmVzZWFyY2glMjBTZXJ2aWNlcyUyQ01hbmFnZW1lbnQlMkNTdHVkZW50JTIwV29ya2VycyUyQzIwMjM=' data-listing-date-sort='1673586000000'>
       Collaborative research services: A peer-led cohort approach
       <br/>
       
@@ -1022,9 +1052,7 @@ to add an indent on lines after title:
 style="margin-left:1em;display:block;"
 --->
 
-<div class="listing-no-matching d-none">
-No matching items
-</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
 <section id="section-4" class="level4">
@@ -1050,7 +1078,7 @@ No matching items
 
 <ul class="list">
   
-    <li data-index="0" data-categories="Community Workshop Series,LIS Education,Community-engaged Learning,2021" data-listing-date-sort="1626235200000">
+    <li data-index="0" data-categories="Q29tbXVuaXR5JTIwV29ya3Nob3AlMjBTZXJpZXMlMkNMSVMlMjBFZHVjYXRpb24lMkNDb21tdW5pdHktZW5nYWdlZCUyMExlYXJuaW5nJTJDMjAyMQ==" data-listing-date-sort="1626235200000">
       The Community Workshop Series: A case study for community-engaged learning in LIS  <a href="https://doi.org/10.1353/lib.2020.0045" title="read the publisher's version of The Community Workshop Series: A case study for community-engaged learning in LIS"><i class="ai ai-closed-access"></i></a> 
       <br>
       
@@ -1060,7 +1088,7 @@ No matching items
       
     </li>
   
-    <li data-index="1" data-categories="TimelineJS,Critical Digital Pedagogy,2021" data-listing-date-sort="1620705600000">
+    <li data-index="1" data-categories="VGltZWxpbmVKUyUyQ0NyaXRpY2FsJTIwRGlnaXRhbCUyMFBlZGFnb2d5JTJDMjAyMQ==" data-listing-date-sort="1620705600000">
       Collaborative digital projects in the undergraduate humanities classroom: Case studies with TimelineJS  <a href="https://cuny.manifoldapp.org/read/collaborative-digital-projects-in-the-undergraduate-humanities-classroom-case-studies-with-timeline-js-31818d57-6216-4f71-b2bf-6f8f62b4bd48/section/5aa1826b-6e78-4346-bc64-7ff15f7ca6cc" title="read the open access version of Collaborative digital projects in the undergraduate humanities classroom: Case studies with TimelineJS"><i class="ai ai-open-access"></i></a> 
       <br>
       
@@ -1075,7 +1103,7 @@ No matching items
 <!---
 <ul class="list">
   
-    <li data-index='2' data-categories='Community Workshop Series,LIS Education,Community-engaged Learning,2021' data-listing-date-sort='1626235200000'>
+    <li data-index='2' data-categories='Q29tbXVuaXR5JTIwV29ya3Nob3AlMjBTZXJpZXMlMkNMSVMlMjBFZHVjYXRpb24lMkNDb21tdW5pdHktZW5nYWdlZCUyMExlYXJuaW5nJTJDMjAyMQ==' data-listing-date-sort='1626235200000'>
       The Community Workshop Series: A case study for community-engaged learning in LIS
       <br/>
       
@@ -1085,7 +1113,7 @@ No matching items
       
     </li>
   
-    <li data-index='3' data-categories='TimelineJS,Critical Digital Pedagogy,2021' data-listing-date-sort='1620705600000'>
+    <li data-index='3' data-categories='VGltZWxpbmVKUyUyQ0NyaXRpY2FsJTIwRGlnaXRhbCUyMFBlZGFnb2d5JTJDMjAyMQ==' data-listing-date-sort='1620705600000'>
       Collaborative digital projects in the undergraduate humanities classroom: Case studies with TimelineJS
       <br/>
       
@@ -1101,9 +1129,7 @@ to add an indent on lines after title:
 style="margin-left:1em;display:block;"
 --->
 
-<div class="listing-no-matching d-none">
-No matching items
-</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
 </section>
@@ -1130,7 +1156,7 @@ No matching items
 
 <ul class="list">
   
-    <li data-index="0" data-categories="Job Crafting,Academic Library Workers,2026" data-listing-date-sort="1772341200000">
+    <li data-index="0" data-categories="Sm9iJTIwQ3JhZnRpbmclMkNBY2FkZW1pYyUyMExpYnJhcnklMjBXb3JrZXJzJTJDMjAyNg==" data-listing-date-sort="1772341200000">
       Job control and librarian engagement: Considerations of workplace agency for crafting meaningful work experiences  <a href="https://www.bloomsbury.com/us/creating-healthy-library-workplaces-9798216188780/" title="read the publisher's version of Job control and librarian engagement: Considerations of workplace agency for crafting meaningful work experiences"><i class="ai ai-closed-access"></i></a> 
       <br>
       
@@ -1140,7 +1166,7 @@ No matching items
       
     </li>
   
-    <li data-index="1" data-categories="Library Instruction,LIS Education,Academic Instruction Librarians,2024" data-listing-date-sort="1727409600000">
+    <li data-index="1" data-categories="TGlicmFyeSUyMEluc3RydWN0aW9uJTJDTElTJTIwRWR1Y2F0aW9uJTJDQWNhZGVtaWMlMjBJbnN0cnVjdGlvbiUyMExpYnJhcmlhbnMlMkMyMDI0" data-listing-date-sort="1727409600000">
       Library instruction training and the MLIS: A review of the literature  <a href="https://alastore.ala.org/training-library-instructors-guide-training-graduate-students-and-librarians-2-volume-set" title="read the publisher's version of Library instruction training and the MLIS: A review of the literature"><i class="ai ai-closed-access"></i></a> 
       <br>
       
@@ -1150,7 +1176,7 @@ No matching items
       
     </li>
   
-    <li data-index="2" data-categories="Library Assessment,Academic Instruction Librarians,2023" data-listing-date-sort="1698811200000">
+    <li data-index="2" data-categories="TGlicmFyeSUyMEFzc2Vzc21lbnQlMkNBY2FkZW1pYyUyMEluc3RydWN0aW9uJTIwTGlicmFyaWFucyUyQzIwMjM=" data-listing-date-sort="1698811200000">
       Everyday evidence to assess teaching and learning: A programmatic assessment of library instruction  <a href="https://alastore.ala.org/content/everyday-evidence-based-practice-academic-libraries-case-studies-and-reflections" title="read the publisher's version of Everyday evidence to assess teaching and learning: A programmatic assessment of library instruction"><i class="ai ai-closed-access"></i></a> 
       <br>
       
@@ -1160,7 +1186,7 @@ No matching items
       
     </li>
   
-    <li data-index="3" data-categories="Library Instruction,LIS Education,Academic Instruction Librarians,2023" data-listing-date-sort="1685592000000">
+    <li data-index="3" data-categories="TGlicmFyeSUyMEluc3RydWN0aW9uJTJDTElTJTIwRWR1Y2F0aW9uJTJDQWNhZGVtaWMlMjBJbnN0cnVjdGlvbiUyMExpYnJhcmlhbnMlMkMyMDIz" data-listing-date-sort="1685592000000">
       Transforming our identities as learners and instructors: A library instruction training program  <a href="https://alastore.ala.org/content/instructional-identities-and-information-literacy-3-volume-set" title="read the publisher's version of Transforming our identities as learners and instructors: A library instruction training program"><i class="ai ai-closed-access"></i></a> 
       <br>
       
@@ -1170,7 +1196,7 @@ No matching items
       
     </li>
   
-    <li data-index="4" data-categories="Library Instruction,Online Learning,Learner-centered Design,2023" data-listing-date-sort="1675227600000">
+    <li data-index="4" data-categories="TGlicmFyeSUyMEluc3RydWN0aW9uJTJDT25saW5lJTIwTGVhcm5pbmclMkNMZWFybmVyLWNlbnRlcmVkJTIwRGVzaWduJTJDMjAyMw==" data-listing-date-sort="1675227600000">
       Promoting critical reading through learner-centered design: WI+RE’s approach to open online learning  <a href="https://alastore.ala.org/content/teaching-critical-reading-skills-strategies-academic-librarians-2-volume-set" title="read the publisher's version of Promoting critical reading through learner-centered design: WI+RE’s approach to open online learning"><i class="ai ai-closed-access"></i></a> 
       <br>
       
@@ -1180,7 +1206,7 @@ No matching items
       
     </li>
   
-    <li data-index="5" data-categories="Library Instruction,Undergradaute Research,Writing &amp; Reseearch,2023" data-listing-date-sort="1672549200000">
+    <li data-index="5" data-categories="TGlicmFyeSUyMEluc3RydWN0aW9uJTJDVW5kZXJncmFkYXV0ZSUyMFJlc2VhcmNoJTJDV3JpdGluZyUyMCUyNiUyMFJlc2VlYXJjaCUyQzIwMjM=" data-listing-date-sort="1672549200000">
       Writing and Research Training Program: A UCLA campus partnership to support BIPOC, LGBTQIA, and disabled student researchers  <a href="https://alastore.ala.org/content/undergraduate-research-and-academic-librarian-case-studies-and-best-practices-volume-2" title="read the publisher's version of Writing and Research Training Program: A UCLA campus partnership to support BIPOC, LGBTQIA, and disabled student researchers"><i class="ai ai-closed-access"></i></a> 
       <br>
       
@@ -1190,7 +1216,7 @@ No matching items
       
     </li>
   
-    <li data-index="6" data-categories="Burnout,Workload,Librarian Worklife,2022" data-listing-date-sort="1669870800000">
+    <li data-index="6" data-categories="QnVybm91dCUyQ1dvcmtsb2FkJTJDTGlicmFyaWFuJTIwV29ya2xpZmUlMkMyMDIy" data-listing-date-sort="1669870800000">
       What’s in a workload? Affect, burnout, and complicating capacity in academic librarians  <a href="https://alastore.ala.org/content/academic-librarian-burnout-causes-and-responses" title="read the publisher's version of What’s in a workload? Affect, burnout, and complicating capacity in academic librarians"><i class="ai ai-closed-access"></i></a> 
       <br>
       
@@ -1202,9 +1228,7 @@ No matching items
   
 </ul>
 
-<div class="listing-no-matching d-none">
-No matching items
-</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
 <section id="other-publications" class="level3">
@@ -1230,7 +1254,7 @@ No matching items
 
 <ul class="list">
   
-    <li data-index="0" data-categories="Burnout,Academic Library Workers,2026" data-listing-date-sort="1767243600000">
+    <li data-index="0" data-categories="QnVybm91dCUyQ0FjYWRlbWljJTIwTGlicmFyeSUyMFdvcmtlcnMlMkMyMDI2" data-listing-date-sort="1767243600000">
       Fixing work, not workers: Burnout as an organizational problem  <a href="https://doi.org/10.5860/crln.87.1.29" title="read the open access version of Fixing work, not workers: Burnout as an organizational problem"><i class="ai ai-open-access"></i></a> 
       <br>
       
@@ -1240,7 +1264,7 @@ No matching items
       
     </li>
   
-    <li data-index="1" data-categories="Information Literacy,2025" data-listing-date-sort="1751342400000">
+    <li data-index="1" data-categories="SW5mb3JtYXRpb24lMjBMaXRlcmFjeSUyQzIwMjU=" data-listing-date-sort="1751342400000">
       Celebrating 25 years of information literacy: A presentation series  <a href="https://doi.org/10.5860/crln.86.7.300" title="read the open access version of Celebrating 25 years of information literacy: A presentation series"><i class="ai ai-open-access"></i></a> 
       <br>
       
@@ -1250,7 +1274,7 @@ No matching items
       
     </li>
   
-    <li data-index="2" data-categories="Burnout,Academic Librarians,Librarian Worklife,2024" data-listing-date-sort="1718856000000">
+    <li data-index="2" data-categories="QnVybm91dCUyQ0FjYWRlbWljJTIwTGlicmFyaWFucyUyQ0xpYnJhcmlhbiUyMFdvcmtsaWZlJTJDMjAyNA==" data-listing-date-sort="1718856000000">
       Keeping up with...burnout  <a href="https://www.ala.org/acrl/publications/keeping_up_with/burnout" title="read the open access version of Keeping up with...burnout"><i class="ai ai-open-access"></i></a> 
       <br>
       
@@ -1260,7 +1284,7 @@ No matching items
       
     </li>
   
-    <li data-index="3" data-categories="Digital Pedagogy,Library Instruction,Academic Instruction Librarians,2021" data-listing-date-sort="1625630400000">
+    <li data-index="3" data-categories="RGlnaXRhbCUyMFBlZGFnb2d5JTJDTGlicmFyeSUyMEluc3RydWN0aW9uJTJDQWNhZGVtaWMlMjBJbnN0cnVjdGlvbiUyMExpYnJhcmlhbnMlMkMyMDIx" data-listing-date-sort="1625630400000">
       Teaching in the digital library: A partnership between teaching librarians and digital library staff  <a href="https://doi.org/10.5860/crln.82.7.302" title="read the open access version of Teaching in the digital library: A partnership between teaching librarians and digital library staff"><i class="ai ai-open-access"></i></a> 
       <br>
       
@@ -1270,7 +1294,7 @@ No matching items
       
     </li>
   
-    <li data-index="4" data-categories="Book Review,2020" data-listing-date-sort="1583125200000">
+    <li data-index="4" data-categories="Qm9vayUyMFJldmlldyUyQzIwMjA=" data-listing-date-sort="1583125200000">
       Book Review: <em>Library Trends</em> issue: Labor in academic libraries  <a href="https://libparlor.com/2020/03/02/book-review-library-trends-issue-labor-in-academic-libraries/" title="read the open access version of Book Review: <em>Library Trends</em> issue: Labor in academic libraries"><i class="ai ai-open-access"></i></a> 
       <br>
       
@@ -1280,7 +1304,7 @@ No matching items
       
     </li>
   
-    <li data-index="5" data-categories="Book Review,2019" data-listing-date-sort="1566532800000">
+    <li data-index="5" data-categories="Qm9vayUyMFJldmlldyUyQzIwMTk=" data-listing-date-sort="1566532800000">
       Book Review: Masked by trust: Bias in library discovery  <a href="https://libparlor.com/2019/08/23/book-review-masked-by-trust-bias-in-library-discovery/" title="read the open access version of Book Review: Masked by trust: Bias in library discovery"><i class="ai ai-open-access"></i></a> 
       <br>
       
@@ -1290,7 +1314,7 @@ No matching items
       
     </li>
   
-    <li data-index="6" data-categories="Book Review,2019" data-listing-date-sort="1558065600000">
+    <li data-index="6" data-categories="Qm9vayUyMFJldmlldyUyQzIwMTk=" data-listing-date-sort="1558065600000">
       Book Review: Critical approaches to credit-bearing information literacy courses  <a href="https://libparlor.com/2019/05/17/book-review-critical-approaches-to-credit-bearing-information-literacy-courses/" title="read the open access version of Book Review: Critical approaches to credit-bearing information literacy courses"><i class="ai ai-open-access"></i></a> 
       <br>
       
@@ -1300,7 +1324,7 @@ No matching items
       
     </li>
   
-    <li data-index="7" data-categories="Information Literacy,2018" data-listing-date-sort="1514782800000">
+    <li data-index="7" data-categories="SW5mb3JtYXRpb24lMjBMaXRlcmFjeSUyQzIwMTg=" data-listing-date-sort="1514782800000">
       Personal health data, surveillance, &amp; biopolitics: Toward a personal health data information literacy  <a href="http://www.progressivelibrariansguild.org/PL/PL46/150johnson.pdf" title="read the open access version of Personal health data, surveillance, &amp; biopolitics: Toward a personal health data information literacy"><i class="ai ai-open-access"></i></a> 
       <br>
       
@@ -1310,7 +1334,7 @@ No matching items
       
     </li>
   
-    <li data-index="8" data-categories="2016" data-listing-date-sort="1460433600000">
+    <li data-index="8" data-categories="MjAxNg==" data-listing-date-sort="1460433600000">
       ‘All human beings, as we meet them, are commingled out of good and evil’: Connections between person and place in <em>Wuthering Heights</em>  <a href="https://doi.org/10.21061/ph.v8i0.162" title="read the open access version of ‘All human beings, as we meet them, are commingled out of good and evil’: Connections between person and place in <em>Wuthering Heights</em>"><i class="ai ai-open-access"></i></a> 
       <br>
       
@@ -1322,9 +1346,7 @@ No matching items
   
 </ul>
 
-<div class="listing-no-matching d-none">
-No matching items
-</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
 </section>
@@ -1365,7 +1387,7 @@ No matching items
 
 <ul class="list">
   
-    <li data-index="0" data-categories="Qualitative Research Methodology,Science Fiction" data-listing-date-sort="1775966400000">
+    <li data-index="0" data-categories="UXVhbGl0YXRpdmUlMjBSZXNlYXJjaCUyME1ldGhvZG9sb2d5JTJDU2NpZW5jZSUyMEZpY3Rpb24=" data-listing-date-sort="1775966400000">
       Science fiction as methodology: Extrapolation, speculation, and fabulation in qualitative inquiry
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1379,7 +1401,7 @@ No matching items
       
     </li>
   
-    <li data-index="1" data-categories="Information Literacy,Research Assignment Design" data-listing-date-sort="1775793600000">
+    <li data-index="1" data-categories="SW5mb3JtYXRpb24lMjBMaXRlcmFjeSUyQ1Jlc2VhcmNoJTIwQXNzaWdubWVudCUyMERlc2lnbg==" data-listing-date-sort="1775793600000">
       Moving past the research paper: Centering metaliteracy in effective research assignment design
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1393,7 +1415,7 @@ No matching items
       
     </li>
   
-    <li data-index="2" data-categories="Qualitative Research Methodology,Generative AI" data-listing-date-sort="1775707200000">
+    <li data-index="2" data-categories="UXVhbGl0YXRpdmUlMjBSZXNlYXJjaCUyME1ldGhvZG9sb2d5JTJDR2VuZXJhdGl2ZSUyMEFJ" data-listing-date-sort="1775707200000">
       Ethics in the algorithm: Artificial intelligence and qualitative research
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1407,7 +1429,7 @@ No matching items
       
     </li>
   
-    <li data-index="3" data-categories="Qualitative Research Methodology,Generative AI" data-listing-date-sort="1768453200000">
+    <li data-index="3" data-categories="UXVhbGl0YXRpdmUlMjBSZXNlYXJjaCUyME1ldGhvZG9sb2d5JTJDR2VuZXJhdGl2ZSUyMEFJ" data-listing-date-sort="1768453200000">
       Qualitative research and generative AI on the intergalactic bummer train
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1421,7 +1443,7 @@ No matching items
       
     </li>
   
-    <li data-index="4" data-categories="Qualitative Research Methodology,Generative AI" data-listing-date-sort="1768366800000">
+    <li data-index="4" data-categories="UXVhbGl0YXRpdmUlMjBSZXNlYXJjaCUyME1ldGhvZG9sb2d5JTJDR2VuZXJhdGl2ZSUyMEFJ" data-listing-date-sort="1768366800000">
       The violence that makes our research possible: AI, extraction, and qualitative ethics
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1435,7 +1457,7 @@ No matching items
       
     </li>
   
-    <li data-index="5" data-categories="Qualitative Research Methodology" data-listing-date-sort="1745726400000">
+    <li data-index="5" data-categories="UXVhbGl0YXRpdmUlMjBSZXNlYXJjaCUyME1ldGhvZG9sb2d5" data-listing-date-sort="1745726400000">
       Methodological performativity: Doing and undoing methodology
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1449,7 +1471,7 @@ No matching items
       
     </li>
   
-    <li data-index="6" data-categories="Quarto" data-listing-date-sort="1745380800000">
+    <li data-index="6" data-categories="UXVhcnRv" data-listing-date-sort="1745380800000">
       Build your personal website with Quarto
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1463,7 +1485,7 @@ No matching items
       
     </li>
   
-    <li data-index="7" data-categories="Qualitative Research Methodology" data-listing-date-sort="1743739200000">
+    <li data-index="7" data-categories="UXVhbGl0YXRpdmUlMjBSZXNlYXJjaCUyME1ldGhvZG9sb2d5" data-listing-date-sort="1743739200000">
       Publish it with ACRL
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1477,7 +1499,7 @@ No matching items
       
     </li>
   
-    <li data-index="8" data-categories="Qualitative Research Methodology" data-listing-date-sort="1741150800000">
+    <li data-index="8" data-categories="UXVhbGl0YXRpdmUlMjBSZXNlYXJjaCUyME1ldGhvZG9sb2d5" data-listing-date-sort="1741150800000">
       (Un)doing methodology/(un)becoming methodologist: Performativity and methodological norms
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1491,7 +1513,7 @@ No matching items
       
     </li>
   
-    <li data-index="9" data-categories="QuantCrit" data-listing-date-sort="1731906000000">
+    <li data-index="9" data-categories="UXVhbnRDcml0" data-listing-date-sort="1731906000000">
       Quantitative Criticalism in LIS
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1505,7 +1527,7 @@ No matching items
       
     </li>
   
-    <li data-index="10" data-categories="Job Control,Academic Library Workers" data-listing-date-sort="1715745600000">
+    <li data-index="10" data-categories="Sm9iJTIwQ29udHJvbCUyQ0FjYWRlbWljJTIwTGlicmFyeSUyMFdvcmtlcnM=" data-listing-date-sort="1715745600000">
       Librarian perceptions of job control: Considerations for leaders and managers
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1519,7 +1541,7 @@ No matching items
       
     </li>
   
-    <li data-index="11" data-categories="Job Control,Librarian Worklife,2024" data-listing-date-sort="1715745600000">
+    <li data-index="11" data-categories="Sm9iJTIwQ29udHJvbCUyQ0xpYnJhcmlhbiUyMFdvcmtsaWZlJTJDMjAyNA==" data-listing-date-sort="1715745600000">
       Meaningful work &amp; librarian agency: Exploring job control among academic instruction librarians
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1533,7 +1555,7 @@ No matching items
       
     </li>
   
-    <li data-index="12" data-categories="Practitioner Research,Librarian-Researcher Confidence,Librarian Professional Development,Research Training,2023" data-listing-date-sort="1699938000000">
+    <li data-index="12" data-categories="UHJhY3RpdGlvbmVyJTIwUmVzZWFyY2glMkNMaWJyYXJpYW4tUmVzZWFyY2hlciUyMENvbmZpZGVuY2UlMkNMaWJyYXJpYW4lMjBQcm9mZXNzaW9uYWwlMjBEZXZlbG9wbWVudCUyQ1Jlc2VhcmNoJTIwVHJhaW5pbmclMkMyMDIz" data-listing-date-sort="1699938000000">
       Developing librarian-research confidence with Research Fridays
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1547,7 +1569,7 @@ No matching items
       
     </li>
   
-    <li data-index="13" data-categories="Burnout,Librarian Worklife,2023" data-listing-date-sort="1697774400000">
+    <li data-index="13" data-categories="QnVybm91dCUyQ0xpYnJhcmlhbiUyMFdvcmtsaWZlJTJDMjAyMw==" data-listing-date-sort="1697774400000">
       Burnout in libraries: A research &amp; advocacy panel
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1561,7 +1583,7 @@ No matching items
       
     </li>
   
-    <li data-index="14" data-categories="Open Educational Resources,Universal Design for Learning,Disability Justice,2022" data-listing-date-sort="1667448000000">
+    <li data-index="14" data-categories="T3BlbiUyMEVkdWNhdGlvbmFsJTIwUmVzb3VyY2VzJTJDVW5pdmVyc2FsJTIwRGVzaWduJTIwZm9yJTIwTGVhcm5pbmclMkNEaXNhYmlsaXR5JTIwSnVzdGljZSUyQzIwMjI=" data-listing-date-sort="1667448000000">
       Accessible access, universal design, and the limits of inclusion in open educational resource development: An interactive workshop
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1575,7 +1597,7 @@ No matching items
       
     </li>
   
-    <li data-index="15" data-categories="Writing and Research,Information Literacy,2021" data-listing-date-sort="1620878400000">
+    <li data-index="15" data-categories="V3JpdGluZyUyMGFuZCUyMFJlc2VhcmNoJTJDSW5mb3JtYXRpb24lMjBMaXRlcmFjeSUyQzIwMjE=" data-listing-date-sort="1620878400000">
       Writing and research are inseparable: Helping instructors integrate research and writing instruction in writing across the curriculum course planning
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1589,7 +1611,7 @@ No matching items
       
     </li>
   
-    <li data-index="16" data-categories="Critical Pedagogy,Critical Librarianship,Human Resources,Librarian Worklife,2020" data-listing-date-sort="1600228800000">
+    <li data-index="16" data-categories="Q3JpdGljYWwlMjBQZWRhZ29neSUyQ0NyaXRpY2FsJTIwTGlicmFyaWFuc2hpcCUyQ0h1bWFuJTIwUmVzb3VyY2VzJTJDTGlicmFyaWFuJTIwV29ya2xpZmUlMkMyMDIw" data-listing-date-sort="1600228800000">
       Conflicting interests and begrudging partnerships: Turning critical pedagogy on human resources
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1603,7 +1625,7 @@ No matching items
       
     </li>
   
-    <li data-index="17" data-categories="Masculinity Studies,Gender Segregation,Library Workplaces,Librarian Worklife,2019" data-listing-date-sort="1565150400000">
+    <li data-index="17" data-categories="TWFzY3VsaW5pdHklMjBTdHVkaWVzJTJDR2VuZGVyJTIwU2VncmVnYXRpb24lMkNMaWJyYXJ5JTIwV29ya3BsYWNlcyUyQ0xpYnJhcmlhbiUyMFdvcmtsaWZlJTJDMjAxOQ==" data-listing-date-sort="1565150400000">
       Desiring SUVs: Masculinities, masculine overcompensation, and gender segregation in academic libraries
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1617,7 +1639,7 @@ No matching items
       
     </li>
   
-    <li data-index="18" data-categories="Information Literacy,Public Libraries,2018" data-listing-date-sort="1539230400000">
+    <li data-index="18" data-categories="SW5mb3JtYXRpb24lMjBMaXRlcmFjeSUyQ1B1YmxpYyUyMExpYnJhcmllcyUyQzIwMTg=" data-listing-date-sort="1539230400000">
       Writing beyond the academy: Writing &amp; digital literacy skills courses in local public libraries
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1631,7 +1653,7 @@ No matching items
       
     </li>
   
-    <li data-index="19" data-categories="Information Worlds,Information Poverty,Writing Centers,2017" data-listing-date-sort="1510462800000">
+    <li data-index="19" data-categories="SW5mb3JtYXRpb24lMjBXb3JsZHMlMkNJbmZvcm1hdGlvbiUyMFBvdmVydHklMkNXcml0aW5nJTIwQ2VudGVycyUyQzIwMTc=" data-listing-date-sort="1510462800000">
       Learning from the library: Information worlds &amp; information poverty
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1645,7 +1667,7 @@ No matching items
       
     </li>
   
-    <li data-index="20" data-categories="Writing Centers,Library Collaborations,2016" data-listing-date-sort="1476417600000">
+    <li data-index="20" data-categories="V3JpdGluZyUyMENlbnRlcnMlMkNMaWJyYXJ5JTIwQ29sbGFib3JhdGlvbnMlMkMyMDE2" data-listing-date-sort="1476417600000">
       Committed to write: Writing centers, libraries, &amp; prisons in collaboration
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1659,7 +1681,7 @@ No matching items
       
     </li>
   
-    <li data-index="21" data-categories="Writing Centers,2015" data-listing-date-sort="1444363200000">
+    <li data-index="21" data-categories="V3JpdGluZyUyMENlbnRlcnMlMkMyMDE1" data-listing-date-sort="1444363200000">
       The Writing Partners Program: A case study of ELL students and beginning coaches
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1673,7 +1695,7 @@ No matching items
       
     </li>
   
-    <li data-index="22" data-categories="Don Juan,Lord Byron,2015" data-listing-date-sort="1432353600000">
+    <li data-index="22" data-categories="RG9uJTIwSnVhbiUyQ0xvcmQlMjBCeXJvbiUyQzIwMTU=" data-listing-date-sort="1432353600000">
       Don Juan in love (and lust)
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1689,9 +1711,7 @@ No matching items
   
 </ul>
 
-<div class="listing-no-matching d-none">
-No matching items
-</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
 <section id="regional-local-institutional" class="level3">
@@ -1729,7 +1749,7 @@ No matching items
 
 <ul class="list">
   
-    <li data-index="0" data-categories="Qualitative Research Methodology" data-listing-date-sort="1777089600000">
+    <li data-index="0" data-categories="UXVhbGl0YXRpdmUlMjBSZXNlYXJjaCUyME1ldGhvZG9sb2d5" data-listing-date-sort="1777089600000">
       Ad-libbing methodology: Templates, structure, and improvisation in writing about qualitative research
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1743,7 +1763,7 @@ No matching items
       
     </li>
   
-    <li data-index="1" data-categories="Queer Studies,PrEP,Feminist STS" data-listing-date-sort="1770958800000">
+    <li data-index="1" data-categories="UXVlZXIlMjBTdHVkaWVzJTJDUHJFUCUyQ0ZlbWluaXN0JTIwU1RT" data-listing-date-sort="1770958800000">
       PrEP and queer potentiality: Resisting normative logics of biomedical technologies in sexual health
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1757,7 +1777,7 @@ No matching items
       
     </li>
   
-    <li data-index="2" data-categories="Academic Libraries,Student Workers,Self-Determination Theory" data-listing-date-sort="1762318800000">
+    <li data-index="2" data-categories="QWNhZGVtaWMlMjBMaWJyYXJpZXMlMkNTdHVkZW50JTIwV29ya2VycyUyQ1NlbGYtRGV0ZXJtaW5hdGlvbiUyMFRoZW9yeQ==" data-listing-date-sort="1762318800000">
       Autonomy, competence, relatedness: A framework of practical strategies for meaningful student work
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1771,7 +1791,7 @@ No matching items
       
     </li>
   
-    <li data-index="3" data-categories="Academic Libraries,Workplace Well-Being" data-listing-date-sort="1761278400000">
+    <li data-index="3" data-categories="QWNhZGVtaWMlMjBMaWJyYXJpZXMlMkNXb3JrcGxhY2UlMjBXZWxsLUJlaW5n" data-listing-date-sort="1761278400000">
       Recovery from work: Recovery activities, experiences, and environments for academic library well-being
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1785,7 +1805,7 @@ No matching items
       
     </li>
   
-    <li data-index="4" data-categories="Qualitative Research Methodology,Methodology as Infrastructure" data-listing-date-sort="1744344000000">
+    <li data-index="4" data-categories="UXVhbGl0YXRpdmUlMjBSZXNlYXJjaCUyME1ldGhvZG9sb2d5JTJDTWV0aG9kb2xvZ3klMjBhcyUyMEluZnJhc3RydWN0dXJl" data-listing-date-sort="1744344000000">
       'Where we're going, we don't need roads': Methodology as infrastructure, (in)visibility, and the potential of disorientation
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1799,7 +1819,7 @@ No matching items
       
     </li>
   
-    <li data-index="5" data-categories="Academic Libraries,Burnout" data-listing-date-sort="1732165200000">
+    <li data-index="5" data-categories="QWNhZGVtaWMlMjBMaWJyYXJpZXMlMkNCdXJub3V0" data-listing-date-sort="1732165200000">
       Academic teaching librarian reflections on self-report burnout and job control scores
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1813,7 +1833,7 @@ No matching items
       
     </li>
   
-    <li data-index="6" data-categories="Information Literacy,Faculty Development,Academic Libraries" data-listing-date-sort="1729828800000">
+    <li data-index="6" data-categories="SW5mb3JtYXRpb24lMjBMaXRlcmFjeSUyQ0ZhY3VsdHklMjBEZXZlbG9wbWVudCUyQ0FjYWRlbWljJTIwTGlicmFyaWVz" data-listing-date-sort="1729828800000">
       Information literacy professional development for disciplinary faculty through a summer institute
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1827,7 +1847,7 @@ No matching items
       
     </li>
   
-    <li data-index="7" data-categories="Open Access,Open Educational Resources,Accessibility,Disability Justice,2022" data-listing-date-sort="1652414400000">
+    <li data-index="7" data-categories="T3BlbiUyMEFjY2VzcyUyQ09wZW4lMjBFZHVjYXRpb25hbCUyMFJlc291cmNlcyUyQ0FjY2Vzc2liaWxpdHklMkNEaXNhYmlsaXR5JTIwSnVzdGljZSUyQzIwMjI=" data-listing-date-sort="1652414400000">
       The limits of open access in open educational resources: Incorporating accessibility into the WI+RE Way at UCLA Library
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1841,7 +1861,7 @@ No matching items
       
     </li>
   
-    <li data-index="8" data-categories="Open Access,Open Educational Resources,Accessibility,Disability Justice,2022" data-listing-date-sort="1647921600000">
+    <li data-index="8" data-categories="T3BlbiUyMEFjY2VzcyUyQ09wZW4lMjBFZHVjYXRpb25hbCUyMFJlc291cmNlcyUyQ0FjY2Vzc2liaWxpdHklMkNEaXNhYmlsaXR5JTIwSnVzdGljZSUyQzIwMjI=" data-listing-date-sort="1647921600000">
       The limits of inclusion in open access: Accessible access, universal design, and open educational resources
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1855,7 +1875,7 @@ No matching items
       
     </li>
   
-    <li data-index="9" data-categories="Anti-Racist Pedagogy,Library Instruction,2021" data-listing-date-sort="1620100800000">
+    <li data-index="9" data-categories="QW50aS1SYWNpc3QlMjBQZWRhZ29neSUyQ0xpYnJhcnklMjBJbnN0cnVjdGlvbiUyQzIwMjE=" data-listing-date-sort="1620100800000">
       UCLA Library’s Anti-Racist Pedagogy Workshop Series
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1871,9 +1891,7 @@ No matching items
   
 </ul>
 
-<div class="listing-no-matching d-none">
-No matching items
-</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
 <section id="invited-talks" class="level3">
@@ -1911,7 +1929,7 @@ No matching items
 
 <ul class="list">
   
-    <li data-index="0" data-categories="Burnout,Librarian Worklife,2025" data-listing-date-sort="1738213200000">
+    <li data-index="0" data-categories="QnVybm91dCUyQ0xpYnJhcmlhbiUyMFdvcmtsaWZlJTJDMjAyNQ==" data-listing-date-sort="1738213200000">
       Seeing ourselves as workers: Exploring burnout &amp; workers solidarity in academic libraries
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1925,7 +1943,7 @@ No matching items
       
     </li>
   
-    <li data-index="1" data-categories="Information Literacy,Teach the Teacher,Library Instruction,2024" data-listing-date-sort="1720497600000">
+    <li data-index="1" data-categories="SW5mb3JtYXRpb24lMjBMaXRlcmFjeSUyQ1RlYWNoJTIwdGhlJTIwVGVhY2hlciUyQ0xpYnJhcnklMjBJbnN0cnVjdGlvbiUyQzIwMjQ=" data-listing-date-sort="1720497600000">
       Teaching information literacy: Considering current and future approaches and models
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1939,7 +1957,7 @@ No matching items
       
     </li>
   
-    <li data-index="2" data-categories="Burnout,Librarian Worklife,2024" data-listing-date-sort="1707282000000">
+    <li data-index="2" data-categories="QnVybm91dCUyQ0xpYnJhcmlhbiUyMFdvcmtsaWZlJTJDMjAyNA==" data-listing-date-sort="1707282000000">
       Best of Core Forum: Burnout in libraries: A research &amp; advocacy panel
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1953,7 +1971,7 @@ No matching items
       
     </li>
   
-    <li data-index="3" data-categories="Burnout,Librarian Worklife,Emotional Labor,2023" data-listing-date-sort="1702443600000">
+    <li data-index="3" data-categories="QnVybm91dCUyQ0xpYnJhcmlhbiUyMFdvcmtsaWZlJTJDRW1vdGlvbmFsJTIwTGFib3IlMkMyMDIz" data-listing-date-sort="1702443600000">
       Burnout and affective labor
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1967,7 +1985,7 @@ No matching items
       
     </li>
   
-    <li data-index="4" data-categories="Open Access,Open Educational Resources,Accessibility,Disability Justice,2023" data-listing-date-sort="1698206400000">
+    <li data-index="4" data-categories="T3BlbiUyMEFjY2VzcyUyQ09wZW4lMjBFZHVjYXRpb25hbCUyMFJlc291cmNlcyUyQ0FjY2Vzc2liaWxpdHklMkNEaXNhYmlsaXR5JTIwSnVzdGljZSUyQzIwMjM=" data-listing-date-sort="1698206400000">
       Missing in the open: Accessibility and OER and open access
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -1983,9 +2001,7 @@ No matching items
   
 </ul>
 
-<div class="listing-no-matching d-none">
-No matching items
-</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
 <section id="webinars" class="level3">
@@ -2023,7 +2039,7 @@ No matching items
 
 <ul class="list">
   
-    <li data-index="0" data-categories="Quarto" data-listing-date-sort="1741752000000">
+    <li data-index="0" data-categories="UXVhcnRv" data-listing-date-sort="1741752000000">
       Build your personal website with Quarto: Sharing your research
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -2037,7 +2053,7 @@ No matching items
       
     </li>
   
-    <li data-index="1" data-categories="Quarto" data-listing-date-sort="1740546000000">
+    <li data-index="1" data-categories="UXVhcnRv" data-listing-date-sort="1740546000000">
       Build your personal website with Quarto: Highlighting your work and creating a blog
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -2051,7 +2067,7 @@ No matching items
       
     </li>
   
-    <li data-index="2" data-categories="Quarto" data-listing-date-sort="1739941200000">
+    <li data-index="2" data-categories="UXVhcnRv" data-listing-date-sort="1739941200000">
       Build your personal website with Quarto: Getting started
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -2065,7 +2081,7 @@ No matching items
       
     </li>
   
-    <li data-index="3" data-categories="Quarto" data-listing-date-sort="1739336400000">
+    <li data-index="3" data-categories="UXVhcnRv" data-listing-date-sort="1739336400000">
       Build your personal website with Quarto: An introduction to GitHub Pages, Markdown, and R Studio
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -2079,7 +2095,7 @@ No matching items
       
     </li>
   
-    <li data-index="4" data-categories="Information Literacy,Library Instruction,LIS Education" data-listing-date-sort="1732078800000">
+    <li data-index="4" data-categories="SW5mb3JtYXRpb24lMjBMaXRlcmFjeSUyQ0xpYnJhcnklMjBJbnN0cnVjdGlvbiUyQ0xJUyUyMEVkdWNhdGlvbg==" data-listing-date-sort="1732078800000">
       Training library instructors: MLIS students
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -2093,7 +2109,7 @@ No matching items
       
     </li>
   
-    <li data-index="5" data-categories="Information Literacy,Library Instruction" data-listing-date-sort="1731474000000">
+    <li data-index="5" data-categories="SW5mb3JtYXRpb24lMjBMaXRlcmFjeSUyQ0xpYnJhcnklMjBJbnN0cnVjdGlvbg==" data-listing-date-sort="1731474000000">
       Training library instructors: Institutional approaches
       <br>
       <!-- paper info for not-yet-published papers -->
@@ -2109,9 +2125,7 @@ No matching items
   
 </ul>
 
-<div class="listing-no-matching d-none">
-No matching items
-</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
 </section>
@@ -2222,43 +2236,58 @@ No matching items
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
       }
+      return false;
     }
-    return false;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
@@ -2266,162 +2295,184 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
       return codeEl.innerText;
     }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
-    };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      return note.innerHTML;
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
     });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
     }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/mattweirick\.com");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
         }
-        return container.innerHTML
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -2429,185 +2480,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 </div> <!-- /content -->
 
 

@@ -1,0 +1,468 @@
+---
+title: "Random Methods Generator"
+---
+This app develops pieces of a methods section by filling in blanks from random lists of controlled vocabulary. This is not AI. Please don't take it seriously, or it'll self-destruct.
+
+``` {=html}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+<style>
+  #adlib-app {
+    --al-bg: #ffffff;
+    --al-bg-secondary: #f5f5f4;
+    --al-bg-tertiary: #eae9e6;
+    --al-text: #1a1a18;
+    --al-text-muted: #6b6b67;
+    --al-border: rgba(0,0,0,0.12);
+    --al-border-strong: rgba(0,0,0,0.22);
+    --al-accent-bg: #eff6ff;
+    --al-accent-text: #1d4ed8;
+    --al-radius-md: 8px;
+    --al-radius-lg: 12px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--al-text);
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 2rem 0 3rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    #adlib-app {
+      --al-bg: #604B8B;
+      --al-bg-secondary: #D0C2D5;
+      --al-bg-tertiary: #2e2e2b;
+      --al-text: #e8e8e3;
+      --al-text-muted: #9a9a94;
+      --al-border: rgba(255,255,255,0.1);
+      --al-border-strong: rgba(255,255,255,0.2);
+      --al-accent-bg: #D0C2D5;
+      --al-accent-text: #604B8B;
+    }
+  }
+
+  #adlib-app * { box-sizing: border-box; }
+
+  #adlib-app select,
+  #adlib-app textarea,
+  #adlib-app button {
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--al-text);
+    background: var(--al-bg);
+    border: none;
+    border-radius: var(--al-radius-md);
+    outline: none;
+    transition: border-color 0.15s;
+  }
+
+  #adlib-app select {
+    padding: 7px 10px;
+    cursor: pointer;
+    width: 100%;
+    border: 0.5px solid var(--al-border-strong);
+  }
+
+  #adlib-app select:focus {
+    border-color: var(--al-accent-text);
+  }
+
+  #adlib-app textarea {
+    padding: 7px 9px;
+    resize: vertical;
+    line-height: 1.6;
+    width: 100%;
+    background: var(--al-bg-secondary);
+  }
+
+  #adlib-app button {
+    padding: 8px 20px;
+    cursor: pointer;
+    background: var(--al-bg);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+  }
+
+  #adlib-app button:hover { background: var(--al-bg-secondary); }
+  #adlib-app button:active { transform: scale(0.98); }
+
+  #adlib-app .al-label {
+    font-size: 11px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--al-text-muted);
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  #adlib-app .al-divider {
+    border: none;
+    border-top: 0.5px solid var(--al-border);
+    margin: 1.5rem 0;
+  }
+
+  #adlib-app .al-preview {
+    font-size: 15px;
+    line-height: 1.85;
+    background: var(--al-bg-secondary);
+    border: 0.5px solid var(--al-border);
+    border-radius: var(--al-radius-lg);
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #000000;
+  }
+
+  #adlib-app .al-blank-badge {
+    display: inline-block;
+    background: var(--al-bg-tertiary);
+    border: 0.5px solid var(--al-border-strong);
+    border-radius: 4px;
+    padding: 1px 7px;
+    font-size: 12px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: var(--al-text-muted);
+    vertical-align: baseline;
+  }
+
+  #adlib-app .al-vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 10px;
+    margin-bottom: 1.5rem;
+  }
+
+  #adlib-app .al-vocab-card {
+    background: var(--al-bg);
+    border: none;
+    border-radius: var(--al-radius-lg);
+    padding: 10px 12px;
+  }
+
+  #adlib-app .al-band-row {
+    display: grid;
+    grid-template-columns: 60px 10px 60px 1fr;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: var(--al-text-muted);
+  }
+
+  #adlib-app .al-band-row input[type="number"] {
+    width: 100%;
+    padding: 4px 6px;
+    font-size: 12px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: var(--al-bg-secondary);
+    border: none;
+    border-radius: 5px;
+    color: var(--al-text);
+    text-align: center;
+    outline: none;
+  }
+
+  #adlib-app .al-band-row input[type="number"]:focus {
+    border-color: var(--al-accent-text);
+  }
+
+  #adlib-app .al-band-header {
+    display: grid;
+    grid-template-columns: 60px 10px 60px 1fr;
+    gap: 6px;
+    font-size: 10px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--al-text-muted);
+    margin-bottom: 4px;
+  }
+
+  #adlib-app .al-weight-bar-wrap {
+    height: 4px;
+    background: var(--al-bg-tertiary);
+    border-radius: 2px;
+    overflow: hidden;
+    flex: 1;
+  }
+
+  #adlib-app .al-weight-bar {
+    height: 100%;
+    background: var(--al-accent-text);
+    border-radius: 2px;
+    opacity: 0.5;
+    transition: width 0.2s;
+  }
+
+  #adlib-app .al-output {
+    font-size: 16px;
+    line-height: 1.9;
+    background: var(--al-bg);
+    border: none;
+    border-radius: var(--al-radius-lg);
+    padding: 1.1rem 1.4rem;
+  }
+
+  #adlib-app .al-filled {
+    background: var(--al-accent-bg);
+    color: var(--al-accent-text);
+    border-radius: 4px;
+    padding: 1px 7px;
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  #adlib-app .al-gen-count {
+    font-size: 13px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: var(--al-text-muted);
+  }
+</style>
+
+<div id="adlib-app">
+
+  <div style="margin-bottom: 1.25rem;">
+    <label class="al-label" for="al-select">Template</label>
+    <select id="al-select"></select>
+  </div>
+
+  <div class="al-preview" id="al-preview"></div>
+
+  <hr class="al-divider">
+
+  <p style="font-size: 13px; font-family: 'Helvetica Neue', Arial, sans-serif; color: var(--al-text-muted); margin: 0 0 10px;">Controlled Vocabularies</p>
+  <div class="al-vocab-grid" id="al-vocab-grid"></div>
+
+  <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 1.5rem;">
+    <button onclick="alGenerate()">
+      <i class="ti ti-refresh" aria-hidden="true" style="font-size: 15px;"></i> Regenerate
+    </button>
+    <span class="al-gen-count" id="al-gen-count"></span>
+  </div>
+
+  <div id="al-output-wrap" style="display: none;">
+    <hr class="al-divider">
+    <p style="font-size: 13px; font-family: 'Helvetica Neue', Arial, sans-serif; color: var(--al-text-muted); margin: 0 0 8px;">Result</p>
+    <div class="al-output" id="al-output"></div>
+  </div>
+
+</div>
+
+<script>
+(function () {
+
+  var TEMPLATES = [
+    {
+      name: "Participants",
+      template: "We recruited [NUMBER] participants through [RECRUITMENT METHOD]. Inclusion criteria required participants to be [AGE RANGE] years old and have experience with [RELEVANT EXPERIENCE]. Participants were predominantly [DEMOGRAPHIC CHARACTERISTIC].",
+      vocab: {
+        "NUMBER": {
+          type: "weighted",
+          bands: [
+            { min: 1,   max: 40,   weight: 90 },
+            { min: 41,  max: 100,  weight: 5  },
+            { min: 101, max: 1000, weight: 5  }
+          ]
+        },
+        "RECRUITMENT METHOD": ["social media advertising","university mailing lists","community flyers","snowball sampling","an online research panel","clinic referrals"],
+        "AGE RANGE": ["18–25","18–35","25–40","30–50","40–60","18–65","21–45"],
+        "RELEVANT EXPERIENCE": ["mobile app usage","digital health tools","remote work","social media platforms","wearable devices","online shopping"],
+        "DEMOGRAPHIC CHARACTERISTIC": ["female (67%)","male (58%)","young adults under 30","college-educated (78%)","employed full-time","from urban areas"]
+      }
+    },
+    {
+      name: "Study design",
+      template: "We used a [STUDY DESIGN] design with [NUMBER] conditions. Data were collected over [TIME PERIOD] using [DATA COLLECTION METHOD]. Statistical analyses were conducted using [ANALYSIS SOFTWARE].",
+      vocab: {
+        "STUDY DESIGN": ["between-subjects","within-subjects","mixed","randomized controlled","longitudinal","cross-sectional"],
+        "NUMBER": ["two","three","four","five"],
+        "TIME PERIOD": ["two weeks","one month","six months","a single session","three sessions"],
+        "DATA COLLECTION METHOD": ["online surveys","in-person interviews","biometric sensors","screen recordings","experience sampling"],
+        "ANALYSIS SOFTWARE": ["R","SPSS","Python","JASP","Stata"]
+      }
+    },
+    {
+      name: "Findings",
+      template: "Results showed a [EFFECT DIRECTION] effect of [INDEPENDENT VARIABLE] on [DEPENDENT VARIABLE] ([STATISTIC]). This suggests that [INTERPRETATION]. However, [LIMITATION] should be considered when interpreting these findings.",
+      vocab: {
+        "EFFECT DIRECTION": ["significant positive","significant negative","marginal","strong","null"],
+        "INDEPENDENT VARIABLE": ["task complexity","social presence","time pressure","user expertise","interface modality"],
+        "DEPENDENT VARIABLE": ["task completion time","error rate","user satisfaction","cognitive load","engagement"],
+        "STATISTIC": ["p < .05","p < .01","p = .08","p < .001","p = .12"],
+        "INTERPRETATION": ["increased complexity impairs performance","familiarity reduces cognitive load","social cues enhance motivation","experience moderates the effect"],
+        "LIMITATION": ["sample size","self-report bias","ecological validity","order effects","demand characteristics"]
+      }
+    },
+    {
+      name: "Reflexivity Statement",
+      template: "As the researcher, I acknowledged my [POSITIONALITY] and reflected on how my [BACKGROUND] might influence the research process and findings. This reflexivity was maintained by [PRACTICE].",
+      vocab: {
+        "POSITIONALITY": ["positionality","bias"],
+        "BACKGROUND": ["background","assumptions"],
+        "PRACTICE": ["maintaining a reflexivity journal"]
+      }
+    }
+  ];
+
+  var current = 0;
+  var genCount = 0;
+
+  function escapeRegex(s) {
+    return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  function isWeighted(v) {
+    return v && typeof v === 'object' && v.type === 'weighted';
+  }
+
+  function pickWeighted(blank) {
+    var vocab = TEMPLATES[current].vocab[blank];
+    var bands = vocab.bands.slice();
+
+    // read live values from inputs
+    bands = bands.map(function (b, i) {
+      var minEl = document.getElementById('al-bmin-' + blank + '-' + i);
+      var maxEl = document.getElementById('al-bmax-' + blank + '-' + i);
+      var wEl   = document.getElementById('al-bw-'   + blank + '-' + i);
+      return {
+        min:    minEl ? (parseInt(minEl.value, 10) || b.min) : b.min,
+        max:    maxEl ? (parseInt(maxEl.value, 10) || b.max) : b.max,
+        weight: wEl   ? (parseFloat(wEl.value)    || b.weight) : b.weight
+      };
+    });
+
+    var total = bands.reduce(function (s, b) { return s + b.weight; }, 0);
+    var roll  = Math.random() * total;
+    var cumul = 0;
+    var chosen = bands[bands.length - 1];
+    for (var i = 0; i < bands.length; i++) {
+      cumul += bands[i].weight;
+      if (roll < cumul) { chosen = bands[i]; break; }
+    }
+    var lo = Math.min(chosen.min, chosen.max);
+    var hi = Math.max(chosen.min, chosen.max);
+    return String(Math.floor(Math.random() * (hi - lo + 1)) + lo);
+  }
+
+  function pickValue(blank) {
+    var vocab = TEMPLATES[current].vocab[blank];
+    if (isWeighted(vocab)) {
+      return pickWeighted(blank);
+    }
+    var ta = document.getElementById('al-vocab-' + blank);
+    var opts = ta ? ta.value.split('\n').map(function (s) { return s.trim(); }).filter(Boolean) : vocab;
+    return opts.length ? opts[Math.floor(Math.random() * opts.length)] : blank;
+  }
+
+  function renderSelect() {
+    var sel = document.getElementById('al-select');
+    TEMPLATES.forEach(function (t, i) {
+      var opt = document.createElement('option');
+      opt.value = i;
+      opt.textContent = t.name;
+      sel.appendChild(opt);
+    });
+    sel.addEventListener('change', function () {
+      current = +sel.value;
+      genCount = 0;
+      document.getElementById('al-gen-count').textContent = '';
+      document.getElementById('al-output-wrap').style.display = 'none';
+      renderPreview();
+      renderVocab();
+    });
+  }
+
+  function renderPreview() {
+    var t = TEMPLATES[current];
+    var html = t.template.replace(/\[([^\]]+)\]/g, function (_, b) {
+      return '<span class="al-blank-badge">[' + b + ']</span>';
+    });
+    document.getElementById('al-preview').innerHTML = html;
+  }
+
+  function updateBars(blank, numBands) {
+    var weights = [];
+    for (var i = 0; i < numBands; i++) {
+      var wEl = document.getElementById('al-bw-' + blank + '-' + i);
+      weights.push(wEl ? (parseFloat(wEl.value) || 0) : 0);
+    }
+    var total = weights.reduce(function (s, w) { return s + w; }, 0) || 1;
+    for (var j = 0; j < numBands; j++) {
+      var bar = document.getElementById('al-bar-' + blank + '-' + j);
+      if (bar) bar.style.width = Math.round((weights[j] / total) * 100) + '%';
+    }
+  }
+
+  function renderVocab() {
+    var t = TEMPLATES[current];
+    var grid = document.getElementById('al-vocab-grid');
+    grid.innerHTML = '';
+
+    Object.keys(t.vocab).forEach(function (blank) {
+      var vocab = t.vocab[blank];
+
+      var section = document.createElement('div');
+      section.style.cssText = 'margin-bottom: 1rem;';
+
+      var label = document.createElement('span');
+      label.className = 'al-label';
+      label.textContent = blank;
+      section.appendChild(label);
+
+      var box = document.createElement('div');
+      box.style.cssText = 'overflow-y: auto; resize: vertical; min-height: 80px; height: 120px; padding: 6px 4px 6px 8px; border: 2px solid #604B8B; border-radius: var(--al-radius-md);';
+
+      var ul = document.createElement('ul');
+      ul.style.cssText = 'margin: 0; padding-left: 1.4em; font-size: 14px; font-family: Georgia, serif; color: #000000;';
+
+      if (isWeighted(vocab)) {
+        vocab.bands.forEach(function (band) {
+          var li = document.createElement('li');
+          li.style.cssText = 'margin-bottom: 3px;';
+          li.textContent = band.min + '\u2013' + band.max + ' (' + band.weight + '%)';
+          ul.appendChild(li);
+        });
+      } else {
+        vocab.forEach(function (opt) {
+          var li = document.createElement('li');
+          li.style.cssText = 'margin-bottom: 3px;';
+          li.textContent = opt;
+          ul.appendChild(li);
+        });
+      }
+
+      box.appendChild(ul);
+      section.appendChild(box);
+      grid.appendChild(section);
+    });
+  }
+
+  window.alGenerate = function () {
+    var t = TEMPLATES[current];
+    var result = t.template;
+    Object.keys(t.vocab).forEach(function (blank) {
+      var re = new RegExp('\\[' + escapeRegex(blank) + '\\]', 'g');
+      result = result.replace(re, function () {
+        return '<span class="al-filled">' + pickValue(blank) + '</span>';
+      });
+    });
+    genCount++;
+    document.getElementById('al-output').innerHTML = result;
+    document.getElementById('al-output-wrap').style.display = 'block';
+    document.getElementById('al-gen-count').textContent = 'Generated ' + genCount + ' time' + (genCount === 1 ? '' : 's');
+  };
+
+  renderSelect();
+  renderPreview();
+  renderVocab();
+
+}());
+</script>
+```

@@ -1,0 +1,487 @@
+- id: abumeeizPromotingCriticalReading2023
+  author:
+  - Salma Abumeeiz
+  - Christopher Lopez
+  - Matthew Weirick Johnson
+  - Kian Ravaei
+  - Renee Romero
+  - Hannah Sutherland
+  - Doug Worsham
+  citation-key: abumeeizPromotingCriticalReading2023
+  container-title: 'Teaching Critical Reading Skills: Strategies for Academic Librarians'
+  editor:
+  - Hannah Gascho Rempel
+  - Rachel Hamelers
+  event-place: Chicago, Illinois
+  ISBN: 978-0-8389-3880-5 978-0-8389-3927-7
+  issued:
+  - year: 2023
+  language: en
+  publisher: Association of College and Research Libraries
+  publisher-place: Chicago, Illinois
+  source: K10plus ISBN
+  title: 'Promoting critical reading through learner-centered design: WI+RE’s approach
+    to open online learning'
+  type: chapter
+  volume: '2'
+- id: agyenWritingResearchTraining2023
+  accessed:
+  - year: 2025
+    month: 3
+    day: 14
+  author:
+  - Akua Agyen
+  - Jason Araújo
+  - Matthew W. Johnson
+  - Simon W. Lee
+  - Ashley Newby
+  - Renee Romero
+  - Laurel Westrup
+  citation-key: agyenWritingResearchTraining2023
+  issued:
+  - year: 2023
+  language: en
+  source: Google Scholar
+  title: 'Writing and research training program: a UCLA campus partnership to support
+    BIPOC, LGBTQIA, and disabled student ResearchersAkua agyen, jason araújo, matthew
+    weirick johnson, simon lee, ashley newby, renee romero, and laurel westrup'
+  title-short: Writing and research training program
+  type: chapter
+  URL: https://escholarship.org/content/qt1t256861/qt1t256861.pdf
+- id: johnsonAcademicInstructionLibrarians2024
+  abstract: Job control encompasses a range of dimensions that reflect the extent
+    to which employees have the freedom and discretion to make decisions about their
+    work. Job control includes control over tasks, scheduling, work pacing, physical
+    environment, decision-making, interaction, and mobility. A web survey was administered
+    to academic librarians with instruction responsibilities. The survey included
+    a previously developed scale for measuring job control and several key demographic
+    and job characteristic questions that were hypothesized to impact job control.
+    307 academic instruction librarians completed the job control scale. Analyzing
+    each item in the job control scale, teaching workload, status, income, years at
+    institution and in libraries, teacher training, union representation, and tenure
+    status have statistically significant effects on responses to at least one question
+    in the scale. Through analysis of the average response among academic instruction
+    librarians in the sample, control over decision-making, including allocation of
+    resources and salaries, and interactions appear to be two places where managers
+    and library leaders may focus improvements. Control over the amount of money academic
+    instruction librarians earn and over how their work is evaluated were the lowest
+    across the 22 items in the job control scale. As library leaders and managers
+    consider the practical implications of job control research on their work, earnings,
+    evaluation processes, and interactions or interruptions may be key areas to enact
+    changes or provide further transparency and shared decision-making.
+  accessed:
+  - year: 2024
+    month: 6
+    day: 26
+  author:
+  - Matthew Weirick Johnson
+  citation-key: johnsonAcademicInstructionLibrarians2024
+  container-title: The Journal of Academic Librarianship
+  container-title-short: J. Acad. Librariansh.
+  DOI: 10.1016/j.acalib.2023.102835
+  ISSN: 0099-1333
+  issue: '1'
+  issued:
+  - year: 2024
+    month: 1
+    day: 1
+  language: en
+  page: '102835'
+  source: ScienceDirect
+  title: 'Academic instruction librarians'' feelings of job control: quantitative
+    analysis of responses to a job control inventory'
+  title-short: Academic instruction librarians' feelings of job control
+  type: article-journal
+  URL: https://www.sciencedirect.com/science/article/pii/S009913332300174X
+  volume: '50'
+- id: johnsonBurdenProvingBurnout2024
+  accessed:
+  - year: 2025
+    month: 3
+    day: 14
+  author:
+  - Matthew Weirick Johnson
+  - Sylvia Page
+  citation-key: johnsonBurdenProvingBurnout2024
+  container-title: Canadian Journal of Academic Librarianship
+  container-title-short: Can. J. Acad. Librariansh.
+  issued:
+  - year: 2024
+  language: en
+  page: 1–13
+  publisher: Érudit
+  source: Google Scholar
+  title: The burden of proving burnout in academic library workers
+  type: article-journal
+  URL: https://www.erudit.org/en/journals/cjalib/2024-v10-cjalib09113/1115624ar/abstract/
+  volume: '10'
+- id: johnsonCollaborativeResearchServices2023a
+  accessed:
+  - year: 2025
+    month: 3
+    day: 14
+  author:
+  - Matthew Weirick Johnson
+  - Estéfani Bowline
+  - Diana Leigh King
+  - Antonia Osuna-Garcia
+  - Sylvia Page
+  - Alohie Tadesse
+  - Maggie Tarmey
+  - Matthew Vest
+  citation-key: johnsonCollaborativeResearchServices2023a
+  container-title: Reference Services Review
+  container-title-short: Ref. Serv. Rev.
+  issue: '2'
+  issued:
+  - year: 2023
+  language: en
+  page: 123–133
+  publisher: Emerald Publishing Limited
+  source: Google Scholar
+  title: 'Collaborative research services: a peer-led cohort approach'
+  title-short: Collaborative research services
+  type: article-journal
+  URL: https://www.emerald.com/insight/content/doi/10.1108/rsr-09-2022-0049/full/html
+  volume: '51'
+- id: johnsonEverydayEvidenceAssess2023
+  accessed:
+  - year: 2025
+    month: 3
+    day: 14
+  author:
+  - Matthew Weirick Johnson
+  - Michelle Brasseur
+  - Monica Hagan
+  - Diane Mizrachi
+  - Jimmy Zavala
+  citation-key: johnsonEverydayEvidenceAssess2023
+  issued:
+  - year: 2023
+  language: en
+  source: Google Scholar
+  title: 'Everyday evidence to assess teaching and learning: a programmatic assessment
+    of library instruction'
+  type: chapter
+  URL: https://escholarship.org/content/qt3p98359m/qt3p98359m.pdf
+- id: johnsonIntersectionPersoncenteredManagement2024
+  accessed:
+  - year: 2025
+    month: 3
+    day: 14
+  author:
+  - Matthew Weirick Johnson
+  - Renee Romero
+  citation-key: johnsonIntersectionPersoncenteredManagement2024
+  container-title: Person-centered Management in Academic Libraries
+  issued:
+  - year: 2024
+  language: en
+  source: Google Scholar
+  title: 'At the intersection of person-centered management and learner-centered pedagogy:
+    training, managing, and mentoring student staff'
+  title-short: At the intersection of person-centered management and learner-centered
+    pedagogy
+  type: chapter
+  URL: https://escholarship.org/content/qt6m1414z9/qt6m1414z9.pdf
+- id: johnsonJobControlIts2023
+  abstract: Librarians have been grappling with the issue of burnout for decades,
+    at least. This study uses the Copenhagen Burnout Inventory (CBI) and Job Control
+    Inventory to show how job control impacts burnout. Using the CBI, academic instruction
+    librarians, on average, have high work-related burnout and even higher personal
+    burnout compared to other jobs. However, librarians have low client-related burnout,
+    similar to other “caring” or “helping” professions. The findings point to key
+    factors that impact job control and burnout to help consider ways of mitigating
+    burnout and increasing job control.
+  accessed:
+  - year: 2023
+    month: 9
+    day: 4
+  author:
+  - Matthew Weirick Johnson
+  citation-key: johnsonJobControlIts2023
+  container-title: Journal of Library Administration
+  container-title-short: J. Libr. Adm.
+  DOI: 10.1080/01930826.2023.2219601
+  ISSN: 0193-0826
+  issue: '5'
+  issued:
+  - year: 2023
+    month: 7
+    day: 4
+  language: en
+  page: 595-632
+  publisher: Routledge
+  source: Taylor and Francis+NEJM
+  title: Job control and its impacts on burnout in academic instruction librarians
+  type: article-journal
+  URL: https://doi.org/10.1080/01930826.2023.2219601
+  volume: '63'
+- id: johnsonJobControlLibrary2025
+  accessed:
+  - year: 2025
+    month: 3
+    day: 14
+  author:
+  - Matthew Weirick Johnson
+  citation-key: johnsonJobControlLibrary2025
+  container-title: College & Research Libraries
+  container-title-short: Coll. Res. Libr.
+  issue: '1'
+  issued:
+  - year: 2025
+  language: en
+  page: '50'
+  source: Google Scholar
+  title: 'Job control, library instruction, and burnout: a quantitative analysis of
+    academic instruction librarians’ experiences of job control while teaching'
+  title-short: Job control, library instruction, and burnout
+  type: article-journal
+  URL: https://crl.acrl.org/index.php/crl/article/view/26623
+  volume: '86'
+- id: johnsonLibraryInstructionTraining2024
+  author:
+  - Matthew Weirick Johnson
+  citation-key: johnsonLibraryInstructionTraining2024
+  collection-number: '82'
+  collection-title: ACRL Publications in Librarianship
+  container-title: 'Training Library Instructors, Vol 1: A Guide to Training Graduate
+    Students'
+  editor:
+  - Matthew Weirick Johnson
+  event-place: Chicago
+  ISBN: 979-8-89255-603-3 979-8-89255-601-9
+  issued:
+  - year: 2024
+  language: en
+  number-of-volumes: '2'
+  publisher: Association of College and Research Libraries
+  publisher-place: Chicago
+  source: Library of Congress ISBN
+  title: 'Library instruction training and the MLIS: a review of the literature'
+  type: chapter
+  volume: '1'
+- id: johnsonLimitsInclusionOpen2023
+  abstract: 'Introduction: The impacts of open educational resources (OER) are both
+    well-documented and far-reaching. Without mitigating the positive outcomes of
+    OER—including reduced textbook costs, readily available knowledge platforms, and
+    open research—we problematize the commonly held assumption that open resources
+    are necessarily more accessible and inherently good.&nbsp;Description of Program:
+    Drawing on writing from antiracist, feminist disability researchers and advocates,
+    we critically examine the UCLA Library online open educational initiative known
+    as Writing Instruction + Research Education (WI+RE). In doing so, we (1) demonstrate
+    how open access (OA) is often framed as an end, when in fact it is just the beginning;
+    (2) encourage readers to resist evangelizing the OA movement such that it is beyond
+    critique; and (3) advocate for the centering of disability justice within and
+    beyond our OA efforts.&nbsp;Next Steps: We discuss both general and specific approaches
+    for centering accessibility in creative processes, advocate for expanded definitions
+    of OERs (beyond simply being “free”), and caution against evangelizing OERs without
+    acknowledging the structural factors that contribute to inaccessibility. We outline
+    four strategies and recommendations for other practitioners, educators, and designers
+    seeking to build accessibility and dis-ability justice into OER design and OA
+    initiatives more broadly. We approach OER both practically and theoretically to
+    present an argument and path forward for designing more accessible resources and
+    expanding OA through accessible access and universal design.'
+  accessed:
+  - year: 2024
+    month: 6
+    day: 26
+  author:
+  - Matthew Weirick Johnson
+  - Salma Abumeeiz
+  citation-key: johnsonLimitsInclusionOpen2023
+  container-title: Journal of Librarianship and Scholarly Communication
+  container-title-short: J. Librariansh. Sch. Commun.
+  DOI: 10.31274/jlsc.14399
+  ISSN: 2162-3309
+  issue: '1'
+  issued:
+  - year: 2023
+    month: 8
+    day: 8
+  language: en
+  number: '1'
+  publisher: Iowa State University Digital Press
+  source: www.iastatedigitalpress.com
+  title: 'The limits of inclusion in open access: accessible access, universal design,
+    and open educational resources'
+  title-short: The limits of inclusion in open access
+  type: article-journal
+  URL: https://www.iastatedigitalpress.com/jlsc/article/id/14399/
+  volume: '11'
+- id: johnsonTrainingLibraryInstructors2024
+  abstract: '"Pedagogy impacts all parts of library work and culture. It changes the
+    way we interact with learners regardless of setting and however we name or define
+    the teaching moment, from research help to outreach to leading meetings. Pedagogy
+    is a praxis of relation, and studying it can improve all aspects of our work and
+    organizations. In two volumes, Training Library Instructors collects examples
+    of how we train our colleagues to teach, whether they''re student workers, non-librarian
+    staff, new or experienced librarians, or something else entirely. Volume 1, A
+    Guide to Training Graduate Students, focuses on teacher training for graduate
+    students in LIS programs and in academic libraries. It presents existing literature
+    and theories, approaches to teaching library school students to teach, and critical
+    reflections from librarians about their varied experiences receiving teacher training.
+    In Volume 2, A Guide to Training Librarians, librarians share their knowledge
+    about teaching, learning, and pedagogy through a variety of replicable activities:
+    formal and informal workshops, courses, communities of practice, peer observation,
+    and more. Training Library Instructors provides detailed, easily implemented and
+    modified plans for courses, internships, teach-the-teacher programs, and other
+    instructional methods and opportunities for graduate students and library workers
+    at all levels of teaching experience"--'
+  citation-key: johnsonTrainingLibraryInstructors2024
+  collection-number: '82'
+  collection-title: ACRL Publications in Librarianship
+  editor:
+  - Matthew Weirick Johnson
+  event-place: Chicago
+  ISBN: 979-8-89255-603-3
+  issued:
+  - year: 2024
+  language: en
+  number-of-volumes: '2'
+  publisher: Association of College and Research Libraries
+  publisher-place: Chicago
+  source: Library of Congress ISBN
+  title: 'Training library instructors, vol 1: a guide to training graduate students'
+  type: book
+  volume: '1'
+- id: johnsonTrainingLibraryInstructors2024a
+  abstract: '"Pedagogy impacts all parts of library work and culture. It changes the
+    way we interact with learners regardless of setting and however we name or define
+    the teaching moment, from research help to outreach to leading meetings. Pedagogy
+    is a praxis of relation, and studying it can improve all aspects of our work and
+    organizations. In two volumes, Training Library Instructors collects examples
+    of how we train our colleagues to teach, whether they''re student workers, non-librarian
+    staff, new or experienced librarians, or something else entirely. Volume 1, A
+    Guide to Training Graduate Students, focuses on teacher training for graduate
+    students in LIS programs and in academic libraries. It presents existing literature
+    and theories, approaches to teaching library school students to teach, and critical
+    reflections from librarians about their varied experiences receiving teacher training.
+    In Volume 2, A Guide to Training Librarians, librarians share their knowledge
+    about teaching, learning, and pedagogy through a variety of replicable activities:
+    formal and informal workshops, courses, communities of practice, peer observation,
+    and more. Training Library Instructors provides detailed, easily implemented and
+    modified plans for courses, internships, teach-the-teacher programs, and other
+    instructional methods and opportunities for graduate students and library workers
+    at all levels of teaching experience"--'
+  citation-key: johnsonTrainingLibraryInstructors2024a
+  collection-number: '83'
+  collection-title: ACRL Publications in Librarianship
+  editor:
+  - Matthew Weirick Johnson
+  event-place: Chicago
+  ISBN: 979-8-89255-601-9
+  issued:
+  - year: 2024
+  language: en
+  number-of-volumes: '2'
+  publisher: Association of College and Research Libraries
+  publisher-place: Chicago
+  source: Library of Congress ISBN
+  title: 'Training library instructors, vol 2: a guide to training librarians'
+  type: book
+  volume: '2'
+- id: johnsonTransformingOurIdentities2023
+  abstract: '"Are librarians teachers? Many academic librarians enter teaching roles
+    with limited experience or education in instruction, discovering how to engage
+    students in learning from their own observations, trial-and-error, or professional
+    learning opportunities. Grappling with this potentially unexpected identity comes
+    amid a time of significant transition for higher education itself. Academic librarians
+    must figure out how to counter mis-, dis-, and malinformation, address shrinking
+    funding for collections while costs increase, and establish meaningful partnerships
+    in diverse, data-driven environments. And writ large, librarianship as a profession
+    continues to grapple with its responsibility to challenge information illiteracy
+    across contexts, its support of systemic systems of oppression under the guise
+    of neutrality, and its value to a society flooded with information. In three volumes,
+    Instructional Identities and Information Literacy uses transformative learning
+    theory-a way of understanding adult learning and ourselves-to explore the ways
+    librarians can meaningfully advance how we think about our identities, instructional
+    work, and learning as transformation. Three volumes explore: Transforming Ourselves;
+    Transforming Our Programs, Institutions, and Profession; and Transforming Student
+    Learning, Information Seeking, and Experiences. Chapters include transforming
+    a critical, feminist pedagogy with antiracist pedagogy; becoming an advocate for
+    library instruction to promote student success; the intersection of reluctant
+    professionals and the academy; transforming STEM learning and information-seeking
+    experiences; using the Framework to reshape student responses to media narratives;
+    and much more. Instructional Identities and Information Literacy contains many
+    ways to consider the programming, dispositions, behaviors, and attitudes we can
+    use as we continue to advance information literacy instruction and reshape our
+    profession"--'
+  author:
+  - Matthew Weirick Johnson
+  - Michelle Brasseur
+  - Alexandra Solodkaya
+  - Hannah Sutherland
+  citation-key: johnsonTransformingOurIdentities2023
+  container-title: 'Instructional Identities and Information Literacy: Transforming
+    Our Programs, Institutions, and Profession'
+  editor:
+  - Amanda Nichols Hess
+  event-place: Chicago
+  ISBN: 978-0-8389-3944-4 978-0-8389-3946-8 978-0-8389-3948-2
+  issued:
+  - year: 2023
+  language: en
+  number-of-volumes: '3'
+  publisher: Association of College and Research Libraries
+  publisher-place: Chicago
+  source: Library of Congress ISBN
+  title: 'Transforming our identities as learners and instructors: a library instruction
+    training program'
+  type: chapter
+  volume: '2'
+- id: johnsonUseCopenhagenBurnout2024
+  abstract: 'Burnout is a pervasive problem in libraries; however, little empirical
+    evidence exists to demonstrate burnout''s extent and to assist in identifying
+    evidence-based solutions. As far as quantitative analysis of burnout is concerned,
+    the Maslach Burnout Inventory (MBI) has been a primary tool for measuring burnout
+    among human services workers. However, the tool is proprietary and can be cost-prohibitive
+    for large samples or small/non-existent budgets. As we consider the measurement
+    of burnout as a field, open tools are better aligned with the values of librarianship,
+    and free tools are better aligned with the resources available for conducting
+    research or internal assessments. The Copenhagen Burnout Inventory (CBI) is a
+    non-commercial, free, and easy-to-administer tool for measuring burnout across
+    three dimensions: personal, work-related, and client-related. The CBI presents
+    a cost-effective alternative to the MBI which may be particularly enticing for
+    academic library leaders and researchers. This study assesses the psychometric
+    properties, including factor structure and scale reliability, to contribute to
+    demonstrating construct validity of the CBI among academic librarians in the United
+    Studies using a probability sample stratified by institutional Carnegie classifications
+    and geographic region. Confirmatory Factory Analysis (CFA) is used the examine
+    the factor structure and model fit of five models for the CBI: a correlated three
+    factors model, a correlated two factors model (using work-related and client-related
+    burnout), and three single factor models for each of the three independent subscales
+    (personal, work-related, and client-related burnout). The factorial validity and
+    model fit for the five models demonstrated in the study are reasonable, suggesting
+    that the items in the three scales are successfully measuring the latent constructs
+    (personal burnout, work-related burnout, and client-related burnout), which contributes
+    to construct validity. The expected relationship between the observed variables
+    (the items in the measurement model) and the latent constructs is supported by
+    the CFA analyses. While other examinations of validity, including other aspects
+    of construct validity, should also be examined, the findings support the use of
+    the CBI for measurement of burnout among academic librarians.'
+  accessed:
+  - year: 2024
+    month: 10
+    day: 2
+  author:
+  - Matthew Weirick Johnson
+  citation-key: johnsonUseCopenhagenBurnout2024
+  container-title: The Journal of Academic Librarianship
+  container-title-short: J. Acad. Librariansh.
+  DOI: 10.1016/j.acalib.2024.102922
+  ISSN: 0099-1333
+  issue: '5'
+  issued:
+  - year: 2024
+    month: 9
+    day: 1
+  language: en
+  page: '102922'
+  source: ScienceDirect
+  title: 'Use of the Copenhagen burnout inventory among US academic librarians: examining
+    construct validity through factor structure and model fit'
+  title-short: Use of the Copenhagen burnout inventory among US academic librarians
+  type: article-journal
+  URL: https://www.sciencedirect.com/science/article/pii/S0099133324000831
+  volume: '50'

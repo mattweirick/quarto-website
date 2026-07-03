@@ -1,0 +1,173 @@
+```{=html}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
+
+<style>
+  
+  .ai-lg {
+    font-size: 1.2em;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .card {
+    margin-bottom: 0;
+    margin-top: 0;
+    border: 0;
+    padding-bottom: 0;
+  }
+  
+  .collapse {
+    margin: 0;
+    padding: 0;
+  }
+
+</style>
+
+<ul class="list">
+  <% for (const item of items) { %>
+    <li <%= metadataAttrs(item) %>>
+      <%= item.title %>
+      <br/>
+      
+      <!-- Paper info for different publication types -->
+      <small class="text-muted">
+        <% if (item.issued && item.issued[0] && item.issued[0].year) { %>
+          <%= item.issued[0].year %>.
+        <% } %>
+        
+        <%= item.author %>.
+        
+        <% if (item.type === 'article-journal' && item['container-title']) { %>
+          <em><%= item['container-title'] %></em>.
+        <% } else if (item.type === 'chapter') { %>
+          <% if (item['container-title']) { %>
+            In: <em><%= item['container-title'] %></em>
+          <% } %>
+          <% if (item.editor && item.editor.length > 0) { %>
+            (Ed. by 
+            <% for (let i = 0; i < item.editor.length; i++) { %>
+              <% if (item.editor[i].given) { %><%= item.editor[i].given %> <% } %><%= item.editor[i].family %><% if (i < item.editor.length - 1) { %>, <% } %>
+            <% } %>)
+          <% } %>
+          .
+        <% } else if (item.type === 'book') { %>
+          <% if (item.publisher) { %>
+            <%= item.publisher %>.
+          <% } %>
+        <% } else if (item['container-title']) { %>
+          <em><%= item['container-title'] %></em>.
+        <% } %>
+      </small>
+      
+     <br/>
+      
+      <% if (item.errata) { %>
+        <a role="button" href="<%= item.errata %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-exclamation-diamond ai-lg"></i> Errata
+        </a> 
+      <% } %>
+      
+      <% if (item.website) { %>
+        <a role="button" href="<%= item.website %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-filetype-html ai-lg"></i> Project Website
+        </a>
+      <% } %>
+      
+      <% if (item.pdf) { %>
+        <a role="button" href="<%= item.pdf %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-file-earmark-pdf ai-lg"></i> PDF 
+        </a> 
+      <% } %>
+      
+      <% if (item.pubopen || item.URL) { %>
+        <a role="button" href="<%= item.pubopen || item.URL %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="ai ai-open-access ai-lg"></i> Open Access
+        </a>
+      <% } %>
+      
+      <% if (item.pubclosed) { %>
+        <a role="button" href="<%= item.pubclosed %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="ai ai-closed-access ai-lg"></i> Publisher's Version 
+        </a>
+      <% } %>
+      
+      <% if (item.DOI && !item.pubopen && !item.pubclosed) { %>
+        <a role="button" href="https://doi.org/<%= item.DOI %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="ai ai-doi ai-lg"></i> DOI 
+        </a>
+      <% } %>
+      
+      <% if (item.preprint) { %>
+        <a role="button" href="<%= item.preprint %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="ai ai-arxiv ai-lg"></i> Preprint 
+        </a> 
+      <% } %>
+      
+      <% if (item.appendix) { %>
+        <a role="button" href="<%= item.appendix %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-file-earmark-plus ai-lg"></i> Appendix 
+        </a>
+      <% } %>
+      
+      <% if (item.dataverse) { %>
+        <a role="button" href="<%= item.dataverse %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="ai ai-dataverse ai-lg"></i> Dataverse 
+        </a>
+      <% } %>
+      
+      <% if (item.osf) { %>
+        <a role="button" href="<%= item.osf %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="ai ai-osf ai-lg"></i> OSF
+        </a>
+      <% } %>
+      
+      <% if (item.github) { %>
+        <a role="button" href="<%= item.github %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="bi bi-github ai-lg"></i> GitHub 
+        </a>
+      <% } %>
+      
+      <% if (item.prereg) { %>
+        <a role="button" href="<%= item.prereg %>" type="button" class="btn btn-outline-secondary btn-xs"> 
+          <i class="ai ai-preregistered ai-lg"></i> Preregistration 
+        </a> 
+      <% } %>
+      
+      <% if (item.abstract) { %>
+        <button class="btn btn-outline-secondary btn-xs" type="button" data-bs-toggle="collapse" data-bs-target="#<%= item.id || item['citation-key'] || item.short %>" aria-expanded="false" aria-controls="<%= item.id || item['citation-key'] || item.short %>">
+          <i class="bi bi-arrow-down-circle-fill ai-lg"></i> Abstract
+        </button>
+        <div class="collapse" id="<%= item.id || item['citation-key'] || item.short %>">
+          <div class="card card-body">
+            <%= item.abstract %>
+          </div>
+        </div>
+      <% } %>
+      
+      <% if(item.categories) { %>
+        <div class="project-categories">
+          <% for (const cat of item.categories) { %>
+            <div class="project-category"><a href="#category=<%= cat %>">
+              <%= cat %>
+            </a></div>
+          <% } %>
+        </div>
+      <% } %>
+      
+      <% if (item.note) { %>
+        <br/>
+        <small class="text-secondary">
+          <span class="note"><%= item.note %></span>    
+        </small>
+      <% } %>
+      <hr>
+    </li>
+  <% } %>
+</ul>
+
+```

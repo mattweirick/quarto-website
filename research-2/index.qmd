@@ -1,0 +1,56 @@
+---
+title: "Research-2"
+description: "" 
+listing:
+  - id: published-papers
+    include: 
+      type: "article-journal"
+    contents: papers.yaml
+    template: papers.ejs
+page-layout: full
+include-back-link: false
+toc-location: right
+---
+
+If want to stay up-to-date on my work, follow me on [Google Scholar](https://scholar.google.com/citations?hl=en&user=dgbjIWIAAAAJ)
+
+```{=html}
+<!---
+You can filter the items displayed below based on my three major research areas:
+
+::: {.btn-group role="group" aria-label="Publication grouping buttons"}
+<a role="button" href="#category=Librarian Worklife" type="button" class="btn btn-outline-secondary btn-s">Improving Librarian Work Life</a> <a role="button" href="#category=" type="button" class="btn btn-outline-secondary btn-s">Training Librarians</a> <a role="button" href="#category=" type="button" class="btn btn-outline-secondary btn-s">Managing Librarians</a>
+:::
+
+</br>
+
+--->
+```
+```{=html}
+<!--
+## Working Papers
+
+:::{#unpublished-papers}
+:::
+
+
+## Forthcoming
+
+:::{#forthcoming-papers}
+:::
+-->
+```
+## Edited Books
+
+-   *Training Library Instructors, Vol 1: A Guide to Training Graduate Students* <br/> <small class="text-muted" style="display:block;"> Matthew Weirick Johnson (Ed.). ACRL. </small>
+
+    <hr>
+
+-   *Training Library Instructors, Vol 2: A Guide to Training Librarians* <br/> <small class="text-muted" style="display:block;"> Matthew Weirick Johnson (Ed.). ACRL.</small>
+
+    <hr>
+
+## Peer-reviewed Articles
+
+::: {#published-papers}
+:::

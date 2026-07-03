@@ -38,8 +38,6 @@ website:
       menu: 
         - text: "{{< fa envelope size=xl >}} Email" 
           href: mailto:matt@mattweirick.com
-        - text: "{{< fa brands twitter size=xl >}} Twitter"
-          href: https://twitter.com/xoxoMattyBoy
         - text: "{{< fa brands linkedin size=xl >}} LinkedIn"
           href: https://www.linkedin.com/in/matthew-w-johnson
         - text: "{{< fa brands instagram size=xl >}} Instagram"

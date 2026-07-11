@@ -221,10 +221,88 @@ ul {
 ```
 
 ::: {.content-visible when-format="html"}
-Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the University of South Florida Libraries and a PhD student in Educational Measurement and Evaluation also at USF. You can also [download a PDF of my CV](/files/johnson-cv.pdf).
+Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the University of South Florida Libraries and a PhD student in Educational Measurement and Evaluation also at USF. You can also [view a PDF of my CV](/files/johnson-cv.pdf).
 :::
 
 ## <i class="fa-solid fa-graduation-cap"></i> Education
+
+### PhD Candidate in Measurement & Research
+
+```{=html}
+<ul>
+  <li>
+    University of South Florida
+    <span class="cvdate">exp. 2027</span>
+  </li>
+  
+  <li class="cv-details-item">
+    <div class="cv-details">
+      <div class="cv-detail-label">Certificates:</div>
+      <div class="cv-detail-value">
+        <div>Qualitative Research</div>
+        <div>Advanced Quantitative Research</div>
+        <div>Women's, Gender &amp; Sexuality Studies</div>
+      </div>
+    </div>
+  </li>
+  
+</ul>
+```
+
+### MA in Women's, Gender, and Sexuality Studies
+
+```{=html}
+<ul>
+  <li>
+    University of South Florida
+    <span class="cvdate">exp. 2027</span>
+  </li>
+</ul>
+```
+
+### MS in Library Science (specialization in Academic Libraries)
+
+```{=html}
+<ul>
+  <li>
+    University of North Carolina at Chapel Hill
+    <span class="cvdate">2018</span>
+  </li>
+
+  <li class="cv-details-item">
+    <div class="cv-details">
+      <div class="cv-detail-label">Master's Paper:</div>
+      <div class="cv-detail-value">
+        “Not playing that game”: An exploratory study of queer men's health
+        information behavior on location-aware dating and sex-seeking mobile
+        applications
+      </div>
+
+      <div class="cv-detail-label">Certificates:</div>
+      <div class="cv-detail-value">
+
+  <div>Interdisciplinary Health Communication</div>
+  <div>Interdisciplinary Health Disparities</div>
+  <div>SILS Diversity Advocate</div>
+
+      </div>
+    </div>
+  </li>
+</ul>
+```
+
+### BA in English (concentration in Literature)
+
+```{=html}
+<ul>
+  <li>
+    Virginia Tech
+    <span class="cvdate">2016</span>
+  </li>
+</ul>
+```
+
+<!---
 
 ### University of South Florida
 
@@ -285,13 +363,17 @@ Matthew Weirick Johnson, MSLS is the Director of Research & Instruction at the U
 </ul>
 ```
 
+--->
+
 ```{=html}
 <!--- Awards: Pratt Severn Best Student Research Paper Award, ASIS&T --->
 ```
 
+<!--
 ### Virginia Tech
 
 - **BA** *English* [2016]{.cvdate}
+--->
 
 ```{=html}
 <!--- Awards: Barbara Ellen Smith Outstanding Paper Award, VT Women's & Gender Studies; Ut Prosim Award for Service, VT English --->

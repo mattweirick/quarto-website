@@ -1,3 +1,20 @@
+- title: "First, let’s see what they know: The assessment and iterative design of an information literacy tutorial for undergraduate biology students"
+  type: "Published"
+  short: "istl-2026"
+  author:
+    - Tessa Withorn
+    - Matthew Weirick Johnson
+    - Amber Willenborg
+  date: 2026-07-10
+  year: 2026
+  journal: "<em> Issues in Science and Technology Librarianship</em>"
+  abstract: "STEM librarians who are new to an institution may find it beneficial to assess students in a required course for a major to gain a better understanding of what students know about information literacy at a mid-way point in their academic career. This article describes a novel 10-item information literacy assessment developed with learning outcomes related to the ACRL Framework for Information Literacy for Higher Education and the STEM companion document. The findings report data from 100 Biology undergraduate students at an R1 university in the United States before and after they completed an online tutorial. Overall, the test lacked internal consistency and there was no statistically significant difference between the pre- and post-test scores. However, this assessment data can be used to identify gaps in the curriculum and revise instructional materials accordingly. Baseline assessments may be followed by more authentic assessment measures that give students a voice in shaping the assessment and learning process."
+  #pdf:
+  pubopen: https://doi.org/10.29173/istl2958
+  categories:
+    - Burnout
+    - 2026
+
 - title: "Insights from a burnout debate: Occupational health psychology for academic librarianship"
   type: "Published"
   short: "burnout-debate-2026"
@@ -7,7 +24,7 @@
   year: 2026
   journal: "<em> portal: Libraries and the Academic</em>"
   abstract: "A recent scholarly debate in Work & Stress challenges foundational assumptions about burnout, with Renzo Bianchi and Irvin Sam Schonfeld arguing for its abandonment in favor of a depression-focused framework. Their critique centers on burnout’s conceptual ambiguity, overstated prevalence, and overlap with depression. Leading occupational health psychologists respond with counterarguments affirming burnout’s distinctiveness and occupational roots. These debates offer critical insights for library and information science, highlighting the need for interdisciplinary engagement, improved measurement, and organizational interventions. Integrating perspectives from occupational health psychology can enrich burnout research in librarianship and support more effective strategies for improving library workplace conditions."
-  #pdf:
+  pdf: ../files/burnoutdebate-portal-acceptedmanuscript.pdf
   pubclosed: https://doi.org/10.1353/pla.2026.a979341
   categories:
     - Burnout
@@ -75,7 +92,7 @@ while teaching"
   year: 2024
   journal: "<em> The Journal of Academic Librarianship</em>"
   abstract: Job control encompasses a range of dimensions that reflect the extent to which employees have the freedom and discretion to make decisions about their work. Job control includes control over tasks, scheduling, work pacing, physical environment, decision-making, interaction, and mobility. A web survey was administered to academic librarians with instruction responsibilities. The survey included a previously developed scale for measuring job control and several key demographic and job characteristic questions that were hypothesized to impact job control. 307 academic instruction librarians completed the job control scale. Analyzing each item in the job control scale, teaching workload, status, income, years at institution and in libraries, teacher training, union representation, and tenure status have statistically significant effects on responses to at least one question in the scale. Through analysis of the average response among academic instruction librarians in the sample, control over decision-making, including allocation of resources and salaries, and interactions appear to be two places where managers and library leaders may focus improvements. Control over the amount of money academic instruction librarians earn and over how their work is evaluated were the lowest across the 22 items in the job control scale. As library leaders and managers consider the practical implications of job control research on their work, earnings, evaluation processes, and interactions or interruptions may be key areas to enact changes or provide further transparency and shared decision-making.
-  #pdf:
+  pdf: ../files/jal-jobcontrol-acceptedmanuscript.pdf
   pubclosed: https://doi.org/10.1016/j.acalib.2023.102835
   categories:
     - Job Control
